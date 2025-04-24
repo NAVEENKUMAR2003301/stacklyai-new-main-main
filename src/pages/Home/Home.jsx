@@ -1208,7 +1208,89 @@ export default function Home() {
 
      {/* {section-15} */}
 
+     <section className="w-full py-16 px-6 bg-white flex flex-col items-center">
+  {/* Heading */}
+  <div className="text-center mb-10">
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+      <span className="inline-flex items-center gap-2">
+        <span className="text-cyan-600 text-4xl">?</span> Frequently Asked Questions
+      </span>
+    </h2>
+    <p className="mt-4 text-gray-500 max-w-xl mx-auto text-sm md:text-base">
+      Have questions? We’ve got answers! Explore our FAQs to learn more.
+    </p>
+  </div>
 
+  {/* FAQ Accordion */}
+  <div className="w-full max-w-2xl bg-gray-50 rounded-xl shadow-md p-4 space-y-4">
+    {/* Single FAQ Item */}
+    <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+      <button className="w-full flex justify-between items-center p-4 text-left text-gray-800 font-medium focus:outline-none">
+        <span>What is Stackly AI?</span>
+        <svg className="w-5 h-5 transform transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor">
+          <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 111.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0l-4.25-4.65a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+        </svg>
+      </button>
+      {/* Content (toggle visibility with state) */}
+      <div className="px-4 pb-4 text-gray-600 text-sm hidden">
+        {/* Your answer goes here */}
+      </div>
+    </div>
+
+    {/* Repeat the above block for more FAQs */}
+  </div>
+  <div className="w-full max-w-2xl bg-gray-50 rounded-xl shadow-md p-4 space-y-4">
+    {/* Single FAQ Item */}
+    <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+      <button className="w-full flex justify-between items-center p-4 text-left text-gray-800 font-medium focus:outline-none">
+        <span> How does Stackly AI work?</span>
+        <svg className="w-5 h-5 transform transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor">
+          <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 111.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0l-4.25-4.65a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+        </svg>
+      </button>
+      {/* Content (toggle visibility with state) */}
+      <div className="px-4 pb-4 text-gray-600 text-sm hidden">
+        {/* Your answer goes here */}
+      </div>
+    </div>
+
+    {/* Repeat the above block for more FAQs */}
+  </div>
+  <div className="w-full max-w-2xl bg-gray-50 rounded-xl shadow-md p-4 space-y-4">
+    {/* Single FAQ Item */}
+    <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+      <button className="w-full flex justify-between items-center p-4 text-left text-gray-800 font-medium focus:outline-none">
+        <span> Is Stackly AI free to use?</span>
+        <svg className="w-5 h-5 transform transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor">
+          <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 111.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0l-4.25-4.65a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+        </svg>
+      </button>
+      {/* Content (toggle visibility with state) */}
+      <div className="px-4 pb-4 text-gray-600 text-sm hidden">
+        {/* Your answer goes here */}
+      </div>
+    </div>
+
+    {/* Repeat the above block for more FAQs */}
+  </div>
+  <div className="w-full max-w-2xl bg-gray-50 rounded-xl shadow-md p-4 space-y-4">
+    {/* Single FAQ Item */}
+    <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+      <button className="w-full flex justify-between items-center p-4 text-left text-gray-800 font-medium focus:outline-none">
+        <span> How do I contact Stackly Ai?</span>
+        <svg className="w-5 h-5 transform transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor">
+          <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 111.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0l-4.25-4.65a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+        </svg>
+      </button>
+      {/* Content (toggle visibility with state) */}
+      <div className="px-4 pb-4 text-gray-600 text-sm hidden">
+        {/* Your answer goes here */}
+      </div>
+    </div>
+
+    {/* Repeat the above block for more FAQs */}
+  </div>
+</section>
 
       {/* {section-17} */}
       <Footer />
