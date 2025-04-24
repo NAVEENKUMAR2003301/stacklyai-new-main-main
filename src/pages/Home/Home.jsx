@@ -1276,7 +1276,7 @@ export default function Home() {
     {/* Single FAQ Item */}
     <div className="bg-white rounded-lg overflow-hidden shadow-sm">
       <button className="w-full flex justify-between items-center p-4 text-left text-gray-800 font-medium focus:outline-none">
-        <span> How do I contact Stackly AI?</span>
+        <span> How do I contact Stackly Ai?</span>
         <svg className="w-5 h-5 transform transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor">
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 111.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0l-4.25-4.65a.75.75 0 01.02-1.06z" clipRule="evenodd" />
         </svg>
