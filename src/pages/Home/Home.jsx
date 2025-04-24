@@ -1217,7 +1217,7 @@ export default function Home() {
       </span>
     </h2>
     <p className="mt-4 text-gray-500 max-w-xl mx-auto text-sm md:text-base">
-      Have questions? We’ve got answers! Explore our FAQs to learn more.
+    Have questions? We've got answers! Explore our FAQs to learn more about how Stackly AI works, its features, and how it can help you streamline your tasks effortlessly.
     </p>
   </div>
 

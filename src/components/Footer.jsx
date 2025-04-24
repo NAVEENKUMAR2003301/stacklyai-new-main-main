@@ -1,12 +1,12 @@
 import React from "react";  
-import seclogo from "../assets/logo.png";
+import logo from "../assets/Logo.png";
 
 export default function Footer() {
   return (
     <footer className="bg-white text-gray-800 py-12 px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
         <div>
-          <img src={seclogo} alt="Stackly Logo" className="mb-4 w-32" />
+          <img src={logo} alt="Stackly Logo" className="mb-4 w-32" />
           <p className="text-sm">
             Automatically generate photo-like images of your desired spaces in
             seconds. Unleash the most advanced AI interior design tool to boost
