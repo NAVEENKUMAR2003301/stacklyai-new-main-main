@@ -151,20 +151,38 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div
-              className="bg-center bg-no-repeat bg-cover max-w-[500px] min-h-[312px] w-full h-auto flex flex-col justify-start items-start"
-              style={{ backgroundImage: "url('/home/sec1/banner-home.png')" }}
-            >
-              <div className="flex flex-col justify-start items-start gap-[5px] pl-[25px] pr-0 pt-2.5 pb-0  max-[500px]:p-3">
-                <div className="max-w-[149px] w-full h-[34px] rounded bg-[#00000066] flex justify-center items-center gap-2.5 px-2.5 py-1.5">
-                  <p className="max-w-[129px] w-full text-base font-medium leading-[100%] text-white z-[1]">
-                    ORGINAL ROOM
+            <div className="relative w-full max-w-[500px] min-h-[312px] group overflow-hidden rounded-lg">
+  
+              <div
+                className="bg-center group-hover:opacity-0 bg-no-repeat bg-cover w-full h-full min-h-[312px] transition-opacity duration-500"
+                style={{ backgroundImage: "url('/home/sec1/banner-home.png')" }}
+              >
+                <div className="flex flex-col justify-start items-start gap-[5px] pl-[25px] pt-2.5 max-[500px]:p-3">
+                  <div className="max-w-[149px] w-full h-[34px] rounded bg-[#00000066] flex justify-center items-center gap-2.5 px-2.5 py-1.5">
+                    <p className="max-w-[129px] w-full text-base font-medium leading-[100%] text-white z-[1]">
+                      ORGINAL ROOM
+                    </p>
+                  </div>
+                  <p className="max-w-[44px] w-full h-5 text-sm leading-[100%] font-medium text-white z-[1] pl-[5px]">
+                    Before
                   </p>
                 </div>
+              </div>
 
-                <p className="max-w-[44px] w-full h-5 text-sm leading-[100%] font-medium text-white z-[1] pl-[5px]">
-                  Before
-                </p>
+              <div
+                className="absolute top-0 left-0 bg-center bg-no-repeat bg-cover w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 min-h-[312px]"
+                style={{ backgroundImage: "url('/home/sec1/banner-home.png')" }}
+              >
+                <div className="flex flex-col justify-start items-start gap-[5px] pl-[25px] pt-2.5 max-[500px]:p-3">
+                  <div className="max-w-[149px] w-full h-[34px] rounded bg-[#00000066] flex justify-center items-center gap-2.5 px-2.5 py-1.5">
+                    <p className="max-w-[129px] w-full text-base font-medium leading-[100%] text-white z-[1]">
+                      STACKLYAI
+                    </p>
+                  </div>
+                  <p className="max-w-[44px] w-full h-5 text-sm leading-[100%] font-medium text-white z-[1] pl-[5px]">
+                    After
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -579,17 +597,23 @@ export default function Home() {
                         Select Building Type
                       </p>
                       <div className="max-w-[550px] w-full min-h-[42px] flex justify-between items-center gap-3">
-                        <label htmlFor="btype1" className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group">
+                        <label
+                          htmlFor="btype1"
+                          className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group"
+                        >
                           <span className="group-hover:text-[#007b82] text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center">
                             Commercial
                           </span>{" "}
-                          <input type="radio" name="buildingType" id="btype1"/>
+                          <input type="radio" name="buildingType" id="btype1" />
                         </label>
-                        <label htmlFor="btype2" className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group">
+                        <label
+                          htmlFor="btype2"
+                          className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group"
+                        >
                           <span className="group-hover:text-[#007b82] text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center">
                             Residential
                           </span>{" "}
-                          <input type="radio" name="buildingType" id="btype2"/>
+                          <input type="radio" name="buildingType" id="btype2" />
                         </label>
                       </div>
                     </div>
@@ -697,13 +721,19 @@ export default function Home() {
                         Select Building Type
                       </p>
                       <div className="max-w-[550px] w-full min-h-[42px] flex justify-between items-center gap-3">
-                        <label htmlFor="btype3" className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer">
+                        <label
+                          htmlFor="btype3"
+                          className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer"
+                        >
                           <span className="text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center group-hover:text-[#007b82]">
                             Commercial
                           </span>{" "}
                           <input type="radio" name="buildingTy" id="btype3" />
                         </label>
-                        <label htmlFor="btype4" className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer">
+                        <label
+                          htmlFor="btype4"
+                          className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer"
+                        >
                           <span className="text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center group-hover:text-[#007b82]">
                             Residential
                           </span>{" "}
@@ -711,13 +741,19 @@ export default function Home() {
                         </label>
                       </div>
                       <div className="max-w-[550px] w-full min-h-[42px] flex justify-between items-center gap-3">
-                        <label htmlFor="btype5" className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer">
+                        <label
+                          htmlFor="btype5"
+                          className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer"
+                        >
                           <span className="text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center group-hover:text-[#007b82]">
                             Commercial
                           </span>{" "}
                           <input type="radio" name="buildingTy" id="btype5" />
                         </label>
-                        <label htmlFor="btype6" className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer">
+                        <label
+                          htmlFor="btype6"
+                          className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer"
+                        >
                           <span className="text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center group-hover:text-[#007b82]">
                             Residential
                           </span>{" "}
@@ -757,51 +793,51 @@ export default function Home() {
             3 Easy Steps to Get Started
           </p>
         </div>
-        
-          <div className="step1">
-            <div
-              className="max-w-[411px] w-full min-h-[232px] bg-center bg-no-repeat bg-cover object-cover p-2.5"
-              style={{ backgroundImage: "url('/home/sec7-5/step1.jpeg')" }}
-            >
-              <div className="bg-[#00000080] backdrop-blur-[5] flex justify-center items-center max-w-[53px] w-full min-h-[19px] text-[10px] font-bold leading-[100%] text-[white] rounded-[60px]">
-                Step 1:
-              </div>
-            </div>
-            <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
-              <span className="text-[aqua]"> Upload </span>a photo of your room,
-              home, or outdoor space.
-            </p>
-          </div>
-          <div className="step2 flex flex-col items-center">
-            <div
-              className="max-w-[411px] w-full min-h-[232px] bg-center bg-no-repeat bg-cover object-cover p-2.5"
-              style={{ backgroundImage: "url('/home/sec7-5/step2.jpeg')" }}
-            >
-              <div className="bg-[#00000080] backdrop-blur-[5] flex justify-center items-center max-w-[53px] w-full min-h-[19px] text-[10px] font-bold leading-[100%] text-[white] rounded-[60px]">
-                Step 2:
-              </div>
-            </div>
-            <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
-              <span className="text-[aqua]"> Personalize your experience </span>
-              — choose the room type, adjust AI creativity, add special
-              instructions, and select your favorite design style
-            </p>
-          </div>
 
-          <div className="step3 flex flex-col items-end">
-            <div
-              className="max-w-[411px] w-full min-h-[232px] bg-center bg-no-repeat bg-cover object-cover p-2.5"
-              style={{ backgroundImage: "url('/home/sec7-5/step3.jpeg')" }}
-            >
-              <div className="bg-[#00000080] backdrop-blur-[5] flex justify-center items-center max-w-[53px] w-full min-h-[19px] text-[10px] font-bold leading-[100%] text-[white] rounded-[60px]">
-                Step 3:
-              </div>
+        <div className="step1">
+          <div
+            className="max-w-[411px] w-full min-h-[232px] bg-center bg-no-repeat bg-cover object-cover p-2.5"
+            style={{ backgroundImage: "url('/home/sec7-5/step1.jpeg')" }}
+          >
+            <div className="bg-[#00000080] backdrop-blur-[5] flex justify-center items-center max-w-[53px] w-full min-h-[19px] text-[10px] font-bold leading-[100%] text-[white] rounded-[60px]">
+              Step 1:
             </div>
-            <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
-              <span className="text-[aqua]">Generate</span> stunning new décor
-              and design concepts in under 25 seconds.
-            </p>
           </div>
+          <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
+            <span className="text-[aqua]"> Upload </span>a photo of your room,
+            home, or outdoor space.
+          </p>
+        </div>
+        <div className="step2 flex flex-col items-center">
+          <div
+            className="max-w-[411px] w-full min-h-[232px] bg-center bg-no-repeat bg-cover object-cover p-2.5"
+            style={{ backgroundImage: "url('/home/sec7-5/step2.jpeg')" }}
+          >
+            <div className="bg-[#00000080] backdrop-blur-[5] flex justify-center items-center max-w-[53px] w-full min-h-[19px] text-[10px] font-bold leading-[100%] text-[white] rounded-[60px]">
+              Step 2:
+            </div>
+          </div>
+          <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
+            <span className="text-[aqua]"> Personalize your experience </span>—
+            choose the room type, adjust AI creativity, add special
+            instructions, and select your favorite design style
+          </p>
+        </div>
+
+        <div className="step3 flex flex-col items-end">
+          <div
+            className="max-w-[411px] w-full min-h-[232px] bg-center bg-no-repeat bg-cover object-cover p-2.5"
+            style={{ backgroundImage: "url('/home/sec7-5/step3.jpeg')" }}
+          >
+            <div className="bg-[#00000080] backdrop-blur-[5] flex justify-center items-center max-w-[53px] w-full min-h-[19px] text-[10px] font-bold leading-[100%] text-[white] rounded-[60px]">
+              Step 3:
+            </div>
+          </div>
+          <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
+            <span className="text-[aqua]">Generate</span> stunning new décor and
+            design concepts in under 25 seconds.
+          </p>
+        </div>
       </section>
 
       {/* Section 8 */}
@@ -1230,7 +1266,7 @@ export default function Home() {
 
       {/* {section-15} */}
 
-      <FAQ faqs={faqs}/>
+      <FAQ faqs={faqs} />
 
       {/* {section-17} */}
       <Footer />
