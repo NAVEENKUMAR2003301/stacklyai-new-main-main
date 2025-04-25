@@ -59,9 +59,32 @@ import sec14Img2 from "../../assets/home/sec14/Vector.png";
 import sec14Img3 from "../../assets/home/sec14/m1.jpg";
 import sec14Img4 from "../../assets/home/sec14/m2.jpg";
 import sec14Img5 from "../../assets/home/sec14/m3.jpg";
+import FAQ from "./FAQ";
 
 export default function Home() {
   const [changeText, setChangeText] = useState(0);
+  const faqs = [
+    {
+      question: "What is Stackly AI?",
+      answer:
+        "Stackly AI is an intelligent platform designed to streamline your tasks using automation and smart tools. It helps enhance productivity by offering tailored solutions based on your needs.",
+    },
+    {
+      question: "How does Stackly AI work?",
+      answer:
+        "Stackly AI works by analyzing your input and tasks, then offering automated suggestions, integrations, and tools to make your workflow more efficient and seamless.",
+    },
+    {
+      question: "Is Stackly AI free to use?",
+      answer:
+        "Stackly AI offers both free and premium plans. The free plan includes essential features, while premium plans unlock advanced capabilities and integrations.",
+    },
+    {
+      question: "How do I contact Stackly AI?",
+      answer:
+        "You can reach out to Stackly AI through our support page, via email at support@stackly.ai, or use the chat feature on our website for instant assistance.",
+    },
+  ];
 
   const [dropDown, setDropDown] = useState(false);
   useEffect(() => {
@@ -556,18 +579,18 @@ export default function Home() {
                         Select Building Type
                       </p>
                       <div className="max-w-[550px] w-full min-h-[42px] flex justify-between items-center gap-3">
-                        <div className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group">
+                        <label htmlFor="btype1" className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group">
                           <span className="group-hover:text-[#007b82] text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center">
                             Commercial
                           </span>{" "}
-                          <input type="radio" name="buildingType" />
-                        </div>
-                        <div className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group">
+                          <input type="radio" name="buildingType" id="btype1"/>
+                        </label>
+                        <label htmlFor="btype2" className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group">
                           <span className="group-hover:text-[#007b82] text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center">
                             Residential
                           </span>{" "}
-                          <input type="radio" name="buildingType" />
-                        </div>
+                          <input type="radio" name="buildingType" id="btype2"/>
+                        </label>
                       </div>
                     </div>
 
@@ -674,32 +697,32 @@ export default function Home() {
                         Select Building Type
                       </p>
                       <div className="max-w-[550px] w-full min-h-[42px] flex justify-between items-center gap-3">
-                        <div className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer">
+                        <label htmlFor="btype3" className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer">
                           <span className="text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center group-hover:text-[#007b82]">
                             Commercial
                           </span>{" "}
-                          <input type="radio" name="buildingTy " />
-                        </div>
-                        <div className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer">
+                          <input type="radio" name="buildingTy" id="btype3" />
+                        </label>
+                        <label htmlFor="btype4" className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer">
                           <span className="text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center group-hover:text-[#007b82]">
                             Residential
                           </span>{" "}
-                          <input type="radio" name="buildingTy " />
-                        </div>
+                          <input type="radio" name="buildingTy" id="btype4" />
+                        </label>
                       </div>
                       <div className="max-w-[550px] w-full min-h-[42px] flex justify-between items-center gap-3">
-                        <div className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer">
+                        <label htmlFor="btype5" className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer">
                           <span className="text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center group-hover:text-[#007b82]">
                             Commercial
                           </span>{" "}
-                          <input type="radio" name="buildingTy " />
-                        </div>
-                        <div className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer">
+                          <input type="radio" name="buildingTy" id="btype5" />
+                        </label>
+                        <label htmlFor="btype6" className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer">
                           <span className="text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center group-hover:text-[#007b82]">
                             Residential
                           </span>{" "}
-                          <input type="radio" name="buildingTy " />
-                        </div>
+                          <input type="radio" name="buildingTy" id="btype6" />
+                        </label>
                       </div>
                     </div>
                     <div
@@ -724,9 +747,9 @@ export default function Home() {
 
       {/* Section 7.5 */}
 
-      <section className="max-w-[100vw] w-full pb-20 px-5 flex flex-col justify-start items-center gap-[30px]">
-        <div className="max-w-[830px] w-full min-h-[300px] flex flex-col justify-center items-center gap-5">
-          <h1 className="max-w-[828px] w-full min-h-[67px] text-5xl font-semibold leading-[140%] text-center text-black">
+      <section className="w-full pb-20 px-5 ">
+        <div className="text-center w-full min-h-[300px] flex flex-col justify-center items-center gap-5">
+          <h1 className=" w-full min-h-[67px] text-5xl font-semibold leading-[140%] text-center text-black">
             <span className="text-[aqua]">SIMPLIFY DESIGN </span>WITH{" "}
             <span className="text-[#078C8C]">STACKLYAI</span>
           </h1>
@@ -734,7 +757,7 @@ export default function Home() {
             3 Easy Steps to Get Started
           </p>
         </div>
-        <div className=" w-full min-h-[auto] flex justify-center items-start gap-5 max-[1000px]:flex-wrap">
+        
           <div className="step1">
             <div
               className="max-w-[411px] w-full min-h-[232px] bg-center bg-no-repeat bg-cover object-cover p-2.5"
@@ -749,7 +772,7 @@ export default function Home() {
               home, or outdoor space.
             </p>
           </div>
-          <div className="step2">
+          <div className="step2 flex flex-col items-center">
             <div
               className="max-w-[411px] w-full min-h-[232px] bg-center bg-no-repeat bg-cover object-cover p-2.5"
               style={{ backgroundImage: "url('/home/sec7-5/step2.jpeg')" }}
@@ -765,7 +788,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="step3">
+          <div className="step3 flex flex-col items-end">
             <div
               className="max-w-[411px] w-full min-h-[232px] bg-center bg-no-repeat bg-cover object-cover p-2.5"
               style={{ backgroundImage: "url('/home/sec7-5/step3.jpeg')" }}
@@ -779,7 +802,6 @@ export default function Home() {
               and design concepts in under 25 seconds.
             </p>
           </div>
-        </div>
       </section>
 
       {/* Section 8 */}
@@ -1206,91 +1228,9 @@ export default function Home() {
 
       {/* {section faq} */}
 
-     {/* {section-15} */}
+      {/* {section-15} */}
 
-     <section className="w-full py-16 px-6 bg-white flex flex-col items-center">
-  {/* Heading */}
-  <div className="text-center mb-10">
-    <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-      <span className="inline-flex items-center gap-2">
-        <span className="text-cyan-600 text-4xl">?</span> Frequently Asked Questions
-      </span>
-    </h2>
-    <p className="mt-4 text-gray-500 max-w-xl mx-auto text-sm md:text-base">
-    Have questions? We've got answers! Explore our FAQs to learn more about how Stackly AI works, its features, and how it can help you streamline your tasks effortlessly.
-    </p>
-  </div>
-
-  {/* FAQ Accordion */}
-  <div className="w-full max-w-2xl bg-gray-50 rounded-xl shadow-md p-4 space-y-4">
-    {/* Single FAQ Item */}
-    <div className="bg-white rounded-lg overflow-hidden shadow-sm">
-      <button className="w-full flex justify-between items-center p-4 text-left text-gray-800 font-medium focus:outline-none">
-        <span>What is Stackly AI?</span>
-        <svg className="w-5 h-5 transform transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor">
-          <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 111.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0l-4.25-4.65a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-        </svg>
-      </button>
-      {/* Content (toggle visibility with state) */}
-      <div className="px-4 pb-4 text-gray-600 text-sm hidden">
-        {/* Your answer goes here */}
-      </div>
-    </div>
-
-    {/* Repeat the above block for more FAQs */}
-  </div>
-  <div className="w-full max-w-2xl bg-gray-50 rounded-xl shadow-md p-4 space-y-4">
-    {/* Single FAQ Item */}
-    <div className="bg-white rounded-lg overflow-hidden shadow-sm">
-      <button className="w-full flex justify-between items-center p-4 text-left text-gray-800 font-medium focus:outline-none">
-        <span> How does Stackly AI work?</span>
-        <svg className="w-5 h-5 transform transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor">
-          <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 111.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0l-4.25-4.65a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-        </svg>
-      </button>
-      {/* Content (toggle visibility with state) */}
-      <div className="px-4 pb-4 text-gray-600 text-sm hidden">
-        {/* Your answer goes here */}
-      </div>
-    </div>
-
-    {/* Repeat the above block for more FAQs */}
-  </div>
-  <div className="w-full max-w-2xl bg-gray-50 rounded-xl shadow-md p-4 space-y-4">
-    {/* Single FAQ Item */}
-    <div className="bg-white rounded-lg overflow-hidden shadow-sm">
-      <button className="w-full flex justify-between items-center p-4 text-left text-gray-800 font-medium focus:outline-none">
-        <span> Is Stackly AI free to use?</span>
-        <svg className="w-5 h-5 transform transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor">
-          <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 111.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0l-4.25-4.65a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-        </svg>
-      </button>
-      {/* Content (toggle visibility with state) */}
-      <div className="px-4 pb-4 text-gray-600 text-sm hidden">
-        {/* Your answer goes here */}
-      </div>
-    </div>
-
-    {/* Repeat the above block for more FAQs */}
-  </div>
-  <div className="w-full max-w-2xl bg-gray-50 rounded-xl shadow-md p-4 space-y-4">
-    {/* Single FAQ Item */}
-    <div className="bg-white rounded-lg overflow-hidden shadow-sm">
-      <button className="w-full flex justify-between items-center p-4 text-left text-gray-800 font-medium focus:outline-none">
-        <span> How do I contact Stackly Ai?</span>
-        <svg className="w-5 h-5 transform transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor">
-          <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 111.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0l-4.25-4.65a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-        </svg>
-      </button>
-      {/* Content (toggle visibility with state) */}
-      <div className="px-4 pb-4 text-gray-600 text-sm hidden">
-        {/* Your answer goes here */}
-      </div>
-    </div>
-
-    {/* Repeat the above block for more FAQs */}
-  </div>
-</section>
+      <FAQ faqs={faqs}/>
 
       {/* {section-17} */}
       <Footer />
