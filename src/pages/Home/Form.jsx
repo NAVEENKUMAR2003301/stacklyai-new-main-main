@@ -146,7 +146,7 @@ export default function Form() {
                       onClick={() => {
                         inpRef.current.click();
                       }}
-                      className="max-w-[163px] min-h-[22px] text-base font-semibold leading-[140%] text-center text-white"
+                      className="max-w-[183px] min-h-[22px] text-base font-semibold leading-[140%] text-center text-white"
                     >
                       Step 1 : Upload images
                     </button>

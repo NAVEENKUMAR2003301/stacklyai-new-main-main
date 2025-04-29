@@ -76,7 +76,7 @@ export default function HeroBanner() {
 
             <div
               className="absolute top-0 left-0 bg-center bg-no-repeat bg-cover w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 min-h-[312px]"
-              style={{ backgroundImage: "url('/home/sec1/banner-home.png')" }}
+              style={{ backgroundImage: "url('/src/assets/home/after/afterImg.png')" }}
             >
               <div className="flex flex-col justify-start items-start gap-[5px] pl-[25px] pt-2.5 max-[500px]:p-3">
                 <div className="max-w-[149px] w-full h-[34px] rounded bg-[#00000066] flex justify-center items-center gap-2.5 px-2.5 py-1.5">
