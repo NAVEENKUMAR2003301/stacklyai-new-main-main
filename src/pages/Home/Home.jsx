@@ -346,8 +346,8 @@ export default function Home() {
               <div className="relative left-[-90px]">
                 <img src={sec6Img4} alt="Design4" />
               </div>
-              <div className="w-[100px] h-[100px] bg-white shadow-[0_1px_4px_0_#00000040] flex justify-center items-center relative left-[-120px] p-2.5 rounded-[50%]">
-                <span className="max-w-[75px] min-h-[45px] text-[32px] font-semibold leading-[100%] text-align-center text-[#007B82]">
+              <div className="w-[100px] h-[80px] bg-white shadow-[0_1px_4px_0_#00000040] flex justify-center items-center relative left-[-120px] p-2.5 rounded-[50%] full-rounded">
+                <span className="max-w-[75px] min-h-[35px] text-[32px] font-semibold leading-[100%] text-align-center text-[#007B82]">
                   45+
                 </span>
               </div>
@@ -377,8 +377,8 @@ export default function Home() {
               <div className=" relative left-[-90px]">
                 <img src={sec6Img8} alt="" />
               </div>
-              <div className="w-[100px] h-[100px] bg-white shadow-[0_1px_4px_0_#00000040] flex justify-center items-center relative left-[-120px] p-2.5 rounded-[50%]">
-                <span className="max-w-[75px] min-h-[45px] text-[32px] font-semibold leading-[100%] text-center text-[#007B82]">
+              <div className="w-[80px] h-[80px] bg-white shadow-[0_1px_4px_0_#00000040] flex justify-center items-center relative left-[-120px] p-2.5 rounded-[50%]">
+                <span className="max-w-[75px] min-h-[35px] text-[32px] font-semibold leading-[100%] text-center text-[#007B82]">
                   100+
                 </span>
               </div>
