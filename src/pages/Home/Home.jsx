@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Header from "../../components/Header";
+import Form from "./Form";
 import sec3Pattern1 from "../../assets/home/sec3/arcticons_ai-chat-alt-1.png";
 import sec3Pattern2 from "../../assets/home/sec3/arcticons_ai-chat-alt-2.png";
 import sec3Pattern3 from "../../assets/home/sec3/material-icon-theme_gemini-ai.png";
@@ -34,13 +35,6 @@ import sec6Img7 from "../../assets/home/sec6/3 (1).png";
 import sec6Img8 from "../../assets/home/sec6/4 (1).png";
 import sec6Logo from "../../assets/home/sec6/Logo.png";
 
-import sec7Model1 from "../../assets/home/sec7/mdi_sofa.png";
-import sec7Model2 from "../../assets/home/sec7/healthicons_home.png";
-import sec7Model3 from "../../assets/home/sec7/mdi_plant.png";
-import sec7Icon1 from "../../assets/home/sec7/solar_upload-outline.png";
-import sec7Icon2 from "../../assets/home/sec7/basil_image-solid (1).png";
-import sec7Icon3 from "../../assets/home/sec7/Vector.png";
-
 import sec9Frame from "../../assets/home/sec9/Frame 168.png";
 
 import sec10Img1 from "../../assets/home/sec10/3d-interior-design-free-png 1.png";
@@ -60,9 +54,9 @@ import sec14Img3 from "../../assets/home/sec14/m1.jpg";
 import sec14Img4 from "../../assets/home/sec14/m2.jpg";
 import sec14Img5 from "../../assets/home/sec14/m3.jpg";
 import FAQ from "./FAQ";
+import HeroBanner from "./HeroBanner";
 
 export default function Home() {
-  const [changeText, setChangeText] = useState(0);
   const faqs = [
     {
       question: "What is Stackly AI?",
@@ -86,16 +80,6 @@ export default function Home() {
     },
   ];
 
-  const [dropDown, setDropDown] = useState(false);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setChangeText((prev) => {
-        return prev === 2 ? 0 : prev + 1;
-      });
-    }, 1500);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div>
@@ -103,91 +87,7 @@ export default function Home() {
 
       {/* banner  */}
 
-      <section
-        className="bg-cover bg-center bg-no-repeat w-full h-auto"
-        style={{ backgroundImage: "url('/home/sec1/banner-bg.png')" }}
-      >
-        <div className="bg-[#0000000f]">
-          <div className="w-full h-[46px] flex justify-center items-center bg-[#0000004d] backdrop-blur-[3px]">
-            <marquee className="max-w-[1279px] w-full h-6 z-0">
-              <p className="max-w-[1320px] w-full h-6 text-xl font-medium leading-[100%] text-white">
-                Hey! It looks like you are from USA . We support Purchasing
-                Power Parity pricing, so enjoy 50% off on your subscription. Use
-                code: abc589 Hey! It looks like you are from USA . We support
-                Purchasing Power Parity pricing, so enjoy 50% off on your
-                subscription. Use code: abc589
-              </p>
-            </marquee>
-          </div>
-
-          <div className="max-[1000px]:flex-col w-full min-h-screen flex justify-center items-center gap-10 px-[5%] py-[30px]">
-            <div className="max-w-[700px] min-h-[304px] flex flex-col justify-center gap-10 items-start">
-              <h3 className="max-w-[700px] w-full text-5xl font-semibold leading-[100%] text-white max-[500px]:text-4xl">
-                Design Your{" "}
-                <span className="text-[#ffd56b]">
-                  {
-                    ["Interiors", "Kitchen", "Balcony", "Living Room"][
-                      changeText
-                    ]
-                  }
-                </span>
-                <br />
-                Space With AI
-              </h3>
-              <p
-                className="max-w-[524px] w-full min-h-[30px] text-[17px] font-medium leading-[150%] text-neutral-100 max-[500px]:text-sm"
-                style={{ wordSpacing: "3px" }}
-              >
-                Easy to Use, Zero Learning, AI Powered Design Tool to generate
-                Your Own Space Photo-like images in 25 Seconds
-              </p>
-
-              <div className="max-w-[305px] w-full h-[50px] flex justify-center items-center bg-[#007b82] text-white shadow-[10px_10px_10px_10px_#2a2a2a29] cursor-pointer rounded-[5px] hover:bg-[#2e9ea4] hover:text-white max-[500px]:h-10">
-                <p
-                  className="text-lg font-bold leading-[100%] text-center text-white"
-                  style={{ wordSpacing: "2px" }}
-                >
-                  Design Now!
-                </p>
-              </div>
-            </div>
-            <div className="relative w-full max-w-[500px] min-h-[312px] group overflow-hidden rounded-lg">
-  
-              <div
-                className="bg-center group-hover:opacity-0 bg-no-repeat bg-cover w-full h-full min-h-[312px] transition-opacity duration-500"
-                style={{ backgroundImage: "url('/home/sec1/banner-home.png')" }}
-              >
-                <div className="flex flex-col justify-start items-start gap-[5px] pl-[25px] pt-2.5 max-[500px]:p-3">
-                  <div className="max-w-[149px] w-full h-[34px] rounded bg-[#00000066] flex justify-center items-center gap-2.5 px-2.5 py-1.5">
-                    <p className="max-w-[129px] w-full text-base font-medium leading-[100%] text-white z-[1]">
-                      ORGINAL ROOM
-                    </p>
-                  </div>
-                  <p className="max-w-[44px] w-full h-5 text-sm leading-[100%] font-medium text-white z-[1] pl-[5px]">
-                    Before
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className="absolute top-0 left-0 bg-center bg-no-repeat bg-cover w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 min-h-[312px]"
-                style={{ backgroundImage: "url('/src/assets/home/after/afterImg.png')" }}
-              >
-                <div className="flex flex-col justify-start items-start gap-[5px] pl-[25px] pt-2.5 max-[500px]:p-3">
-                  <div className="max-w-[149px] w-full h-[34px] rounded bg-[#00000066] flex justify-center items-center gap-2.5 px-2.5 py-1.5">
-                    <p className="max-w-[129px] w-full text-base font-medium leading-[100%] text-white z-[1]">
-                      STACKLYAI
-                    </p>
-                  </div>
-                  <p className="max-w-[44px] w-full h-5 text-sm leading-[100%] font-medium text-white z-[1] pl-[5px]">
-                    After
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroBanner/>
 
       {/* section 2 */}
 
@@ -494,298 +394,13 @@ export default function Home() {
 
       {/* Section 7 */}
 
-      <section className="max-w-[100vw] w-full min-h-[1385px] flex justify-center items-center bg-[#002628]">
-        <div className="w-[1280px] min-h-[1199px]">
-          <div
-            className="max-w-screen-xl w-full min-h-[287px] flex flex-col justify-center items-center gap-5 rounded-t-[20px]"
-            style={{
-              background:
-                "linear-gradient(to bottom, #007c82 0%, #004245 50%, #00292b 100%)",
-            }}
-          >
-            <h1 className="max-w-[658px] w-full min-h-[53px] text-[38px] font-bold leading-[140%] tracking-[60%] text-center text-white">
-              PICK YOUR STYLE
-            </h1>
-            <div className="max-w-[658px] w-full h-auto flex justify-evenly items-center">
-              <div className="max-w-[101px] min-h-[121px] flex flex-col justify-center items-center gap-5">
-                {" "}
-                {/* interiors */}
-                <div className="img">
-                  <img src={sec7Model1} alt="interiors" />
-                </div>
-                <p className="max-w-[101px] min-h-[31px] text-[22px] font-semibold leading-[140%] text-center text-[white]">
-                  interiors
-                </p>
-              </div>
-              <div className="max-w-[101px] min-h-[121px] flex flex-col justify-center items-center gap-5">
-                {" "}
-                {/* exteriors */}
-                <div className="img">
-                  <img src={sec7Model2} alt="exteriors" />
-                </div>
-                <p className="max-w-[101px] min-h-[31px] text-[22px] font-semibold leading-[140%] text-center text-[white]">
-                  exteriors
-                </p>
-              </div>
-              <div className="max-w-[101px] min-h-[121px] flex flex-col justify-center items-center gap-5">
-                <div className="img">
-                  <img src={sec7Model3} alt="outdoors" />
-                </div>
-                <p className="max-w-[101px] min-h-[31px] text-[22px] font-semibold leading-[140%] text-center text-[white]">
-                  outdoors
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="max-w-screen-xl min-h-[912px]  shadow-[0px_0px_4px_opx_#00000059] flex justify-center rounded-none items-center ">
-            <div className=" bg-[#002628] w-full min-h-[868px] flex justify-center items-center gap-5 max-[1100px]:flex-col p-5 max-[400px]:p-3 rounded-br-[20px] rounded-bl-[20px]">
-              <div className="flex-1 w-full min-h-[400px] p-4 min-[500px]:min-h-[868px] bg-[#00393D] flex justify-center items-center rounded-[10px]">
-                <div className="flex-1 w-full min-[500px]:min-h-[795px] flex flex-col justify-center items-center gap-[30px]">
-                  <div className="max-w-[550px] w-full min-w-[55px] flex justify-center items-start cursor-pointer">
-                    <div
-                      className="max-w-[235px] w-full min-h-[40px] flex justify-center items-center px-5 py-2 rounded-[20px]"
-                      style={{
-                        background:
-                          "linear-gradient(to right, rgb(0, 176, 186) 0%, rgba(0, 0, 0, 0) 50%, rgb(0, 176, 186) 100%)",
-                      }}
-                    >
-                      <img
-                        src={sec7Icon1}
-                        alt=""
-                        className="max-w-[21.5px] min-h-[21.5px]"
-                      />
-                      <button className="max-w-[163px] min-h-[22px] text-base font-semibold leading-[140%] text-center text-white">
-                        Step 1 : Upload images
-                      </button>
-                    </div>
-                  </div>
-
-                  <div className="max-w-[550px] w-full min-[500px]:min-h-[740px] p-10 border cursor-pointer flex flex-col justify-center items-center rounded-sm border-[white] border-dashed">
-                    <img
-                      src={sec7Icon2}
-                      alt=""
-                      className="max-w-[60px] min-w-[60px]"
-                    />
-                    <p className="max-w-[280px] min-h-[40px] text-sm leading-[140%] text-center text-white">
-                      Drop an image,Tap to Select,Take a Photo or Paste
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <form className="max-w-[610px] w-full min-h-[868px] flex flex-col justify-center items-center gap-[20PX]">
-                <div className="max-w-[610px] min-h-[516px] w-full bg-[#00393D] flex flex-col justify-center items-center rounded-[10px] p-5">
-                  <div className="max-w-[610px] w-full min-h-[75px] cursor-pointer flex justify-center items-center">
-                    <div
-                      className="max-w-[292px] min-h-[40px] flex justify-center items-center px-5 py-2 rounded-[40px]"
-                      style={{
-                        background:
-                          "linear-gradient(to right,#00b0ba 0%,#0000001a 50%,#007b82 100%)",
-                      }}
-                    >
-                      <img src={sec7Model2} alt="" className="w-6 h-6" />
-                      <p className="max-w-[220px] min-h-[22px] text-base font-[600px] leading-[140%] text-center text-white">
-                        Step2 : Design or Customize
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="max-w-[550px] w-full min-h-[389px] flex flex-col justify-center items-center gap-[31px]">
-                    <div className="max-w-[550px] w-full flex flex-col justify-center items-center gap-2.5">
-                      <p className="max-w-[550px] w-full min-h-[22px] text-base font-normal leading-[140%] text-white">
-                        Select Building Type
-                      </p>
-                      <div className="max-w-[550px] w-full min-h-[42px] flex justify-between items-center gap-3">
-                        <label
-                          htmlFor="btype1"
-                          className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group"
-                        >
-                          <span className="group-hover:text-[#007b82] text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center">
-                            Commercial
-                          </span>{" "}
-                          <input type="radio" name="buildingType" id="btype1" />
-                        </label>
-                        <label
-                          htmlFor="btype2"
-                          className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group"
-                        >
-                          <span className="group-hover:text-[#007b82] text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center">
-                            Residential
-                          </span>{" "}
-                          <input type="radio" name="buildingType" id="btype2" />
-                        </label>
-                      </div>
-                    </div>
-
-                    <div className="max-w-[550px] w-full flex flex-col justify-center items-center gap-2.5">
-                      <p className="max-w-[550px] w-full min-h-[22px] text-base leading-[140%] font-normal text-white text-start">
-                        Room Type
-                      </p>
-                      <div className="max-w-[550px] w-full min-h-[42px] h-full rounded flex justify-between items-center bg-white text-black px-4 py-2.5">
-                        <select name="Living Room" id="">
-                          <option value="Bedroom">Bedroom</option>
-                          <option value="Kitchen">Kitchen</option>
-                          <option value="Dining Room">Dining Room</option>
-                          <option value="Study Room">Study Room</option>
-                          <option value="Home Office">HOME Office</option>
-                          <option value="Family Room">Family Room</option>
-                          <option value="Kids Room">Kids Room</option>
-                          <option value="Balcony">Balcony</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div className="max-w-[550px] w-full flex flex-col justify-center items-center gap-2.5">
-                      <p className="max-w-[550px] w-full min-h-[22px] text-base leading-[140%] font-normal text-white text-start">
-                        Room Style
-                      </p>
-                      <div className="max-w-[550px] w-full min-h-[42px] h-full rounded flex justify-between items-center bg-white text-black px-4 py-2.5">
-                        <select name="modern" id="">
-                          <option value="Midcentury Modern">
-                            Midcentury Modern
-                          </option>
-                          <option value="Modern">Modern</option>
-                          <option value="Tropical">Tropical</option>
-                          <option value="Rustic">Rustic</option>
-                          <option value="Tribal">Tribal</option>
-                          <option value="Cyberpunk">Cyberpunk</option>
-                          <option value="Zen">Zen</option>
-                          <option value="Japanese Design">
-                            Japanese Design
-                          </option>
-                          <option value="Biophilic">Biophilic</option>
-                          <option value="Christimas">Christimas</option>
-                          <option value="Bohemian">Bohemian</option>
-                          <option value="Contemporary">Contemporary</option>
-                          <option value="Maximalist">Maximalist</option>
-                          <option value="Vintage">Vintage</option>
-                          <option value="Baroque">Baroque</option>
-                          <option value="Farmhouse">Farmhouse</option>
-                          <option value="Minimalist">Minimalist</option>
-                          <option value="Gaming Room">Gaming Room</option>
-                          <option value="French Country">French Country</option>
-                          <option value="Art Deco">Art Deco</option>
-                          <option value="Art Nouveau">Art Nouveau</option>
-                          <option value="Halloween">Halloween</option>
-                          <option value="Ski Chalet">Ski Chalet</option>
-                          <option value="Sketch">Sketch</option>
-                          <option value="Scandinavian">Scandinavian</option>
-                          <option value="Industrial">Industrial</option>
-                          <option value="Neoclassic">Neoclassic</option>
-                          <option value="Medieval">Medieval</option>
-                          <option value="Shabby Chic">Shabby Chic</option>
-                          <option value="Eclectic">Eclectic</option>
-                          <option value="Asian Traditional">
-                            Asian Traditional
-                          </option>
-                          <option value="Hollywood Glam">Hollywood Glam</option>
-                          <option value="Western Traditional">
-                            Western Traditional
-                          </option>
-                          <option value="Transitional">Transitional</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div className="max-w-[550px] w-full flex flex-col justify-center items-center gap-2.5">
-                      <p className="max-w-[550px] w-full min-h-[22px] text-base leading-[140%] font-normal text-white text-start">
-                        Number Of Design
-                      </p>
-                      <div className="max-w-[550px] w-full min-h-[42px] h-full rounded flex justify-between items-center bg-white text-black px-4 py-2.5">
-                        <input type="text" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="max-w-[610px] min-h-[332px] w-full bg-[#00393D] flex flex-col justify-center items-center rounded-[10px] p-5">
-                  <div className="max-w-[610px] w-full min-h-[75px] flex justify-center items-center cursor-pointer">
-                    <div
-                      className="max-w-[292px] min-h-[40px] flex justify-center items-center px-5 py-2 rounded-[40px]"
-                      style={{
-                        background:
-                          "linear-gradient(to right,#00b0ba 0%,#0000001a 50%,#007b82 100%)",
-                      }}
-                    >
-                      <img src={sec7Model2} alt="" className="w-6 h-6" />
-                      <p className="max-w-[220px] min-h-[22px] text-base font-[600px] leading-[140%] text-center text-white">
-                        Step3 : Generate new Design
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="max-w-[550px] w-full min-h-[240px] flex flex-col justify-center items-center gap-[31px]">
-                    <div className="max-w-[550px] w-full flex flex-col justify-center items-center gap-5">
-                      <p className="max-w-[550px] w-full min-h-[22px] text-base font-normal leading-[140%] text-white">
-                        Select Building Type
-                      </p>
-                      <div className="max-w-[550px] w-full min-h-[42px] flex justify-between items-center gap-3">
-                        <label
-                          htmlFor="btype3"
-                          className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer"
-                        >
-                          <span className="text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center group-hover:text-[#007b82]">
-                            Commercial
-                          </span>{" "}
-                          <input type="radio" name="buildingTy" id="btype3" />
-                        </label>
-                        <label
-                          htmlFor="btype4"
-                          className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer"
-                        >
-                          <span className="text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center group-hover:text-[#007b82]">
-                            Residential
-                          </span>{" "}
-                          <input type="radio" name="buildingTy" id="btype4" />
-                        </label>
-                      </div>
-                      <div className="max-w-[550px] w-full min-h-[42px] flex justify-between items-center gap-3">
-                        <label
-                          htmlFor="btype5"
-                          className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer"
-                        >
-                          <span className="text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center group-hover:text-[#007b82]">
-                            Commercial
-                          </span>{" "}
-                          <input type="radio" name="buildingTy" id="btype5" />
-                        </label>
-                        <label
-                          htmlFor="btype6"
-                          className="max-w-[255px] w-full min-h-[42px] rounded bg-[#00000033] flex justify-between items-center px-2.5 py-0 hover:bg-white group cursor-pointer"
-                        >
-                          <span className="text-[white] max-w-[92px] min-h-[22px] text-base font-medium leading-[140%] text-center group-hover:text-[#007b82]">
-                            Residential
-                          </span>{" "}
-                          <input type="radio" name="buildingTy" id="btype6" />
-                        </label>
-                      </div>
-                    </div>
-                    <div
-                      className="max-w-[570px] w-full min-h-[54px] border bg-[#00B0BACC] flex justify-center items-center gap-2.5 cursor-pointer rounded-[5px] border-solid border-[white_30%]"
-                      style={{
-                        background:
-                          "linear-gradient(to right,#00b0ba 0%,#0000004d 50%,#007b82 100%)",
-                      }}
-                    >
-                      <img src={sec7Icon3} alt="" />
-                      <button className="text-white cursor-pointer">
-                        Create Magic
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Form/>
 
       {/* Section 7.5 */}
 
       <section className="w-full pb-20 px-5 ">
         <div className="text-center w-full min-h-[300px] flex flex-col justify-center items-center gap-5">
-          <h1 className=" w-full min-h-[67px] text-5xl font-semibold leading-[140%] text-center text-black">
+          <h1 className=" w-full min-h-[67px] text-3xl md:text-5xl font-semibold leading-[140%] text-center text-black">
             <span className="text-[aqua]">SIMPLIFY DESIGN </span>WITH{" "}
             <span className="text-[#078C8C]">STACKLYAI</span>
           </h1>
