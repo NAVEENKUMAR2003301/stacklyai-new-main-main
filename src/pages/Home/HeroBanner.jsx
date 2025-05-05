@@ -8,7 +8,7 @@ export default function HeroBanner() {
       setChangeText((prev) => {
         return prev === 2 ? 0 : prev + 1;
       });
-    }, 1500);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -18,16 +18,19 @@ export default function HeroBanner() {
       style={{ backgroundImage: "url('/home/sec1/banner-bg.png')" }}
     >
       <div className="bg-[#0000000f]">
-        <div className="w-full h-[46px] flex justify-center items-center bg-[#0000004d] backdrop-blur-[3px]">
-          <marquee className="max-w-[1279px] w-full h-6 z-0">
-            <p className="max-w-[1320px] w-full h-6 text-xl font-medium leading-[100%] text-white">
-              Hey! It looks like you are from USA . We support Purchasing Power
+        <div className="marquee-container">
+          <div className="marquee-content">
+            <span className="marquee-text">
+              Hey! It looks like you are from USA. We support Purchasing Power
               Parity pricing, so enjoy 50% off on your subscription. Use code:
-              abc589 Hey! It looks like you are from USA . We support Purchasing
-              Power Parity pricing, so enjoy 50% off on your subscription. Use
-              code: abc589
-            </p>
-          </marquee>
+              abc589
+            </span>
+            <span className="marquee-text">
+              Hey! It looks like you are from USA. We support Purchasing Power
+              Parity pricing, so enjoy 50% off on your subscription. Use code:
+              abc589
+            </span>
+          </div>
         </div>
 
         <div className="max-[1000px]:flex-col w-full min-h-screen flex justify-center items-center gap-10 px-[5%] py-[30px]">
@@ -76,7 +79,7 @@ export default function HeroBanner() {
 
             <div
               className="absolute top-0 left-0 bg-center bg-no-repeat bg-cover w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 min-h-[312px]"
-              style={{ backgroundImage: "url('src/assets/home/after/afterImg.png')" }}
+              style={{ backgroundImage: "url('/home/sec1/afterImg.png')" }}
             >
               <div className="flex flex-col justify-start items-start gap-[5px] pl-[25px] pt-2.5 max-[500px]:p-3">
                 <div className="max-w-[149px] w-full h-[34px] rounded bg-[#00000066] flex justify-center items-center gap-2.5 px-2.5 py-1.5">

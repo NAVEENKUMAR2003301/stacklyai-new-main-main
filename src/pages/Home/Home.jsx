@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
-import Header from "../../components/Header";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import Form from "./Form";
 import sec3Pattern1 from "../../assets/home/sec3/arcticons_ai-chat-alt-1.png";
 import sec3Pattern2 from "../../assets/home/sec3/arcticons_ai-chat-alt-2.png";
@@ -39,12 +38,7 @@ import sec9Frame from "../../assets/home/sec9/Frame 168.png";
 
 import sec10Img1 from "../../assets/home/sec10/3d-interior-design-free-png 1.png";
 import sec10Img2 from "../../assets/home/sec10/3d-interior-design-png 1.png";
-import sec11Img1 from "../../assets/home/sec11/Frame 78.png";
-import sec11Img2 from "../../assets/home/sec11/Frame 79.png";
 
-import sec12Img1 from "../../assets/home/sec12/Image 1.png";
-import sec12Img2 from "../../assets/home/sec12/Image 2.png";
-import sec12Img3 from "../../assets/home/sec12/Image 3.png";
 
 import sec13Img1 from "../../assets/home/sec13/img1.jpg";
 import sec13Img2 from "../../assets/home/sec13/img2.jpg";
@@ -55,8 +49,12 @@ import sec14Img4 from "../../assets/home/sec14/m2.jpg";
 import sec14Img5 from "../../assets/home/sec14/m3.jpg";
 import FAQ from "./FAQ";
 import HeroBanner from "./HeroBanner";
+import DraggableImageSection from "./DraggableImageSection";
+import ImageSlider from "./ImageSlider";
 
 export default function Home() {
+  
+
   const faqs = [
     {
       question: "What is Stackly AI?",
@@ -80,14 +78,12 @@ export default function Home() {
     },
   ];
 
-
   return (
     <div>
-      <Header />
 
       {/* banner  */}
 
-      <HeroBanner/>
+      <HeroBanner />
 
       {/* section 2 */}
 
@@ -346,8 +342,8 @@ export default function Home() {
               <div className="relative left-[-90px]">
                 <img src={sec6Img4} alt="Design4" />
               </div>
-              <div className="w-[100px] h-[80px] bg-white shadow-[0_1px_4px_0_#00000040] flex justify-center items-center relative left-[-120px] p-2.5 rounded-[50%] full-rounded">
-                <span className="max-w-[75px] min-h-[35px] text-[32px] font-semibold leading-[100%] text-align-center text-[#007B82]">
+              <div className="w-[100px] h-[100px] bg-white shadow-[0_1px_4px_0_#00000040] flex justify-center items-center relative left-[-120px] p-2.5 rounded-[50%]">
+                <span className="max-w-[75px] min-h-[45px] text-[32px] font-semibold leading-[100%] text-align-center text-[#007B82]">
                   45+
                 </span>
               </div>
@@ -377,8 +373,8 @@ export default function Home() {
               <div className=" relative left-[-90px]">
                 <img src={sec6Img8} alt="" />
               </div>
-              <div className="w-[80px] h-[80px] bg-white shadow-[0_1px_4px_0_#00000040] flex justify-center items-center relative left-[-120px] p-2.5 rounded-[50%]">
-                <span className="max-w-[75px] min-h-[35px] text-[32px] font-semibold leading-[100%] text-center text-[#007B82]">
+              <div className="w-[100px] h-[100px] bg-white shadow-[0_1px_4px_0_#00000040] flex justify-center items-center relative left-[-120px] p-2.5 rounded-[50%]">
+                <span className="max-w-[75px] min-h-[45px] text-[32px] font-semibold leading-[100%] text-center text-[#007B82]">
                   100+
                 </span>
               </div>
@@ -394,7 +390,7 @@ export default function Home() {
 
       {/* Section 7 */}
 
-      <Form/>
+      <Form />
 
       {/* Section 7.5 */}
 
@@ -556,53 +552,16 @@ export default function Home() {
       </section>
 
       {/* {section:11} */}
+
+
+            <ImageSlider/>
+
       {/* Section: Community Showcase */}
-      <section className="w-full min-h-[600px] py-16 px-4 flex flex-col justify-center items-center gap-10">
-        <h2 className="text-black text-center text-3xl md:text-4xl font-medium max-w-[900px] leading-snug">
-          Explore our community's creations for{" "}
-          <span className="text-cyan-400">inspiration</span>, then craft your{" "}
-          <span className="text-cyan-400">own project</span> and share amazing
-          images with the world.
-        </h2>
+      
 
-        <div className="flex flex-wrap justify-center items-center gap-6">
-          <div className="relative max-w-[500px] w-full">
-            <img
-              src={sec11Img1}
-              alt="Original Room"
-              className="rounded-md shadow-lg w-full"
-            />
-            <div className="absolute top-3 left-3 bg-black bg-opacity-70 text-white text-sm px-3 py-1 rounded">
-              Original Room
-            </div>
-          </div>
-          <div className="relative max-w-[500px] w-full">
-            <img
-              src={sec11Img2}
-              alt="STACKLY AI"
-              className="rounded-md shadow-lg w-full"
-            />
-            <div className="absolute top-3 left-3 bg-black bg-opacity-70 text-white text-sm px-3 py-1 rounded">
-              STACKLYAI
-            </div>
-          </div>
-        </div>
 
-        <div className="flex justify-center items-center gap-2 mt-8">
-          <span className="w-3 h-3 bg-black rounded-full" />
-          <span className="w-5 h-3 bg-cyan-500 rounded-full" />
-          <span className="w-3 h-3 bg-black rounded-full" />
-        </div>
 
-        <div className="w-full max-w-[1070px] flex justify-end mt-6">
-          <a
-            href="#"
-            className="text-cyan-500 text-lg font-bold underline underline-offset-4 hover:text-cyan-400"
-          >
-            Learn More
-          </a>
-        </div>
-      </section>
+
       {/* {section-12} */}
       <section className="w-full min-h-[200px] py-10 px-4 bg-teal-100 flex flex-col md:flex-row justify-center items-center gap-6">
         <h2 className="text-black text-center md:text-left text-2xl md:text-3xl font-medium max-w-[900px]">
@@ -630,112 +589,7 @@ export default function Home() {
 
       {/* {section-14} */}
 
-      <section className="w-full bg-[#001f20] text-white py-16 px-4 flex flex-col items-center">
-        {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-semibold leading-tight">
-            {" "}
-            <span className="text-cyan-400"></span>
-          </h2>
-          <h2 className="text-3xl md:text-5xl font-semibold leading-tight mt-2"></h2>
-        </div>
-
-        {/* Features Section */}
-        <div className="flex flex-col gap-16 w-full max-w-7xl">
-          {/* Feature 1 */}
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            {/* Text */}
-            <div className="flex-1">
-              <h3 className="text-2xl font-bold mb-4">
-                <span className="text-cyan-400">Gorgeous Makeovers</span> and
-                Stylish Transformations
-              </h3>
-              <p className="text-gray-300">
-                Want to give your home a stunning new look inside and out? Our
-                AI-powered makeover feature lets you explore various styles to
-                elevate your space. Redesign any interior, exterior, or outdoor
-                area effortlessly.
-              </p>
-            </div>
-            {/* Image */}
-            <div className="flex-1">
-              <img
-                src={sec12Img1}
-                alt="Gorgeous Makeovers"
-                className="rounded-lg shadow-lg w-full"
-              />
-            </div>
-          </div>
-
-          {/* Feature 2 */}
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            {/* Text */}
-            <div className="flex-1">
-              <h3 className="text-2xl font-bold mb-4">
-                <span className="text-cyan-400">Transform Empty Spaces</span>{" "}
-                with Stylish Furniture
-              </h3>
-              <p className="text-gray-300">
-                Curious how your room would look fully furnished? Our AI-powered
-                tool fills any room type with furniture and décor. Perfect for
-                empty or under-construction spaces—bring your vision to life
-                with Stackly.
-              </p>
-            </div>
-            {/* Image */}
-            <div className="flex-1">
-              <img
-                src={sec12Img2}
-                alt="Transform Empty Spaces"
-                className="rounded-lg shadow-lg w-full"
-              />
-            </div>
-          </div>
-
-          {/* Feature 3 */}
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            {/* Text */}
-            <div className="flex-1">
-              <h3 className="text-2xl font-bold mb-4">
-                Artistic Makeover for{" "}
-                <span className="text-cyan-400">Interiors and Exteriors</span>
-              </h3>
-              <p className="text-gray-300">
-                Unleash the power of AI with Artistic Makeover. From stylish
-                furniture arrangements to a complete exterior refresh, let AI
-                transform your space with a fresh, creative vision.
-              </p>
-            </div>
-            {/* Image */}
-            <div className="flex-1">
-              <img
-                src={sec12Img3}
-                alt="Artistic Makeover"
-                className="rounded-lg shadow-lg w-full"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Text */}
-        <div className="mt-16 text-center max-w-2xl text-gray-300">
-          Loved by experts and designed for everyone, our platform brings
-          professional-quality results with ease and simplicity.
-        </div>
-
-        {/* Call to Action */}
-        <div className="mt-8 flex flex-col items-center gap-4">
-          <h3 className="text-2xl font-bold text-cyan-400">
-            Get Started – Infinite Ideas.
-          </h3>
-          <a
-            href="#"
-            className="bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-3 px-8 rounded-md transition"
-          >
-            Access Now !
-          </a>
-        </div>
-      </section>
+      <DraggableImageSection/>
 
       {/* {section-15} */}
 

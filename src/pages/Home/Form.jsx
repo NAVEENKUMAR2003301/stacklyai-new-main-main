@@ -1,12 +1,17 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import sec7Model1 from "../../assets/home/sec7/mdi_sofa.png";
 import sec7Model2 from "../../assets/home/sec7/healthicons_home.png";
 import sec7Model3 from "../../assets/home/sec7/mdi_plant.png";
 import sec7Icon1 from "../../assets/home/sec7/solar_upload-outline.png";
 import sec7Icon2 from "../../assets/home/sec7/basil_image-solid (1).png";
 import sec7Icon3 from "../../assets/home/sec7/Vector.png";
+import { UserContext } from "../../context/UserContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Form() {
+  const { userInfo } = useContext(UserContext);
+  const navigave = useNavigate();
+
   const [formData, setFormData] = useState({
     buildingType: "",
     roomType: "",
@@ -18,6 +23,9 @@ export default function Form() {
   const inpRef = useRef(null);
 
   const changeImage = (e) => {
+    if (!userInfo.userId) {
+      return navigave("/sign-in");
+    }
     const file = e.target.files[0];
     if (file) {
       const preview = URL.createObjectURL(file);
@@ -31,6 +39,9 @@ export default function Form() {
 
   const handleDrop = (e) => {
     e.preventDefault();
+    if (!userInfo.userId) {
+      return navigave("/sign-in");
+    }
     const file = e.dataTransfer.files[0];
 
     if (file && file.type.startsWith("image/")) {
@@ -49,6 +60,9 @@ export default function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!userInfo.userId) {
+      return navigave("/sign-in");
+    }
     if (
       formData.aiTouch &&
       formData.noOfDesign &&
@@ -144,9 +158,12 @@ export default function Form() {
                     />
                     <button
                       onClick={() => {
+                        if (!userInfo.userId) {
+                          return navigave("/sign-in");
+                        }
                         inpRef.current.click();
                       }}
-                      className="max-w-[183px] min-h-[22px] text-base font-semibold leading-[140%] text-center text-white"
+                      className="max-w-[163px] min-h-[22px] text-base font-semibold leading-[140%] text-center text-white"
                     >
                       Step 1 : Upload images
                     </button>
@@ -158,6 +175,9 @@ export default function Form() {
                     imgURL ? "cursor-default" : "cursor-pointer"
                   } flex flex-col justify-center items-center rounded-sm border-[white] border-dashed`}
                   onClick={() => {
+                    if (!userInfo.userId) {
+                      return navigave("/sign-in");
+                    }
                     !imgURL && inpRef.current.click();
                   }}
                   onDragOver={handleDragOver}
@@ -170,6 +190,9 @@ export default function Form() {
                           <div
                             className="p-3 rounded-full bg-[#007B824D]"
                             onClick={() => {
+                              if (!userInfo.userId) {
+                                return navigave("/sign-in");
+                              }
                               inpRef.current.click();
                             }}
                           >

@@ -8,30 +8,37 @@ export default function SignUp() {
 
   return (
     <div>
-      <Header />
       <div
         className="bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: "url('/signUp/bg-img.jpeg')" }}
       >
         <div className="max-[1000px]:p-5 max-[1000px]:flex-col max-[1000px]:gap-[40px] min-h-screen bg-[#000000b2] flex items-center justify-center gap-5 px-[5%] py-[25px]">
-          <div className="flex-1 text-center">
-            <h3 className="max-[500px]:mb-0 max-[1000px]:mb-0 font-semibold text-2xl text-white mb-2.5">
+          <div className="flex-1 flex flex-col items-center justify-center gap-3">
+            <h3 className="max-[500px]:mb-[10px] max-[1000px]:mb-0 font-semibold text-2xl text-white mb-1">
               Get Your Personal AI
             </h3>
-            <h1 className="max-[500px]:text-[60px] max-[500px]:mb-0 max-[1000px]:mb-[20px] font-medium text-[100px] text-[#ffd56b] mb-[50px]">
+            <h1 className="max-[500px]:text-[60px] max-[500px]:mb-0 font-medium text-[100px] text-[#ffd56b]">
               Interiors
             </h1>
-            <p className="max-[500px]:m-0 max-[1000px]:mb-[20px] font-medium text-xl text-white max-w-[522px] mx-auto my-[50px]">
+            <p className="text-center max-[500px]:mb-0 max-[1000px]:mb-[20px] font-medium text-xl text-white max-w-[522px] mx-auto">
               you'll unlock endless possibilities to remaining & Transform Any
               home using AI.
             </p>
-            <button className="w-[436px] h-[55px] mt-[20px] rounded-full text-white text-[18px] font-semibold bg-black/70 hover:bg-black transition duration-300 border-5 border-white">
-  Start Free Trial
-</button>
+            <button
+              onClick={() => {
+                couponRef.current.value = "STACKLYAI";
+              }}
+              className="border cursor-pointer font-medium text-base text-white bg-[#0000004d] mt-[50px] px-5 py-2.5 rounded-[5px] border-solid border-[white]"
+            >
+              APPLY COUPON : <span className="font-bold">STACKLYAI</span>
+            </button>
 
+            <button className="w-full min-[500px]:w-[436px] h-[50px] rounded-full border border-white/30 text-white text-[16px] font-semibold bg-black/50 hover:bg-black transition duration-300 mx-auto">
+              Start Free Trial
+            </button>
 
-            <p className="font-medium text-base pt-[20px] text-[#b0b0b0]">
-            Get started with 10 free outputs – No credit card needed!
+            <p className="font-medium text-sm min-[500px]:text-base pt-5 text-[#b0b0b0]">
+              Get started with 10 free outputs – No credit card needed!
             </p>
           </div>
           <div className="max-[1000px]:w-full flex-1 max-w-[522px] border flex flex-col gap-5 items-center justify-center bg-[#0000004d] p-5 rounded-[10px] border-solid border-[white]">
@@ -175,7 +182,7 @@ export default function SignUp() {
                 </span>
               </div>
 
-              {/* <div className="max-w-[406px] w-full bg-[white] flex items-center justify-center p-[15px] rounded-[5px]">
+              <div className="max-w-[406px] w-full bg-[white] flex items-center justify-center p-[15px] rounded-[5px]">
                 <input
                   className="placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a] flex-1 bg-white"
                   type="text"
@@ -190,7 +197,7 @@ export default function SignUp() {
                 >
                   Apply
                 </span>
-              </div> */}
+              </div>
 
               <button
                 type="submit"
@@ -201,7 +208,7 @@ export default function SignUp() {
               <p className="text-base text-[#b0b0b0] font-normal">
                 Already have an account?{" "}
                 <Link
-                  to={'sign-in'}
+                  to={"sign-in"}
                   className="no-underline font-medium text-white"
                 >
                   Log In

@@ -1,44 +1,67 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Header from "../components/Header";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { UserContext } from "../context/UserContext";
 
 export default function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+  const { setUserInfo } = useContext(UserContext);
+
+  const userList = {
+    "nishanth@gmail.com": "12345",
+  };
+
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (userList[formData.email] === formData.password) {
+      setUserInfo({
+        userId: "001",
+        email: formData.email,
+      });
+
+      navigate("/");
+    } else {
+      setFormData({
+        email: "",
+        password: "",
+      });
+      alert("Wrong Credentials");
+    }
+  };
 
   return (
     <div>
-      <Header />
-
       <div
         className="bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: 'url("/logIn/bg-img.jpeg")' }}
       >
-        <div class="max-[1000px]:p-[20px] max-[1000px]:flex-col max-[1000px]:gap-[50px] min-h-screen bg-[#000000b2] flex items-center justify-center gap-5 px-[5%] py-[25px]">
-          <div class="flex-1 text-center max-w-[631px]">
-            <h3 className="max-[1000px]:mb-[20px] max-[500px]:mb-[10px] max-[500px]:text-center max-[500px]:text-[30px]  max-[500px]:leading-9 font-semibold text-[44px] text-white text-start leading-[64px] mb-2.5">
+        <div className="max-[1000px]:p-[20px] max-[1000px]:flex-col max-[1000px]:gap-[50px] min-h-screen bg-[#000000b2] flex items-center justify-center gap-5 px-[5%] py-[25px]">
+          <div className="flex-1 flex flex-col items-center justify-center gap-3">
+            <h3 className="w-full font-semibold text-center min-[500px]:text-start text-[28px] min-[500px]:text-[44px] leading-[36px] min-[500px]:leading-[64px] text-white mb-2.5">
               Redesign your{" "}
-              <span class=" max-[500px]:text-[30px] font-semibold text-[44px] text-[#ffd56b] mb-[50px]">
+              <span className="block text-[#ffd56b] text-[30px] min-[500px]:inline min-[500px]:text-[44px] font-semibold">
                 "Interiors"
               </span>
-              <br />
+              <br className="hidden min-[500px]:block" />
               with Stackly in less than 25 seconds.
             </h3>
 
-            <button className="w-[436px] h-[55px] mt-[20px] rounded-full border border-white/3 text-white text-[18px] font-semibold bg-black/50 hover:bg-black transition duration-300">
-            Start Free Trial
+            <button className="w-full min-[500px]:w-[436px] h-[50px] rounded-full border border-white/30 text-white text-[16px] font-semibold bg-black/50 hover:bg-black transition duration-300 mx-auto">
+              Start Free Trial
             </button>
 
-            <p className="font-medium text-base pt-[20px] text-[#b0b0b0]">
-            Get started with 10 free outputs – No credit card needed!
+            <p className="font-medium text-sm min-[500px]:text-base pt-5 text-[#b0b0b0]">
+              Get started with 10 free outputs – No credit card needed!
             </p>
-
-
           </div>
 
-        
-
-          
-          <div class="flex-1 max-[1000px]:w-full max-w-[522px] max-h-[559px] border flex flex-col gap-5 items-center justify-center bg-[#0000004d] p-5 rounded-[10px] border-solid border-[white]">
+          <div className="flex-1 max-[1000px]:w-full max-w-[522px] max-h-[559px] border flex flex-col gap-5 items-center justify-center bg-[#0000004d] p-5 rounded-[10px] border-solid border-[white]">
             <h3 className="font-semibold text-[26px] text-white">
               Welcome Back!
             </h3>
@@ -142,27 +165,38 @@ export default function SignIn() {
               </a>
             </div>
 
-            <p className="font-medium text-base text-[#b0b0b0]">
-              or
-            </p>
+            <p className="font-medium text-base text-[#b0b0b0]">or</p>
 
-
-
-            <form className="flex flex-col gap-5 items-center justify-center w-full">
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-5 items-center justify-center w-full"
+            >
               <input
                 className="max-w-[406px] w-full bg-[white] p-[15px] rounded-[5px] placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a]"
                 type="email"
                 placeholder="Email"
                 required
+                value={formData.email}
+                onChange={(e) => {
+                  setFormData((prev) => {
+                    return { ...prev, email: e.target.value };
+                  });
+                }}
               />
 
-              <div class="max-w-[406px] w-full bg-[white] flex items-center justify-center p-[15px] rounded-[5px]">
+              <div className="max-w-[406px] w-full bg-[white] flex items-center justify-center p-[15px] rounded-[5px]">
                 <input
                   className="bg-white flex-1 placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a]"
                   type={showPassword ? "text" : "password"}
                   id="password"
                   placeholder="Password"
                   required
+                  value={formData.password}
+                  onChange={(e) => {
+                    setFormData((prev) => {
+                      return { ...prev, password: e.target.value };
+                    });
+                  }}
                 />
                 <span
                   className="cursor-pointer"
@@ -170,7 +204,6 @@ export default function SignIn() {
                     setShowPassword((prev) => !prev);
                   }}
                 >
-                  
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
@@ -201,11 +234,11 @@ export default function SignIn() {
               >
                 Log In
               </button>
-              <p class="text-base text-[#b0b0b0] font-normal">
+              <p className="text-base text-[#b0b0b0] font-normal">
                 Don't have an account?{" "}
                 <Link
                   className="no-underline font-medium text-white"
-                  to={'sign-up'}
+                  to={"sign-up"}
                 >
                   Sign up
                 </Link>
