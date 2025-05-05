@@ -28,7 +28,7 @@ export default function ImageSlider() {
         images with the world.
       </h2>
 
-      <div className="w-ful flex items-start justify-start gap-0 h-auto overflow-hidden flex-nowrap">
+      <div className="w-full flex items-start justify-start gap-0 h-auto overflow-hidden flex-nowrap">
         <div
           className="flex flex-col sm:flex-row justify-center items-center gap-6 min-w-full transition-all "
           style={{ transform: `translateX(${index * -100}%)` }}

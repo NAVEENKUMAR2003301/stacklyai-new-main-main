@@ -38,7 +38,7 @@ export default function DraggableImageSection() {
             </p>
           </div>
           {/* Image */}
-          <div className="flex-1">
+          <div className="flex-1 max-w-[500px] min-w-[300px] w-full">
             <DraggableImages imageRight={dragImg1_1} imageLeft={dragImg1_2} />
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function DraggableImageSection() {
             </p>
           </div>
           {/* Image */}
-          <div className="flex-1">
+          <div className="flex-1 max-w-[500px] min-w-[300px] w-full">
             <DraggableImages imageRight={dragImg2_1} imageLeft={dragImg2_2} />
           </div>
         </div>
@@ -79,7 +79,7 @@ export default function DraggableImageSection() {
             </p>
           </div>
           {/* Image */}
-          <div className="flex-1">
+          <div className="flex-1 max-w-[500px] min-w-[300px] w-full">
             <DraggableImages imageRight={dragImg3_1} imageLeft={dragImg3_2} />
           </div>
         </div>

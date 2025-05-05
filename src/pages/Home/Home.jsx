@@ -397,7 +397,7 @@ export default function Home() {
       <section className="w-full pb-20 px-5 ">
         <div className="text-center w-full min-h-[300px] flex flex-col justify-center items-center gap-5">
           <h1 className=" w-full min-h-[67px] text-3xl md:text-5xl font-semibold leading-[140%] text-center text-black">
-            <span className="text-[#009A98]">SIMPLIFY DESIGN </span>WITH{" "}
+            <span className="text-[aqua]">SIMPLIFY DESIGN </span>WITH{" "}
             <span className="text-[#078C8C]">STACKLYAI</span>
           </h1>
           <p className="max-w-[294px] w-full min-h-[31px] text-[22px] font-semibold leading-[140%] text-center text-[#2A2A2A]">
@@ -415,7 +415,7 @@ export default function Home() {
             </div>
           </div>
           <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
-            <span className="text-[#009A98]"> Upload </span>a photo of your room,
+            <span className="text-[aqua]"> Upload </span>a photo of your room,
             home, or outdoor space.
           </p>
         </div>
@@ -429,7 +429,7 @@ export default function Home() {
             </div>
           </div>
           <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
-            <span className="text-[#009A98]"> Personalize your experience </span>—
+            <span className="text-[aqua]"> Personalize your experience </span>—
             choose the room type, adjust AI creativity, add special
             instructions, and select your favorite design style
           </p>
@@ -445,7 +445,7 @@ export default function Home() {
             </div>
           </div>
           <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
-            <span className="text-[#009A98]">Generate</span> stunning new décor and
+            <span className="text-[aqua]">Generate</span> stunning new décor and
             design concepts in under 25 seconds.
           </p>
         </div>
@@ -459,18 +459,18 @@ export default function Home() {
       >
         <div className="max-w-[727px] w-full min-h-[274px] bg-[#00000099] backdrop-blur-[2] flex flex-col justify-center items-center gap-6 px-[30px] py-10 rounded-xl">
           <h1 className="max-w-[667px] w-full min-h-[62px] text-[44px] font-bold leading-[140%] text-center text-[white]">
-            Sign Up Quickly! Get <span className="text-[#009A98]">25%</span>Offer
+            Sign Up Quickly! Get <span className="text-[aqua]">25%</span>Offer
           </h1>
           <div className="ul-list">
             <ul className="max-w-[405px] w-full min-h-[24px] flex justify-between items-center">
               <li
-                className='before:content-["."] text-[white] text-[17px] font-medium leading-[140%] text-center before:text-[#009A98] before:text-[50px] before:m-2.5'
+                className='before:content-["."] text-[white] text-[17px] font-medium leading-[140%] text-center before:text-[aqua] before:text-[50px] before:m-2.5'
                 style={{ listStyle: "none" }}
               >
                 30 free outputs
               </li>
               <li
-                className='before:content-["."] text-[white] text-[17px] font-medium leading-[140%] text-center before:text-[#009A98] before:text-[50px] before:m-2.5'
+                className='before:content-["."] text-[white] text-[17px] font-medium leading-[140%] text-center before:text-[aqua] before:text-[50px] before:m-2.5'
                 style={{ listStyle: "none" }}
               >
                 No credit card required
@@ -495,7 +495,7 @@ export default function Home() {
       <section className="max-w-[100vw]  flex flex-col justify-center items-center gap-[50px] p-5 py-32">
         <h1 className="max-w-[1320px] w-full min-w-[134px] md:text-5xl text-3xl font-semibold leading-[140%] text-center text-black">
           Plan Your Future{" "}
-          <span className="text-[#009A98]">Interiors, Exteriors, </span> and{" "}
+          <span className="text-[aqua]">Interiors, Exteriors, </span> and{" "}
           <span>Outdoor Spaces </span>with{" "}
           <span className="text-[rgb(5,128,128)]">Stackly</span>
         </h1>
@@ -511,7 +511,7 @@ export default function Home() {
       <section className="max-w-[100vw] min-h-[926px] flex flex-col justify-center items-center gap-[30px]">
         <h1 className="max-w-[1320px] min-h-[67px] w-full text-5xl font-semibold leading-[140%] text-center text-black">
           Compare Design, Find Your{" "}
-          <span className="text-[#009A98]">Perfect style</span>
+          <span className="text-[aqua]">Perfect style</span>
         </h1>
         <p className="max-w-[736px] w-full min-h-[72px] text-lg font-medium leading-[200%] text-center text-[#B0B0B0]">
           Explore and compare multiple interior, exterior, and outdoor designs
@@ -525,7 +525,7 @@ export default function Home() {
               alt="image1"
             />
             <p className="max-w-[541px] min-h-[72px] w-full text-center text-[17px] font-medium leading-[140%] text-black">
-              <span className="text-[#009A98]">
+              <span className="text-[aqua]">
                 "Your style is sleek and sophisticated.{" "}
               </span>
               This brown-themed office design blends modern functionality with
@@ -541,7 +541,7 @@ export default function Home() {
               alt="image2"
             />
             <p className="max-w-[541px] min-h-[72px] w-full text-center text-[17px] font-medium leading-[140%] text-black">
-              <span className="text-[#009A98]">
+              <span className="text-[aqua]">
                 "Embrace comfort with a touch of elegance.
               </span>{" "}
               This brown-themed lounge offers a cozy yet professional
