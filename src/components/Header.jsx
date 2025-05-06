@@ -27,7 +27,7 @@ export default function Header() {
           >
             <li>
               <Link
-                className="text-base font-medium text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
                 to="/"
               >
                 Home
@@ -35,7 +35,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                className="text-base font-medium text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
                 to="/products"
               >
                 Products
@@ -43,7 +43,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                className="text-base font-medium text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
                 to=""
               >
                 Pricing
@@ -51,7 +51,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                className="text-base font-medium text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
                 to=""
               >
                 API
@@ -59,7 +59,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                className="text-base font-medium text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
                 to=""
               >
                 Contact Us
@@ -79,7 +79,7 @@ export default function Header() {
               >
                 <g filter="url(#filter0_d_1339_1265)">
                   <path
-                    d="M15.9919 14.6876C16.7011 14.6876 17.4032 14.5479 18.0584 14.2765C18.7136 14.0052 19.3089 13.6074 19.8103 13.106C20.3117 12.6045 20.7095 12.0092 20.9809 11.3541C21.2522 10.6989 21.3919 9.99674 21.3919 9.2876C21.3919 8.57846 21.2522 7.87627 20.9809 7.22111C20.7095 6.56595 20.3117 5.97066 19.8103 5.46922C19.3089 4.96779 18.7136 4.57003 18.0584 4.29865C17.4032 4.02728 16.7011 3.8876 15.9919 3.8876C14.5597 3.8876 13.1862 4.45653 12.1735 5.46922C11.1608 6.48192 10.5919 7.85543 10.5919 9.2876C10.5919 10.7198 11.1608 12.0933 12.1735 13.106C13.1862 14.1187 14.5597 14.6876 15.9919 14.6876ZM16.0003 2C17.581 1.99949 19.1179 2.51913 20.3739 3.47876C21.6299 4.43838 22.5352 5.78466 22.9501 7.30987C23.3651 8.83508 23.2666 10.4544 22.6699 11.9181C22.0732 13.3818 21.0114 14.6085 19.6483 15.4088C24.0739 16.7408 27.3979 20.4704 27.9943 25.1024C28.0507 25.5428 27.7231 25.9424 27.2623 25.9964C26.8027 26.0504 26.3827 25.7384 26.3263 25.298C25.6783 20.27 21.3235 16.484 16.0423 16.484C10.7323 16.484 6.32112 20.2772 5.67432 25.298C5.61792 25.7384 5.19792 26.0504 4.73832 25.9964C4.27752 25.9424 3.94992 25.5428 4.00632 25.1024C4.60152 20.4896 7.94352 16.7648 12.3763 15.4208C11.0091 14.6241 9.9425 13.3992 9.34132 11.9354C8.74014 10.4717 8.6379 8.85069 9.05042 7.32302C9.46293 5.79536 10.3672 4.44613 11.6235 3.48396C12.8797 2.52178 14.4179 2.00025 16.0003 2Z"
+                    d="M15.9919 14.6876C20.7011 14.6876 17.4032 14.5479 18.0584 14.2765C18.7136 14.0052 19.3089 13.6074 19.8103 13.106C20.3117 12.6045 20.7095 12.0092 20.9809 11.3541C21.2522 10.6989 21.3919 9.99674 21.3919 9.2876C21.3919 8.57846 21.2522 7.87627 20.9809 7.22111C20.7095 6.56595 20.3117 5.97066 19.8103 5.46922C19.3089 4.96779 18.7136 4.57003 18.0584 4.29865C17.4032 4.02728 20.7011 3.8876 15.9919 3.8876C14.5597 3.8876 13.1862 4.45653 12.1735 5.46922C11.2008 6.48192 10.5919 7.85543 10.5919 9.2876C10.5919 10.7198 11.2008 12.0933 12.1735 13.106C13.1862 14.1187 14.5597 14.6876 15.9919 14.6876ZM20.0003 2C17.581 1.99949 19.1179 2.51913 20.3739 3.47876C21.6299 4.43838 22.5352 5.78466 22.9501 7.30987C23.3651 8.83508 23.2666 10.4544 22.6699 11.9181C22.0732 13.3818 21.0114 14.6085 19.6483 15.4088C24.0739 20.7408 27.3979 20.4704 27.9943 25.1024C28.0507 25.5428 27.7231 25.9424 27.2623 25.9964C26.8027 26.0504 26.3827 25.7384 26.3263 25.298C25.6783 20.27 21.3235 20.484 20.0423 20.484C10.7323 20.484 6.32112 20.2772 5.67432 25.298C5.61792 25.7384 5.19792 26.0504 4.73832 25.9964C4.27752 25.9424 3.94992 25.5428 4.00632 25.1024C4.60152 20.4896 7.94352 20.7648 12.3763 15.4208C11.0091 14.6241 9.9425 13.3992 9.34132 11.9354C8.74014 10.4717 8.6379 8.85069 9.05042 7.32302C9.46293 5.79536 10.3672 4.44613 11.6235 3.48396C12.8797 2.52178 14.4179 2.00025 20.0003 2Z"
                     fill="#007B82"
                   />
                 </g>
@@ -157,13 +157,13 @@ export default function Header() {
             <div className="min-[900px]:flex hidden  gap-[24px]">
               <Link
                 to={"/sign-in"}
-                className="w-[107px] h-[39px] text-base font-semibold leading-[100%] border bg-white text-[#007b82] cursor-pointer flex justify-center items-center no-underline rounded-[5px] border-solid border-[#007b82]  active:bg-[#007b82] active:text-white"
+                className="w-[107px] h-[39px] text-[20px] font-semibold leading-[100%] border bg-white text-[#007b82] cursor-pointer flex justify-center items-center no-underline rounded-[5px] border-solid border-[#007b82]  active:bg-[#007b82] active:text-white"
               >
                 Log In
               </Link>
               <Link
                 to={"/sign-up"}
-                className="w-[107px] h-[39px] text-base font-semibold leading-[100%] border bg-[#007b82] text-white cursor-pointer flex justify-center items-center no-underline rounded-[5px] border-solid border-white active:bg-white active:text-[#007b82]"
+                className="w-[107px] h-[39px] text-[20px] font-semibold leading-[100%] border bg-[#007b82] text-white cursor-pointer flex justify-center items-center no-underline rounded-[5px] border-solid border-white active:bg-white active:text-[#007b82]"
               >
                 Sign Up
               </Link>
@@ -202,7 +202,7 @@ export default function Header() {
           <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
         </svg>
         <Link
-          className="text-base font-medium text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
           to="/"
           onClick={() => {
             setShowSideBar(false);
@@ -212,7 +212,7 @@ export default function Header() {
         </Link>
 
         <Link
-          className="text-base font-medium text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
           to="/products"
           onClick={() => {
             setShowSideBar(false);
@@ -222,7 +222,7 @@ export default function Header() {
         </Link>
 
         <Link
-          className="text-base font-medium text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
           to=""
           onClick={() => {
             setShowSideBar(false);
@@ -232,7 +232,7 @@ export default function Header() {
         </Link>
 
         <Link
-          className="text-base font-medium text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
           to=""
           onClick={() => {
             setShowSideBar(false);
@@ -242,7 +242,7 @@ export default function Header() {
         </Link>
 
         <Link
-          className="text-base font-medium text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
           to=""
           onClick={() => {
             setShowSideBar(false);
@@ -254,7 +254,7 @@ export default function Header() {
         {!userInfo.userId && (
           <>
             <button
-              className="w-[107px] h-[39px] text-base font-semibold leading-[100%] border bg-white text-[#007b82] cursor-pointer flex justify-center items-center no-underline rounded-[5px] border-solid border-[#007b82] active:bg-[#007b82] active:text-white"
+              className="w-[107px] h-[39px] text-[20px] font-semibold leading-[100%] border bg-white text-[#007b82] cursor-pointer flex justify-center items-center no-underline rounded-[5px] border-solid border-[#007b82] active:bg-[#007b82] active:text-white"
               onClick={() => {
                 navigate("/sign-in");
                 setShowSideBar(false);
@@ -263,7 +263,7 @@ export default function Header() {
               Log In
             </button>
             <button
-              className="w-[107px] h-[39px] text-base font-semibold leading-[100%] border bg-[#007b82] text-white cursor-pointer flex justify-center items-center no-underline rounded-[5px] border-solid border-white active:bg-white active:text-[#007b82]"
+              className="w-[107px] h-[39px] text-[20px] font-semibold leading-[100%] border bg-[#007b82] text-white cursor-pointer flex justify-center items-center no-underline rounded-[5px] border-solid border-white active:bg-white active:text-[#007b82]"
               onClick={() => {
                 navigate("/sign-up");
                 setShowSideBar(false);

@@ -673,21 +673,21 @@ export default function Home() {
             </div>
 
             {/* Member Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl w-full">
+            <div className="w-[100vw] flex justify-center item-center flex-wrap gap-10">
               {/* Card 1 */}
-              <div className="bg-white text-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center">
-                <div className="flex items-center justify-between gap-10 mb-4">
-                  <div className="flex-1">
-                    <h3 className="font-bold text-lg">Guru Ragav Auditor</h3>
-                    <p className="text-gray-500 text-sm">Auditor</p>
+              <div className="max-w-[413px] min-h-[288px] bg-white rounded-[12px] p-10 flex flex-col items-center">
+                <div className="min-w-[413px] h-full flex justify-around items-center">
+                  <div className="max-w-[206px] min-h-[64px] flex flex-col items-start gap-1 ">
+                    <h3 className="text-black text-[22px] font-medium leading-[140%] ">Guru Ragav Auditor</h3>
+                    <p className="text-[#b0b0b0] font-[400] text-[18px] leading-[140%]">Auditor</p>
                   </div>
                   <img
                     src={sec14Img3}
                     alt="Member 1"
-                    className="w-12 h-12 rounded-full object-cover ml-4"
+                    className="w-20 h-20 rounded-full object-cover"
                   />
                 </div>
-                <p className="text-gray-600 text-sm">
+                <p className="text-[#2A2A2A] font-[400] text-[18px] leading-[140%] mt-10">
                   “I use Stackly AI to help my clients visualize how their
                   backyard could look like if they hire me for the job. It works
                   flawlessly!”
@@ -695,38 +695,38 @@ export default function Home() {
               </div>
 
               {/* Card 2 */}
-              <div className="bg-white text-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center">
-                <div className="flex items-center justify-between gap-10 mb-4">
-                  <div className="flex-1">
-                    <h3 className="font-bold text-lg">Cristian Rama</h3>
-                    <p className="text-gray-500 text-sm">Architect</p>
+              <div className="max-w-[413px] min-h-[288px] bg-white rounded-[12px] p-10 flex flex-col items-center">
+                <div className="min-w-[413px] h-full flex justify-around items-center">
+                  <div className="max-w-[206px] min-h-[64px] flex flex-col items-start gap-1">
+                    <h3 className="text-black text-[22px] font-medium leading-[140%]">Cristian Rama</h3>
+                    <p className="text-[#b0b0b0] font-[400] text-[18px] leading-[140%]">Architect</p>
                   </div>
                   <img
                     src={sec14Img4}
                     alt="Member 2"
-                    className="w-12 h-12 rounded-full object-cover ml-4"
+                    className="w-20 h-20 rounded-full object-cover"
                   />
                 </div>
-                <p className="text-gray-600 text-sm">
+                <p className="text-[#2A2A2A] font-[400] text-[18px] leading-[140%] mt-10">
                   “I needed to replace my living room furniture so I generated a
                   few design ideas with Stackly AI. Awesome technology!”
                 </p>
               </div>
 
               {/* Card 3 */}
-              <div className="bg-white text-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center">
-                <div className="flex items-center justify-between gap-10 mb-4">
-                  <div className="flex-1">
-                    <h3 className="font-bold text-lg">Ram Krishnan</h3>
-                    <p className="text-gray-500 text-sm">Architect</p>
+              <div className="max-w-[413px] min-h-[288px] bg-white rounded-[12px] p-10 flex flex-col items-center">
+                <div className="min-w-[413px] h-full flex justify-around items-center">
+                  <div className="max-w-[206px] min-h-[64px] flex flex-col items-start gap-1">
+                    <h3 className="text-black text-[22px] font-medium leading-[140%]">Ram Krishnan</h3>
+                    <p className="text-[#b0b0b0] font-[400] text-[18px] leading-[140%]">Architect</p>
                   </div>
                   <img
                     src={sec14Img5}
                     alt="Member 3"
-                    className="w-12 h-12 rounded-full object-cover ml-4"
+                    className="w-20 h-20 rounded-full object-cover"
                   />
                 </div>
-                <p className="text-gray-600 text-sm">
+                <p className="text-[#2A2A2A] font-[400] text-[18px] leading-[140%] mt-10">
                   “I run a real estate agency and my clients send me pictures
                   with their empty properties. I use Stackly AI to furnish them
                   automatically!”
