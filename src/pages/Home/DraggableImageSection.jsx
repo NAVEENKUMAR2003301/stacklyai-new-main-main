@@ -10,7 +10,7 @@ import DraggableImages from "../../components/DraggableImages";
 
 export default function DraggableImageSection() {
   return (
-    <section className="w-full bg-[#001f20] text-white py-16 px-4 flex flex-col items-center">
+    <section className="w-full bg-[#011213] text-white py-16 px-4 flex flex-col items-center">
       {/* Heading */}
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-semibold leading-tight">
@@ -26,11 +26,11 @@ export default function DraggableImageSection() {
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Text */}
           <div className="flex-1">
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-[34px] font-semibold leading-[140%] mb-4">
               <span className="text-cyan-400">Gorgeous Makeovers</span> and
               Stylish Transformations
             </h3>
-            <p className="text-gray-300">
+            <p className="leading-[200%] text-[18px] font-medium text-[#f5f5f5]">
               Want to give your home a stunning new look inside and out? Our
               AI-powered makeover feature lets you explore various styles to
               elevate your space. Redesign any interior, exterior, or outdoor
@@ -47,11 +47,11 @@ export default function DraggableImageSection() {
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Text */}
           <div className="flex-1">
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-[34px] font-semibold leading-[140%] mb-4">
               <span className="text-cyan-400">Transform Empty Spaces</span> with
               Stylish Furniture
             </h3>
-            <p className="text-gray-300">
+            <p className="leading-[200%] text-[18px] font-medium text-[#f5f5f5]">
               Curious how your room would look fully furnished? Our AI-powered
               tool fills any room type with furniture and décor. Perfect for
               empty or under-construction spaces—bring your vision to life with
@@ -68,11 +68,11 @@ export default function DraggableImageSection() {
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Text */}
           <div className="flex-1">
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-[34px] font-semibold leading-[140%] mb-4">
               Artistic Makeover for{" "}
               <span className="text-cyan-400">Interiors and Exteriors</span>
             </h3>
-            <p className="text-gray-300">
+            <p className="leading-[200%] text-[18px] font-medium text-[#f5f5f5]">
               Unleash the power of AI with Artistic Makeover. From stylish
               furniture arrangements to a complete exterior refresh, let AI
               transform your space with a fresh, creative vision.
@@ -86,19 +86,22 @@ export default function DraggableImageSection() {
       </div>
 
       {/* Bottom Text */}
-      <div className="mt-16 text-center max-w-2xl text-gray-300">
+      <div className="mt-16 text-center max-w-[681px] text-[#ffffff] font-normal text-[24px] leading-[180%] align-center">
         Loved by experts and designed for everyone, our platform brings
         professional-quality results with ease and simplicity.
       </div>
 
       {/* Call to Action */}
       <div className="mt-8 flex flex-col items-center gap-4">
-        <h3 className="text-2xl font-bold text-cyan-400">
+        <h3 className="text-[32px] font-semibold text-[#00b0ba] leading-[140%]">
           Get Started – Infinite Ideas.
         </h3>
         <a
           href="#"
-          className="bg-cyan-600 hover:bg-cyan-500 text-white font-semibold py-3 px-8 rounded-md transition"
+          className="max-w-[406px] min-h-[60px] rounded-[5px] hover:bg-cyan-500 text-white font-semibold py-4 px-8 rounded-md text-[20px] leading-[35px] spacing-[8px] transition"style={{
+            background:
+              "linear-gradient(to right, #007c82 0%,rgb(4, 68, 75),rgb(3, 89, 94) 100%)",
+          }}
         >
           Access Now !
         </a>

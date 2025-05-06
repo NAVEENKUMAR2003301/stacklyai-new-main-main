@@ -420,7 +420,7 @@ export default function Home() {
               Step 1:
             </div>
           </div>
-          <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
+          <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center mt-5 mb-10">
             <span className="text-[#007B82]"> Upload </span>a photo of your room,
             home, or outdoor space.
           </p>
@@ -434,7 +434,7 @@ export default function Home() {
               Step 2:
             </div>
           </div>
-          <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
+          <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center mt-5 mb-10">
             <span className="text-[#007B82]"> Personalize your experience </span>—
             choose the room type, adjust AI creativity, add special
             instructions, and select your favorite design style
@@ -450,8 +450,8 @@ export default function Home() {
               Step 3:
             </div>
           </div>
-          <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
-            <span className="text-[#007B82]">Generate</span> stunning new décor and
+          <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center mt-5 mb-10">
+            <span className="text-[#007B82]">Generate</span> stunning new decor and
             design concepts in under 25 seconds.
           </p>
         </div>
@@ -487,7 +487,7 @@ export default function Home() {
             className="max-w-[406px] w-full min-h-[60px] flex justify-center items-center gap-2.5 text-xl font-bold leading-[35px] text-center text-[white] cursor-pointer rounded-xl"
             style={{
               background:
-                "linear-gradient(to right,#00B0BA 0%,#0000004D 50%,#007B82 100%)",
+                "linear-gradient(to right,#00B0BA 0%,#000000 50%,#007B82 100%)",
               wordSpacing: "8px",
             }}
           >
@@ -515,7 +515,7 @@ export default function Home() {
       {/* Section 10 */}
 
       <section className="max-w-[100vw] min-h-[926px] flex flex-col justify-center items-center gap-[30px]">
-        <h1 className="max-w-[1320px] min-h-[67px] w-full text-5xl font-semibold leading-[140%] text-center text-black">
+        <h1 className="max-w-[1320px] min-h-[67px] w-full text-[48px] font-semibold leading-[140%] text-center text-black">
           Compare Design, Find Your{" "}
           <span className="text-[#007B82]">Perfect style</span>
         </h1>
@@ -569,26 +569,26 @@ export default function Home() {
 
 
       {/* {section-12} */}
-      <section className="w-full min-h-[200px] py-10 px-4 bg-[#007B8212] flex flex-col md:flex-row justify-center items-center gap-6">
+      <section className="w-full min-h-[200px] py-10 px-4 bg-[#007B8212] flex flex-col md:flex-row justify-center items-center flex-wrap gap-6">
         <h2 className="text-black text-center md:text-left text-2xl md:text-3xl font-medium max-w-[900px]">
           Get started with 10 free outputs – No credit card needed!
         </h2>
 
         <a
           href="#"
-          className="bg-gradient-to-r from-teal-900 via-teal-700 to-[#007B82] text-white font-bold py-3 px-6 rounded-md hover:opacity-90 transition"
+          className="max-w-[406px] min-h-[60px] rounded-[5px] bg-gradient-to-r from-[#00B0BA] via-[#000000] to-[#007B82] text-white font-bold py-5 px-16 rounded-md hover:opacity-50 transition"
         >
           Start Free Trial
         </a>
       </section>
       {/* {section-13} */}
-      <section className="w-full py-16 px-4 flex flex-col justify-center items-center">
-        <h2 className="text-3xl md:text-5xl font-medium text-center text-gray-800 leading-tight">
+      <section className="w-full py-16 px-4 flex flex-col justify-center items-center mt-20">
+        <h2 className="text-[48px] md:text-5xl font-semibold text-center text-gray-800 leading-[140%]">
           Discover Our{" "}
           <span className="text-[#007B82]">Advanced AI Interior Tools</span> and
           Redesign
         </h2>
-        <h2 className="text-3xl md:text-5xl font-medium text-center text-gray-800 mt-2">
+        <h2 className="text-[48px] md:text-5xl font-semibold text-center text-[black] mt-3">
           Your Space Instantly
         </h2>
       </section>
@@ -602,11 +602,11 @@ export default function Home() {
       <section className="w-full py-16 px-6 flex flex-col items-center bg-white text-gray-800">
         {/* Heading */}
         <div className="text-center mb-12">
-          <p className="text-lg font-medium text-gray-500">
+          <p className="text-[28px] font-semibold leading-[140%] text-[black]">
             Transform in <span className="text-[#007b82]">Seconds</span>, Not
             Days
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold mt-2">
+          <h2 className="text-[48px] md:text-5xl font-semibold mt-2 leading-[140%] ">
             StacklyAI is for <span className="text-[#007b82]">Homeowners</span>{" "}
             and <span className="text-[#007b82]">Professionals</span>
           </h2>
@@ -621,10 +621,10 @@ export default function Home() {
               alt="Personal Use"
               className="rounded-lg shadow-md mb-6 w-full object-cover"
             />
-            <h3 className="text-2xl font-semibold mb-2">
+            <h3 className="text-[38px] font-semibold mb-2 leading-[140%] align-center">
               For Personal Use <span className="text-[#007B82]">01</span>
             </h3>
-            <p className="text-gray-500 max-w-sm">
+            <p className="text-[#b0b0b0] font-[normal] text-[19px] leading-[200%] max-w-sm">
               Explore your unique style and create endless realistic designs for
               both your home's interior and exterior spaces.
             </p>
@@ -637,10 +637,10 @@ export default function Home() {
               alt="Professional Use"
               className="rounded-lg shadow-md mb-6 w-full object-cover"
             />
-            <h3 className="text-2xl font-medium mb-2">
+            <h3 className="text-[38px] font-semibold mb-2 leading-[140%] align-center mb-2">
               For Professional Use <span className="text-[#007B82]">02</span>
             </h3>
-            <p className="text-gray-500 max-w-sm">
+            <p className="text-[#b0b0b0] font-[normal] text-[19px] leading-[200%] max-w-sm">
               Impress clients instantly by showcasing stunning design
               transformations while saving time on every project.
             </p>
@@ -656,18 +656,18 @@ export default function Home() {
       >
         <div className="py-20 px-6 bg-[#00000096]">
           <div className="flex flex-col items-center text-center text-white">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-[48px] md:text-5xl leading-[140%] text-center font-bold mb-4">
               <span className="text-6xl font-bold">“</span> Meet Our Members{" "}
               <span className="text-6xl font-bold">”</span>
             </h2>
-            <p className="max-w-2xl text-lg md:text-xl text-gray-300 mb-8">
+            <p className="max-w-[630px] min-h-[78px] text-[28px] leading-[140%] text-center md:text-xl text-gray-300 mb-8">
               You're in good company with{" "}
-              <span className="text-cyan-400 font-semibold">Stackly AI</span>,
+              <span className="text-cyan-400  font-semibold">Stackly AI</span>,
               trusted by people in all 195 countries.
             </p>
             {/* Center logo */}
             <div className="mb-16">
-              <div className="bg-white rounded-full p-4 shadow-lg">
+              <div className="bg-[#FFFFFF1F] rounded-full p-8 shadow-lg">
                 <img src={sec14Img2} alt="Center Icon" className="w-12 h-12" />
               </div>
             </div>
@@ -676,7 +676,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl w-full">
               {/* Card 1 */}
               <div className="bg-white text-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center">
-                <div className="flex items-center mb-4">
+                <div className="flex items-center justify-between gap-10 mb-4">
                   <div className="flex-1">
                     <h3 className="font-bold text-lg">Guru Ragav Auditor</h3>
                     <p className="text-gray-500 text-sm">Auditor</p>
@@ -696,7 +696,7 @@ export default function Home() {
 
               {/* Card 2 */}
               <div className="bg-white text-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center">
-                <div className="flex items-center mb-4">
+                <div className="flex items-center justify-between gap-10 mb-4">
                   <div className="flex-1">
                     <h3 className="font-bold text-lg">Cristian Rama</h3>
                     <p className="text-gray-500 text-sm">Architect</p>
@@ -715,7 +715,7 @@ export default function Home() {
 
               {/* Card 3 */}
               <div className="bg-white text-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center">
-                <div className="flex items-center mb-4">
+                <div className="flex items-center justify-between gap-10 mb-4">
                   <div className="flex-1">
                     <h3 className="font-bold text-lg">Ram Krishnan</h3>
                     <p className="text-gray-500 text-sm">Architect</p>
