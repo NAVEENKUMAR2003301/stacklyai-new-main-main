@@ -652,7 +652,7 @@ export default function Home() {
 
       <section
         className="relative w-full  absolute-0  bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/src/assets/home/sec14/bg1.jpg')" }}
+        style={{ backgroundImage: "url('./src/assets/home/sec14/bg1.jpg')" }}
       >
         <div className="py-20 px-6 bg-[#00000096]">
           <div className="flex flex-col items-center text-center text-white">
