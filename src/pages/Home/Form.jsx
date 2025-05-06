@@ -7,7 +7,7 @@ import sec7Icon2 from "../../assets/home/sec7/basil_image-solid (1).png";
 import sec7Icon3 from "../../assets/home/sec7/Vector.png";
 import { UserContext } from "../../context/UserContext";
 import { useNavigate } from "react-router-dom";
-import step3 from "../././../../public/home/form/vector.png";
+import step3 from "../../../public/home/form/Vector.png";
 
 export default function Form() {
   const { userInfo } = useContext(UserContext);
