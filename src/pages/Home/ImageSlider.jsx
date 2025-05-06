@@ -23,8 +23,8 @@ export default function ImageSlider() {
     <section className="w-full min-h-[600px] py-16 px-4 flex flex-col justify-center items-center gap-10">
       <h2 className="text-black text-center text-3xl md:text-4xl font-medium max-w-[900px] leading-snug">
         Explore our community's creations for{" "}
-        <span className="text-cyan-400">inspiration</span>, then craft your{" "}
-        <span className="text-cyan-400">own project</span> and share amazing
+        <span className="text-[#007B82]">inspiration</span>, then craft your{" "}
+        <span className="text-[#007B82]">own project</span> and share amazing
         images with the world.
       </h2>
 
@@ -166,9 +166,9 @@ export default function ImageSlider() {
       <div className="w-full max-w-[1070px] flex justify-end mt-6">
         <Link
           to={""}
-          className="text-cyan-500 text-lg font-bold underline underline-offset-4 hover:text-cyan-400"
+          className="text-[#007b82] text-lg font-bold underline underline-offset-4 hover:text-cyan-400"
         >
-          Learn More
+          
         </Link>
       </div>
     </section>

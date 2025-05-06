@@ -98,7 +98,7 @@ export default function DraggableImageSection() {
         </h3>
         <a
           href="#"
-          className="bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-3 px-8 rounded-md transition"
+          className="bg-cyan-600 hover:bg-cyan-500 text-white font-semibold py-3 px-8 rounded-md transition"
         >
           Access Now !
         </a>

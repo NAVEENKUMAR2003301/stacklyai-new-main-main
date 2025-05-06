@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-bold mb-4">Quick links</h4>
+          <h4 className="font-bold mb-4 text-[#007b82]">Quick links</h4>
           <ul className="space-y-2 text-sm">
             <li>
               <a href="#">Home</a>
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-bold mb-4">Terms & Policy</h4>
+          <h4 className="font-bold mb-4 text-[#007b82]">Terms & Policy</h4>
           <ul className="space-y-2 text-sm">
             <li>
               <a href="#">Terms of Services</a>
@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-bold mb-4">Contact Us</h4>
+          <h4 className="font-bold mb-4 text-[#007b82]">Contact Us</h4>
           <p className="text-sm">
             <a
               href="mailto:info@stacklyai.com"

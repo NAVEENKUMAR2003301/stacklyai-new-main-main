@@ -88,13 +88,13 @@ export default function Home() {
       {/* section 2 */}
 
       <section className="max-w-[100vw] w-full min-h-[552px] flex flex-col justify-center items-center gap-5 p-[30px] max-[500px]:py -10 max-[500px]:min-h-0">
-        <h3 className="max-w-[220px] w-full min-h-[46px] text-[38px] font-semibold leading-[100%] text-[#2a2a2a] text-center">
+        <h3 className="max-w-[220px] w-full min-h-[46px] text-[38px] font-bold leading-[100%] text-[#2a2a2a] text-center">
           STACKLY AI
         </h3>
-        <h2 className="max-w-[951px] w-full min-h-[53px] text-[44px] font-bold leading-[100%] text-center text-[#00b0ba]">
+        <h2 className="max-w-[951px] w-full min-h-[53px] text-[44px] font-semibold leading-[100%] text-center text-[#007B82]">
           Smart, fast, and built for excellence.
         </h2>
-        <p className="max-w-[839px] w-full min-h-[76px] text-xl font-normal leading-[100%] h-[38px] text-center text-[#b0b0b0]">
+        <p className="max-w-[839px] w-full min-h-[76px] text-xl font- leading-[100%] h-[38px] text-center text-black">
           Delivering rapid, photo-realistic designs with advanced AI
           technology—trusted by professionals and homeowners alike.
         </p>
@@ -202,11 +202,11 @@ export default function Home() {
 
       <section className="max-[500px]:p-5 max-w-[100vw] w-full min-h-[983px] overflow-x-hidden flex justify-center items-center p-[50px]">
         <div className="max-w-[1279px] w-full min-h-[778px] bg-white shadow-[0px_0px_5px_2px_#00000040] flex flex-col justify-center items-center gap-10 px-5 py-10 rounded-[15px]">
-          <p className="max-w-[951px] w-full min-h-[29px] text-2xl font-semibold leading-[100%] text-center text-[#007b82]">
+          <p className="max-w-[951px] w-full min-h-[29px] text-2xl font-semibold leading-[100%] text-center text-[#007B82]">
             First-of-Its-Kind Features
           </p>
           <h2 className="max-w-[820px] w-full min-h-[53px] text-[44px] font-bold leading-[100%] text-center text-black">
-            The <span className="text-[#00b0ba]">All You Need</span> AI Home
+            The <span className="text-[#007B82]">All You Need</span> AI Home
             Design Tool
           </h2>
 
@@ -342,7 +342,7 @@ export default function Home() {
               <div className="relative left-[-90px]">
                 <img src={sec6Img4} alt="Design4" />
               </div>
-              <div className="w-[100px] h-[100px] bg-white shadow-[0_1px_4px_0_#00000040] flex justify-center items-center relative left-[-120px] p-2.5 rounded-[50%]">
+              <div className="w-[80px] h-[80px] bg-white shadow-[0_1px_4px_0_#00000040] flex justify-center items-center relative left-[-120px] p-2.5 rounded-[50%]">
                 <span className="max-w-[75px] min-h-[45px] text-[32px] font-semibold leading-[100%] text-align-center text-[#007B82]">
                   45+
                 </span>
@@ -373,15 +373,15 @@ export default function Home() {
               <div className=" relative left-[-90px]">
                 <img src={sec6Img8} alt="" />
               </div>
-              <div className="w-[100px] h-[100px] bg-white shadow-[0_1px_4px_0_#00000040] flex justify-center items-center relative left-[-120px] p-2.5 rounded-[50%]">
+              <div className="w-[80px] h-[80px] bg-white shadow-[0_1px_4px_0_#00000040] flex justify-center items-center relative left-[-120px] p-2.5 rounded-[50%]">
                 <span className="max-w-[75px] min-h-[45px] text-[32px] font-semibold leading-[100%] text-center text-[#007B82]">
                   100+
                 </span>
               </div>
             </div>
             <div className="w-[380px] min-h-[39px] flex justify-center items-center">
-              <span className="min-w-[185px] text-center text-[28px] font-medium leading-[100%] h-[140%] text-[#2A2A2A]">
-                Design Styles
+              <span className="min-w-[185px] text-center text-[28px] font-medium leading-[100%] h-[140%] text-[#2A2A2A] position-relative-[top:10px]">
+                Professionals Trust Us
               </span>
             </div>
           </div>
@@ -397,8 +397,8 @@ export default function Home() {
       <section className="w-full pb-20 px-5 ">
         <div className="text-center w-full min-h-[300px] flex flex-col justify-center items-center gap-5">
           <h1 className=" w-full min-h-[67px] text-3xl md:text-5xl font-semibold leading-[140%] text-center text-black">
-            <span className="text-[aqua]">SIMPLIFY DESIGN </span>WITH{" "}
-            <span className="text-[#078C8C]">STACKLYAI</span>
+            <span className="text-[#007B82]">SIMPLIFY DESIGN </span>WITH{" "}
+            <span className="text-[#007B82]">STACKLYAI</span>
           </h1>
           <p className="max-w-[294px] w-full min-h-[31px] text-[22px] font-semibold leading-[140%] text-center text-[#2A2A2A]">
             3 Easy Steps to Get Started
@@ -415,7 +415,7 @@ export default function Home() {
             </div>
           </div>
           <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
-            <span className="text-[aqua]"> Upload </span>a photo of your room,
+            <span className="text-[#007B82]"> Upload </span>a photo of your room,
             home, or outdoor space.
           </p>
         </div>
@@ -429,7 +429,7 @@ export default function Home() {
             </div>
           </div>
           <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
-            <span className="text-[aqua]"> Personalize your experience </span>—
+            <span className="text-[#007B82]"> Personalize your experience </span>—
             choose the room type, adjust AI creativity, add special
             instructions, and select your favorite design style
           </p>
@@ -445,7 +445,7 @@ export default function Home() {
             </div>
           </div>
           <p className="max-w-[374px] w-full min-h-[68px] text-[17px] font-semibold leading-[160%] text-center">
-            <span className="text-[aqua]">Generate</span> stunning new décor and
+            <span className="text-[#007B82]">Generate</span> stunning new décor and
             design concepts in under 25 seconds.
           </p>
         </div>
@@ -459,18 +459,18 @@ export default function Home() {
       >
         <div className="max-w-[727px] w-full min-h-[274px] bg-[#00000099] backdrop-blur-[2] flex flex-col justify-center items-center gap-6 px-[30px] py-10 rounded-xl">
           <h1 className="max-w-[667px] w-full min-h-[62px] text-[44px] font-bold leading-[140%] text-center text-[white]">
-            Sign Up Quickly! Get <span className="text-[aqua]">25%</span>Offer
+            Sign Up Quickly! Get <span className="text-[#00d1dd]">25%</span>Offer
           </h1>
           <div className="ul-list">
             <ul className="max-w-[405px] w-full min-h-[24px] flex justify-between items-center">
               <li
-                className='before:content-["."] text-[white] text-[17px] font-medium leading-[140%] text-center before:text-[aqua] before:text-[50px] before:m-2.5'
+                className='before:content-["."] text-[white] text-[17px] font-medium leading-[140%] text-center before:text-[#007B82] before:text-[50px] before:m-2.5'
                 style={{ listStyle: "none" }}
               >
                 30 free outputs
               </li>
               <li
-                className='before:content-["."] text-[white] text-[17px] font-medium leading-[140%] text-center before:text-[aqua] before:text-[50px] before:m-2.5'
+                className='before:content-["."] text-[white] text-[17px] font-medium leading-[140%] text-center before:text-[#007B82] before:text-[50px] before:m-2.5'
                 style={{ listStyle: "none" }}
               >
                 No credit card required
@@ -495,7 +495,7 @@ export default function Home() {
       <section className="max-w-[100vw]  flex flex-col justify-center items-center gap-[50px] p-5 py-32">
         <h1 className="max-w-[1320px] w-full min-w-[134px] md:text-5xl text-3xl font-semibold leading-[140%] text-center text-black">
           Plan Your Future{" "}
-          <span className="text-[aqua]">Interiors, Exteriors, </span> and{" "}
+          <span className="text-[#007B82]">Interiors, Exteriors, </span> and{" "}
           <span>Outdoor Spaces </span>with{" "}
           <span className="text-[rgb(5,128,128)]">Stackly</span>
         </h1>
@@ -511,9 +511,9 @@ export default function Home() {
       <section className="max-w-[100vw] min-h-[926px] flex flex-col justify-center items-center gap-[30px]">
         <h1 className="max-w-[1320px] min-h-[67px] w-full text-5xl font-semibold leading-[140%] text-center text-black">
           Compare Design, Find Your{" "}
-          <span className="text-[aqua]">Perfect style</span>
+          <span className="text-[#007B82]">Perfect style</span>
         </h1>
-        <p className="max-w-[736px] w-full min-h-[72px] text-lg font-medium leading-[200%] text-center text-[#B0B0B0]">
+        <p className="max-w-[736px] w-full min-h-[72px] text-lg font-semibold leading-[200%] text-center text-[#B0B0B0]">
           Explore and compare multiple interior, exterior, and outdoor designs
           to discover the one that matches your unique taste.
         </p>
@@ -524,8 +524,8 @@ export default function Home() {
               src={sec10Img1}
               alt="image1"
             />
-            <p className="max-w-[541px] min-h-[72px] w-full text-center text-[17px] font-medium leading-[140%] text-black">
-              <span className="text-[aqua]">
+            <p className="max-w-[541px] min-h-[72px] w-full text-center text-[17px] font-semibold leading-[140%] text-black">
+              <span className="text-[#007B82]">
                 "Your style is sleek and sophisticated.{" "}
               </span>
               This brown-themed office design blends modern functionality with
@@ -540,8 +540,8 @@ export default function Home() {
               src={sec10Img2}
               alt="image2"
             />
-            <p className="max-w-[541px] min-h-[72px] w-full text-center text-[17px] font-medium leading-[140%] text-black">
-              <span className="text-[aqua]">
+            <p className="max-w-[541px] min-h-[72px] w-full text-center text-[17px] font-semibold leading-[140%] text-black">
+              <span className="text-[#007B82]">
                 "Embrace comfort with a touch of elegance.
               </span>{" "}
               This brown-themed lounge offers a cozy yet professional
@@ -563,14 +563,14 @@ export default function Home() {
 
 
       {/* {section-12} */}
-      <section className="w-full min-h-[200px] py-10 px-4 bg-teal-100 flex flex-col md:flex-row justify-center items-center gap-6">
+      <section className="w-full min-h-[200px] py-10 px-4 bg-[#007B8212] flex flex-col md:flex-row justify-center items-center gap-6">
         <h2 className="text-black text-center md:text-left text-2xl md:text-3xl font-medium max-w-[900px]">
           Get started with 10 free outputs – No credit card needed!
         </h2>
 
         <a
           href="#"
-          className="bg-gradient-to-r from-teal-900 via-teal-700 to-cyan-500 text-white font-bold py-3 px-6 rounded-md hover:opacity-90 transition"
+          className="bg-gradient-to-r from-teal-900 via-teal-700 to-[#007B82] text-white font-bold py-3 px-6 rounded-md hover:opacity-90 transition"
         >
           Start Free Trial
         </a>
@@ -579,7 +579,7 @@ export default function Home() {
       <section className="w-full py-16 px-4 flex flex-col justify-center items-center">
         <h2 className="text-3xl md:text-5xl font-medium text-center text-gray-800 leading-tight">
           Discover Our{" "}
-          <span className="text-cyan-400">Advanced AI Interior Tools</span> and
+          <span className="text-[#007B82]">Advanced AI Interior Tools</span> and
           Redesign
         </h2>
         <h2 className="text-3xl md:text-5xl font-medium text-center text-gray-800 mt-2">
@@ -597,12 +597,12 @@ export default function Home() {
         {/* Heading */}
         <div className="text-center mb-12">
           <p className="text-lg font-medium text-gray-500">
-            Transform in <span className="text-cyan-500">Seconds</span>, Not
+            Transform in <span className="text-[#007b82]">Seconds</span>, Not
             Days
           </p>
           <h2 className="text-3xl md:text-5xl font-bold mt-2">
-            StacklyAI is for <span className="text-cyan-500">Homeowners</span>{" "}
-            and <span className="text-cyan-500">Professionals</span>
+            StacklyAI is for <span className="text-[#007b82]">Homeowners</span>{" "}
+            and <span className="text-[#007b82]">Professionals</span>
           </h2>
         </div>
 
@@ -616,7 +616,7 @@ export default function Home() {
               className="rounded-lg shadow-md mb-6 w-full object-cover"
             />
             <h3 className="text-2xl font-semibold mb-2">
-              For Personal Use <span className="text-cyan-500">01</span>
+              For Personal Use <span className="text-[#007B82]">01</span>
             </h3>
             <p className="text-gray-500 max-w-sm">
               Explore your unique style and create endless realistic designs for
@@ -632,7 +632,7 @@ export default function Home() {
               className="rounded-lg shadow-md mb-6 w-full object-cover"
             />
             <h3 className="text-2xl font-medium mb-2">
-              For Professional Use <span className="text-cyan-500">02</span>
+              For Professional Use <span className="text-[#007B82]">02</span>
             </h3>
             <p className="text-gray-500 max-w-sm">
               Impress clients instantly by showcasing stunning design
