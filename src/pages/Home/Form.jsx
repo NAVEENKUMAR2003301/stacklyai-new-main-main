@@ -7,6 +7,7 @@ import sec7Icon2 from "../../assets/home/sec7/basil_image-solid (1).png";
 import sec7Icon3 from "../../assets/home/sec7/Vector.png";
 import { UserContext } from "../../context/UserContext";
 import { useNavigate } from "react-router-dom";
+import step3 from "../././../../public/home/form/vector.png";
 
 export default function Form() {
   const { userInfo } = useContext(UserContext);
@@ -88,7 +89,7 @@ export default function Form() {
 
   return (
     <section className="max-w-[100vw] w-full flex justify-center items-center bg-[#002628]">
-      <div className="w-[1280px]">
+      <div className="w-[1280px] p-10 pt-20 pb-20">
         <div
           className="max-w-screen-xl w-full min-h-[287px] flex flex-col justify-center items-center gap-5 rounded-t-[20px]"
           style={{
@@ -96,7 +97,7 @@ export default function Form() {
               "linear-gradient(to bottom, #007c82 0%, #004245 50%, #00292b 100%)",
           }}
         >
-          <h1 className="max-w-[658px] w-full min-h-[53px] text-[38px] font-bold leading-[140%] tracking-[60%] text-center text-white">
+          <h1 className="max-w-[658px] w-full min-h-[53px] text-[38px] font-bold leading-[140%] tracking-widest tracking-[60%] text-center text-white">
             PICK YOUR STYLE
           </h1>
           <div className="max-w-[658px] w-full h-auto flex justify-evenly items-center">
@@ -107,7 +108,7 @@ export default function Form() {
                 <img src={sec7Model1} alt="interiors" />
               </div>
               <p className="max-w-[101px] min-h-[31px] text-[22px] font-semibold leading-[140%] text-center text-[white]">
-                interiors
+                Interiors
               </p>
             </div>
             <div className="max-w-[101px] min-h-[121px] flex flex-col justify-center items-center gap-5">
@@ -117,7 +118,7 @@ export default function Form() {
                 <img src={sec7Model2} alt="exteriors" />
               </div>
               <p className="max-w-[101px] min-h-[31px] text-[22px] font-semibold leading-[140%] text-center text-[white]">
-                exteriors
+                Exteriors
               </p>
             </div>
             <div className="max-w-[101px] min-h-[121px] flex flex-col justify-center items-center gap-5">
@@ -125,7 +126,7 @@ export default function Form() {
                 <img src={sec7Model3} alt="outdoors" />
               </div>
               <p className="max-w-[101px] min-h-[31px] text-[22px] font-semibold leading-[140%] text-center text-[white]">
-                outdoors
+                Outdoors
               </p>
             </div>
           </div>
@@ -143,9 +144,9 @@ export default function Form() {
               />
 
               <div className="flex-1 w-full min-[500px]:min-h-[795px] flex flex-col justify-center items-center gap-[30px]">
-                <div className="max-w-[550px] w-full min-w-[55px] flex justify-center items-start cursor-pointer">
+                <div className="max-w-[550px] w-full min-w-[55px] flex justify-center items-start ">
                   <div
-                    className="max-w-[235px] w-full min-h-[40px] flex justify-center items-center px-5 py-2 rounded-[20px]"
+                    className="max-w-[235px] w-full min-h-[40px] flex justify-center items-center px-5 py-2 rounded-[20px] gap-1"
                     style={{
                       background:
                         "linear-gradient(to right, rgb(0, 176, 186) 0%, rgba(0, 0, 0, 0) 50%, rgb(0, 176, 186) 100%)",
@@ -157,13 +158,13 @@ export default function Form() {
                       className="max-w-[21.5px] min-h-[21.5px]"
                     />
                     <button
-                      onClick={() => {
-                        if (!userInfo.userId) {
-                          return navigave("/sign-in");
-                        }
-                        inpRef.current.click();
-                      }}
-                      className="max-w-[163px] min-h-[22px] text-base font-semibold leading-[140%] text-center text-white"
+                      // onClick={() => {
+                      //   if (!userInfo.userId) {
+                      //     return navigave("/sign-in");
+                      //   }
+                      //   inpRef.current.click();
+                      // }}
+                      className="max-w-[235px] min-h-[40px] text-[16px] font-semibold leading-[140%] text-center text-white"
                     >
                       Step 1 : Upload images
                     </button>
@@ -293,16 +294,16 @@ export default function Form() {
               className="max-w-[610px] w-full min-h-[868px] flex flex-col justify-center items-center gap-[20PX]"
             >
               <div className="max-w-[610px] min-h-[516px] w-full bg-[#00393D] flex flex-col justify-center items-center rounded-[10px] p-5">
-                <div className="max-w-[610px] w-full min-h-[75px] cursor-pointer flex justify-center items-center">
+                <div className="max-w-[610px] w-full min-h-[75px]  flex justify-center items-center">
                   <div
-                    className="max-w-[292px] min-h-[40px] flex justify-center items-center px-5 py-2 rounded-[40px]"
+                    className="max-w-[292px] min-h-[40px] flex justify-center items-center px-6 py-4 rounded-[40px] gap-2"
                     style={{
                       background:
                         "linear-gradient(to right,#00b0ba 0%,#0000001a 50%,#007b82 100%)",
                     }}
                   >
                     <img src={sec7Model2} alt="" className="w-6 h-6" />
-                    <p className="max-w-[220px] min-h-[22px] text-base font-[600px] leading-[140%] text-center text-white">
+                    <p className="max-w-[220px] min-h-[22px] text-[16px] font-semibold leading-[140%] text-center text-white">
                       Step2 : Design or Customize
                     </p>
                   </div>
@@ -456,16 +457,16 @@ export default function Form() {
               </div>
 
               <div className="max-w-[610px] min-h-[332px] w-full bg-[#00393D] flex flex-col justify-center items-center rounded-[10px] p-5">
-                <div className="max-w-[610px] w-full min-h-[75px] flex justify-center items-center cursor-pointer">
+                <div className="max-w-[610px] w-full min-h-[75px] flex justify-center items-center">
                   <div
-                    className="max-w-[292px] min-h-[40px] flex justify-center items-center px-5 py-2 rounded-[40px]"
+                    className="max-w-[292px] min-h-[40px] flex justify-center items-center px-5 py-4 rounded-[40px] gap-2"
                     style={{
                       background:
                         "linear-gradient(to right,#00b0ba 0%,#0000001a 50%,#007b82 100%)",
                     }}
                   >
-                    <img src={sec7Model2} alt="" className="w-6 h-6" />
-                    <p className="max-w-[220px] min-h-[22px] text-base font-[600px] leading-[140%] text-center text-white">
+                    <img src={step3} alt="" className="w-6 h-6" />
+                    <p className="max-w-[220px] min-h-[22px] text-[16px] font-semibold leading-[140%] text-center text-white">
                       Step3 : Generate new Design
                     </p>
                   </div>
@@ -554,7 +555,7 @@ export default function Form() {
                     </div>
                   </div>
                   <div
-                    className="max-w-[570px] w-full min-h-[54px] border bg-[#00B0BACC] flex justify-center items-center gap-2.5 cursor-pointer rounded-[5px] border-solid border-[white_30%]"
+                    className="max-w-[570px] w-full min-h-[54px] border-2 border-[#FFFFFF4D] bg-[#00B0BAC] flex justify-center items-center gap-2.5 cursor-pointer rounded-[5px] border-solid border-[white_30%]"
                     style={{
                       background:
                         "linear-gradient(to right,#00b0ba 0%,#0000004d 50%,#007b82 100%)",

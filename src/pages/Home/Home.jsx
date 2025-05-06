@@ -88,13 +88,13 @@ export default function Home() {
       {/* section 2 */}
 
       <section className="max-w-[100vw] w-full min-h-[552px] flex flex-col justify-center items-center gap-5 p-[30px] max-[500px]:py -10 max-[500px]:min-h-0">
-        <h3 className="max-w-[220px] w-full min-h-[46px] text-[38px] font-bold leading-[100%] text-[#2a2a2a] text-center">
+        <h1 className="max-w-[220px] w-full min-h-[46px] text-[40px] font-black  leading-[100%] text-[#2a2a2a] text-center">
           STACKLY AI
-        </h3>
+        </h1>
         <h2 className="max-w-[951px] w-full min-h-[53px] text-[44px] font-semibold leading-[100%] text-center text-[#007B82]">
           Smart, fast, and built for excellence.
         </h2>
-        <p className="max-w-[839px] w-full min-h-[76px] text-xl font- leading-[100%] h-[38px] text-center text-black">
+        <p className="max-w-[839px] w-full min-h-[76px] text-[20px] font-normal leading-[38px] leading-[100%] h-[38px] text-center text-[#B0B0B0]">
           Delivering rapid, photo-realistic designs with advanced AI
           technology—trusted by professionals and homeowners alike.
         </p>
@@ -164,7 +164,7 @@ export default function Home() {
 
             <div className="w-full mt-[100px]">
               <div className="design flex items-center justify-center gap-5 absolute left-5 top-5 max-[600px]:static max-[600px]:flex-col max-[600px]:p-3">
-                <p className="rounded-tl-[100px] rounded-tr-[20px] rounded-bl-[100px] text-[22px] font-semibold text-black bg-white p-5">
+                <p className="rounded-tl-[50px] rounded-tr-[50px] rounded-bl-[50px] rounded-br-[50px] text-[22px] font-semibold text-black bg-white p-5">
                   AI-Powered Interior Designs
                 </p>
                 <img
@@ -179,12 +179,12 @@ export default function Home() {
                   src={sec3Design2}
                   alt=""
                 />
-                <p className="rounded-tl-[20px] rounded-tr-[100px] rounded-br-[100px] text-[22px] font-semibold text-black bg-white p-5">
+                <p className="rounded-tl-[50px] rounded-tr-[50px] rounded-bl-[50px] rounded-br-[50px] text-[22px] font-semibold text-black bg-white p-5">
                   Stunning Exterior Makeovers
                 </p>
               </div>
               <div className="design flex items-center justify-center gap-5 absolute left-5 top-[600px] max-[600px]:static max-[600px]:flex-col max-[600px]:p-3">
-                <p className="rounded-tl-[100px] rounded-tr-[50px] rounded-bl-[100px] text-[22px] font-semibold text-black bg-white p-5">
+                <p className="rounded-tl-[50px] rounded-tr-[50px] rounded-bl-[50px] rounded-br-[50px] text-[22px] font-semibold text-black bg-white p-5">
                   Outdoor Spaces Reimagined
                 </p>
                 <img
@@ -202,7 +202,7 @@ export default function Home() {
 
       <section className="max-[500px]:p-5 max-w-[100vw] w-full min-h-[983px] overflow-x-hidden flex justify-center items-center p-[50px]">
         <div className="max-w-[1279px] w-full min-h-[778px] bg-white shadow-[0px_0px_5px_2px_#00000040] flex flex-col justify-center items-center gap-10 px-5 py-10 rounded-[15px]">
-          <p className="max-w-[951px] w-full min-h-[29px] text-2xl font-semibold leading-[100%] text-center text-[#007B82]">
+          <p className="max-w-[951px] w-full min-h-[29px] text-[28px] font-semibold leading-[100%] text-center text-[#007B82]">
             First-of-Its-Kind Features
           </p>
           <h2 className="max-w-[820px] w-full min-h-[53px] text-[44px] font-bold leading-[100%] text-center text-black">
@@ -210,17 +210,17 @@ export default function Home() {
             Design Tool
           </h2>
 
-          <div className="max-w-[1219px] w-full min-h-[310px] flex justify-center items-center max-[900px]:flex-wrap">
+          <div className="max-w-[1219px] w-full min-h-[310px] flex justify-center items-center max-[900px]:flex-wrap gap-20">
             <div className="max-w-[250px] w-full min-h-[310px] flex flex-col justify-center items-center gap-5">
               <img
                 src={sec4Icon1}
                 alt="icon1"
                 className="max-w-[100px] w-full min-h-[100px]"
               />
-              <h3 className="max-w-[211px] w-full min-h-[48px] text-xl font-semibold leading-[100%] text-center text-[#2a2a2a]">
+              <h3 className="max-w-[211px] w-full min-h-[48px] text-[20px] font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 Interior & Exterior Image Generation
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px] text-[17px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
+              <p className="max-w-[250px] w-full min-h-[102px] text-[17px] leading-[34px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
                 Get design ideas for every part of your home—both indoors and
                 outdoors.
               </p>
@@ -232,10 +232,10 @@ export default function Home() {
                 alt="icon1"
                 className="max-w-[100px] w-full min-h-[100px]"
               />
-              <h3 className="max-w-[211px] w-full min-h-[48px] text-xl font-semibold leading-[100%] text-center text-[#2a2a2a]">
+              <h3 className="max-w-[211px] text-[20px] w-full min-h-[48px]  font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 Unlimited AI Ideas
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px] text-[17px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
+              <p className="max-w-[250px] w-full min-h-[102px] leading-[34px] text-[17px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
                 Generate endless creative ideas to transform any space with
                 ease.
               </p>
@@ -247,10 +247,10 @@ export default function Home() {
                 alt="icon1"
                 className="max-w-[100px] w-full min-h-[100px]"
               />
-              <h3 className="max-w-[211px] w-full min-h-[48px] text-xl font-semibold leading-[100%] text-center text-[#2a2a2a]">
+              <h3 className="max-w-[211px] w-full min-h-[48px] text-[20px] font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 High-Resolution Images
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px] text-[17px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
+              <p className="max-w-[250px] w-full min-h-[102px] leading-[34px] text-[17px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
                 Download crystal-clear, AI-generated images that capture every
                 detail.
               </p>
@@ -262,18 +262,24 @@ export default function Home() {
                 alt="icon1"
                 className="max-w-[100px] w-full min-h-[100px]"
               />
-              <h3 className="max-w-[211px] w-full min-h-[48px] text-xl font-semibold leading-[100%] text-center text-[#2a2a2a]">
+              <h3 className="max-w-[211px] w-full min-h-[48px] text-[20px] font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 Fast Image Generation
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px] text-[17px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
+              <p className="max-w-[250px] w-full min-h-[102px] leading-[34px] text-[17px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
                 Create stunning, AI-powered images in just seconds.
               </p>
             </div>
           </div>
-          <div className="max-w-[406px] w-full min-h-[60px] bg-[#007b82] flex justify-center items-center rounded-[5px] hover:bg-[#4bb0b5]">
+          <div className="max-w-[406px] w-full min-h-[60px] flex justify-center items-center rounded-[5px] hover:bg-[#4bb0b5]
+          "style={{
+                      background:
+                        "linear-gradient(to right, rgb(0, 176, 186) 0%, rgba(0, 0, 0) 50%, rgb(0, 176, 186) 100%)",
+                    }}
+          >
             <p
-              className="max-w-[137px] w-full min-h-[35px] text-xl font-bold leading-[100%] h-[35px] text-center text-white no-underline"
+              className="max-w-[137px] w-full min-h-[35px] text-xl font-bold leading-[100%] h-[35px] pt-[8px] text-center text-white no-underline"
               style={{ wordSpacing: "2px" }}
+              
             >
               Generate now
             </p>
@@ -293,7 +299,7 @@ export default function Home() {
               FUTURE HOME
             </span>
           </h1>
-          <p className="max-w-[941px] w-full min-h-[76px] text-xl font-medium leading-[100%] h-[38px] text-center text-white">
+          <p className="max-w-[941px] w-full min-h-[76px] text-xl font-medium leading-[38px] h-[38px] text-center text-white">
             Bring your dream home to life! Explore innovative designs, customize
             every detail, and create a space that reflects your style and vision
           </p>
@@ -348,7 +354,7 @@ export default function Home() {
                 </span>
               </div>
             </div>
-            <div className="w-[380px] min-h-[39px] flex justify-center items-center">
+            <div className="w-[380px] min-h-[39px] flex justify-center items-center mt-5">
               <span className="min-w-[185px] text-center text-[28px] font-medium leading-[100%] text-[#2A2A2A]">
                 Design Styles
               </span>
@@ -359,8 +365,8 @@ export default function Home() {
             <img src={sec6Logo} alt="logo" />
           </div>
 
-          <div className="max-w-[400px] min-h-[165px] text-center flex flex-col justify-center items-center">
-            <div className="flex justify-center items-center relative left-[60px]">
+          <div className="max-w-[400px] min-h-[165px] text-center flex flex-col justify-center items-center mb-10">
+            <div className="flex justify-center items-center relative left-[60px] top-[10px]">
               <div className="img1  lite">
                 <img src={sec6Img5} alt="" />
               </div>
@@ -380,7 +386,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-[380px] min-h-[39px] flex justify-center items-center">
-              <span className="min-w-[185px] text-center text-[28px] font-medium leading-[100%] h-[140%] text-[#2A2A2A] position-relative-[top:10px]">
+              <span className="min-w-[185px] text-center text-[28px] font-medium leading-[140%] h-[140%] text-[#2A2A2A] relative top-8">
                 Professionals Trust Us
               </span>
             </div>
