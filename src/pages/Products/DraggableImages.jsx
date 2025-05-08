@@ -39,9 +39,9 @@ export default function DraggableImages() {
     <div className=" min-h-[78px] text-[48px] font-bold leading-bold spacing-5% text-center text-[#2A2A2A]">COLLECTIONS</div>
 
          <div className="max-w-[100vw] flex justify-center items-center">
-  <div className="max-w-[1280px] min-h-[1833px] rounded-[20px] bg-white shadow-#00000040-lg  py-10">
+  <div className="max-w-[1280px] min-h-[1833px] rounded-[20px] flex bg-white shadow-sm drop-shadow-sm shadow-black  py-10">
 
-      <div className="flex justify-around flex-wrap gap-20">
+      <div className="flex justify-around items-center flex-wrap gap-20">
 
 
 
@@ -189,8 +189,10 @@ export default function DraggableImages() {
 
       </div>
 
-    </div>
+  </div>
+
          </div>
+      <div className="w-[100vw] text-[22px] relative top-[-70px] font-semibold text-[#009A98] underline leading-[140%] text-center"><a href="">view more</a></div>
          
 
 </div>
