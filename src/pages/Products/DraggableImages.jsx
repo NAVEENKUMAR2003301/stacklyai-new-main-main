@@ -1,9 +1,9 @@
 import React from 'react'
-import DragSize from '../../assets/product-pg/draggableImg/dragSize.png'
-import Img1 from '../../assets/product-pg/draggableImg/img1.png'
-import Search from '../../assets/product-pg/draggableImg/search.png'
-import Input from '../../assets/product-pg/draggableImg/input.png'
-import Download from '../../assets/product-pg/draggableImg/download.png'
+import DragSize from '/src/assets/product-pg/draggableImg/dragSize.png'
+import Img1 from '/src/assets/product-pg/draggableImg/img1.png'
+import Search from '/src/assets/product-pg/draggableImg/search.png'
+import Input from '/src/assets/product-pg/draggableImg/input.png'
+import Download from '/src/assets/product-pg/draggableImg/download.png'
 
 
 
