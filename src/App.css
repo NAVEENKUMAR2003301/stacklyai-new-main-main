@@ -12,6 +12,10 @@
   src: url("./assets/fonts/Inter_18pt-Light.ttf");
 }
 
+a.active{
+  color: #007b82;
+}
+
 /* Home */
 .marquee-container {
   width: 100%;

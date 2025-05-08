@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import logoImg from "../assets/Logo.png";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 
 export default function Header() {
@@ -26,44 +26,44 @@ export default function Header() {
             style={{ listStyle: "none" }}
           >
             <li>
-              <Link
-                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+              <NavLink
+                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] NavLink visited:font-bold"
                 to="/"
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+              <NavLink
+                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] NavLink visited:font-bold"
                 to="/products"
               >
                 Products
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
-                to=""
+              <NavLink
+                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] NavLink visited:font-bold"
+                to="/pricing"
               >
                 Pricing
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
-                to=""
+              <NavLink
+                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] NavLink visited:font-bold"
+                to="/api"
               >
                 API
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
-                to=""
+              <NavLink
+                className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] NavLink visited:font-bold"
+                to="/contact"
               >
                 Contact Us
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -140,33 +140,33 @@ export default function Header() {
                 className="profile-list min-w-[150px] p-4 z-10 hidden group-hover:flex flex-col gap-2 absolute bottom-0 right-0 bg-white rounded-md"
                 style={{ transform: "translateY(95%)" }}
               >
-                <Link>My Profile</Link>
-                <Link>My Creations</Link>
+                <NavLink>My Profile</NavLink>
+                <NavLink>My Creations</NavLink>
                 <p className="w-full h-[1px] bg-gray-600 my-1"></p>
-                <Link
+                <NavLink
                   onClick={() => {
                     setUserInfo({});
                     navigate("/sign-in");
                   }}
                 >
                   Logout
-                </Link>
+                </NavLink>
               </div>
             </div>
           ) : (
             <div className="min-[900px]:flex hidden  gap-[24px]">
-              <Link
+              <NavLink
                 to={"/sign-in"}
                 className="w-[107px] h-[39px] text-[20px] font-semibold leading-[100%] border bg-white text-[#007b82] cursor-pointer flex justify-center items-center no-underline rounded-[5px] border-solid border-[#007b82]  active:bg-[#007b82] active:text-white"
               >
                 Log In
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 to={"/sign-up"}
                 className="w-[107px] h-[39px] text-[20px] font-semibold leading-[100%] border bg-[#007b82] text-white cursor-pointer flex justify-center items-center no-underline rounded-[5px] border-solid border-white active:bg-white active:text-[#007b82]"
               >
                 Sign Up
-              </Link>
+              </NavLink>
             </div>
           )}
 
@@ -201,55 +201,55 @@ export default function Header() {
         >
           <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
         </svg>
-        <Link
-          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+        <NavLink
+          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] NavLink visited:font-bold"
           to="/"
           onClick={() => {
             setShowSideBar(false);
           }}
         >
           Home
-        </Link>
+        </NavLink>
 
-        <Link
-          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+        <NavLink
+          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] NavLink visited:font-bold"
           to="/products"
           onClick={() => {
             setShowSideBar(false);
           }}
         >
           Products
-        </Link>
+        </NavLink>
 
-        <Link
-          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+        <NavLink
+          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] NavLink visited:font-bold"
           to=""
           onClick={() => {
             setShowSideBar(false);
           }}
         >
           Pricing
-        </Link>
+        </NavLink>
 
-        <Link
-          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+        <NavLink
+          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] NavLink visited:font-bold"
           to=""
           onClick={() => {
             setShowSideBar(false);
           }}
         >
           API
-        </Link>
+        </NavLink>
 
-        <Link
-          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] visited:text-[#007b82] visited:font-bold"
+        <NavLink
+          className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] NavLink visited:font-bold"
           to=""
           onClick={() => {
             setShowSideBar(false);
           }}
         >
           Contact Us
-        </Link>
+        </NavLink>
 
         {!userInfo.userId && (
           <>
