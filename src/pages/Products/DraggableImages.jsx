@@ -1,9 +1,9 @@
 import React from 'react'
-// import DragSize from '/src/assets/product-pg/draggableImg/dragSize.png'
-// import Img1 from '/src/assets/product-pg/draggableImg/img1.png'
-// import Search from '/src/assets/product-pg/draggableImg/search.png'
-// import Input from '/src/assets/product-pg/draggableImg/input.png'
-// import Download from '/src/assets/product-pg/draggableImg/download.png'
+import DragSize from '../../assets/product-pg/draggableImg/dragSize.png'
+import Img1 from '../../assets/product-pg/draggableImg/img1.png'
+import Search from '../../assets/product-pg/draggableImg/search.png'
+import Input from '../../assets/product-pg/draggableImg/input.png'
+import Download from '../../assets/product-pg/draggableImg/download.png'
 
 
 
@@ -50,20 +50,20 @@ export default function DraggableImages() {
       <div className="max-w-[522px] min-h-[434px] flex flex-col gap-">
         <div className="max-w-[520px] min-h-[35px] flex justify-between">
           <div className="text-[24px] font-semibold leading-[35px] spacing-[8px] text-center text-[#2A2A2A]">Living Room</div>
-          <div className="w-[28px] h-[28px]"><img src="/src/assets/product-pg/draggableImg/dragSize.png" alt="size" /></div>
+          <div className="w-[28px] h-[28px]"><img src={DragSize} alt="size" /></div>
         </div>
-        <div className="max-w-[522px] min-h-[313px] rounded-[4px]"><img src="/src/assets/product-pg/draggableImg/img1.png" alt="img1" /></div>
+        <div className="max-w-[522px] min-h-[313px] rounded-[4px]"><img src={Img1} alt="img1" /></div>
         <div className="max-w-[520px] min-h-[57px] flex justify-between items-center">
           <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/search.png" alt="search" />
+            <img src={Search} alt="search" />
             <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">show</div>
           </div>
           <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/input.png" alt="input" />
+            <img src={Input} alt="input" />
             <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Input</div>
           </div>
           <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/download.png" alt="download" />
+            <img src={Download} alt="download" />
             <div className="max-w-[57px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Download</div>
           </div>
         </div>
@@ -71,66 +71,20 @@ export default function DraggableImages() {
       <div className="max-w-[522px] min-h-[434px] flex flex-col gap-">
         <div className="max-w-[520px] min-h-[35px] flex justify-between">
           <div className="text-[24px] font-semibold leading-[35px] spacing-[8px] text-center text-[#2A2A2A]">Living Room</div>
-          <div className="w-[28px] h-[28px]"><img src="/src/assets/product-pg/draggableImg/dragSize.png" alt="size" /></div>
+          <div className="w-[28px] h-[28px]"><img src={DragSize} alt="size" /></div>
         </div>
-        <div className="max-w-[522px] min-h-[313px] rounded-[4px]"><img src="/src/assets/product-pg/draggableImg/img1.png" alt="img1" /></div>
+        <div className="max-w-[522px] min-h-[313px] rounded-[4px]"><img src={Img1} alt="img1" /></div>
         <div className="max-w-[520px] min-h-[57px] flex justify-between items-center">
           <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/search.png" alt="search" />
+            <img src={Search} alt="search" />
             <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">show</div>
           </div>
           <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/input.png" alt="input" />
+            <img src={Input} alt="input" />
             <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Input</div>
           </div>
           <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/download.png" alt="download" />
-            <div className="max-w-[57px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Download</div>
-          </div>
-        </div>
-      </div>
-      
-          </div>
-          <div className="max-w-[1280px] flex justify-around items-center flex-wrap gap-20">
-  {/* left */}
-      <div className="max-w-[522px] min-h-[434px] flex flex-col gap-">
-        <div className="max-w-[520px] min-h-[35px] flex justify-between">
-          <div className="text-[24px] font-semibold leading-[35px] spacing-[8px] text-center text-[#2A2A2A]">Living Room</div>
-          <div className="w-[28px] h-[28px]"><img src="/src/assets/product-pg/draggableImg/dragSize.png" alt="size" /></div>
-        </div>
-        <div className="max-w-[522px] min-h-[313px] rounded-[4px]"><img src="/src/assets/product-pg/draggableImg/img1.png" alt="img1" /></div>
-        <div className="max-w-[520px] min-h-[57px] flex justify-between items-center">
-          <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/search.png" alt="search" />
-            <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">show</div>
-          </div>
-          <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/input.png" alt="input" />
-            <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Input</div>
-          </div>
-          <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/download.png" alt="download" />
-            <div className="max-w-[57px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Download</div>
-          </div>
-        </div>
-      </div>
-      <div className="max-w-[522px] min-h-[434px] flex flex-col gap-">
-        <div className="max-w-[520px] min-h-[35px] flex justify-between">
-          <div className="text-[24px] font-semibold leading-[35px] spacing-[8px] text-center text-[#2A2A2A]">Living Room</div>
-          <div className="w-[28px] h-[28px]"><img src="/src/assets/product-pg/draggableImg/dragSize.png" alt="size" /></div>
-        </div>
-        <div className="max-w-[522px] min-h-[313px] rounded-[4px]"><img src="/src/assets/product-pg/draggableImg/img1.png" alt="img1" /></div>
-        <div className="max-w-[520px] min-h-[57px] flex justify-between items-center">
-          <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/search.png" alt="search" />
-            <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">show</div>
-          </div>
-          <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/input.png" alt="input" />
-            <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Input</div>
-          </div>
-          <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/download.png" alt="download" />
+            <img src={Download} alt="download" />
             <div className="max-w-[57px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Download</div>
           </div>
         </div>
@@ -142,20 +96,20 @@ export default function DraggableImages() {
       <div className="max-w-[522px] min-h-[434px] flex flex-col gap-">
         <div className="max-w-[520px] min-h-[35px] flex justify-between">
           <div className="text-[24px] font-semibold leading-[35px] spacing-[8px] text-center text-[#2A2A2A]">Living Room</div>
-          <div className="w-[28px] h-[28px]"><img src="/src/assets/product-pg/draggableImg/dragSize.png" alt="size" /></div>
+          <div className="w-[28px] h-[28px]"><img src={DragSize} alt="size" /></div>
         </div>
-        <div className="max-w-[522px] min-h-[313px] rounded-[4px]"><img src="/src/assets/product-pg/draggableImg/img1.png" alt="img1" /></div>
+        <div className="max-w-[522px] min-h-[313px] rounded-[4px]"><img src={Img1} alt="img1" /></div>
         <div className="max-w-[520px] min-h-[57px] flex justify-between items-center">
           <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/search.png" alt="search" />
+            <img src={Search} alt="search" />
             <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">show</div>
           </div>
           <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/input.png" alt="input" />
+            <img src={Input} alt="input" />
             <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Input</div>
           </div>
           <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/download.png" alt="download" />
+            <img src={Download} alt="download" />
             <div className="max-w-[57px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Download</div>
           </div>
         </div>
@@ -163,20 +117,66 @@ export default function DraggableImages() {
       <div className="max-w-[522px] min-h-[434px] flex flex-col gap-">
         <div className="max-w-[520px] min-h-[35px] flex justify-between">
           <div className="text-[24px] font-semibold leading-[35px] spacing-[8px] text-center text-[#2A2A2A]">Living Room</div>
-          <div className="w-[28px] h-[28px]"><img src="/src/assets/product-pg/draggableImg/dragSize.png" alt="size" /></div>
+          <div className="w-[28px] h-[28px]"><img src={DragSize} alt="size" /></div>
         </div>
-        <div className="max-w-[522px] min-h-[313px] rounded-[4px]"><img src="/src/assets/product-pg/draggableImg/img1.png" alt="img1" /></div>
+        <div className="max-w-[522px] min-h-[313px] rounded-[4px]"><img src={Img1} alt="img1" /></div>
         <div className="max-w-[520px] min-h-[57px] flex justify-between items-center">
           <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/search.png" alt="search" />
+            <img src={Search} alt="search" />
             <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">show</div>
           </div>
           <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/input.png" alt="input" />
+            <img src={Input} alt="input" />
             <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Input</div>
           </div>
           <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
-            <img src="/src/assets/product-pg/draggableImg/download.png" alt="download" />
+            <img src={Download} alt="download" />
+            <div className="max-w-[57px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Download</div>
+          </div>
+        </div>
+      </div>
+      
+          </div>
+          <div className="max-w-[1280px] flex justify-around items-center flex-wrap gap-20">
+  {/* left */}
+      <div className="max-w-[522px] min-h-[434px] flex flex-col gap-">
+        <div className="max-w-[520px] min-h-[35px] flex justify-between">
+          <div className="text-[24px] font-semibold leading-[35px] spacing-[8px] text-center text-[#2A2A2A]">Living Room</div>
+          <div className="w-[28px] h-[28px]"><img src={DragSize} alt="size" /></div>
+        </div>
+        <div className="max-w-[522px] min-h-[313px] rounded-[4px]"><img src={Img1} alt="img1" /></div>
+        <div className="max-w-[520px] min-h-[57px] flex justify-between items-center">
+          <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
+            <img src={Search} alt="search" />
+            <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">show</div>
+          </div>
+          <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
+            <img src={Input} alt="input" />
+            <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Input</div>
+          </div>
+          <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
+            <img src={Download} alt="download" />
+            <div className="max-w-[57px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Download</div>
+          </div>
+        </div>
+      </div>
+      <div className="max-w-[522px] min-h-[434px] flex flex-col gap-">
+        <div className="max-w-[520px] min-h-[35px] flex justify-between">
+          <div className="text-[24px] font-semibold leading-[35px] spacing-[8px] text-center text-[#2A2A2A]">Living Room</div>
+          <div className="w-[28px] h-[28px]"><img src={DragSize} alt="size" /></div>
+        </div>
+        <div className="max-w-[522px] min-h-[313px] rounded-[4px]"><img src={Img1} alt="img1" /></div>
+        <div className="max-w-[520px] min-h-[57px] flex justify-between items-center">
+          <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
+            <img src={Search} alt="search" />
+            <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">show</div>
+          </div>
+          <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
+            <img src={Input} alt="input" />
+            <div className="max-w-[40px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Input</div>
+          </div>
+          <div className="max-w-[40px] min-h-[57px] flex flex-col justify-center items-center">
+            <img src={Download} alt="download" />
             <div className="max-w-[57px] min-h-[17px] text-[12px] leading-[140%] text-center font-[400] text-[#2A2A2A]">Download</div>
           </div>
         </div>
