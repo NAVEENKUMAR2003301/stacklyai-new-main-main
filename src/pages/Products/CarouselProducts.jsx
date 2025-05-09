@@ -23,7 +23,7 @@ export default function CarouselProducts() {
         Latest <span className="text-[#00b0ba]">Design Trends</span>
       </h3>
 
-      <div className="overflow-x-hidden flex gap-2 sm:gap-5 w-full mt-10 px-2 items-center justify-center">
+      <div className="overflow-x-hidden flex gap-1 sm:gap-5 w-full mt-10  sm:px-2 items-center justify-center">
         <span className="p-2 sm:p-4 text-md sm:text-xl bg-[#19383b] cursor-pointer rounded-full" onClick={showPrev}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
