@@ -12,43 +12,138 @@ export default function SignUp() {
         className="bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: "url('/signUp/bg-img.jpeg')" }}
       >
-        <div className="max-[1000px]:p-5 max-[1000px]:flex-col max-[1000px]:gap-[40px] min-h-screen bg-[#000000b2] flex items-center justify-center gap-5 px-[5%] py-[25px]">
+        <div className="max-[1440px]:p-5 max-[1000px]:flex-col max-[1000px]:gap-[40px] min-h-screen bg-[#000000b2] flex items-center justify-center gap-5 px-[5%] py-[25px]">
           <div className="flex-1 flex flex-col items-center justify-center gap-3">
-            <h3 className="max-[500px]:mb-[10px] max-[1000px]:mb-0 font-semibold text-2xl text-white mb-1">
+            <h3 className="max-[596px]:mb-[10px] min-h-[29px] max-[1000px]:mb-0 font-semibold text-[24px] leading-[100%] text-center text-white mb-1">
               Get Your Personal AI
             </h3>
-            <h1 className="max-[500px]:text-[60px] max-[500px]:mb-0 font-medium text-[100px] text-[#ffd56b]">
+            <h1 className="max-[596px]:text-[60px] min-h-[87px] max-[500px]:mb-0 font-bold text-[72px] leading-[100%] text-center text-[#009A98]">
               Interiors
             </h1>
-            <p className="text-center max-[500px]:mb-0 max-[1000px]:mb-[20px] font-medium text-xl text-white max-w-[522px] mx-auto">
+            <p className="text-center max-[522px]:mb-0 max-[1000px]:mb-[20px] min-h-[48px] font-medium text-xl text-white max-w-[522px] mx-auto leading-[140%]">
               you'll unlock endless possibilities to remaining & Transform Any
               home using AI.
             </p>
             <button
-              onClick={() => {
-                couponRef.current.value = "STACKLYAI";
-              }}
-              className="border cursor-pointer font-medium text-base text-white bg-[#0000004d] mt-[50px] px-5 py-2.5 rounded-[5px] border-solid border-[white]"
+              // onClick={() => {
+              //   couponRef.current.value = "";
+              // }}
+              className=" w-full max-w-[435px] min-h-[55px] rounded-[12px] border cursor-pointer font-medium text-base text-white bg-[#0000004d] mt-[50px] pt-[10px] pr-[20px] pb-[10px] pl-[20px]  border-solid border-[white] flex justify-center items-center gap-[10px]"
             >
-              APPLY COUPON : <span className="font-bold">STACKLYAI</span>
+             <span className="font-bold max-w-[150px] min-h-[35px] text-[18px] leading-[35px] spacing-[8px] tracking-[1px]">Start Free Trial</span>
             </button>
 
-            <button className="w-full min-[500px]:w-[436px] h-[50px] rounded-full border border-white/30 text-white text-[16px] font-semibold bg-black/50 hover:bg-black transition duration-300 mx-auto">
-              Start Free Trial
-            </button>
+           
 
-            <p className="font-medium text-sm min-[500px]:text-base pt-5 text-[#b0b0b0]">
+            <p className="font-medium text-[16px] w-full max-w-[596px] min-h-[19px] leading-[100%] min-[500px]:text-base pt-5 text-[#ffffff] text-center">
               Get started with 10 free outputs – No credit card needed!
             </p>
           </div>
-          <div className="max-[1000px]:w-full flex-1 max-w-[522px] border flex flex-col gap-5 items-center justify-center bg-[#0000004d] p-5 rounded-[10px] border-solid border-[white]">
-            <h3 className="font-semibold text-[26px] text-white">
+          <div className="max-[1000px]:w-full flex-1 max-w-[522px] min-h-[618px] border flex flex-col items-center justify-center bg-[#00000033] pt-[28px] pr-[32px] pb-[28px] pl-[32px]  rounded-[10px] border-solid border-[white] gap-[40px] shadow:0 1px 3px 0">
+            <h3 className="font-semibold text-[24px] text-[#009A98] leading-[100%] text-center">
               Create an Account
             </h3>
-            <p className="font-medium text-base text-[#b0b0b0]">sign up with</p>
-            <div className="flex items-center justify-around gap-2.5 w-full">
+            <form className=" w-full max-w-[558px] min-h-[44px] flex flex-col gap-5 items-center justify-center">
+              <input
+                className="placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a] max-w-[458px] w-full bg-[white] p-[15px] rounded-[5px]"
+                type="email"
+                placeholder="Email"
+                required
+              />
+
+              <div class="max-w-[458px] w-full bg-[white] flex items-center justify-center p-[15px] rounded-[5px]">
+                <input
+                  className="bg-white flex-1 placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a]"
+                  type={showPassword ? "text" : "password"}
+                  id="password"
+                  placeholder="Password"
+                  required
+                />
+                <span
+                  className="cursor-pointer"
+                  onClick={() => {
+                    setShowPassword((prev) => !prev);
+                  }}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="15"
+                    viewBox="0 0 25 15"
+                    fill="none"
+                  >
+                    <path
+                      d="M24.0705 7.51211C21.3277 4.35156 17.5375 0.71875 12.5 0.71875C10.4656 0.71875 8.60078 1.29395 6.63301 2.52305C4.97402 3.56445 3.27266 5.02969 0.935547 7.43945L0.875 7.5L1.28066 7.91777C4.6168 11.3326 7.49883 14.2812 12.5 14.2812C14.71 14.2812 16.8533 13.5607 19.0512 12.0773C20.9221 10.8119 22.5145 9.20742 23.792 7.91172L24.125 7.57871L24.0705 7.51211ZM12.5 12.3438C9.82988 12.3438 7.65625 10.1701 7.65625 7.5C7.65625 4.82988 9.82988 2.65625 12.5 2.65625C15.1701 2.65625 17.3438 4.82988 17.3438 7.5C17.3438 10.1701 15.1701 12.3438 12.5 12.3438Z"
+                      fill="#BEBCBC"
+                    />
+                    <path
+                      d="M12.1609 5.73203C12.1609 5.31426 12.282 4.9207 12.4939 4.59375C10.8895 4.59375 9.59375 5.90156 9.59375 7.51211C9.59375 9.12266 10.8955 10.4244 12.4939 10.4244C14.0924 10.4244 15.4002 9.12266 15.4002 7.51211C15.0732 7.72402 14.6797 7.84512 14.2619 7.84512C13.1055 7.83906 12.1609 6.89453 12.1609 5.73203Z"
+                      fill="#BEBCBC"
+                    />
+                  </svg>
+                </span>
+              </div>
+
+              <div className="max-w-[458px] min-h-[44px] w-full bg-[white] flex items-center justify-center p-[15px] rounded-[5px]">
+                <input
+                  className="placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a] flex-1 bg-white"
+                  type="text"
+                  placeholder="Confirm Password"
+                  id="coupon"
+                  ref={couponRef}
+                />
+                {/* <span
+                  id="apply_btn"
+                  onclick="applyCoupon()"
+                  className="cursor-pointer font-medium text-base text-[#007b82]"
+                >
+                  Apply
+                </span> */}
+                <span
+                  className="cursor-pointer"
+                  onClick={() => {
+                    setShowPassword((prev) => !prev);
+                  }}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="15"
+                    viewBox="0 0 25 15"
+                    fill="none"
+                  >
+                    <path
+                      d="M24.0705 7.51211C21.3277 4.35156 17.5375 0.71875 12.5 0.71875C10.4656 0.71875 8.60078 1.29395 6.63301 2.52305C4.97402 3.56445 3.27266 5.02969 0.935547 7.43945L0.875 7.5L1.28066 7.91777C4.6168 11.3326 7.49883 14.2812 12.5 14.2812C14.71 14.2812 16.8533 13.5607 19.0512 12.0773C20.9221 10.8119 22.5145 9.20742 23.792 7.91172L24.125 7.57871L24.0705 7.51211ZM12.5 12.3438C9.82988 12.3438 7.65625 10.1701 7.65625 7.5C7.65625 4.82988 9.82988 2.65625 12.5 2.65625C15.1701 2.65625 17.3438 4.82988 17.3438 7.5C17.3438 10.1701 15.1701 12.3438 12.5 12.3438Z"
+                      fill="#BEBCBC"
+                    />
+                    <path
+                      d="M12.1609 5.73203C12.1609 5.31426 12.282 4.9207 12.4939 4.59375C10.8895 4.59375 9.59375 5.90156 9.59375 7.51211C9.59375 9.12266 10.8955 10.4244 12.4939 10.4244C14.0924 10.4244 15.4002 9.12266 15.4002 7.51211C15.0732 7.72402 14.6797 7.84512 14.2619 7.84512C13.1055 7.83906 12.1609 6.89453 12.1609 5.73203Z"
+                      fill="#BEBCBC"
+                    />
+                  </svg>
+                </span>
+              </div>
+
+              <button
+                type="submit"
+                className="bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-base text-[white] cursor-pointer font-bold max-w-[458px] w-full p-[15px] rounded-[5px]"
+              >
+                Sign Up
+              </button>
+            </form>
+
+           
+            <div className=" w-full max-w-[458px] min-h-[19px] flex justify-between items-center p-[15px]">
+                <div className="w-[202px] border-[1px] border-solid border-[#B0B0B0]"></div>
+                <p className="font-medium text-base text-[#b0b0b0] text-[16px] leading-[100%] px-3">or</p>
+                <div className="w-[202px] border-[1px] border-solid border-[#B0B0B0]"></div>
+            </div>
+           
+ 
+            <p className="font-semibold max-w-[458px] text-[16px] leading-[100%] text-center text-base text-[#b0b0b0]">sign up with</p>
+            <div className="max-w-[458px] flex items-center justify-between gap-2.5 w-full">
               <a href="#">
-                <button className="w-20 h-11 bg-white rounded cursor-pointer shadow-[2px_2px_5px_#00000014] p-2.5 flex items-center justify-center">
+                <button className="w-[136px] h-[44px] bg-white rounded cursor-pointer shadow-[2px_2px_5px_#00000014] p-2.5 flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -87,7 +182,7 @@ export default function SignUp() {
                 </button>
               </a>
               <a href="#">
-                <button className="w-20 h-11 bg-white rounded cursor-pointer shadow-[2px_2px_5px_#00000014] p-2.5 flex items-center justify-center">
+                <button className="w-[136px] h-[44px] bg-white rounded cursor-pointer shadow-[2px_2px_5px_#00000014] p-2.5 flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -103,7 +198,7 @@ export default function SignUp() {
                 </button>
               </a>
               <a href="#">
-                <button className="w-20 h-11 bg-white rounded cursor-pointer shadow-[2px_2px_5px_#00000014] p-2.5 flex items-center justify-center">
+                <button className="w-[136px] h-[44px] bg-white rounded cursor-pointer shadow-[2px_2px_5px_#00000014] p-2.5 flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -140,81 +235,15 @@ export default function SignUp() {
                 </button>
               </a>
             </div>
-            <p className="font-medium text-base text-[#b0b0b0]">or</p>
-            <form className="flex flex-col gap-5 items-center justify-center w-full">
-              <input
-                className="placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a] max-w-[406px] w-full bg-[white] p-[15px] rounded-[5px]"
-                type="email"
-                placeholder="Email"
-                required
-              />
-
-              <div class="max-w-[406px] w-full bg-[white] flex items-center justify-center p-[15px] rounded-[5px]">
-                <input
-                  className="bg-white flex-1 placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a]"
-                  type={showPassword ? "text" : "password"}
-                  id="password"
-                  placeholder="Password"
-                  required
-                />
-                <span
-                  className="cursor-pointer"
-                  onClick={() => {
-                    setShowPassword((prev) => !prev);
-                  }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25"
-                    height="15"
-                    viewBox="0 0 25 15"
-                    fill="none"
-                  >
-                    <path
-                      d="M24.0705 7.51211C21.3277 4.35156 17.5375 0.71875 12.5 0.71875C10.4656 0.71875 8.60078 1.29395 6.63301 2.52305C4.97402 3.56445 3.27266 5.02969 0.935547 7.43945L0.875 7.5L1.28066 7.91777C4.6168 11.3326 7.49883 14.2812 12.5 14.2812C14.71 14.2812 16.8533 13.5607 19.0512 12.0773C20.9221 10.8119 22.5145 9.20742 23.792 7.91172L24.125 7.57871L24.0705 7.51211ZM12.5 12.3438C9.82988 12.3438 7.65625 10.1701 7.65625 7.5C7.65625 4.82988 9.82988 2.65625 12.5 2.65625C15.1701 2.65625 17.3438 4.82988 17.3438 7.5C17.3438 10.1701 15.1701 12.3438 12.5 12.3438Z"
-                      fill="#BEBCBC"
-                    />
-                    <path
-                      d="M12.1609 5.73203C12.1609 5.31426 12.282 4.9207 12.4939 4.59375C10.8895 4.59375 9.59375 5.90156 9.59375 7.51211C9.59375 9.12266 10.8955 10.4244 12.4939 10.4244C14.0924 10.4244 15.4002 9.12266 15.4002 7.51211C15.0732 7.72402 14.6797 7.84512 14.2619 7.84512C13.1055 7.83906 12.1609 6.89453 12.1609 5.73203Z"
-                      fill="#BEBCBC"
-                    />
-                  </svg>
-                </span>
-              </div>
-
-              <div className="max-w-[406px] w-full bg-[white] flex items-center justify-center p-[15px] rounded-[5px]">
-                <input
-                  className="placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a] flex-1 bg-white"
-                  type="text"
-                  placeholder="Coupon Code "
-                  id="coupon"
-                  ref={couponRef}
-                />
-                <span
-                  id="apply_btn"
-                  onclick="applyCoupon()"
-                  className="cursor-pointer font-medium text-base text-[#007b82]"
-                >
-                  Apply
-                </span>
-              </div>
-
-              <button
-                type="submit"
-                className="bg-[rgb(0,123,130)] text-base text-[white] cursor-pointer font-bold max-w-[406px] w-full p-[15px] rounded-[5px]"
-              >
-                Sign Up
-              </button>
-              <p className="text-base text-[#b0b0b0] font-normal">
+              <p className="max-w-[246px] min-h-[19px] flex justify-center items-center gap-[4px] text-[16] leading-[100%] text-base text-[#b0b0b0] font-normal">
                 Already have an account?{" "}
                 <Link
                   to={"sign-in"}
-                  className="no-underline font-medium text-white"
+                  className="nounderline font-[900] text-[16px]  text-[#00B0BA]"
                 >
                   Log In
                 </Link>
               </p>
-            </form>
           </div>
         </div>
       </div>
