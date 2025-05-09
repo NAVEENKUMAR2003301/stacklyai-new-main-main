@@ -138,7 +138,7 @@ export default function SignIn() {
                 </div>
   
                 <p className="max-w-[465px] w-full text-base text-[#b0b0b0] font-normal text-end">
-                  <Link className="no-underline font-medium text-[#009A98]" to="">
+                  <Link className="no-underline font-medium text-[#009A98]" to="/ForgetPg">
                     Forget Password?
                   </Link>
                 </p>
