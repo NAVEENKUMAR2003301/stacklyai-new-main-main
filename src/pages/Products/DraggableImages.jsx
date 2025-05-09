@@ -2,8 +2,8 @@ import React from 'react'
 import DragSize from './../../assets/product-pg/dragSize.png'
 import Img1 from './../../assets/product-pg/img1.png'
 import Search from './../../assets/product-pg/search.png'
-import Input from './../../assets/product-pg/input.Png'
-import Download from './../../assets/product-pg/download.Png'
+import Input from './../../assets/product-pg/input.png'
+import Download from './../../assets/product-pg/download.png'
 
 
 
