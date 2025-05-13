@@ -4,7 +4,6 @@ import sec7Model2 from "../../assets/home/sec7/healthicons_home.png";
 import sec7Model3 from "../../assets/home/sec7/mdi_plant.png";
 import sec7Icon1 from "../../assets/home/sec7/solar_upload-outline.png";
 import sec7Icon2 from "../../assets/home/sec7/basil_image-solid (1).png";
-import sec7Icon3 from "../../assets/home/sec7/Vector.png";
 import { UserContext } from "../../context/UserContext";
 import { useNavigate } from "react-router-dom";
 import Interior from "../../assets/product-pg/Vector.png"
