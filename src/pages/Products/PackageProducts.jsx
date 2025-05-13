@@ -12,13 +12,13 @@ export default function PackageProducts() {
             <div className="w-[406px] min-h-[60px] rounded-[5px] bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-[20px] font-bold leading-[35px] spacing-[8px] text-center text-white flex justify-center items-center">GET STARTED!</div>
           </div>
 
-          <div className="w-[57.1px] h-[37.47px] rotate-[30deg] relative top-[-400px] right-[-20px]">
+          <div className="w-[57.1px] h-[37.47px] rotate-[30deg] relative top-[-100px] right-[-280px]">
             <img src={Coin} alt="" />
           </div>
-          <div className="w-[25.22px] h-[16.55px] rotate-[-30deg] relative top-[-400px] right-[10px]">
+          <div className="w-[25.22px] h-[16.55px] rotate-[-30deg] relative top-[-100px] right-[-300px]">
             <img src={Coin} alt="" />
           </div>
-          <div className="w-[25.22px] h-[16.55px] rotate-[-30deg] relative top-[-450px] right-[20px]">
+          <div className="w-[25.22px] h-[16.55px] rotate-[-30deg] relative top-[-150px] right-[-320px]">
             <img src={Coin} alt="" />
           </div>
           

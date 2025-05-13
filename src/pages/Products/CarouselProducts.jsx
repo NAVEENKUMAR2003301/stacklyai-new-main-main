@@ -22,6 +22,14 @@ export default function CarouselProducts() {
       <h3 className="text-2xl sm:text-[40px] text-white font-bold text-center">
         Latest <span className="text-[#00b0ba]">Design Trends</span>
       </h3>
+      <div className="w-full text-center font-[400] text-[24px] leading-[28px] text-white my-[22px]">
+        <p>Curated ideas for modern living</p>
+      </div>
+     <div className="w-full flex justify-center items-center">
+     <div className="w-full max-w-[850px] min-h-[48px] rounded-[10px] border-[1px] border-solid border-white px-[20px] py-[10px] text-white font-[500] text-[16px] text-center leading-[28px] my-[20px]">
+      Soft Neutrals Tone
+      </div>
+     </div>
 
       <div className="overflow-x-hidden flex gap-2 sm:gap-5 w-full mt-10 px-2 items-center justify-center">
         <span className="p-2 sm:p-4 text-md sm:text-xl bg-[#19383b] cursor-pointer rounded-full" onClick={showPrev}>
