@@ -105,7 +105,7 @@ export default function Footer() {
 
       <div className="w-[1300px] h-[2px] flex justify-center items-center bg-[#007B8233] sm:m-5 m-10"></div>
 
-      <div className="text-center text-[#B0B0B0] text-[12px] leading-[16px] text-xs mt-4 mb-10">
+      <div className="text-center text-[#007B82] text-[16px] leading-[16px] tracking-[0.26px] text-xs mt-4 mb-10">
         &copy; 2023 Stackly AI | All Rights Reserved
       </div>
     </footer>

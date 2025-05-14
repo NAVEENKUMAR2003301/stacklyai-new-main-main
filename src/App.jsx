@@ -10,6 +10,7 @@ import Products from "./pages/Products/Products";
 import Footer from "./components/Footer";
 import Header1 from "./components/Header1";
 import ForgetPg from "./pages/forgetPage/ForgetPg";
+import forgotYourPwd from "./pages/forgetPage/forgotYourPwd";
 
 
 
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/ForgetPg" element={<ForgetPg/>}/>
+        <Route path="/forgotYourPwd" element={<forgotYourPwd/>}/>
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
       </Routes>
