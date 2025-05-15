@@ -1,6 +1,6 @@
 import React from 'react'
 import apiBackground from '../../assets/api/back.png';
-import Keys from './keys';
+import Keys from './Keys';
 import ApiIntegrate from './ApiIntegrate';
 import Plan from './Plan';
 import ApiAccess from './ApiAccess';
