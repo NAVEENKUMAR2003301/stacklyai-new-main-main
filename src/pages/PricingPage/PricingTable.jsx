@@ -74,11 +74,11 @@ const plans = [
 
 export default function PricingTable() {
   return (
-    <div className="min-h-screen bg-white py-16 px-4 md:px-12 lg:px-32 text-gray-800">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">
+    <div className="min-h-[1806px] bg-white flex justify-center items-center flex-col">
+      <h2 className="w-[922px] min-h-[64px] font-bold text-[48px] leading-[64px] text-center text-[black]">
         Find the Perfect Plan for You
       </h2>
-      <p className="text-center text-gray-500 mb-8">
+      <p className="text-center w-[759px] min-h-[28px] font-[400] text-[18px] leading-[28px] text-[#B0B0B0]">
         Start free or unlock premium features—choose what fits your journey best.
       </p>
 

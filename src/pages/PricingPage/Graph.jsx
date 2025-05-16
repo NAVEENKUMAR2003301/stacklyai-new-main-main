@@ -1,5 +1,5 @@
 import React from "react";
-import GraphImage from "../../assets/pricing-pg/graph.png";
+import GraphImage from "../../assets/pricing-pg/Graph.png";
 
 export default function Graph() {
   return (
