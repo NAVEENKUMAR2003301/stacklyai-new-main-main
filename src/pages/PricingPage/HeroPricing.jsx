@@ -5,6 +5,7 @@ import Banner2 from "../../assets/pricing-pg/banner2.png";
 import CreditStats from "./CreditStats";
 import Graph from "./Graph";
 import PricingTable from "./PricingTable";
+import PricingFaq from "./PricingFaq";
 
 export default function HeroPricing() {
   
@@ -17,10 +18,11 @@ export default function HeroPricing() {
         "24/7 Support Assistance",
         "Cancel Anytime",
       ];
+
   return (
 
 
-         <div>
+ <div>
 
     {/* section-1  */}  
 
@@ -104,11 +106,16 @@ export default function HeroPricing() {
       </div>
     </div>
 
-   
+    
+
+   {/* section-8  */}
+
+
+   <PricingFaq/>
 
 
    
-    </div>
+</div>
 
   );
 }
