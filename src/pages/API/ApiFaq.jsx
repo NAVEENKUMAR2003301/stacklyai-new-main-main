@@ -23,7 +23,7 @@ export default function ApiFaq({ faqs }) {
         </p>
       </div>
 
-      <div className="w-full max-w-[846px] h-auto md:h-[488px] bg-[#007B820F] rounded-[16px] shadow-md p-4 sm:p-6 md:p-12 space-y-4 flex flex-col justify-center">
+      <div className="w-full max-w-[846px] h-auto md:h-[788px] bg-[#007B820F] rounded-[16px] shadow-md p-4 sm:p-6 md:p-12 space-y-4 flex flex-col justify-center">
         {faqs.map((faq, index) => (
           <div
             key={index}
@@ -53,7 +53,7 @@ export default function ApiFaq({ faqs }) {
               </svg>
             </button>
             {activeIndex === index && (
-              <div className="px-3 pt-3 sm:px-4 pb-4 sm:pb-6 md:pb-20 text-[#2a2a2a] bg-[white] text-sm sm:text-base md:text-[18px]">
+              <div className="px-20 pt-2 pb-10 text-[#2a2a2a] bg-[white] text-sm sm:text-base md:text-[18px]">
                 {faq.answer}
               </div>
             )}

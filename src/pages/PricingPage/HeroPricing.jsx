@@ -3,6 +3,7 @@ import Banner1 from "../../assets/pricing-pg/banner1.png";
 import Banner2 from "../../assets/pricing-pg/banner2.png";
 import CreditStats from "./CreditStats";
 import Graph from "./Graph";
+import PricingTable from "./PricingTable";
 
 export default function HeroPricing() {
     const features = [
@@ -75,7 +76,7 @@ export default function HeroPricing() {
     </section>
 
     {/* section-5  */}
-
+     <PricingTable/>
 
     {/* section-6  */}
 
