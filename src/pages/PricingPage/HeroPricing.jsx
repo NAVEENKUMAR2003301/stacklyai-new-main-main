@@ -1,4 +1,5 @@
 import React from "react";
+import { CheckCircle2 } from "lucide-react";
 import Banner1 from "../../assets/pricing-pg/banner1.png";
 import Banner2 from "../../assets/pricing-pg/banner2.png";
 import CreditStats from "./CreditStats";
@@ -6,7 +7,9 @@ import Graph from "./Graph";
 import PricingTable from "./PricingTable";
 
 export default function HeroPricing() {
-    const features = [
+  
+
+      const features = [
         "Unlimited Designs",
         "High-Resolution 4K Images",
         "Watermark-Free Downloads",
@@ -76,9 +79,30 @@ export default function HeroPricing() {
     </section>
 
     {/* section-5  */}
-     <PricingTable/>
+     {/* <PricingTable/> */}
 
     {/* section-6  */}
+
+    <div className="bg-[#001E20] text-white py-12 px-4 md:px-16 text-center">
+      <h2 className="text-[48px] font-bold leading-[64px] text-center text-[white]">Why Upgrade to Premium?</h2>
+
+      <div className="inline-block mb-8">
+        <span className="bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-[22px] leading-[44px] text-center text-white text-sm font-semibold px-[30px] py-[10px] rounded-[50px] relative top-[55px]">
+          Features of Paid Plans
+        </span>
+      </div>
+
+      <div className="border-[1px] border-solid border-teal-700 rounded-[30px] px-[60px] py-[80px] max-w-[1200px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+          {features.map((feature, idx) => (
+            <div key={idx} className="flex items-start gap-2">
+              <CheckCircle2 className="text-teal-400 w-5 h-5 mt-1" />
+              <span className="text-[20px] leading-[44px] text-center font-medium">{feature}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
 
    
 

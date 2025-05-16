@@ -74,7 +74,7 @@ const plans = [
 
 export default function PricingTable() {
   return (
-    <div className="min-h-[1806px] bg-white flex justify-center items-center flex-col">
+    <div className="min-h-screen bg-white flex justify-center items-center flex-col">
       <h2 className="w-[922px] min-h-[64px] font-bold text-[48px] leading-[64px] text-center text-[black]">
         Find the Perfect Plan for You
       </h2>
