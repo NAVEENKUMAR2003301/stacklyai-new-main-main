@@ -11,10 +11,47 @@ import sec14Img2 from "../../assets/home/sec14/Vector.png";
 import sec14Img3 from "../../assets/home/sec14/m1.jpg";
 import sec14Img4 from "../../assets/home/sec14/m2.jpg";
 import sec14Img5 from "../../assets/home/sec14/m3.jpg";
+import ApiFaq from './ApiFaq';
+
 
 
 
 export default function HeroApi() {
+
+  const faqs = [
+    {
+      question: "What is Stackly AI?",
+      answer:
+        "Stackly AI is an intelligent platform designed to streamline your tasks using automation and smart tools. It helps enhance productivity by offering tailored solutions based on your needs.",
+    },
+    {
+      question: "How does Stackly AI work?",
+      answer:
+        "Stackly AI works by analyzing your input and tasks, then offering automated suggestions, integrations, and tools to make your workflow more efficient and seamless.",
+    },
+    {
+      question: "Is Stackly AI free to use?",
+      answer:
+        "Stackly AI offers both free and premium plans. The free plan includes essential features, while premium plans unlock advanced capabilities and integrations.",
+    },
+    {
+      question: " What image formats do StacklyAI APIs support?",
+      answer:
+        "You can reach out to Stackly AI through our support page, via email at support@stackly.ai, or use the chat feature on our website for instant assistance.",
+    },
+    {
+      question: "How to handle other image formats e.g. HEIC, HEIF etc?",
+      answer:
+        "You can reach out to Stackly AI through our support page, via email at support@stackly.ai, or use the chat feature on our website for instant assistance.",
+    },
+    {
+      question: " What is the expiration period for my credit pack?",
+      answer:
+        "You can reach out to Stackly AI through our support page, via email at support@stackly.ai, or use the chat feature on our website for instant assistance.",
+    },
+  ];
+
+
   return (
     <div>
       {/* section1 */}
@@ -251,6 +288,7 @@ export default function HeroApi() {
 
        {/* section-14  */}
        
+       <ApiFaq faqs={faqs} />
 
 
 
