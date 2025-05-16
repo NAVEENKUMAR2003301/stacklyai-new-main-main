@@ -81,7 +81,7 @@ export default function HeroPricing() {
     </section>
 
     {/* section-5  */}
-     {/* <PricingTable/> */}
+    <PricingTable />
 
     {/* section-6  */}
 
@@ -106,9 +106,7 @@ export default function HeroPricing() {
       </div>
     </div>
 
-    
-
-   {/* section-8  */}
+    {/* section-7  */}
 
 
    <PricingFaq/>
