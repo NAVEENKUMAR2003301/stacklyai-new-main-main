@@ -223,7 +223,7 @@ export default function Header() {
 
         <NavLink
           className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] NavLink visited:font-bold"
-          to=""
+          to="/pricing"
           onClick={() => {
             setShowSideBar(false);
           }}

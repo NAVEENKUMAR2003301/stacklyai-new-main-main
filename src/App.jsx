@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Header1 from "./components/Header1";
 import ForgetPg from "./pages/forgetPage/ForgetPg";
 import Api from "./pages/API/Api";
+import Pricing from "./pages/PricingPage/Pricing";
 
 
 
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/Api" element={<Api/>}/>
+        <Route path="/Pricing" element={<Pricing/>}/>
         <Route path="/ForgetPg" element={<ForgetPg/>}/>
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
