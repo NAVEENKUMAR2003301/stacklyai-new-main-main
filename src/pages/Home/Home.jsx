@@ -124,10 +124,10 @@ export default function Home() {
       <div className='absolute'>
         <img src={Star} alt="" className='relative top-[-120px] left-[60px]'/>
         <img src={Star} alt="" className='relative top-[-130px] left-[100px] w-[30px]'/>
-        <img src={Star} alt="" className='relative top-[-570px] left-[1400px]' />
-        <img src={Star} alt="" className='relative top-[-580px] left-[1440px] w-[30px]' />
-        <img src={Reacts} alt="" className='relative top-[-670px] left-[20px]' />
-        <img src={Reacts} alt="" className='relative top-[-370px] left-[1400px]' />
+        {/* <img src={Star} alt="" className='relative top-[-570px] left-[1000px]' /> */}
+        {/* <img src={Star} alt="" className='relative top-[-580px] left-[1040px] w-[30px]' /> */}
+        <img src={Reacts} alt="" className='relative top-[-570px] left-[50px]' />
+        {/* <img src={Reacts} alt="" className='relative top-[-370px] left-[1100px]' /> */}
       </div>
 
       {/* section 3 */}
@@ -227,9 +227,9 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-      <section className="w-full min-h-[1394px]" ref={sectionRef}>
-  <div className="w-full min-h-[1394px] bg-[#002628]">
-    <div className="home-bg-img relative w-full min-h-[1371px] overflow-hidden px-[5%] py-[100px]">
+<section className="w-full  min-h-[1094px]" ref={sectionRef}>
+  <div className="w-full min-h-[1094px] bg-[#002628]">
+    <div className="home-bg-img relative w-full min-h-[1071px] overflow-hidden ">
       {/* Background images */}
       <img
         src={sec3Pattern1}
@@ -252,12 +252,12 @@ export default function Home() {
         className="absolute w-[44px] h-[44px] top-[932px] left-[70%]"
       />
 
-      <h1 className="text-[40px] font-bold text-white text-center mb-5">
+      <h1 className="text-[40px] font-bold text-white text-center mb-5 relative top-[-150px]">
         Ultimate{" "}
         <span className="text-[#00D1DD] opacity-100">AI Design Tool</span>{" "}
         for Interiors & Exteriors
       </h1>
-      <p className="text-[22px] font-medium text-white text-center">
+      <p className="text-[22px] font-medium text-white text-center relative top-[-120px]">
         Transform Any Space Effortlessly
       </p>
 
@@ -343,7 +343,7 @@ export default function Home() {
               <h3 className="max-w-[211px] w-full min-h-[48px] text-[24px] font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 Interior & Exterior Image Generation
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px] text-[16px] leading-[24px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
+              <p className="max-w-[250px] w-full min-h-[102px] text-[16px]  font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
                 Get design ideas for every part of your home—both indoors and
                 outdoors.
               </p>
@@ -358,7 +358,7 @@ export default function Home() {
               <h3 className="max-w-[211px] text-[24px] w-full min-h-[48px]  font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 Unlimited AI Ideas
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px] leading-[24px] text-[16px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
+              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
                 Generate endless creative ideas to transform any space with
                 ease.
               </p>
@@ -373,7 +373,7 @@ export default function Home() {
               <h3 className="max-w-[211px] w-full min-h-[48px] text-[24px] font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 High-Resolution Images
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px] leading-[24px] text-[16px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
+              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
                 Download crystal-clear, AI-generated images that capture every
                 detail.
               </p>
@@ -388,7 +388,7 @@ export default function Home() {
               <h3 className="max-w-[211px] w-full min-h-[48px] text-[24px] font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 Fast Image Generation
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px] leading-[24px] text-[16px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
+              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
                 Create stunning, AI-powered images in just seconds.
               </p>
             </div>
@@ -412,8 +412,8 @@ export default function Home() {
       </section>
 
       <div className='absolute'>
-        <img src={Star} alt="" className='relative top-[-120px] left-[1410px]'/>
-        <img src={Star} alt="" className='relative top-[-190px] left-[1390px] w-[30px]'/>
+        {/* <img src={Star} alt="" className='relative top-[-120px] left-[1010px]'/> */}
+        {/* <img src={Star} alt="" className='relative top-[-190px] left-[1090px] w-[30px]'/> */}
         <img src={Star} alt="" className='relative top-[-1000px] left-[50px]' />
         <img src={Star} alt="" className='relative top-[-1000px] left-[90px] w-[30px]' />
         {/* <img src={Reacts} alt="" className='relative top-[-670px] left-[20px]' />
