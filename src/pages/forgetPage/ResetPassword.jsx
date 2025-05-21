@@ -62,7 +62,7 @@ export default function ResetPassword() {
                   {" "}
                   <img src={Arrow} alt="" />
                   <div className="font-semibold text-[15px] leading-[100%] text-[#009A98] ">
-                    <a href="/Sign-in">Back to Login</a>
+                    <Link to="/Sign-in">Back to Login</Link>
                   </div>
                 </Link>
               </div>
