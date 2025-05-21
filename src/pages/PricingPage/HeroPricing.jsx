@@ -6,6 +6,10 @@ import CreditStats from "./CreditStats";
 import Graph from "./Graph";
 import PricingTable from "./PricingTable";
 import PricingFaq from "./PricingFaq";
+import Billing from "./Billing";
+import Payment from "./Payment";
+
+
 
 export default function HeroPricing() {
   
@@ -110,6 +114,16 @@ export default function HeroPricing() {
 
 
    <PricingFaq/>
+
+   {/* section 8  */}
+
+   <Billing />
+
+   <Payment />
+
+
+
+   
 
 
    

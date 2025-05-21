@@ -73,8 +73,10 @@ export default function FAQ({ faqs }) {
       <div className="text-center mb-6 md:mb-10 w-full">
         <h2 className="text-3xl md:text-[48px] font-black text-gray-800 leading-[100%]">
           <span className="inline-flex items-center text-md:text-[30px] gap-2">
-            <span className="text-[white] w-8 h-8 md:w-[50px] md:h-[50px] bg-[#007B82] rounded-full flex justify-center items-center text-xl md:text-4xl">?</span> Frequently Asked
-            Questions
+            <span className="text-[white] w-8 h-8 md:w-[50px] md:h-[50px] bg-[#007B82] rounded-full flex justify-center items-center text-xl md:text-4xl">
+              ?
+            </span>{" "}
+            Frequently Asked Questions
           </span>
         </h2>
         <p className="mt-4 md:mt-10 text-[#B0B0B0] max-w-[941px] min-h-[48px] mx-auto text-md text-base md:text-[20px] font-[400] leading-[120%] md:leading-[100%]">
@@ -94,14 +96,18 @@ export default function FAQ({ faqs }) {
           >
             <button
               className={`w-full flex justify-between items-center p-3 sm:p-4 md:p-5 text-base sm:text-lg md:text-[22px] font-medium text-left focus:outline-none ${
-                activeIndex === index ? "bg-[#007B82] text-white" : "text-[#2A2A2A]"
+                activeIndex === index
+                  ? "bg-[#007B82] text-white"
+                  : "text-[#2A2A2A]"
               }`}
               onClick={() => toggleFAQ(index)}
             >
               <span className="text-left">{faq.question}</span>
               <svg
                 className={`w-4 h-4 sm:w-5 sm:h-5 transform transition-transform duration-200 ${
-                  activeIndex === index ? "rotate-180 text-white" : "text-current"
+                  activeIndex === index
+                    ? "rotate-180 text-white"
+                    : "text-current"
                 }`}
                 viewBox="0 0 20 20"
                 fill="currentColor"

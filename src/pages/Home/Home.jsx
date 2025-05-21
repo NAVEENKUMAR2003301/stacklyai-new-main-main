@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import Form from "./Form";
 import GalleryHover from "../../components/GalleryHover";
 import { useAnimation } from "../../components/AnimatedDesignSection";
@@ -40,7 +40,6 @@ import sec9Frame from "../../assets/home/sec9/Frame 168.png";
 import sec10Img1 from "../../assets/home/sec10/3d-interior-design-free-png 1.png";
 import sec10Img2 from "../../assets/home/sec10/3d-interior-design-png 1.png";
 
-
 import sec13Img1 from "../../assets/home/sec13/img1.jpg";
 import sec13Img2 from "../../assets/home/sec13/img2.jpg";
 
@@ -52,28 +51,24 @@ import FAQ from "./FAQ";
 import HeroBanner from "./HeroBanner";
 import DraggableImageSection from "./DraggableImageSection";
 import ImageSlider from "./ImageSlider";
-import StepsHome from './StepsHome';
-import Star from "../../assets/home/star.png"
-import Reacts from "../../assets/home/react.png"
-import Stars from "../../assets/home/stars.png"
-import Magic from "../../assets/product-pg/magic.png"
-
-
-
-
+import StepsHome from "./StepsHome";
+import Star from "../../assets/home/star.png";
+import Reacts from "../../assets/home/react.png";
+import Stars from "../../assets/home/stars.png";
+import Magic from "../../assets/product-pg/magic.png";
 
 //export default function Home() {
 export default function Home() {
   const frameImages = [
-  "/home/sec5/frame1.png",
-  "/home/sec5/frame2.png",
-  "/home/sec5/frame3.png",
-  "/home/sec5/frame4.png",
-  "/home/sec5/frame5.png",
-  "/home/sec5/frame6.png",
-  "/home/sec5/frame7.png",
-  "/home/sec5/frame8.png",
-]; 
+    "/home/sec5/frame1.png",
+    "/home/sec5/frame2.png",
+    "/home/sec5/frame3.png",
+    "/home/sec5/frame4.png",
+    "/home/sec5/frame5.png",
+    "/home/sec5/frame6.png",
+    "/home/sec5/frame7.png",
+    "/home/sec5/frame8.png",
+  ];
   const { sectionRef, animations } = useAnimation();
   const faqs = [
     {
@@ -100,7 +95,6 @@ export default function Home() {
 
   return (
     <div>
-
       {/* banner  */}
 
       <HeroBanner />
@@ -112,21 +106,28 @@ export default function Home() {
           STACKLY AI
         </h1>
         <h2 className="max-w-[979px] w-full min-h-[63px] text-[52px] font-bold leading-[100%] text-center text-[#007B82] flex gap-[10px] ">
-          <img src={Stars} alt="stars" className='w-[50px] h-[50px]' />
-          Smart, fast, and built for excellence.
+          <img src={Stars} alt="stars" className="w-[50px] h-[50px]" />
+          Smarter. Faster. Built for Excellence
         </h2>
-        <p className="max-w-[839px] w-full min-h-[76px] text-[20px] font-normal leading-[38px]  h-[38px] text-center text-[#B0B0B0]">
-          Delivering rapid, photo-realistic designs with advanced AI
-          technology—trusted by professionals and homeowners alike.
+        <p className="max-w-[839px] w-full min-h-[76px] text-[20px] font-normal leading-[38px]  h-[38px] text-center ">
+          Experience rapid, photo-realistic designs powered by advanced
+          AI—trusted by professionals and homeowners alike.
         </p>
-       
       </section>
-      <div className='absolute'>
-        <img src={Star} alt="" className='relative top-[-120px] left-[60px]'/>
-        <img src={Star} alt="" className='relative top-[-130px] left-[100px] w-[30px]'/>
+      <div className="absolute">
+        <img src={Star} alt="" className="relative top-[-120px] left-[60px]" />
+        <img
+          src={Star}
+          alt=""
+          className="relative top-[-130px] left-[100px] w-[30px]"
+        />
         {/* <img src={Star} alt="" className='relative top-[-570px] left-[1000px]' /> */}
         {/* <img src={Star} alt="" className='relative top-[-580px] left-[1040px] w-[30px]' /> */}
-        <img src={Reacts} alt="" className='relative top-[-570px] left-[50px]' />
+        <img
+          src={Reacts}
+          alt=""
+          className="relative top-[-570px] left-[50px]"
+        />
         {/* <img src={Reacts} alt="" className='relative top-[-370px] left-[1100px]' /> */}
       </div>
 
@@ -227,99 +228,96 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-<section className="w-full  min-h-[1094px]" ref={sectionRef}>
-  <div className="w-full min-h-[1094px] bg-[#002628]">
-    <div className="home-bg-img relative w-full min-h-[1071px] overflow-hidden ">
-      {/* Background images */}
-      <img
-        src={sec3Pattern1}
-        alt=""
-        className="absolute w-[240px] h-[240px] top-0 left-0 mix-blend-overlay"
-      />
-      <img
-        src={sec3Pattern2}
-        alt=""
-        className="absolute w-[60px] h-[60px] top-[554px] left-[1080px] mix-blend-overlay"
-      />
-      <img
-        src={sec3Pattern3}
-        alt=""
-        className="absolute w-[44px] h-[44px] top-[747px] left-[260px]"
-      />
-      <img
-        src={sec3Pattern4}
-        alt=""
-        className="absolute w-[44px] h-[44px] top-[932px] left-[70%]"
-      />
+      <section className="w-full  min-h-[900px]" ref={sectionRef}>
+        <div className="w-full min-h-[900px] bg-[#002628] pb-0">
+          <div className="home-bg-img relative w-full min-h-[900px] overflow-hidden ">
+            {/* Background images */}
+            <img
+              src={sec3Pattern1}
+              alt=""
+              className="absolute w-[240px] h-[240px] top-0 left-0 mix-blend-overlay"
+            />
+            <img
+              src={sec3Pattern2}
+              alt=""
+              className="absolute w-[60px] h-[60px] top-[554px] left-[1080px] mix-blend-overlay"
+            />
+            <img
+              src={sec3Pattern3}
+              alt=""
+              className="absolute w-[44px] h-[44px] top-[747px] left-[260px]"
+            />
+            <img
+              src={sec3Pattern4}
+              alt=""
+              className="absolute w-[44px] h-[44px] top-[932px] left-[70%]"
+            />
+            <h1 className="text-[40px] font-bold text-white text-center mb-2 relative top-[-300px]">
+              Ultimate{" "}
+              <span className="text-[#00D1DD] opacity-100">AI Design Tool</span>{" "}
+              for Interiors & Exteriors{" "}
+            </h1>
+            <p className="text-[22px] font-medium text-white text-center top-[-290px]">
+              Transform Any Space Effortlessly
+            </p>
+            <div className="w-full relative min-h-[1050px]">
+              {/* Left design - comes from left */}
+              <div
+                className={`flex items-center justify-center gap-5 absolute left-5 mt-[-200px] max-[600px]:static max-[600px]:flex-col max-[600px]:p-3 transition-all duration-1000 ease-out ${
+                  animations?.leftVisible
+                    ? "translate-x-0 opacity-100"
+                    : "-translate-x-[100%] opacity-0"
+                }`}
+              >
+                <p className="rounded-full text-[22px] font-semibold text-black bg-white p-5 whitespace-nowrap">
+                  AI-Powered Interior Designs
+                </p>
+                <img
+                  className="w-full max-w-[400px] max-h-[400px] rounded-[50%] border-8 border-solid border-white"
+                  src={sec3Design1}
+                  alt="Interior design"
+                />
+              </div>
 
-      <h1 className="text-[40px] font-bold text-white text-center mb-5 relative top-[-150px]">
-        Ultimate{" "}
-        <span className="text-[#00D1DD] opacity-100">AI Design Tool</span>{" "}
-        for Interiors & Exteriors
-      </h1>
-      <p className="text-[22px] font-medium text-white text-center relative top-[-120px]">
-        Transform Any Space Effortlessly
-      </p>
+              {/* Center design - comes from right */}
+              <div
+                className={`flex items-center justify-center gap-5 absolute right-5 top-[80px] max-[600px]:static max-[600px]:flex-col max-[600px]:p-3 transition-all duration-1000 ease-out ${
+                  animations?.centerVisible
+                    ? "translate-x-0 opacity-100"
+                    : "translate-x-[100%] opacity-0"
+                }`}
+              >
+                <img
+                  className="w-full max-w-[400px] max-h-[400px] rounded-[50%] border-8 border-solid border-white"
+                  src={sec3Design2}
+                  alt="Exterior design"
+                />
+                <p className="rounded-full text-[22px] font-semibold text-black bg-white p-5 whitespace-nowrap">
+                  Stunning Exterior Makeovers
+                </p>
+              </div>
 
-      <div className="w-full mt-[100px] relative min-h-[1050px]">
-        {/* Left design - comes from left */}
-        <div
-          className={`flex items-center justify-center gap-5 absolute left-5 top-5 max-[600px]:static max-[600px]:flex-col max-[600px]:p-3 transition-all duration-1000 ease-out ${
-            animations?.leftVisible
-              ? "translate-x-0 opacity-100"
-              : "-translate-x-[100%] opacity-0"
-          }`}
-        >
-          <p className="rounded-full text-[22px] font-semibold text-black bg-white p-5 whitespace-nowrap">
-            AI-Powered Interior Designs
-          </p>
-          <img
-            className="w-full max-w-[400px] max-h-[400px] rounded-[50%] border-8 border-solid border-white"
-            src={sec3Design1}
-            alt="Interior design"
-          />
+              {/* Right design - comes from left */}
+              <div
+                className={`flex items-center justify-center gap-5 absolute left-5 top-[370px] max-[600px]:static max-[600px]:flex-col max-[600px]:p-3 transition-all duration-1000 ease-out ${
+                  animations?.rightVisible
+                    ? "translate-x-0 opacity-100"
+                    : "-translate-x-[100%] opacity-0"
+                }`}
+              >
+                <p className="rounded-full text-[22px] font-semibold text-black bg-white p-5 whitespace-nowrap">
+                  Outdoor Spaces Reimagined
+                </p>
+                <img
+                  className="w-full max-w-[400px] max-h-[400px] rounded-[50%] border-8 border-solid border-white"
+                  src={sec3Design3}
+                  alt="Outdoor design"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-
-        {/* Center design - comes from right */}
-        <div
-          className={`flex items-center justify-center gap-5 absolute right-5 top-[300px] max-[600px]:static max-[600px]:flex-col max-[600px]:p-3 transition-all duration-1000 ease-out ${
-            animations?.centerVisible
-              ? "translate-x-0 opacity-100"
-              : "translate-x-[100%] opacity-0"
-          }`}
-        >
-          <img
-            className="w-full max-w-[400px] max-h-[400px] rounded-[50%] border-8 border-solid border-white"
-            src={sec3Design2}
-            alt="Exterior design"
-          />
-          <p className="rounded-full text-[22px] font-semibold text-black bg-white p-5 whitespace-nowrap">
-            Stunning Exterior Makeovers
-          </p>
-        </div>
-
-        {/* Right design - comes from left */}
-        <div
-          className={`flex items-center justify-center gap-5 absolute left-5 top-[600px] max-[600px]:static max-[600px]:flex-col max-[600px]:p-3 transition-all duration-1000 ease-out ${
-            animations?.rightVisible
-              ? "translate-x-0 opacity-100"
-              : "-translate-x-[100%] opacity-0"
-          }`}
-        >
-          <p className="rounded-full text-[22px] font-semibold text-black bg-white p-5 whitespace-nowrap">
-            Outdoor Spaces Reimagined
-          </p>
-          <img
-            className="w-full max-w-[400px] max-h-[400px] rounded-[50%] border-8 border-solid border-white"
-            src={sec3Design3}
-            alt="Outdoor design"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* Section 4 */}
 
@@ -329,8 +327,8 @@ export default function Home() {
             First-of-Its-Kind Features
           </p>
           <h2 className="max-w-[951px] w-full min-h-[48px] text-[40px] font-bold leading-[100%] text-center text-black">
-            The <span className="text-[#009A98]">All You Need</span> AI Home
-            Design Tool
+            The <span className="text-[#009A98]">All You Need</span> AI Home
+            Design Tool
           </h2>
 
           <div className="max-w-[1219px] w-full min-h-[310px] flex justify-center items-center max-[900px]:flex-wrap gap-20">
@@ -343,7 +341,7 @@ export default function Home() {
               <h3 className="max-w-[211px] w-full min-h-[48px] text-[24px] font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 Interior & Exterior Image Generation
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px] text-[16px]  font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
+              <p className="max-w-[250px] w-full min-h-[102px] text-[16px]  font-medium leading-[100%] h-[34px] text-center">
                 Get design ideas for every part of your home—both indoors and
                 outdoors.
               </p>
@@ -358,7 +356,7 @@ export default function Home() {
               <h3 className="max-w-[211px] text-[24px] w-full min-h-[48px]  font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 Unlimited AI Ideas
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
+              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[100%] h-[34px] text-center">
                 Generate endless creative ideas to transform any space with
                 ease.
               </p>
@@ -373,7 +371,7 @@ export default function Home() {
               <h3 className="max-w-[211px] w-full min-h-[48px] text-[24px] font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 High-Resolution Images
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
+              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[100%] h-[34px] text-center">
                 Download crystal-clear, AI-generated images that capture every
                 detail.
               </p>
@@ -388,34 +386,39 @@ export default function Home() {
               <h3 className="max-w-[211px] w-full min-h-[48px] text-[24px] font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 Fast Image Generation
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[100%] h-[34px] text-center text-[#b0b0b0]">
+              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[100%] h-[34px] text-center ">
                 Create stunning, AI-powered images in just seconds.
               </p>
             </div>
           </div>
-          <div className="max-w-[846px] w-full min-h-[65px] flex justify-center items-center rounded-[5px] hover:bg-[#4bb0b5]
-          "style={{
-                      background:
-                        "linear-gradient(to right, rgb(0, 176, 186) 0%, rgba(0, 0, 0) 50%, rgb(0, 176, 186) 100%)",
-                    }}
+          <div
+            className="max-w-[846px] w-full min-h-[65px] flex justify-center items-center rounded-[5px] hover:bg-[#4bb0b5]
+          "
+            style={{
+              background:
+                "linear-gradient(to right, rgb(0, 176, 186) 0%, rgba(0, 0, 0) 50%, rgb(0, 176, 186) 100%)",
+            }}
           >
             <p
               className="max-w-[464px] w-full min-h-[65px] text-xl font-bold leading-[100%]  text-center text-white no-underline flex justify-center items-center gap-[10px] cursor-pointer"
               style={{ wordSpacing: "2px" }}
-              
             >
-              <img src={Magic} alt="" className='w-30px h-[30px]' />
+              <img src={Magic} alt="" className="w-30px h-[30px]" />
               Generate Design
             </p>
           </div>
         </div>
       </section>
 
-      <div className='absolute'>
+      <div className="absolute">
         {/* <img src={Star} alt="" className='relative top-[-120px] left-[1010px]'/> */}
         {/* <img src={Star} alt="" className='relative top-[-190px] left-[1090px] w-[30px]'/> */}
-        <img src={Star} alt="" className='relative top-[-1000px] left-[50px]' />
-        <img src={Star} alt="" className='relative top-[-1000px] left-[90px] w-[30px]' />
+        <img src={Star} alt="" className="relative top-[-1000px] left-[50px]" />
+        <img
+          src={Star}
+          alt=""
+          className="relative top-[-1000px] left-[90px] w-[30px]"
+        />
         {/* <img src={Reacts} alt="" className='relative top-[-670px] left-[20px]' />
         <img src={Reacts} alt="" className='relative top-[-370px] left-[1400px]' /> */}
       </div>
@@ -463,17 +466,17 @@ export default function Home() {
         </div>
       </section> */}
 
-       <GalleryHover
-      sec5BlockImg={sec5BlockImg}
-      sec5Frame1={sec5Frame1}
-      sec5Frame2={sec5Frame2}
-      sec5Frame3={sec5Frame3}
-      sec5Frame4={sec5Frame4}
-      sec5Frame5={sec5Frame5}
-      sec5Frame6={sec5Frame6}
-      sec5Frame7={sec5Frame7}
-      sec5Frame8={sec5Frame8}
-    />
+      <GalleryHover
+        sec5BlockImg={sec5BlockImg}
+        sec5Frame1={sec5Frame1}
+        sec5Frame2={sec5Frame2}
+        sec5Frame3={sec5Frame3}
+        sec5Frame4={sec5Frame4}
+        sec5Frame5={sec5Frame5}
+        sec5Frame6={sec5Frame6}
+        sec5Frame7={sec5Frame7}
+        sec5Frame8={sec5Frame8}
+      />
 
       {/* Section 6 */}
 
@@ -541,72 +544,80 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-<section className="w-full min-h-[925px] bg-white py-16 px-4 flex flex-col justify-center items-center gap-[100px]">
-      <div className="max-w-6xl mx-auto ">
-        {/* Title */}
-        <h2 className="text-center text-[#007B82] text-2xl md:text-3xl text-[40px] leading-[140%] font-semibold mb-16">
-          Our Design Range, Trusted Worldwide
-        </h2>
+      <section className="w-full min-h-[925px] bg-white py-16 px-4 flex flex-col justify-center items-center gap-[100px]">
+        <div className="max-w-6xl mx-auto ">
+          {/* Title */}
+          <h2 className="text-center text-[#007B82] text-2xl md:text-3xl text-[40px] leading-[140%] font-semibold mb-16">
+            Our Design Range, Trusted Worldwide
+          </h2>
 
-        {/* First Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6 mb-16">
-          {/* Images */}
-          <div className="flex justify-center md:justify-start -space-x-4">
-            {[img1, img2, img3, img4].map((src, idx) => (
-              <img
-                key={idx}
-                src={src}
-                alt={`Design ${idx + 1}`}
-                className="w-[88px] h-[88px] rounded-full border-2 border-white object-cover"
-              />
-            ))}
+          {/* First Row */}
+          <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6 mb-16">
+            {/* Images */}
+            <div className="flex justify-center md:justify-start -space-x-4">
+              {[img1, img2, img3, img4].map((src, idx) => (
+                <img
+                  key={idx}
+                  src={src}
+                  alt={`Design ${idx + 1}`}
+                  className="w-[88px] h-[88px] rounded-full border-2 border-white object-cover"
+                />
+              ))}
+            </div>
+
+            {/* Middle - Stat */}
+            <div className="text-center">
+              <p className="text-3xl font-bold text-teal-700 text-[82px] mb-[30px]">
+                45+
+              </p>
+              <p className="text-gray-800 font-medium text-[32px]">
+                Design Styles
+              </p>
+            </div>
+
+            {/* Right - Text */}
+            <div className="text-center text-[black] text-[28px] leading-[140%]">
+              <p>
+                We blend AI intelligence with diverse design trends to deliver
+                spaces you'll love
+              </p>
+            </div>
           </div>
 
-          {/* Middle - Stat */}
-          <div className="text-center">
-            <p className="text-3xl font-bold text-teal-700 text-[82px] mb-[30px]">45+</p>
-            <p className="text-gray-800 font-medium text-[32px]">Design Styles</p>
-          </div>
+          {/* Second Row */}
+          <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6">
+            {/* Left - Text */}
+            <div className=" text-[black] text-[28px] leading-[140%] text-center">
+              <p>
+                Join a growing community of users transforming their spaces with
+                AI-powered design
+              </p>
+            </div>
 
-          {/* Right - Text */}
-          <div className="text-center text-[black] text-[28px] leading-[140%]">
-            <p>We blend AI intelligence with diverse design trends to deliver spaces you'll love</p>
+            {/* Middle - User Images */}
+            <div className="flex justify-center -space-x-4">
+              {[img5, user6, user7, user8].map((src, idx) => (
+                <img
+                  key={idx}
+                  src={src}
+                  alt={`User ${idx + 1}`}
+                  className="w-[88px] h-[88px] rounded-full border-2 border-white object-cover"
+                />
+              ))}
+            </div>
+
+            {/* Right - Stat */}
+            <div className="text-center">
+              <p className="text-[82px] font-bold text-teal-700">100+</p>
+              <p className="text-gray-800 font-medium text-center text-[32px]">
+                Happy Users
+              </p>
+            </div>
           </div>
         </div>
-
-        {/* Second Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6">
-          {/* Left - Text */}
-          <div className=" text-[black] text-[28px] leading-[140%] text-center">
-            <p>Join a growing community of users transforming their spaces with AI-powered design</p>
-          </div>
-
-          {/* Middle - User Images */}
-          <div className="flex justify-center -space-x-4">
-            {[img5, user6, user7, user8].map((src, idx) => (
-              <img
-                key={idx}
-                src={src}
-                alt={`User ${idx + 1}`}
-                className="w-[88px] h-[88px] rounded-full border-2 border-white object-cover"
-              />
-            ))}
-          </div>
-
-          {/* Right - Stat */}
-          <div className="text-center">
-            <p className="text-[82px] font-bold text-teal-700">100+</p>
-            <p className="text-gray-800 font-medium text-center text-[32px]">Happy Users</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-      <section>
-         
       </section>
+
+      <section></section>
 
       {/* Section 7 */}
 
@@ -614,12 +625,8 @@ export default function Home() {
 
       {/* Section 7.5 */}
 
-      <StepsHome/>
+      <StepsHome />
 
-      
-
-      
-      
       {/* Section 8 */}
 
       <section
@@ -628,7 +635,8 @@ export default function Home() {
       >
         <div className="max-w-[727px] w-full min-h-[274px] bg-[#00000099] backdrop-blur-[2] flex flex-col justify-center items-center gap-6 px-[30px] py-10 rounded-xl">
           <h1 className="max-w-[667px] w-full min-h-[62px] text-[44px] font-bold leading-[140%] text-center text-[white]">
-            Sign Up Quickly! Get <span className="text-[#00d1dd]">25%</span>Offer
+            Sign Up Quickly! Get <span className="text-[#00d1dd]">25%</span>
+            Offer
           </h1>
           <div className="ul-list">
             <ul className="max-w-[405px] w-full min-h-[24px] flex justify-between items-center">
@@ -662,7 +670,7 @@ export default function Home() {
       {/* Section 9 */}
 
       <section className="max-w-[100vw]  flex flex-col justify-center items-center gap-[50px] p-5 py-32">
-        <h1 className="max-w-[1320px] w-full min-w-[134px] md:text-5xl text-3xl font-semibold leading-[140%] text-center text-black">
+        <h1 className="max-w-[1320px] w-full min-w-[134px] md:text-5xl text-3xl font-semibold leading-[140%] mb-[80px] text-center text-black">
           Plan Your Future{" "}
           <span className="text-[#007B82]">Interiors, Exteriors, </span> and{" "}
           <span>Outdoor Spaces </span>with{" "}
@@ -724,7 +732,7 @@ export default function Home() {
           Compare Design, Find Your{" "}
           <span className="text-[#007B82]">Perfect style</span>
         </h1>
-        <p className="max-w-[736px] w-full min-h-[72px] text-lg font-semibold leading-[200%] text-center text-[#B0B0B0]">
+        <p className="max-w-[736px] w-full min-h-[72px] text-lg font-semibold leading-[200%] text-center ">
           Explore and compare multiple interior, exterior, and outdoor designs
           to discover the one that matches your unique taste.
         </p>
@@ -760,48 +768,47 @@ export default function Home() {
             </p>
           </div>
         </div> */}
-           <div className="flex justify-center items-center max-[1000px]:flex-wrap gap-5 p-5">
-  {[{
-    img: sec10Img1,
-    text: `"Your style is sleek and sophisticated. This brown-themed office design blends modern functionality with warm, earthy tones—perfect for a productive and stylish workspace."`
-  },
-  {
-    img: sec10Img2,
-    text: `"Embrace comfort with a touch of elegance. This brown-themed lounge offers a cozy yet professional atmosphere, balancing work and relaxation effortlessly."`
-  }].map((item, index) => (
-    <div
-      key={index}
-      className="group max-w-[577px] w-full bg-white shadow-[0_0_4px_0_#00000040] rounded-[10px] overflow-hidden transition-all duration-500"
-    >
-      <div className="overflow-hidden">
-        <img
-          src={item.img}
-          alt={`image${index}`}
-          className="w-full max-w-[541px] transition-transform duration-500 group-hover:scale-105"
-        />
-      </div>
+        <div className="flex justify-center items-center max-[1000px]:flex-wrap gap-5 p-5">
+          {[
+            {
+              img: sec10Img1,
+              text: `"Your style is sleek and sophisticated. This brown-themed office design blends modern functionality with warm, earthy tones—perfect for a productive and stylish workspace."`,
+            },
+            {
+              img: sec10Img2,
+              text: `"Embrace comfort with a touch of elegance. This brown-themed lounge offers a cozy yet professional atmosphere, balancing work and relaxation effortlessly."`,
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="group max-w-[577px] w-full bg-white shadow-[0_0_4px_0_#00000040] rounded-[10px] overflow-hidden transition-all duration-500"
+            >
+              <div className="overflow-hidden">
+                <img
+                  src={item.img}
+                  alt={`image${index}`}
+                  className="w-full max-w-[541px] transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
 
-      <div className="max-h-0 opacity-0 group-hover:max-h-[400px] group-hover:opacity-100 transition-all duration-500 ease-in-out p-5">
-        <p className="text-center text-[17px] font-semibold leading-[140%] text-black">
-          <span className="text-[#007B82]">{item.text.split(".")[0]}.</span>
-          {item.text.slice(item.text.indexOf(".") + 1)}
-        </p>
-      </div>
-    </div>
-  ))}
-</div>
+              <div className="max-h-0 opacity-0 group-hover:max-h-[400px] group-hover:opacity-100 transition-all duration-500 ease-in-out p-5">
+                <p className="text-center text-[17px] font-semibold leading-[140%] text-black">
+                  <span className="text-[#007B82]">
+                    {item.text.split(".")[0]}.
+                  </span>
+                  {item.text.slice(item.text.indexOf(".") + 1)}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* {section:11} */}
 
-
-            <ImageSlider/>
+      <ImageSlider />
 
       {/* Section: Community Showcase */}
-      
-
-
-
 
       {/* {section-12} */}
       <section className="w-full min-h-[200px] py-10 px-4 bg-[#007B8212] flex flex-col md:flex-row justify-center items-center flex-wrap gap-6">
@@ -830,7 +837,7 @@ export default function Home() {
 
       {/* {section-14} */}
 
-      <DraggableImageSection/>
+      <DraggableImageSection />
 
       {/* {section-15} */}
 
@@ -859,7 +866,7 @@ export default function Home() {
             <h3 className="text-[38px] font-semibold mb-2 leading-[140%] align-center">
               For Personal Use <span className="text-[#007B82]">01</span>
             </h3>
-            <p className="text-[#b0b0b0] font-[normal] text-[19px] leading-[200%] max-w-sm">
+            <p className=" font-[normal] text-[19px] leading-[200%] max-w-sm">
               Explore your unique style and create endless realistic designs for
               both your home's interior and exterior spaces.
             </p>
@@ -875,7 +882,7 @@ export default function Home() {
             <h3 className="text-[38px] font-semibold mb-2 leading-[140%] align-center mb-2">
               For Professional Use <span className="text-[#007B82]">02</span>
             </h3>
-            <p className="text-[#b0b0b0] font-[normal] text-[19px] leading-[200%] max-w-sm">
+            <p className="font-[normal] text-[19px] leading-[200%] max-w-sm">
               Impress clients instantly by showcasing stunning design
               transformations while saving time on every project.
             </p>
@@ -913,8 +920,12 @@ export default function Home() {
               <div className="max-w-[413px] min-h-[288px] bg-white rounded-[12px] p-10 flex flex-col items-center">
                 <div className="min-w-[413px] h-full flex justify-around items-center">
                   <div className="max-w-[206px] min-h-[64px] flex flex-col items-start gap-1 ">
-                    <h3 className="text-black text-[22px] font-medium leading-[140%] ">Guru Ragav Auditor</h3>
-                    <p className="text-[#b0b0b0] font-[400] text-[18px] leading-[140%]">Auditor</p>
+                    <h3 className="text-black text-[22px] font-medium leading-[140%] ">
+                      Guru Ragav Auditor
+                    </h3>
+                    <p className="text-[#b0b0b0] font-[400] text-[18px] leading-[140%]">
+                      Auditor
+                    </p>
                   </div>
                   <img
                     src={sec14Img3}
@@ -933,8 +944,12 @@ export default function Home() {
               <div className="max-w-[413px] min-h-[288px] bg-white rounded-[12px] p-10 flex flex-col items-center">
                 <div className="min-w-[413px] h-full flex justify-around items-center">
                   <div className="max-w-[206px] min-h-[64px] flex flex-col items-start gap-1">
-                    <h3 className="text-black text-[22px] font-medium leading-[140%]">Cristian Rama</h3>
-                    <p className="text-[#b0b0b0] font-[400] text-[18px] leading-[140%]">Architect</p>
+                    <h3 className="text-black text-[22px] font-medium leading-[140%]">
+                      Cristian Rama
+                    </h3>
+                    <p className="text-[#b0b0b0] font-[400] text-[18px] leading-[140%]">
+                      Architect
+                    </p>
                   </div>
                   <img
                     src={sec14Img4}
@@ -944,7 +959,9 @@ export default function Home() {
                 </div>
                 <p className="text-[#2A2A2A] font-[400] text-[18px] leading-[140%] mt-10">
                   “I needed to replace my living room furniture so I generated a
-                  few design ideas with Stackly AI. Awesome technology!”
+                  few design ideas with Stackly AI. I picked my favorite, sent
+                  it to the furniture maker and now I have it in real life.
+                  Awesome technology!”
                 </p>
               </div>
 
@@ -952,8 +969,12 @@ export default function Home() {
               <div className="max-w-[413px] min-h-[288px] bg-white rounded-[12px] p-10 flex flex-col items-center">
                 <div className="min-w-[413px] h-full flex justify-around items-center">
                   <div className="max-w-[206px] min-h-[64px] flex flex-col items-start gap-1">
-                    <h3 className="text-black text-[22px] font-medium leading-[140%]">Ram Krishnan</h3>
-                    <p className="text-[#b0b0b0] font-[400] text-[18px] leading-[140%]">Architect</p>
+                    <h3 className="text-black text-[22px] font-medium leading-[140%]">
+                      Ram Krishnan
+                    </h3>
+                    <p className="text-[#b0b0b0] font-[400] text-[18px] leading-[140%]">
+                      Architect
+                    </p>
                   </div>
                   <img
                     src={sec14Img5}
@@ -962,9 +983,10 @@ export default function Home() {
                   />
                 </div>
                 <p className="text-[#2A2A2A] font-[400] text-[18px] leading-[140%] mt-10">
-                  “I run a real estate agency and my clients send me pictures
-                  with their empty properties. I use Stackly AI to furnish them
-                  automatically!”
+                  “I run a real estate agency and a lot of my clients send me
+                  pictures with their empty properties. I use Stackly AI to
+                  furnish them automatically. It has become an indispensable
+                  tool for us.”
                 </p>
               </div>
             </div>
@@ -977,8 +999,6 @@ export default function Home() {
       {/* {section-15} */}
 
       <FAQ faqs={faqs} />
-
-      
     </div>
   );
 }

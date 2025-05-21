@@ -98,7 +98,8 @@ export default function DraggableImageSection() {
         </h3>
         <a
           href="#"
-          className="max-w-[406px] min-h-[60px] rounded-[5px] hover:bg-cyan-500 text-white font-semibold py-4 px-8 rounded-md text-[20px] leading-[35px] spacing-[8px] transition"style={{
+          className="max-w-[406px] min-h-[60px] rounded-[5px] hover:bg-cyan-500 text-white font-semibold py-4 px-8 rounded-md text-[20px] leading-[35px] spacing-[8px] transition"
+          style={{
             background:
               "linear-gradient(to right, #007c82 0%,rgb(4, 68, 75),rgb(3, 89, 94) 100%)",
           }}

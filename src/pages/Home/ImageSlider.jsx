@@ -167,9 +167,7 @@ export default function ImageSlider() {
         <Link
           to={""}
           className="text-[#007b82] text-lg font-bold underline underline-offset-4 hover:text-cyan-400"
-        >
-          
-        </Link>
+        ></Link>
       </div>
     </section>
   );

@@ -89,7 +89,7 @@ export default function GalleryHover({
       className="relative w-full min-h-screen bg-gray-900 bg-center bg-no-repeat overflow-hidden"
       style={{ backgroundImage: "url('/home/sec5/banner.jpg')" }}
     >
-      <div className="w-full min-h-screen flex flex-col items-center pt-[70px] pb-[50px] px-4">
+      <div className="w-full min-h-screen flex flex-col items-center pt-[70px] pb-[200px] px-4">
         {/* Animated Title */}
         <AnimatePresence>
           {isVisible && (
@@ -105,10 +105,7 @@ export default function GalleryHover({
                 variants={textVariants}
               >
                 DESIGN YOUR{" "}
-                <motion.span
-                  className="text-[#00d1dd] block"
-                  variants={textVariants}
-                >
+                <motion.span className="text-[#00d1dd]" variants={textVariants}>
                   FUTURE HOME
                 </motion.span>
               </motion.h1>
@@ -116,7 +113,8 @@ export default function GalleryHover({
                 className="text-xl font-medium text-white max-w-3xl mx-auto leading-relaxed"
                 variants={textVariants}
               >
-                Bring your dream home to life! Explore innovative designs, customize every detail,
+                Bring your dream home to life! Explore innovative designs,
+                customize every detail,
                 <br />
                 and create a space that reflects your style and vision
               </motion.p>
@@ -155,7 +153,7 @@ export default function GalleryHover({
           </AnimatePresence>
 
           {/* Animated Frames */}
-          <div className="relative w-full h-full">
+          <div className="relative w-full h-full ">
             <AnimatePresence>
               {isVisible &&
                 frames.map((frame, index) => (

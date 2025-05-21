@@ -8,7 +8,7 @@ export default function HeroBanner() {
       setChangeText((prev) => {
         return prev === 2 ? 0 : prev + 1;
       });
-    }, 3000);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
