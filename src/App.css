@@ -133,3 +133,14 @@ a.active{
   font-size: 50px;
   margin: 10px;
 }
+
+/*Api page table colors*/
+.gradient-bg {
+  background: linear-gradient(90deg, #007B82 0%, #001A1C 100%);
+  color: white;
+}
+
+/*Api page table colors*/
+.bg-header-teal {
+  background-color: #00B0BA1F;
+}

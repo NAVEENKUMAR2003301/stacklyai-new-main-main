@@ -10,7 +10,7 @@ export default function Keys() {
   return (
     <div className="relative w-full h-[856px] bg-white flex items-center justify-center overflow-hidden">
     {/* Curve decorations */}
-    <img
+    {/* <img
       src={rightL}
       alt="curve"
       className="absolute top-[-200px] right-[-600px] w-[719.82px] h-[719.82px] rotate-[0deg] border border-[#66747F4D]"
@@ -29,18 +29,18 @@ export default function Keys() {
       src={leftB}
       alt="curve"
       className="absolute top-[170px] left-[50px] w-[120.05px] h-[120.05px] rotate-[-180deg] border border-[#66747F4D]"
-    />
+    /> */}
 
     {/* Content */}
     <div className="z-10 flex flex-col items-center">
       {/* Title */}
-      <h2 className="w-[478px] h-[64px] font-bold text-[48px] leading-[64px] text-center text-[#2a2a2a]">
+      <h2 className="w-[895px] h-[64px] font-[700] font-bold text-[48px] leading-[64px] text-center text-[#2a2a2a]">
         What Is an <span className="text-[#009A98]">API Key?</span>
       </h2>
 
       {/* Subtitle */}
       <p className="w-[895px] h-[64px] font-[400] text-[20px] leading-[32px] text-center text-[#2a2a2a] mt-4">
-        An API key is your unique access code to authenticate and use StacklyAI’s rendering engine from your own app or system.
+        An API key is your unique access code to authenticate and use StacklyAI’s <br />rendering engine from your own app or system.
       </p>
 
       {/* Content Row */}
@@ -48,22 +48,22 @@ export default function Keys() {
         {/* Info Cards */}
         <div className="w-[630px] h-[385px] flex flex-col justify-between">
           {/* Card 1 */}
-          <div className="w-[412px] h-[115px] bg-[#ABB2BB4] rounded-[30px] shadow-[0_6.54px_12.2px_0_rgba(0,0,0,0.1)] flex items-center justify-center">
-            <p className="w-[349px] h-[36px] font-semibold text-[20px] leading-[36px] text-center text-[#2a2a2a]">
+          <div className="w-[616px] h-[100px] bg-[#ABB2BB4]  border-solid border-[3px] border-[#00B0BA] rounded-[30px] flex items-center justify-center">
+            <p className="w-[489px] h-[36px] font-semibold text-[20px] leading-[36px] text-center text-[#2a2a2a]">
               Each key is linked to a team or client
             </p>
           </div>
 
           {/* Card 2 */}
-          <div className="w-[630px] h-[115px] bg-[#ABB2BB4] rounded-[30px] shadow-[0_6.54px_12.2px_0_rgba(0,0,0,0.1)] flex items-center justify-center">
-            <p className="w-[558px] h-[36px] font-semibold text-[20px] leading-[36px] text-center text-[#2A2A2A]">
+          <div className="w-[616px] h-[136px] bg-[#ABB2BB4] border-solid border-[3px] border-[#00B0BA] rounded-[30px] flex items-center justify-center">
+            <p className="w-[100%] max-w-[342px] text-center font-semibold text-[20px] leading-[36px]  text-[#2A2A2A]">
               It tracks the number of images generated (design credits)
             </p>
           </div>
 
           {/* Card 3 */}
-          <div className="w-[630px] h-[115px] bg-[#ABB2BB4] rounded-[30px] shadow-[0_6.54px_12.2px_0_rgba(0,0,0,0.1)] flex items-center justify-center">
-            <p className="w-[525px] h-[36px] font-semibold text-[20px] leading-[36px] text-center text-[#2a2a2a]">
+          <div className="w-[616px] h-[136px] bg-[#ABB2BB4] border-solid border-[3px] border-[#00B0BA] rounded-[30px] flex items-center justify-center">
+            <p className="w-[342px] text-center font-semibold text-[20px] leading-[36px] text-center text-[#2a2a2a]">
               You can monitor usage and manage limits for each key
             </p>
           </div>
@@ -73,7 +73,7 @@ export default function Keys() {
         <img
           src={keyImage}
           alt="API Key Illustration"
-          className="w-[300px] h-auto object-contain"
+          className="w-[644px] h-[634]"
         />
       </div>
     </div>

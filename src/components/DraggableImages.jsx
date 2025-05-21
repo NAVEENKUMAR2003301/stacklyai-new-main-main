@@ -45,7 +45,7 @@ const DraggableImages = ({ imageLeft, imageRight }) => {
     >
       {/* Left image */}
       <img
-        src={imageLeft}
+        src={imageRight}
         alt="Left"
         draggable={false}
         className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-10"
@@ -54,7 +54,7 @@ const DraggableImages = ({ imageLeft, imageRight }) => {
 
       {/* Right image */}
       <img
-        src={imageRight}
+        src={imageLeft}
         alt="Right"
         draggable={false}
         className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-20"

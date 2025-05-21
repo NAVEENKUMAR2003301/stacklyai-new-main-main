@@ -12,33 +12,33 @@ const HowItWorks = () => {
 
       <div className="w-full h-auto flex p-[20px] justify-center items-center">
 
-        <div className="w-[330px] h-[400px] flex flex-col gap-[50px] justify-center items-center">
-           <div className=" w-[130px] h-[133px] rounded-[140px] border-dashed border-[2px] border-[#B0B0B0] flex justify-center items-center text-[60px] font-bold leading-[100%] text-center">1</div>
-           <div  className="w-[305px] h-[184px] rounded-[30px] px-[20px] py-[60px] bg-[white] gap-[10px] shadow-[0_6.54px_12.2px_0] shadow-[#ABB2BB40] flex flex-col justify-center items-center">
+        <div className="w-[330px] h-[400px] flex flex-col  justify-center items-center">
+           <div className=" w-[130px] h-[133px] rounded-[140px] border-dashed border-[2px] border-[#007B82] flex justify-center items-center text-[60px] font-bold leading-[100%] text-center">1</div>
+           <div  className="w-[305px] h-[184px] rounded-[30px] px-[20px] py-[60px] bg-gradient-to-r from-[#00B0BA] to-[#007B82] gap-[10px] shadow-[0_6.54px_12.2px_0] shadow-[#ABB2BB40] flex flex-col justify-center items-center">
                <div className="text-center text-[19px] leading-[32px] font-medium text-[#2A2A2A]">Connect your API key to your backend or platform</div>
            </div>
         </div>
 
           
-        <div className="w-[330px] h-[400px] flex flex-col gap-[50px] justify-center items-center">
-           <div className="w-[130px] h-[133px] rounded-[140px] border-dashed border-[2px] border-[#B0B0B0] flex justify-center items-center text-[60px] font-bold leading-[100%] text-center">2</div>
-           <div  className="w-[305px] h-[184px] rounded-[30px] px-[20px] py-[60px] bg-[white] gap-[10px] shadow-[0_6.54px_12.2px_0] shadow-[#ABB2BB40] flex flex-col justify-center items-center">
+        <div className="w-[330px] h-[400px] flex flex-col  justify-center items-center">
+           <div className="mt-[20px w-[130px] h-[133px] rounded-[140px] border-dashed border-[2px] border-[#007B82] flex justify-center items-center text-[60px] font-bold leading-[100%] text-center">2</div>
+           <div  className="w-[305px] h-[184px] rounded-[30px] px-[20px] py-[60px] bg-gradient-to-r from-[#00B0BA] to-[#007B82] gap-[10px] shadow-[0_6.54px_12.2px_0] shadow-[#ABB2BB40] flex flex-col justify-center items-center">
                <div className="text-center text-[19px] leading-[32px] font-medium text-[#2A2A2A]">Send a user-uploaded image with a chosen style prompt</div>
            </div>
         </div>
 
           
-        <div className="w-[330px] h-[400px] flex flex-col gap-[50px] justify-center items-center">
-           <div className="w-[130px] h-[133px] rounded-[140px] border-dashed border-[2px] border-[#B0B0B0] flex justify-center items-center text-[60px] font-bold leading-[100%] text-center">3</div>
-           <div  className="w-[305px] h-[184px] rounded-[30px] px-[20px] py-[60px] bg-[white] gap-[10px] shadow-[0_6.54px_12.2px_0] shadow-[#ABB2BB40] flex flex-col justify-center items-center">
+        <div className="w-[330px] h-[400px] flex flex-col  justify-center items-center">
+           <div className="w-[130px] h-[133px] rounded-[140px] border-dashed border-[2px] border-[#007B82] flex justify-center items-center text-[60px] font-bold leading-[100%] text-center">3</div>
+           <div  className="w-[305px] h-[184px] rounded-[30px] px-[20px] py-[60px] bg-gradient-to-r from-[#00B0BA] to-[#007B82] gap-[10px] shadow-[0_6.54px_12.2px_0] shadow-[#ABB2BB40] flex flex-col justify-center items-center">
                <div className="text-center text-[19px] leading-[32px] font-medium text-[#2A2A2A]">Receive high-quality, styled images in seconds</div>
            </div>
         </div>
 
           
-        <div className="w-[330px] h-[400px] flex flex-col gap-[50px] justify-center items-center">
-           <div className="w-[130px] h-[133px] rounded-[140px] border-dashed border-[2px] border-[#B0B0B0] flex justify-center items-center text-[60px] font-bold leading-[100%] text-center">4</div>
-           <div  className="w-[305px] h-[184px] rounded-[30px] px-[20px] py-[60px] bg-[white] gap-[10px] shadow-[0_6.54px_12.2px_0] shadow-[#ABB2BB40] flex flex-col justify-center items-center">
+        <div className="w-[330px] h-[400px] flex flex-col  justify-center items-center">
+           <div className="w-[130px] h-[133px] rounded-[140px] border-dashed border-[2px] border-[#007B82] flex justify-center items-center text-[60px] font-bold leading-[100%] text-center">4</div>
+           <div  className="w-[305px] h-[184px] rounded-[30px] px-[20px] py-[60px] bg-gradient-to-r from-[#00B0BA] to-[#007B82] gap-[10px] shadow-[0_6.54px_12.2px_0] shadow-[#ABB2BB40] flex flex-col justify-center items-center">
                <div className="text-center text-[19px] leading-[32px] font-medium text-[#2A2A2A]">Display or store them seamlessly within your app</div>
            </div>
         </div>
