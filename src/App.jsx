@@ -17,8 +17,6 @@ import Otp from "./pages/forgetPage/Otp";
 import ResetPassword from "./pages/forgetPage/ResetPassword";
 import ResetPopup from "./pages/forgetPage/ResetPopup";
 
-
-
 export default function App() {
   return (
     <div className="overflow-x-hidden">

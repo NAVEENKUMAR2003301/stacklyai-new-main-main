@@ -284,7 +284,7 @@ const handleSubmit = async (e) => {
                   Don't have an account?{" "}
                   <Link
                     className="no-underline font-bold text-[#00B0BA]"
-                    to={"sign-up"}
+                    to={"/sign-up"}
                   >
                     Sign up
                   </Link>

@@ -238,9 +238,10 @@ export default function SignUp() {
               <p className="max-w-[246px] min-h-[19px] flex justify-center items-center gap-[4px] text-[16] leading-[100%] text-base text-[#b0b0b0] font-normal">
                 Already have an account?{" "}
                 <Link
-                  to={"sign-in"}
+                  to={"/sign-in"}
                   className="nounderline font-[900] text-[16px]  text-[#00B0BA]"
                 >
+                  
                   Log In
                 </Link>
               </p>
