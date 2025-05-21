@@ -12,7 +12,7 @@ export default function HeroForgetPg() {
         {/* Forget Your Password Page  */}
 
         <section className='w-full min-h-[800px] flex justify-center items-center bg-no-repeat bg-center bg-cover
-         'style={{backgroundImage :'url("../../src/assets/forgetPg/fgPg.png")'}}>
+         'style={{backgroundImage :'url("/ForgetPg/fgPg.png")'}}>
 
             <div className='w-[525px] min-h-[444px] rounded-[10px] border-[1px] border-solid border-white px-[32px] py-[28px] shadow-sm shadow-black flex flex-col justify-center items-center gap-[0px] bg-[#00000033] backdrop-blur-sm'>
 
