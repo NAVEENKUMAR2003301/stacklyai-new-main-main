@@ -1,5 +1,4 @@
 import React from 'react'
-import SideArrow from "../../assets/pricing-pg/SideArrow.png";
 import Tick from "../../assets/pricing-pg/tick.png";
 import Tick1 from "../../assets/pricing-pg/tick1.png";
 import Logo from "../../assets/pricing-pg/flogo.png";
