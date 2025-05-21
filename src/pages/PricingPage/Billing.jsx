@@ -1,5 +1,5 @@
 import React from 'react'
-import SideArrow from "../../assets/pricing-pg/SideArrow.png"
+import SideArrow from "../../assets/pricing-pg/sideArrow.png"
 import Tick from "../../assets/pricing-pg/tick.png"
 import Tick1 from "../../assets/pricing-pg/tick1.png"
 import Paper from "../../assets/pricing-pg/paper.png"
