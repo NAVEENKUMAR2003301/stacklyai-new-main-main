@@ -185,7 +185,7 @@ export default function Billing() {
                   />
 
                   <Link to="/Pay">
-                    <div className="w-[716px] h-[49px] rounded-[8px] bg-gradient-to-l from-[#00B0BA] via-[black] to-[#007B82] text-[white] text-[16px] text-bold leading-[35px] tracking-[8px] text-center flex justify-center items-center">
+                    <div className="w-[716px] h-[49px] rounded-[8px] bg-gradient-to-l from-[#00B0BA] via-[black] to-[#007B82] text-[white] text-[16px] text-bold leading-[35px] tracking-[0px] text-center flex justify-center items-center">
                       Continue
                     </div>
                   </Link>

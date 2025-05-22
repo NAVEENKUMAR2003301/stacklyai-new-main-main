@@ -121,8 +121,7 @@ export default function HeroPricing() {
       {/* section 8  */}
 
     
-<ConformationPage />
-<Pay />
+
       
     </div>
   );
