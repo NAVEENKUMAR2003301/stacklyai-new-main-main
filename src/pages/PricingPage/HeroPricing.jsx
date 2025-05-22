@@ -8,6 +8,7 @@ import PricingTable from "./PricingTable";
 import PricingFaq from "./PricingFaq";
 import Billing from "./Billing";
 import Payment from "./Payment";
+import UiPlans from "./UiPlans";
 
 
 
@@ -120,6 +121,8 @@ export default function HeroPricing() {
    <Billing />
 
    <Payment />
+
+   <UiPlans />
 
 
 

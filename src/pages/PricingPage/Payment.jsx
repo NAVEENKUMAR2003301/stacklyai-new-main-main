@@ -57,15 +57,8 @@ export default function Payment() {
                 active.”
               </div>
               <img src={Success} alt="logo-success" />
-              <button className="w-[371px] h-[49px] rounded-[5px] border-[1.5px] border-solid border-[#007B82] flex justify-center items-center text-[16px] text-[#007B82] font-semibold tracking-[8px] leading-[35px] text-center ">
-                {" "}
-                Download Invoice
-              </button>
-              <Link to="/Pricing">
-                <div className="font-[400] text-[16px] leading-[156%] text-[#2A2A2A]">
-                  Go to Dashboard
-                </div>
-              </Link>
+             
+              
             </div>
           </div>
         </div>

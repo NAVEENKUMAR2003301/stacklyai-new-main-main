@@ -131,30 +131,30 @@ export default function Billing() {
                   {/* <div className="w-[716px] h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px] flex justify-start items-center text-[14px] leading-[24px] tracking-[0.3px] font-[400] text-[#2A2A2A] bg-white"> */}
                   <input
                     type="name"
-                    className="w-[716px] h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px] flex justify-start items-center text-[14px] leading-[24px] tracking-[0.3px] font-[400] text-[#2A2A2A] bg-white"
+                    className="w-[716px] h-[52px] placeholder:text-[#2A2A2A] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px] flex justify-start items-center text-[14px] leading-[24px] tracking-[0.3px] font-[400] text-[#2A2A2A] bg-white"
                     placeholder="Full Name"
                   />
 
                   <input
                     type="name"
-                    className="w-[716px] h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px] flex justify-start items-center text-[14px] leading-[24px] tracking-[0.3px] font-[400] text-[#2A2A2A] bg-white"
+                    className="w-[716px] h-[52px] placeholder:text-[#2A2A2A] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px] flex justify-start items-center text-[14px] leading-[24px] tracking-[0.3px] font-[400] text-[#2A2A2A] bg-white"
                     placeholder="Email"
                   />
 
-                  <div className="w-[716px] h-[52px] flex justify-between items-start gap-[16px]">
+                  <div className="w-[716px] h-[52px]  flex justify-between items-start gap-[16px]">
                     <input
                       type="text"
-                      className="w-[228px] bg-white h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px]"
+                      className="w-[228px] placeholder:text-[#2A2A2A] bg-white h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px]"
                       placeholder="Address"
                     />
                     <input
                       type="number"
-                      className="w-[228px] bg-white h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px]"
+                      className="w-[228px] placeholder:text-[#2A2A2A] bg-white h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px]"
                       placeholder="Phone Number"
                     />
                     <input
                       type="text"
-                      className="w-[228px] bg-white h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px]"
+                      className="w-[228px] placeholder:text-[#2A2A2A] bg-white h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px]"
                       placeholder="City"
                     />
                   </div>
@@ -162,22 +162,16 @@ export default function Billing() {
                   <div className="w-[716px] h-[52px] flex justify-between items-start gap-[16px]">
                     <input
                       type="text"
-                      className="w-[228px] bg-white h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px]"
+                      className="w-[228px] placeholder:text-[#2A2A2A] bg-white h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px]"
                       placeholder="State/Province"
                     />
                     <input
                       type="number"
-                      className="w-[228px] bg-white h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px]"
+                      className="w-[228px] placeholder:text-[#2A2A2A] bg-white h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px]"
                       placeholder="Zip/Postal Code"
                     />
-                    <div className="w-[228px] bg-white h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] flex justify-between items-center  overflow-hidden">
-                      <input
-                        type="text"
-                        className="overflow-hidden px-[14px] py-[20px]"
-                        placeholder="Country"
-                      />
-
-                      <select name="" id="">
+                    <div className="w-[228px] bg-white h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] flex justify-between items-center  overflow-hidden px-[20px] cursor-pointer">
+                      <select name="" id="" className="w-[208px]">
                         <option value="">IND</option>
                         <option value="">USA</option>
                       </select>
@@ -186,7 +180,7 @@ export default function Billing() {
 
                   <input
                     type="name"
-                    className="w-[716px] h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px] flex justify-start items-center text-[14px] leading-[24px] tracking-[0.3px] font-[400] text-[#2A2A2A] bg-white"
+                    className="w-[716px] placeholder:text-[#2A2A2A] h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] px-[20px] py-[14px] flex justify-start items-center text-[14px] leading-[24px] tracking-[0.3px] font-[400] text-[#2A2A2A] bg-white"
                     placeholder="Enter Coupen Code"
                   />
 
@@ -197,7 +191,7 @@ export default function Billing() {
                   </Link>
                 </div>
               </div>
-              
+
               {/* right */}
               <div className="w-[426px] h-[504px] border-[1.5px] flex flex-col justify-center items-center gap-[px]">
                 <div className="w-[384.54px] h-[327.96px] rounded-[16px] bg-[#007B82B2] backdrop-blur-32 px-[20px] py-[50px] gap-[20px] flex flex-col justify-start">
@@ -259,7 +253,7 @@ export default function Billing() {
                 </div>
                 <div className="w-[50px] h-[50px] rounded-[50px] bg-white absolute top-[480px] right-[450px]"></div>
                 <div className="w-[50px] h-[50px] rounded-[50px] bg-white absolute  top-[480px] right-[70px]"></div>
-                <div className='w-[60%] border-[2px] border-dashed border-white absolute top-[505px]'></div>
+                <div className="w-[60%] border-[2px] border-dashed border-white absolute top-[505px]"></div>
               </div>
             </div>
           </div>
