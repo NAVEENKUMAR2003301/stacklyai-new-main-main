@@ -15,7 +15,7 @@ export default function Billing() {
       >
         <div className="w-[1280px] min-h-[720px] rounded-[16px] border-[1px] border-solid border-[#E8EBF1] drop-shadow-[0_0_12px_0] shadow-[#E3EBFB80] bg-blur-[100px] blur-[100px] backdrop-blur-[20px] flex flex-col justify-start items-start px-[50px] py-[30px]">
           <div className="w-full min-h-[50px] flex justify-start">
-            <Link to="">
+            <Link to="/UiPlans">
               <div className="w-[70px] flex justify-center items-center">
                 <img
                   src={SideArrow}
@@ -110,7 +110,7 @@ export default function Billing() {
 
                       <input
                         type="radio"
-                        className="accent-[#007B82] "
+                        className="accent-[#007B82]  "
                         name="Durations"
                       />
                     </div>
@@ -184,7 +184,7 @@ export default function Billing() {
                     placeholder="Enter Coupen Code"
                   />
 
-                  <Link to="/Payment">
+                  <Link to="/Pay">
                     <div className="w-[716px] h-[49px] rounded-[8px] bg-gradient-to-l from-[#00B0BA] via-[black] to-[#007B82] text-[white] text-[16px] text-bold leading-[35px] tracking-[8px] text-center flex justify-center items-center">
                       Continue
                     </div>

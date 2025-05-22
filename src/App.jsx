@@ -19,6 +19,8 @@ import ResetPopup from "./pages/forgetPage/ResetPopup";
 import Billing from "./pages/PricingPage/Billing";
 import Payment from "./pages/PricingPage/Payment";
 import UiPlans from "./pages/PricingPage/UiPlans";
+import Pay from "./pages/PricingPage/Pay";
+import ConformationPage from "./pages/PricingPage/ConformationPage";
 
 export default function App() {
   return (
@@ -32,6 +34,8 @@ export default function App() {
         <Route path="/Pricing" element={<Pricing/>}/>
         <Route path="/Billing" element={<Billing/>}/>
         <Route path="/UiPlans" element={<UiPlans/>}/>
+        <Route path="/Pay" element={<Pay/>}/>
+        <Route path="/ConformationPage" element={<ConformationPage/>}/>
         <Route path="/Payment" element={<Payment/>}/>
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/HeroForgetPg" element={<HeroForgetPg/>}/>

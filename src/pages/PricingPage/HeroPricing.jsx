@@ -9,6 +9,8 @@ import PricingFaq from "./PricingFaq";
 import Billing from "./Billing";
 import Payment from "./Payment";
 import UiPlans from "./UiPlans";
+import ConformationPage from "./ConformationPage";
+import Pay from "./Pay";
 
 
 
@@ -119,7 +121,8 @@ export default function HeroPricing() {
       {/* section 8  */}
 
     
-
+<ConformationPage />
+<Pay />
       
     </div>
   );
