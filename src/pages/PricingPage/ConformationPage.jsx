@@ -90,7 +90,7 @@ export default function ConformationPage() {
                     Price
                   </div>
                   <div className="w-[50%] h-[32px] flex justify-start items-center text-white font-semibold">
-                    ₹29.00
+                    $29.00
                   </div>
                 </div>
                 <div className="w-[303px] h-[35px] flex">

@@ -205,7 +205,7 @@ export default function Billing() {
                         Plan Name
                       </div>
                       <div className="w-[50%] h-[32px] flex justify-start items-center text-white font-semibold">
-                        Basic
+                        Silver
                       </div>
                     </div>
                     <div className="w-[303px] h-[128px] flex">
@@ -213,7 +213,7 @@ export default function Billing() {
                         Price
                       </div>
                       <div className="w-[50%] h-[32px] flex justify-start items-center text-white font-semibold">
-                        ₹4,799
+                        $29.20
                       </div>
                     </div>
                     <div className="w-[303px] h-[128px] flex">
@@ -242,7 +242,7 @@ export default function Billing() {
                         Grand Total
                       </div>
                       <div className="font-[600] text-[25px] leading-[100%] text-[white]">
-                        ₹4,799
+                        $29.00
                       </div>
                     </div>
 
