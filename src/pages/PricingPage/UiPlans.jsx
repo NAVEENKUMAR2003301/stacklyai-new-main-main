@@ -52,7 +52,7 @@ export default function UiPlans() {
                   </span>
                 </div>
                 <Link to="/Billing">
-                  <div className="w-[373px] h-[46px] bg-[white] rounded-[8px] border-[1px] border-solid border-[#007B82] text-[#007B82] flex justify-center items-center">
+                  <div className="w-[373px] h-[46px] bg-[white] rounded-[8px] border-[1px] border-solid border-[#007B82] text-[#007B82] flex justify-center items-center hover:bg-gradient-to-b from-[#007B82] to-[#00B0BA] hover:text-white">
                     Get Started
                   </div>
                 </Link>
@@ -156,7 +156,7 @@ export default function UiPlans() {
                   </div>
                   <Link to="/Billing">
                     {" "}
-                    <div className="w-[373px] h-[46px] rounded-[5px] border-[1px] border-solid border-[#007B82] text-[white] flex justify-center items-center bg-gradient-to-b from-[#007B82] to-[#00B0BA]">
+                    <div className="w-[373px] h-[46px] rounded-[5px] border-[1px] border-solid border-[#007B82] hover:text-[white] text-[#007B82] bg-white flex justify-center items-center hover:bg-gradient-to-b from-[#007B82] to-[#00B0BA]">
                       Get Started
                     </div>
                   </Link>
@@ -218,7 +218,7 @@ export default function UiPlans() {
             <div className="w-[413px] h-[810px] min-w-[340px] rounded-[12px] px-[20px] py-[40px] bg-[#FFFFFF1A] border-[1px] border-solid border-[white] shadow-[0px_2px_12px_0] shadow-[#007B8229] gap-[32px] overflow-hidden">
               <div className="w-[374px] min-h-[364px] flex flex-col justify-start items-start">
                 <div className="w-[374px] min-h-[364px] flex flex-col justify-start items-start gap-[34px]">
-                  <span className="w-[122px] h-[40px] rounded-bl-[16px] px-[10px] py-[4px] flex justify-center items-center bg-gradient-to-b from-[#FFAA17] to-[#99660E] text-[white] font-medium text-[16px] text-center absolute top-[8081px] ml-[271px] rounded-tr-[13px]">
+                  <span className="w-[122px] h-[40px] rounded-bl-[16px] px-[10px] py-[4px] flex justify-center items-center bg-gradient-to-b from-[#FFAA17] to-[#99660E] text-[white] font-medium text-[16px] text-center absolute mt-[-41px] ml-[271px] rounded-tr-[13px]">
                     Most Popular
                   </span>
                   <div className="w-[360px] h-[32px] flex justify-between">
@@ -258,7 +258,7 @@ export default function UiPlans() {
                     </div>
                   </div>
                   <Link to="/Billing">
-                    <div className="w-[373px] h-[46px] bg-[white] rounded-[8px] border-[1px] border-solid border-[#007B82] text-[#007B82] flex justify-center items-center">
+                    <div className="w-[373px] h-[46px] bg-[white] rounded-[8px] border-[1px] border-solid border-[#007B82] text-[#007B82] flex justify-center items-center hover:text-[white] hover:bg-gradient-to-b from-[#007B82] to-[#00B0BA]">
                       Get Started
                     </div>
                   </Link>

@@ -171,7 +171,7 @@ export default function Billing() {
                       placeholder="Zip/Postal Code"
                     />
                     <div className="w-[228px] bg-white h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] flex justify-between items-center  overflow-hidden px-[20px] cursor-pointer">
-                      <select name="" id="" className="w-[208px]">
+                      <select name="" id="" className="w-[208px] cursor-pointer">
                         <option value="">IND</option>
                         <option value="">USA</option>
                       </select>

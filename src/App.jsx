@@ -18,6 +18,7 @@ import ResetPassword from "./pages/forgetPage/ResetPassword";
 import ResetPopup from "./pages/forgetPage/ResetPopup";
 import Billing from "./pages/PricingPage/Billing";
 import Payment from "./pages/PricingPage/Payment";
+import UiPlans from "./pages/PricingPage/UiPlans";
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/Api" element={<Api/>}/>
         <Route path="/Pricing" element={<Pricing/>}/>
         <Route path="/Billing" element={<Billing/>}/>
+        <Route path="/UiPlans" element={<UiPlans/>}/>
         <Route path="/Payment" element={<Payment/>}/>
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/HeroForgetPg" element={<HeroForgetPg/>}/>
