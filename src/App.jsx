@@ -21,6 +21,7 @@ import Payment from "./pages/PricingPage/Payment";
 import UiPlans from "./pages/PricingPage/UiPlans";
 import Pay from "./pages/PricingPage/Pay";
 import ConformationPage from "./pages/PricingPage/ConformationPage";
+import Profile from "./pages/Profile/Profile";
 
 export default function App() {
   return (
@@ -45,6 +46,7 @@ export default function App() {
         <Route path="/ForgetPg" element={<ForgetPg/>}/>
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp/>}/>
+        <Route path="/Profile" element={<Profile/>}/>
       </Routes>
 
       <Footer />
