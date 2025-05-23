@@ -9,6 +9,7 @@ import sec3Pattern4 from "../../assets/home/sec3/material-icon-theme_gemini-ai(1
 import sec3Design1 from "../../assets/home/sec3/design1.jpeg";
 import sec3Design2 from "../../assets/home/sec3/design2.jpeg";
 import sec3Design3 from "../../assets/home/sec3/design3.jpeg";
+import sec3bg1 from "../../assets/home/sec3/Threefeatures.jpg";
 
 import sec4Icon1 from "../../assets/home/sec4/1.png";
 import sec4Icon2 from "../../assets/home/sec4/2.png";
@@ -228,48 +229,54 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-      <section className="w-full  min-h-[900px]" ref={sectionRef}>
-        <div className="w-full min-h-[900px] bg-[#002628] pb-0">
-          <div className="home-bg-img relative w-full min-h-[900px] overflow-hidden ">
+      <section className="w-full min-h-[900px]" ref={sectionRef}>
+        <div
+          className="w-full min-h-[900px]  bg-cover bg-center bg-no-repeat bg-blend-overlay pb-0"
+          style={{ backgroundImage: `url(${sec3bg1})` }}
+        >
+          <div className="home-bg-img relative w-full min-h-[900px] overflow-hidden">
             {/* Background images */}
             <img
               src={sec3Pattern1}
               alt=""
-              className="absolute w-[240px] h-[240px] top-0 left-0 mix-blend-overlay"
+              className="absolute w-[240px] h-[240px] top-0 left-0 mix-blend-overlay max-sm:w-[120px] max-sm:h-[120px]"
             />
             <img
               src={sec3Pattern2}
               alt=""
-              className="absolute w-[60px] h-[60px] top-[554px] left-[1080px] mix-blend-overlay"
+              className="absolute w-[60px] h-[60px] top-[554px] left-[1080px] mix-blend-overlay max-sm:hidden"
             />
             <img
               src={sec3Pattern3}
               alt=""
-              className="absolute w-[44px] h-[44px] top-[747px] left-[260px]"
+              className="absolute w-[44px] h-[44px] top-[747px] left-[260px] max-sm:hidden"
             />
             <img
               src={sec3Pattern4}
               alt=""
-              className="absolute w-[44px] h-[44px] top-[932px] left-[70%]"
+              className="absolute w-[44px] h-[44px] top-[932px] left-[70%] max-sm:hidden"
             />
-            <h1 className="text-[40px] font-bold text-white text-center mb-2 relative top-[-300px]">
-              Ultimate{" "}
-              <span className="text-[#00D1DD] opacity-100">AI Design Tool</span>{" "}
-              for Interiors & Exteriors{" "}
+
+            {/* Heading */}
+            <h1 className="text-[40px] font-bold text-white text-center mb-2 relative top-[-300px] max-sm:top-0 max-sm:text-[28px] px-4">
+              Ultimate <span className="text-[#00D1DD]">AI Design Tool</span>{" "}
+              for Interiors & Exteriors
             </h1>
-            <p className="text-[22px] font-medium text-white text-center top-[-290px]">
+            <p className="text-[22px] font-medium text-white text-center relative top-[-290px] max-sm:top-0 max-sm:text-[18px] px-4">
               Transform Any Space Effortlessly
             </p>
-            <div className="w-full relative min-h-[1050px]">
-              {/* Left design - comes from left */}
+
+            {/* Design sections */}
+            <div className="w-full relative min-h-[1050px] max-sm:min-h-fit flex flex-col items-center gap-10 py-10">
+              {/* Left */}
               <div
-                className={`flex items-center justify-center gap-5 absolute left-5 mt-[-200px] max-[600px]:static max-[600px]:flex-col max-[600px]:p-3 transition-all duration-1000 ease-out ${
+                className={`flex items-center justify-center gap-5 absolute left-5 mt-[-200px] max-sm:static max-sm:flex-col max-sm:p-3 transition-all duration-1000 ease-out ${
                   animations?.leftVisible
                     ? "translate-x-0 opacity-100"
                     : "-translate-x-[100%] opacity-0"
                 }`}
               >
-                <p className="rounded-full text-[22px] font-semibold text-black bg-white p-5 whitespace-nowrap">
+                <p className="rounded-full text-[22px] font-semibold text-black bg-white p-5 whitespace-nowrap max-sm:text-[18px] max-sm:text-center">
                   AI-Powered Interior Designs
                 </p>
                 <img
@@ -279,9 +286,9 @@ export default function Home() {
                 />
               </div>
 
-              {/* Center design - comes from right */}
+              {/* Center */}
               <div
-                className={`flex items-center justify-center gap-5 absolute right-5 top-[80px] max-[600px]:static max-[600px]:flex-col max-[600px]:p-3 transition-all duration-1000 ease-out ${
+                className={`flex items-center justify-center gap-5 absolute right-5 top-[80px] max-sm:static max-sm:flex-col max-sm:p-3 transition-all duration-1000 ease-out ${
                   animations?.centerVisible
                     ? "translate-x-0 opacity-100"
                     : "translate-x-[100%] opacity-0"
@@ -292,20 +299,20 @@ export default function Home() {
                   src={sec3Design2}
                   alt="Exterior design"
                 />
-                <p className="rounded-full text-[22px] font-semibold text-black bg-white p-5 whitespace-nowrap">
+                <p className="rounded-full text-[22px] font-semibold text-black bg-white p-5 whitespace-nowrap max-sm:text-[18px] max-sm:text-center">
                   Stunning Exterior Makeovers
                 </p>
               </div>
 
-              {/* Right design - comes from left */}
+              {/* Right */}
               <div
-                className={`flex items-center justify-center gap-5 absolute left-5 top-[370px] max-[600px]:static max-[600px]:flex-col max-[600px]:p-3 transition-all duration-1000 ease-out ${
+                className={`flex items-center justify-center gap-5 absolute left-5 top-[370px] max-sm:static max-sm:flex-col max-sm:p-3 transition-all duration-1000 ease-out ${
                   animations?.rightVisible
                     ? "translate-x-0 opacity-100"
                     : "-translate-x-[100%] opacity-0"
                 }`}
               >
-                <p className="rounded-full text-[22px] font-semibold text-black bg-white p-5 whitespace-nowrap">
+                <p className="rounded-full text-[22px] font-semibold text-black bg-white p-5 whitespace-nowrap max-sm:text-[18px] max-sm:text-center">
                   Outdoor Spaces Reimagined
                 </p>
                 <img
@@ -341,7 +348,7 @@ export default function Home() {
               <h3 className="max-w-[211px] w-full min-h-[48px] text-[24px] font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 Interior & Exterior Image Generation
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px] text-[16px]  font-medium leading-[100%] h-[34px] text-center">
+              <p className="max-w-[250px] w-full min-h-[102px] text-[16px]  font-medium leading-[150%] h-[34px] text-center">
                 Get design ideas for every part of your home—both indoors and
                 outdoors.
               </p>
@@ -356,7 +363,7 @@ export default function Home() {
               <h3 className="max-w-[211px] text-[24px] w-full min-h-[48px]  font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 Unlimited AI Ideas
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[100%] h-[34px] text-center">
+              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[150%] h-[34px] text-center">
                 Generate endless creative ideas to transform any space with
                 ease.
               </p>
@@ -371,7 +378,7 @@ export default function Home() {
               <h3 className="max-w-[211px] w-full min-h-[48px] text-[24px] font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 High-Resolution Images
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[100%] h-[34px] text-center">
+              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[150%] h-[34px] text-center">
                 Download crystal-clear, AI-generated images that capture every
                 detail.
               </p>
@@ -386,7 +393,7 @@ export default function Home() {
               <h3 className="max-w-[211px] w-full min-h-[48px] text-[24px] font-semibold leading-[100%] text-center text-[#2a2a2a]">
                 Fast Image Generation
               </h3>
-              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[100%] h-[34px] text-center ">
+              <p className="max-w-[250px] w-full min-h-[102px]  text-[16px] font-medium leading-[150%] h-[34px] text-center ">
                 Create stunning, AI-powered images in just seconds.
               </p>
             </div>
@@ -395,8 +402,10 @@ export default function Home() {
             className="max-w-[846px] w-full min-h-[65px] flex justify-center items-center rounded-[5px] hover:bg-[#4bb0b5]
           "
             style={{
-              background:
-                "linear-gradient(to right, rgb(0, 176, 186) 0%, rgba(0, 0, 0) 50%, rgb(0, 176, 186) 100%)",
+              backgroundImage: `
+        linear-gradient(to right, #007c82 0%,rgb(4, 68, 75),rgb(3, 89, 94) 100%)
+        
+        `,
             }}
           >
             <p
@@ -413,14 +422,29 @@ export default function Home() {
       <div className="absolute">
         {/* <img src={Star} alt="" className='relative top-[-120px] left-[1010px]'/> */}
         {/* <img src={Star} alt="" className='relative top-[-190px] left-[1090px] w-[30px]'/> */}
-        <img src={Star} alt="" className="relative top-[-1000px] left-[50px]" />
+        <img src={Star} alt="" className="relative top-[-800px] left-[50px]" />
         <img
           src={Star}
           alt=""
-          className="relative top-[-1000px] left-[90px] w-[30px]"
+          className="relative top-[-800px] left-[90px] w-[30px]"
         />
         {/* <img src={Reacts} alt="" className='relative top-[-670px] left-[20px]' />
         <img src={Reacts} alt="" className='relative top-[-370px] left-[1400px]' /> */}
+      </div>
+      <div className="relative w-full h-full">
+        {/* Star on left side with relative top and left */}
+        <img
+          src={Star}
+          alt=""
+          className="absolute bottom-[200px] right-[90px]"
+        />
+
+        {/* Star on bottom right corner with absolute positioning */}
+        <img
+          src={Star}
+          alt=""
+          className="absolute bottom-[180px] right-[50px] w-[30px]"
+        />
       </div>
 
       {/* Section 5 */}
@@ -544,7 +568,7 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-      <section className="w-full min-h-[925px] bg-white py-16 px-4 flex flex-col justify-center items-center gap-[100px]">
+      <section className="w-full min-h-[725px] bg-white py-16 px-4 flex flex-col justify-center items-center gap-[100px]">
         <div className="max-w-6xl mx-auto ">
           {/* Title */}
           <h2 className="text-center text-[#007B82] text-2xl md:text-3xl text-[40px] leading-[140%] font-semibold mb-16">

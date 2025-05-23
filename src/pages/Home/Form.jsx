@@ -969,336 +969,531 @@ export default function Form() {
     //     </div>
     //  </section>
 
-    <section className="w-[full] max-w-[full] min-h-[1216px] px-[86px] py-[68px] flex flex-col justify-start items-center gap-[40px] bg-gradient-to-l from-[#002628] to-[#00646A]">
-      <div className="max-w-[1268px] min-h-[113px]">
-        <div className="max-w-[1268px] min-h-[67px] font-semibold text-[48px] leading-[140%] text-center text-white">
+    //  <section className="w-[full] max-w-[full] min-h-[1216px] px-[86px] py-[68px] flex flex-col justify-start items-center gap-[40px] bg-gradient-to-l from-[#002628] to-[#00646A]">
+    //     <div className="max-w-[1268px] min-h-[113px]">
+    //       <div className="max-w-[1268px] min-h-[67px] font-semibold text-[48px] leading-[140%] text-center text-white">
+    //         Let AI Style It
+    //       </div>
+    //       <div className="max-w-[1268px] min-h-[34px] font-semibold text-[24px] leading-[140%] text-center text-white">
+    //         Upload a photo to begin your AI-powered room design
+    //       </div>
+    //     </div>
+
+    //     <div className="max-w-[1268px] min-h-[150px] flex flex-col items-center justify-start">
+    //       <div className="max-w-[920px] min-h-[128px] flex justify-center items-center gap-[40px] flex-wrap">
+    //         {tabs.map((tab) => (
+    //           <div
+    //             key={tab.name}
+    //             className="w-[200px] h-[128px] flex flex-col justify-center items-center gap-[20px] cursor-pointer"
+    //             onClick={() => {
+    //               if (tab.name === "Upgrade to Unlock") {
+    //                 alert("Please upgrade your account to access this feature");
+    //               } else {
+    //                 setActiveTab(tab.name);
+    //                 setFormData((prev) => ({
+    //                   ...prev,
+    //                   roomType: "",
+    //                   buildingType: "",
+    //                 }));
+    //               }
+    //             }}
+    //           >
+    //             <div
+    //               className={`w-[80px] h-[77px] border-[2px] px-[20px] py-[24px] flex justify-center items-center gap-[10px] rounded-[90px] transition-all duration-200 ${
+    //                 activeTab === tab.name
+    //                   ? "border-white bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82]"
+    //                   : "border-[#FFFFFF1A] bg-[#FFFFFF1A] hover:border-blue-300"
+    //               }`}
+    //             >
+    //               <img src={tab.icon} alt={tab.name} />
+    //             </div>
+    //             <div className="max-w-[200px] min-h-[31px] text-[22px] font-semibold leading-[140%] text-center text-white">
+    //               {tab.name}
+    //             </div>
+    //           </div>
+    //         ))}
+    //       </div>
+    //     </div>
+
+    //     <div className="max-w-[1268px] min-h-[727px] flex flex-col justify-start items-center gap-[56px]">
+    //       <form
+    //         onSubmit={handleSubmit}
+    //         className="max-w-[1268px] min-h-[604px] flex justify-between items-center gap-[82px] flex-wrap"
+    //       >
+    //         <div className="max-w-[636px] min-h-[604px] flex flex-col justify-center items-center gap-[12px]">
+    //           <div
+    //             className="w-[636px] min-h-[552px] rounded-[12px] border-[1px] border-dashed border-white flex justify-center items-center cursor-pointer"
+    //             onClick={() => inpRef.current.click()}
+    //             onDragOver={handleDragOver}
+    //             onDrop={handleDrop}
+    //           >
+    //             {imgURL ? (
+    //               <img
+    //                 src={imgURL}
+    //                 alt="Preview"
+    //                 className="w-full h-full object-cover rounded-[12px]"
+    //               />
+    //             ) : (
+    //               <div className="w-[280px] min-h-[133px] flex flex-col justify-center items-center">
+    //                 <div className="w-[70px] h-[70px] rounded-[40px] px-[18px] py-[16px] rouned-[40px] bg-[#FFFFFF1A] flex justify-center items-center">
+    //                   <img src={Galley} alt="gallery" />
+    //                 </div>
+    //                 <div className="w-[280px] h-[68px] font-[400] text-[24px] leading-[140%] text-center text-[#FFFFFFB2]">
+    //                   Drag & drop or click to upload a photo
+    //                 </div>
+    //               </div>
+    //             )}
+    //             <input
+    //               type="file"
+    //               ref={inpRef}
+    //               onChange={changeImage}
+    //               accept="image/*"
+    //               className="hidden"
+    //             />
+    //           </div>
+
+    //           <div className="w-[147px] h-[40px] rounded-[6px] border-[1.5px] border-solid border-white px-[10px] py-[8px] flex justify-around items-center cursor-pointer">
+    //             <div className="w-[24px] h-[24px]">
+    //               <img src={I} alt="i" />
+    //             </div>
+    //             <div className="w-[93px] h-[19px] text-[16px] font-[medium] leading-[100%] text-center text-white">
+    //               Photo guide
+    //             </div>
+    //           </div>
+    //         </div>
+
+    //         <div className="w-[550px] h-[604px] flex flex-col items-start justify-start gap-[52px]">
+    //           <div className="w-[550px] min-h-[411px] flex flex-col items-center justify-start gap-[31px]">
+    //             <div className="w-[550px] min-h-[81px] flex flex-col justify-start items-center gap-[12px]">
+    //               <div className="w-[550px] min-h-[27px] font-[400] text-[19px] leading-[140%] text-white">
+    //                 Choose Building Type
+    //               </div>
+    //               <div className="w-[100%] max-w-[550px] min-h-[42px] flex justify-between items-center">
+    //                 <div
+    //                   className={`w-full max-w-[255px] min-h-[42px] rounded-[4px] flex justify-between items-center px-[20px] cursor-pointer ${
+    //                     formData.buildingType === "Commercial"
+    //                       ? "bg-white"
+    //                       : "bg-[#00000033]"
+    //                   }`}
+    //                   onClick={() => handleChange("Commercial", "buildingType")}
+    //                 >
+    //                   <span
+    //                     className={`w-[92px] min-h-[22px] font-medium text-[16px] leading-[140%] text-center ${
+    //                       formData.buildingType === "Commercial"
+    //                         ? "text-[#007B82]"
+    //                         : "text-[#FFFFFF80]"
+    //                     }`}
+    //                   >
+    //                     Commercial
+    //                   </span>
+    //                   <input
+    //                     type="radio"
+    //                     checked={formData.buildingType === "Commercial"}
+    //                     onChange={() => {}}
+    //                   />
+    //                 </div>
+
+    //                 <div
+    //                   className={`w-full max-w-[255px] min-h-[42px] rounded-[4px] flex justify-between items-center px-[20px] cursor-pointer ${
+    //                     formData.buildingType === "Residential"
+    //                       ? "bg-white"
+    //                       : "bg-[#00000033]"
+    //                   }`}
+    //                   onClick={() => handleChange("Residential", "buildingType")}
+    //                 >
+    //                   <span
+    //                     className={`w-[92px] min-h-[22px] font-medium text-[16px] leading-[140%] text-center ${
+    //                       formData.buildingType === "Residential"
+    //                         ? "text-[#007B82]"
+    //                         : "text-[#FFFFFF80]"
+    //                     }`}
+    //                   >
+    //                     Residential
+    //                   </span>
+    //                   <input
+    //                     type="radio"
+    //                     checked={formData.buildingType === "Residential"}
+    //                     onChange={() => {}}
+    //                   />
+    //                 </div>
+    //               </div>
+    //             </div>
+
+    //             <div className="w-[550px] min-h-[81px] flex flex-col justify-start items-start gap-[12px]">
+    //               <div className="w-[550px] min-h-[27px] font-[400] text-[19px] leading-[140%] text-white">
+    //                 Select Room Type
+    //               </div>
+    //               <div className="w-full max-w-[550px] min-h-[42px] rounded-[4px] bg-white flex justify-between items-center px-[20px]">
+    //                 <select
+    //                   name="roomType"
+    //                   value={formData.roomType}
+    //                   onChange={(e) => handleChange(e.target.value, "roomType")}
+    //                   className="w-[510px] h-[42px] cursor-pointer text-[#007B82]"
+    //                 >
+    //                   <option value="">Select room type</option>
+    //                   {roomTypes[activeTab]?.map((room) => (
+    //                     <option key={room} value={room}>
+    //                       {room}
+    //                     </option>
+    //                   ))}
+    //                 </select>
+    //               </div>
+    //             </div>
+
+    //             <div className="w-[550px] min-h-[81px] flex flex-col justify-start items-start gap-[12px]">
+    //               <div className="w-[550px] min-h-[27px] font-[400] text-[19px] leading-[140%] text-white">
+    //                 Pick a Style
+    //               </div>
+    //               <div className="w-full max-w-[550px] min-h-[42px] rounded-[4px] bg-white flex justify-between items-center px-[20px]">
+    //                 <select
+    //                   name="roomStyle"
+    //                   value={formData.roomStyle}
+    //                   onChange={(e) => handleChange(e.target.value, "roomStyle")}
+    //                   className="w-[510px] h-[42px] cursor-pointer text-[#007B82]"
+    //                 >
+    //                   <option value="">Select style</option>
+    //                   {styles.map((style) => (
+    //                     <option key={style} value={style}>
+    //                       {style}
+    //                     </option>
+    //                   ))}
+    //                 </select>
+    //               </div>
+    //             </div>
+
+    //             <div className="w-[550px] min-h-[81px] flex flex-col justify-start items-start gap-[12px]">
+    //               <div className="w-[550px] min-h-[27px] font-[400] text-[19px] leading-[140%] text-white">
+    //                 Number of designs
+    //               </div>
+    //               <div className="w-full max-w-[550px] min-h-[42px] rounded-[4px] bg-white flex justify-between items-center px-[20px]">
+    //                 <select
+    //                   name="noOfDesign"
+    //                   value={formData.noOfDesign}
+    //                   onChange={(e) => handleChange(e.target.value, "noOfDesign")}
+    //                   className="w-[510px] h-[42px] cursor-pointer text-[#007B82]"
+    //                 >
+    //                   {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
+    //                     <option key={num} value={num}>
+    //                       {num}
+    //                     </option>
+    //                   ))}
+    //                 </select>
+    //               </div>
+    //             </div>
+    //           </div>
+
+    //           <div className="w-full max-w-[550px] min-h-[141px] flex flex-col justify-start items-start gap-[12px]">
+    //             <div className="w-[550px] min-h-[81px] flex flex-col justify-start items-start gap-[12px]">
+    //               <div className="w-[550px] min-h-[27px] font-[400] text-[19px] leading-[140%] text-white">
+    //                 AI Styling Strength
+    //               </div>
+    //               <div className="w-[100%] max-w-[550px] min-h-[42px] flex justify-between items-center">
+    //                 <div
+    //                   className={`w-full max-w-[255px] min-h-[42px] rounded-[4px] flex justify-between items-center px-[20px] cursor-pointer ${
+    //                     formData.aiTouch === "Very Low" ? "bg-white" : "bg-[#00000033]"
+    //                   }`}
+    //                   onClick={() => handleChange("Very Low", "aiTouch")}
+    //                 >
+    //                   <span
+    //                     className={`w-[92px] min-h-[22px] font-medium text-[16px] leading-[140%] text-center ${
+    //                       formData.aiTouch === "Very Low"
+    //                         ? "text-[#007B82]"
+    //                         : "text-[#FFFFFF80]"
+    //                     }`}
+    //                   >
+    //                     Very Low
+    //                   </span>
+    //                   <input
+    //                     type="radio"
+    //                     checked={formData.aiTouch === "Very Low"}
+    //                     onChange={() => {}}
+    //                   />
+    //                 </div>
+
+    //                 <div
+    //                   className={`w-full max-w-[255px] min-h-[42px] rounded-[4px] flex justify-between items-center px-[20px] cursor-pointer ${
+    //                     formData.aiTouch === "Low" ? "bg-white" : "bg-[#00000033]"
+    //                   }`}
+    //                   onClick={() => handleChange("Low", "aiTouch")}
+    //                 >
+    //                   <span
+    //                     className={`w-[92px] min-h-[22px] font-medium text-[16px] leading-[140%] text-center ${
+    //                       formData.aiTouch === "Low"
+    //                         ? "text-[#007B82]"
+    //                         : "text-[#FFFFFF80]"
+    //                     }`}
+    //                   >
+    //                     Low
+    //                   </span>
+    //                   <input
+    //                     type="radio"
+    //                     checked={formData.aiTouch === "Low"}
+    //                     onChange={() => {}}
+    //                   />
+    //                 </div>
+    //               </div>
+    //               <div className="w-[100%] max-w-[550px] min-h-[42px] flex justify-between items-center">
+    //                 <div
+    //                   className={`w-full max-w-[255px] min-h-[42px] rounded-[4px] flex justify-between items-center px-[20px] cursor-pointer ${
+    //                     formData.aiTouch === "Medium" ? "bg-white" : "bg-[#00000033]"
+    //                   }`}
+    //                   onClick={() => handleChange("Medium", "aiTouch")}
+    //                 >
+    //                   <span
+    //                     className={`w-[92px] min-h-[22px] font-medium text-[16px] leading-[140%] text-center ${
+    //                       formData.aiTouch === "Medium"
+    //                         ? "text-[#007B82]"
+    //                         : "text-[#FFFFFF80]"
+    //                     }`}
+    //                   >
+    //                     Medium
+    //                   </span>
+    //                   <input
+    //                     type="radio"
+    //                     checked={formData.aiTouch === "Medium"}
+    //                     onChange={() => {}}
+    //                   />
+    //                 </div>
+
+    //                 <div
+    //                   className={`w-full max-w-[255px] min-h-[42px] rounded-[4px] flex justify-between items-center px-[20px] cursor-pointer ${
+    //                     formData.aiTouch === "High" ? "bg-white" : "bg-[#00000033]"
+    //                   }`}
+    //                   onClick={() => handleChange("High", "aiTouch")}
+    //                 >
+    //                   <span
+    //                     className={`w-[92px] min-h-[22px] font-medium text-[16px] leading-[140%] text-center ${
+    //                       formData.aiTouch === "High"
+    //                         ? "text-[#007B82]"
+    //                         : "text-[#FFFFFF80]"
+    //                     }`}
+    //                   >
+    //                     High
+    //                   </span>
+    //                   <input
+    //                     type="radio"
+    //                     checked={formData.aiTouch === "High"}
+    //                     onChange={() => {}}
+    //                   />
+    //                 </div>
+    //               </div>
+    //             </div>
+    //           </div>
+    //         </div>
+
+    //         <div className="w-full max-w-[899px] min-h-[67px] rounded-[8px] border-[1px] border-solid border-[#FFFFFF4D] bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] flex justify-center items-center cursor-pointer">
+    //           <button
+    //             type="submit"
+    //             className="w-[200px] min-h-[35px] flex justify-center items-center gap-[10px] text-[20px] font-bold leading-[35px] spacing-[8px] text-center text-white"
+    //           >
+    //             <span>
+    //               <img src={Magic} alt="magic" />
+    //             </span>
+    //             Generate Design
+    //           </button>
+    //         </div>
+    //       </form>
+    //     </div>
+    //   </section>
+
+    //add some responsive
+
+    <section className="w-full min-h-screen pb-[50px] px-6 sm:px-10 py-10 flex flex-col justify-start items-center gap-y-10 bg-gradient-to-l from-[#002628] to-[#00646A] overflow-hidden">
+      {/* Header */}
+      <div className="w-full max-w-4xl text-center space-y-2">
+        <h1 className="text-[clamp(2rem,5vw,3rem)] font-semibold text-white leading-snug">
           Let AI Style It
-        </div>
-        <div className="max-w-[1268px] min-h-[34px] font-semibold text-[24px] leading-[140%] text-center text-white">
+        </h1>
+        <p className="text-[clamp(1rem,2.5vw,1.5rem)] font-medium text-white leading-snug">
           Upload a photo to begin your AI-powered room design
-        </div>
+        </p>
       </div>
 
-      <div className="max-w-[1268px] min-h-[150px] flex flex-col items-center justify-start">
-        <div className="max-w-[920px] min-h-[128px] flex justify-center items-center gap-[40px] flex-wrap">
-          {tabs.map((tab) => (
+      {/* Tabs */}
+      <div className="w-full max-w-6xl flex flex-wrap justify-center items-center gap-4">
+        {tabs.map((tab) => (
+          <div
+            key={tab.name}
+            className="w-[clamp(120px,15vw,200px)] max-w-[200px] h-[clamp(100px,12vh,128px)] flex flex-col justify-center items-center gap-2 cursor-pointer"
+            onClick={() => {
+              if (tab.name === "Upgrade to Unlock") {
+                alert("Please upgrade your account to access this feature");
+              } else {
+                setActiveTab(tab.name);
+                setFormData((prev) => ({
+                  ...prev,
+                  roomType: "",
+                  buildingType: "",
+                }));
+              }
+            }}
+          >
             <div
-              key={tab.name}
-              className="w-[200px] h-[128px] flex flex-col justify-center items-center gap-[20px] cursor-pointer"
-              onClick={() => {
-                if (tab.name === "Upgrade to Unlock") {
-                  alert("Please upgrade your account to access this feature");
-                } else {
-                  setActiveTab(tab.name);
-                  setFormData((prev) => ({
-                    ...prev,
-                    roomType: "",
-                    buildingType: "",
-                  }));
-                }
-              }}
+              className={`w-[clamp(60px,6vw,77px)] aspect-square border-2 p-2 flex justify-center items-center rounded-full transition-all duration-200 ${
+                activeTab === tab.name
+                  ? "border-white bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82]"
+                  : "border-[#FFFFFF1A] bg-[#FFFFFF1A] hover:border-blue-300"
+              }`}
             >
-              <div
-                className={`w-[80px] h-[77px] border-[2px] px-[20px] py-[24px] flex justify-center items-center gap-[10px] rounded-[90px] transition-all duration-200 ${
-                  activeTab === tab.name
-                    ? "border-white bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82]"
-                    : "border-[#FFFFFF1A] bg-[#FFFFFF1A] hover:border-blue-300"
-                }`}
-              >
-                <img src={tab.icon} alt={tab.name} />
-              </div>
-              <div className="max-w-[200px] min-h-[31px] text-[22px] font-semibold leading-[140%] text-center text-white">
-                {tab.name}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="max-w-[1268px] min-h-[727px] flex flex-col justify-start items-center gap-[56px]">
-        <form
-          onSubmit={handleSubmit}
-          className="max-w-[1268px] min-h-[604px] flex justify-between items-center gap-[82px] flex-wrap"
-        >
-          <div className="max-w-[636px] min-h-[604px] flex flex-col justify-center items-center gap-[12px]">
-            <div
-              className="w-[636px] min-h-[552px] rounded-[12px] border-[1px] border-dashed border-white flex justify-center items-center cursor-pointer"
-              onClick={() => inpRef.current.click()}
-              onDragOver={handleDragOver}
-              onDrop={handleDrop}
-            >
-              {imgURL ? (
-                <img
-                  src={imgURL}
-                  alt="Preview"
-                  className="w-full h-full object-cover rounded-[12px]"
-                />
-              ) : (
-                <div className="w-[280px] min-h-[133px] flex flex-col justify-center items-center">
-                  <div className="w-[70px] h-[70px] rounded-[40px] px-[18px] py-[16px] rouned-[40px] bg-[#FFFFFF1A] flex justify-center items-center">
-                    <img src={Galley} alt="gallery" />
-                  </div>
-                  <div className="w-[280px] h-[68px] font-[400] text-[24px] leading-[140%] text-center text-[#FFFFFFB2]">
-                    Drag & drop or click to upload a photo
-                  </div>
-                </div>
-              )}
-              <input
-                type="file"
-                ref={inpRef}
-                onChange={changeImage}
-                accept="image/*"
-                className="hidden"
+              <img
+                src={tab.icon}
+                alt={tab.name}
+                className="w-full h-auto max-w-[60%] max-h-[60%] object-contain"
               />
             </div>
+            <p className="text-white text-[clamp(0.9rem,1.5vw,1.4rem)] font-semibold text-center">
+              {tab.name}
+            </p>
+          </div>
+        ))}
+      </div>
 
-            <div className="w-[147px] h-[40px] rounded-[6px] border-[1.5px] border-solid border-white px-[10px] py-[8px] flex justify-around items-center cursor-pointer">
-              <div className="w-[24px] h-[24px]">
-                <img src={I} alt="i" />
+      {/* Form Section */}
+      <div className="w-full max-w-7xl flex flex-col xl:flex-row gap-10 items-start justify-between">
+        {/* Upload */}
+        <div className="w-full xl:w-1/2 max-w-xl flex flex-col items-center gap-4">
+          <div
+            className="w-full aspect-[4/3] max-h-[70vh] border-2 border-dashed border-white rounded-xl flex justify-center items-center cursor-pointer"
+            onClick={() => inpRef.current.click()}
+            onDragOver={handleDragOver}
+            onDrop={handleDrop}
+          >
+            {imgURL ? (
+              <img
+                src={imgURL}
+                alt="Preview"
+                className="w-full h-full object-cover rounded-xl"
+              />
+            ) : (
+              <div className="w-[clamp(180px,25vw,280px)] flex flex-col items-center gap-2">
+                <div className="w-[clamp(40px,5vw,70px)] aspect-square rounded-full p-2 bg-[#FFFFFF1A] flex justify-center items-center">
+                  <img src={Galley} alt="gallery" className="w-full h-auto" />
+                </div>
+                <p className="text-[#FFFFFFB2] text-center text-[clamp(0.9rem,2vw,1.5rem)] leading-snug">
+                  Drag & drop or click to upload a photo
+                </p>
               </div>
-              <div className="w-[93px] h-[19px] text-[16px] font-[medium] leading-[100%] text-center text-white">
-                Photo guide
-              </div>
+            )}
+            <input
+              type="file"
+              ref={inpRef}
+              onChange={changeImage}
+              accept="image/*"
+              className="hidden"
+            />
+          </div>
+
+          <div className="w-[147px] h-[40px] rounded-[6px] border-[1.5px] border-solid border-white px-[10px] py-[8px] flex justify-around items-center cursor-pointer">
+            <div className="w-[24px] h-[24px]">
+              <img src={I} alt="i" />
+            </div>
+            <div className="w-[93px] h-[19px] text-[16px] font-[medium] leading-[100%] text-center text-white">
+              Photo guide
+            </div>
+          </div>
+        </div>
+
+        {/* Form Controls */}
+        <form
+          onSubmit={handleSubmit}
+          className="w-full xl:w-1/2 max-w-xl flex flex-col gap-6"
+        >
+          {/* Building Type */}
+          <div className="space-y-2">
+            <label className="text-white text-lg">Choose Building Type</label>
+            <div className="flex flex-col sm:flex-row gap-4">
+              {["Commercial", "Residential"].map((type) => (
+                <div
+                  key={type}
+                  className={`flex-1 flex justify-between items-center px-4 py-2 rounded-md cursor-pointer ${
+                    formData.buildingType === type
+                      ? "bg-white text-[#007B82]"
+                      : "bg-[#00000033] text-[#FFFFFF80]"
+                  }`}
+                  onClick={() => handleChange(type, "buildingType")}
+                >
+                  <span>{type}</span>
+                  <input
+                    type="radio"
+                    checked={formData.buildingType === type}
+                    onChange={() => {}}
+                  />
+                </div>
+              ))}
             </div>
           </div>
 
-          <div className="w-[550px] h-[604px] flex flex-col items-start justify-start gap-[52px]">
-            <div className="w-[550px] min-h-[411px] flex flex-col items-center justify-start gap-[31px]">
-              <div className="w-[550px] min-h-[81px] flex flex-col justify-start items-center gap-[12px]">
-                <div className="w-[550px] min-h-[27px] font-[400] text-[19px] leading-[140%] text-white">
-                  Choose Building Type
-                </div>
-                <div className="w-[100%] max-w-[550px] min-h-[42px] flex justify-between items-center">
-                  <div
-                    className={`w-full max-w-[255px] min-h-[42px] rounded-[4px] flex justify-between items-center px-[20px] cursor-pointer ${
-                      formData.buildingType === "Commercial"
-                        ? "bg-white"
-                        : "bg-[#00000033]"
-                    }`}
-                    onClick={() => handleChange("Commercial", "buildingType")}
-                  >
-                    <span
-                      className={`w-[92px] min-h-[22px] font-medium text-[16px] leading-[140%] text-center ${
-                        formData.buildingType === "Commercial"
-                          ? "text-[#007B82]"
-                          : "text-[#FFFFFF80]"
-                      }`}
-                    >
-                      Commercial
-                    </span>
-                    <input
-                      type="radio"
-                      checked={formData.buildingType === "Commercial"}
-                      onChange={() => {}}
-                    />
-                  </div>
-
-                  <div
-                    className={`w-full max-w-[255px] min-h-[42px] rounded-[4px] flex justify-between items-center px-[20px] cursor-pointer ${
-                      formData.buildingType === "Residential"
-                        ? "bg-white"
-                        : "bg-[#00000033]"
-                    }`}
-                    onClick={() => handleChange("Residential", "buildingType")}
-                  >
-                    <span
-                      className={`w-[92px] min-h-[22px] font-medium text-[16px] leading-[140%] text-center ${
-                        formData.buildingType === "Residential"
-                          ? "text-[#007B82]"
-                          : "text-[#FFFFFF80]"
-                      }`}
-                    >
-                      Residential
-                    </span>
-                    <input
-                      type="radio"
-                      checked={formData.buildingType === "Residential"}
-                      onChange={() => {}}
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="w-[550px] min-h-[81px] flex flex-col justify-start items-start gap-[12px]">
-                <div className="w-[550px] min-h-[27px] font-[400] text-[19px] leading-[140%] text-white">
-                  Select Room Type
-                </div>
-                <div className="w-full max-w-[550px] min-h-[42px] rounded-[4px] bg-white flex justify-between items-center px-[20px]">
-                  <select
-                    name="roomType"
-                    value={formData.roomType}
-                    onChange={(e) => handleChange(e.target.value, "roomType")}
-                    className="w-[510px] h-[42px] cursor-pointer text-[#007B82]"
-                  >
-                    <option value="">Select room type</option>
-                    {roomTypes[activeTab]?.map((room) => (
-                      <option key={room} value={room}>
-                        {room}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-
-              <div className="w-[550px] min-h-[81px] flex flex-col justify-start items-start gap-[12px]">
-                <div className="w-[550px] min-h-[27px] font-[400] text-[19px] leading-[140%] text-white">
-                  Pick a Style
-                </div>
-                <div className="w-full max-w-[550px] min-h-[42px] rounded-[4px] bg-white flex justify-between items-center px-[20px]">
-                  <select
-                    name="roomStyle"
-                    value={formData.roomStyle}
-                    onChange={(e) => handleChange(e.target.value, "roomStyle")}
-                    className="w-[510px] h-[42px] cursor-pointer text-[#007B82]"
-                  >
-                    <option value="">Select style</option>
-                    {styles.map((style) => (
-                      <option key={style} value={style}>
-                        {style}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-
-              <div className="w-[550px] min-h-[81px] flex flex-col justify-start items-start gap-[12px]">
-                <div className="w-[550px] min-h-[27px] font-[400] text-[19px] leading-[140%] text-white">
-                  Number of designs
-                </div>
-                <div className="w-full max-w-[550px] min-h-[42px] rounded-[4px] bg-white flex justify-between items-center px-[20px]">
-                  <select
-                    name="noOfDesign"
-                    value={formData.noOfDesign}
-                    onChange={(e) => handleChange(e.target.value, "noOfDesign")}
-                    className="w-[510px] h-[42px] cursor-pointer text-[#007B82]"
-                  >
-                    {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
-                      <option key={num} value={num}>
-                        {num}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
+          {/* Dynamic Fields */}
+          {[
+            {
+              label: "Select Room Type",
+              name: "roomType",
+              options: roomTypes[activeTab],
+            },
+            { label: "Pick a Style", name: "roomStyle", options: styles },
+            {
+              label: "Number of designs",
+              name: "noOfDesign",
+              options: Array.from({ length: 9 }, (_, i) => i + 1),
+            },
+          ].map((field) => (
+            <div key={field.name} className="space-y-2">
+              <label className="text-white text-lg">{field.label}</label>
+              <select
+                name={field.name}
+                value={formData[field.name]}
+                onChange={(e) => handleChange(e.target.value, field.name)}
+                className="w-full p-3 rounded-md bg-white text-[#007B82] cursor-pointer"
+              >
+                <option value="">Select {field.name}</option>
+                {field.options.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
             </div>
+          ))}
 
-            <div className="w-full max-w-[550px] min-h-[141px] flex flex-col justify-start items-start gap-[12px]">
-              <div className="w-[550px] min-h-[81px] flex flex-col justify-start items-start gap-[12px]">
-                <div className="w-[550px] min-h-[27px] font-[400] text-[19px] leading-[140%] text-white">
-                  AI Styling Strength
+          {/* AI Strength */}
+          <div className="space-y-2">
+            <label className="text-white text-lg">AI Styling Strength</label>
+            <div className="flex flex-wrap gap-3">
+              {["Very Low", "Low", "Medium", "High"].map((level) => (
+                <div
+                  key={level}
+                  className={`flex-1 min-w-[120px] px-4 py-2 rounded-md cursor-pointer text-center ${
+                    formData.aiTouch === level
+                      ? "bg-white text-[#007B82]"
+                      : "bg-[#00000033] text-[#FFFFFF80]"
+                  }`}
+                  onClick={() => handleChange(level, "aiTouch")}
+                >
+                  {level}
                 </div>
-                <div className="w-[100%] max-w-[550px] min-h-[42px] flex justify-between items-center">
-                  <div
-                    className={`w-full max-w-[255px] min-h-[42px] rounded-[4px] flex justify-between items-center px-[20px] cursor-pointer ${
-                      formData.aiTouch === "Very Low"
-                        ? "bg-white"
-                        : "bg-[#00000033]"
-                    }`}
-                    onClick={() => handleChange("Very Low", "aiTouch")}
-                  >
-                    <span
-                      className={`w-[92px] min-h-[22px] font-medium text-[16px] leading-[140%] text-center ${
-                        formData.aiTouch === "Very Low"
-                          ? "text-[#007B82]"
-                          : "text-[#FFFFFF80]"
-                      }`}
-                    >
-                      Very Low
-                    </span>
-                    <input
-                      type="radio"
-                      checked={formData.aiTouch === "Very Low"}
-                      onChange={() => {}}
-                    />
-                  </div>
-
-                  <div
-                    className={`w-full max-w-[255px] min-h-[42px] rounded-[4px] flex justify-between items-center px-[20px] cursor-pointer ${
-                      formData.aiTouch === "Low" ? "bg-white" : "bg-[#00000033]"
-                    }`}
-                    onClick={() => handleChange("Low", "aiTouch")}
-                  >
-                    <span
-                      className={`w-[92px] min-h-[22px] font-medium text-[16px] leading-[140%] text-center ${
-                        formData.aiTouch === "Low"
-                          ? "text-[#007B82]"
-                          : "text-[#FFFFFF80]"
-                      }`}
-                    >
-                      Low
-                    </span>
-                    <input
-                      type="radio"
-                      checked={formData.aiTouch === "Low"}
-                      onChange={() => {}}
-                    />
-                  </div>
-                </div>
-                <div className="w-[100%] max-w-[550px] min-h-[42px] flex justify-between items-center">
-                  <div
-                    className={`w-full max-w-[255px] min-h-[42px] rounded-[4px] flex justify-between items-center px-[20px] cursor-pointer ${
-                      formData.aiTouch === "Medium"
-                        ? "bg-white"
-                        : "bg-[#00000033]"
-                    }`}
-                    onClick={() => handleChange("Medium", "aiTouch")}
-                  >
-                    <span
-                      className={`w-[92px] min-h-[22px] font-medium text-[16px] leading-[140%] text-center ${
-                        formData.aiTouch === "Medium"
-                          ? "text-[#007B82]"
-                          : "text-[#FFFFFF80]"
-                      }`}
-                    >
-                      Medium
-                    </span>
-                    <input
-                      type="radio"
-                      checked={formData.aiTouch === "Medium"}
-                      onChange={() => {}}
-                    />
-                  </div>
-
-                  <div
-                    className={`w-full max-w-[255px] min-h-[42px] rounded-[4px] flex justify-between items-center px-[20px] cursor-pointer ${
-                      formData.aiTouch === "High"
-                        ? "bg-white"
-                        : "bg-[#00000033]"
-                    }`}
-                    onClick={() => handleChange("High", "aiTouch")}
-                  >
-                    <span
-                      className={`w-[92px] min-h-[22px] font-medium text-[16px] leading-[140%] text-center ${
-                        formData.aiTouch === "High"
-                          ? "text-[#007B82]"
-                          : "text-[#FFFFFF80]"
-                      }`}
-                    >
-                      High
-                    </span>
-                    <input
-                      type="radio"
-                      checked={formData.aiTouch === "High"}
-                      onChange={() => {}}
-                    />
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
-          </div>
-
-          <div className="w-full max-w-[899px] min-h-[67px] rounded-[8px] border-[1px] border-solid border-[#FFFFFF4D] bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] flex justify-center items-center cursor-pointer">
-            <button
-              type="submit"
-              className="w-[200px] min-h-[35px] flex justify-center items-center gap-[10px] text-[20px] font-bold leading-[35px] spacing-[8px] text-center text-white"
-            >
-              <span>
-                <img src={Magic} alt="magic" />
-              </span>
-              Generate Design
-            </button>
           </div>
         </form>
+      </div>
+      <div
+        className="w-full max-w-[899px] min-h-[67px] rounded-[8px] border border-[#FFFFFF4D] flex justify-center items-center cursor-pointer"
+        style={{
+          backgroundImage: `
+        linear-gradient(to right, #007c82 0%,rgb(4, 68, 75),rgb(3, 89, 94) 100%)
+        
+        `,
+        }}
+      >
+        <button
+          type="submit"
+          className="w-[200px] min-h-[35px] flex justify-center items-center gap-[10px] text-[20px] font-bold leading-[35px] tracking-[0.5px] text-center text-white"
+        >
+          <span>
+            <img src={Magic} alt="magic" />
+          </span>
+          Generate Design
+        </button>
       </div>
     </section>
   );
