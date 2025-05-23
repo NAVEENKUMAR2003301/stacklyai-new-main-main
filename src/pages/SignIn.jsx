@@ -178,7 +178,7 @@ const handleSubmit = async (e) => {
                
                 <button
                   type="submit"
-                  className="w-[456px] bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-base text-[white] cursor-pointer font-bold max-w-[465px] w-full p-[15px] rounded-[5px]"
+                  className="w-[456px] bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-base text-[white] cursor-pointer font-bold max-w-[465px] p-[15px] rounded-[5px]"
                 >
                   Log In
                 </button>
