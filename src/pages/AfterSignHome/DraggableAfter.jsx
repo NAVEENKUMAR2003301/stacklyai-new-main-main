@@ -6,7 +6,7 @@ import Download from "../../../public/AfterHome/download.png"
 import Input from "../../../public/AfterHome/input.png"
 import Search from "../../../public/AfterHome/search.png"
 import More from "../../../public/AfterHome/more.png"
-import Share from "../../../public/AfterHome/Share.png"
+import Share from "../../../public/AfterHome/share.png"
 
 import dragImg1_1 from "../../assets/home/draggableImgSection/drag1(1).png";
 import dragImg1_2 from "../../assets/home/draggableImgSection/drag1(2).png";
