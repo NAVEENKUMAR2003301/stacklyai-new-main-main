@@ -447,48 +447,7 @@ export default function Home() {
         />
       </div>
 
-      {/* Section 5 */}
-      {/* <section
-        className="  relative w-full min-[500px]:min-h-[1116px] bg-center object-cover bg-cover bg-no-repeat bg-scroll  overflow-hidden"
-        style={{ backgroundImage: "url('/home/sec5/banner.jpg')" }}
-      >
-        <div className="w-full min-h-[896px] flex flex-col justify-center items-center gap-[30px]">
-          <h1 className="max-w-[688px] w-full min-h-[67px] text-5xl font-semibold leading-[100%] h-[140%] text-center text-white">
-            DESIGN YOUR{" "}
-            <span className="max-w-[688px] w-full min-h-[67px] text-5xl font-semibold leading-[100%] h-[140%] text-center text-[#00d1dd]">
-              FUTURE HOME
-            </span>
-          </h1>
-          <p className="max-w-[941px] w-full min-h-[76px] text-xl font-medium leading-[38px] h-[38px] text-center text-white">
-            Bring your dream home to life! Explore innovative designs, customize
-            every detail, and create a space that reflects your style and vision
-          </p>
-          <div className="group">
-            <img
-              src={sec5BlockImg}
-              alt="gallery"
-              id="gall"
-              className="max-w-[250px] w-full min-h-[250px] transition-all duration-[2s] rounded-sm"
-            />
-            <div
-              className="hidden max-[300px]:hidden min-[300px]:group-hover:block transition-all duration-[2s]"
-              id="gally"
-            >
-              <img src={sec5Frame1} className="absolute left-0 top-[370px]" />
-              <img src={sec5Frame2} className="absolute left-0 bottom-5" />
-              <img src={sec5Frame3} className="absolute right-0 top-[400px]" />
-              <img src={sec5Frame4} className="absolute left-20 top-[600px]" />
-              <img src={sec5Frame5} className="absolute left-[50%] bottom-0" />
-              <img
-                src={sec5Frame6}
-                className="absolute left-[50%] bottom-[30%]"
-              />
-              <img src={sec5Frame7} className="absolute bottom-0" />
-              <img src={sec5Frame8} className="absolute right-[40%]" />
-            </div>
-          </div>
-        </div>
-      </section> */}
+     
 
       <GalleryHover
         sec5BlockImg={sec5BlockImg}
@@ -502,72 +461,7 @@ export default function Home() {
         sec5Frame8={sec5Frame8}
       />
 
-      {/* Section 6 */}
-
-      {/* <section className="min-h-[500px]">
-        <div className="h-[500px] max-[1000px]:flex-col flex justify-center items-center">
-          <div className="max-w-[400px] min-h-[165px] text-center flex flex-col justify-center items-center">
-            <div className="flex justify-center items-center relative left-[60px]">
-              <div className="img1 lite">
-                <img src={sec6Img1} alt="Design1" />
-              </div>
-              <div className="relative left-[-30px]">
-                <img src={sec6Img2} alt="Design2" />
-              </div>
-              <div className="relative left-[-60px]">
-                <img src={sec6Img3} alt="Design3" />
-              </div>
-              <div className="relative left-[-90px]">
-                <img src={sec6Img4} alt="Design4" />
-              </div>
-              <div className="w-[80px] h-[80px] bg-white shadow-[0_1px_4px_0_#00000040] flex justify-center items-center relative left-[-120px] p-2.5 rounded-[50%]">
-                <span className="max-w-[75px] min-h-[45px] text-[32px] font-semibold leading-[100%] text-align-center text-[#007B82]">
-                  45+
-                </span>
-              </div>
-            </div>
-            <div className="w-[380px] min-h-[39px] flex justify-center items-center mt-5">
-              <span className="min-w-[185px] text-center text-[28px] font-medium leading-[100%] text-[#2A2A2A]">
-                Design Styles
-              </span>
-            </div>
-            <div>
-              We blend AI intelligence with diverse design trends to deliver spaces you'll love
-            </div>
-          </div>
-
-          <div className="min-w-[245px] min-h-[71.62px] text-center flex items-baseline justify-center">
-            <img src={sec6Logo} alt="logo" />
-          </div>
-
-          <div className="max-w-[400px] min-h-[165px] text-center flex flex-col justify-center items-center mb-10">
-            <div className="flex justify-center items-center relative left-[60px] top-[10px]">
-              <div className="img1  lite">
-                <img src={sec6Img5} alt="" />
-              </div>
-              <div className=" relative left-[-30px]">
-                <img src={sec6Img6} alt="" />
-              </div>
-              <div className=" relative left-[-60px]">
-                <img src={sec6Img7} alt="" />
-              </div>
-              <div className=" relative left-[-90px]">
-                <img src={sec6Img8} alt="" />
-              </div>
-              <div className="w-[80px] h-[80px] bg-white shadow-[0_1px_4px_0_#00000040] flex justify-center items-center relative left-[-120px] p-2.5 rounded-[50%]">
-                <span className="max-w-[75px] min-h-[45px] text-[32px] font-semibold leading-[100%] text-center text-[#007B82]">
-                  100+
-                </span>
-              </div>
-            </div>
-            <div className="w-[380px] min-h-[39px] flex justify-center items-center">
-              <span className="min-w-[185px] text-center text-[28px] font-medium leading-[140%] h-[140%] text-[#2A2A2A] relative top-8">
-                Professionals Trust Us
-              </span>
-            </div>
-          </div>
-        </div>
-      </section> */}
+      
       <section className="w-full min-h-[725px] bg-white py-16 px-4 flex flex-col justify-center items-center gap-[100px]">
         <div className="max-w-6xl mx-auto ">
           {/* Title */}

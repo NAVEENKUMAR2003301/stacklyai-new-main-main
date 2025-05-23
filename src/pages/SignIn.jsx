@@ -89,7 +89,9 @@ const handleSubmit = async (e) => {
               // }}
               className=" w-full max-w-[435px] min-h-[55px] rounded-[12px] border cursor-pointer font-medium text-base text-white bg-[#0000004d] mt-[50px] pt-[10px] pr-[20px] pb-[10px] pl-[20px]  border-solid border-[white] flex justify-center items-center gap-[10px]"
             >
-             <span className="font-bold max-w-[150px] min-h-[35px] text-[18px] leading-[35px] spacing-[8px] tracking-[1px]">Start Free Trial</span>
+              <span className="font-bold max-w-[150px] min-h-[35px] text-[18px] leading-[35px] spacing-[8px] tracking-[1px]">
+                Start Free Trial
+              </span>
             </button>
 
             <p className="font-medium text-[16px] w-full max-w-[596px] min-h-[19px] leading-[100%] min-[500px]:text-base pt-5 text-[#ffffff] text-center">
@@ -108,81 +110,91 @@ const handleSubmit = async (e) => {
             <p className="font-medium text-[16px] text-[#ffffff] leading-[100%]">
               Log in and bring your dream space to life
             </p>
-              <form
-                onSubmit={handleSubmit}
-                className="flex flex-col gap-5 items-center justify-center w-full"
-              >
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-5 items-center justify-center w-full"
+            >
+              <input
+                className="max-w-[465px] min-h-[44px] w-full bg-[white] p-[15px] placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a] rounded-[8px]"
+                type="email"
+                placeholder="Email"
+                required
+                value={formData.email}
+                onChange={(e) => {
+                  setFormData((prev) => {
+                    return { ...prev, email: e.target.value };
+                  });
+                }}
+              />
+
+              <div className="max-w-[465px] min-h-[44px] w-full bg-[white] flex items-center justify-center p-[15px] rounded-[5px]">
                 <input
-                  className="max-w-[465px] min-h-[44px] w-full bg-[white] p-[15px] placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a] rounded-[8px]"
-                  type="email"
-                  placeholder="Email"
+                  className="bg-white flex-1 placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a]"
+                  type={showPassword ? "text" : "password"}
+                  id="password"
+                  placeholder="Password"
                   required
-                  value={formData.email}
+                  value={formData.password}
                   onChange={(e) => {
                     setFormData((prev) => {
-                      return { ...prev, email: e.target.value };
+                      return { ...prev, password: e.target.value };
                     });
                   }}
                 />
-  
-                <div className="max-w-[465px] min-h-[44px] w-full bg-[white] flex items-center justify-center p-[15px] rounded-[5px]">
-                  <input
-                    className="bg-white flex-1 placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a]"
-                    type={showPassword ? "text" : "password"}
-                    id="password"
-                    placeholder="Password"
-                    required
-                    value={formData.password}
-                    onChange={(e) => {
-                      setFormData((prev) => {
-                        return { ...prev, password: e.target.value };
-                      });
-                    }}
-                  />
-                  <span
-                    className="cursor-pointer"
-                    onClick={() => {
-                      setShowPassword((prev) => !prev);
-                    }}
+                <span
+                  className="cursor-pointer"
+                  onClick={() => {
+                    setShowPassword((prev) => !prev);
+                  }}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="15"
+                    viewBox="0 0 25 15"
+                    fill="none"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="15"
-                      viewBox="0 0 25 15"
-                      fill="none"
-                    >
-                      <path
-                        d="M24.0705 7.51211C21.3277 4.35156 17.5375 0.71875 12.5 0.71875C10.4656 0.71875 8.60078 1.29395 6.63301 2.52305C4.97402 3.56445 3.27266 5.02969 0.935547 7.43945L0.875 7.5L1.28066 7.91777C4.6168 11.3326 7.49883 14.2812 12.5 14.2812C14.71 14.2812 16.8533 13.5607 19.0512 12.0773C20.9221 10.8119 22.5145 9.20742 23.792 7.91172L24.125 7.57871L24.0705 7.51211ZM12.5 12.3438C9.82988 12.3438 7.65625 10.1701 7.65625 7.5C7.65625 4.82988 9.82988 2.65625 12.5 2.65625C15.1701 2.65625 17.3438 4.82988 17.3438 7.5C17.3438 10.1701 15.1701 12.3438 12.5 12.3438Z"
-                        fill="#BEBCBC"
-                      />
-                      <path
-                        d="M12.1609 5.73203C12.1609 5.31426 12.282 4.9207 12.4939 4.59375C10.8895 4.59375 9.59375 5.90156 9.59375 7.51211C9.59375 9.12266 10.8955 10.4244 12.4939 10.4244C14.0924 10.4244 15.4002 9.12266 15.4002 7.51211C15.0732 7.72402 14.6797 7.84512 14.2619 7.84512C13.1055 7.83906 12.1609 6.89453 12.1609 5.73203Z"
-                        fill="#BEBCBC"
-                      />
-                    </svg>
-                  </span>
-                </div>
-  
-                <p className="max-w-[465px] w-full text-base text-[#b0b0b0] font-normal text-end">
-                  <Link className="no-underline font-medium text-[#009A98]" to="/HeroForgetPg">
-                    Forget Password?
-                  </Link>
-                </p>
+                    <path
+                      d="M24.0705 7.51211C21.3277 4.35156 17.5375 0.71875 12.5 0.71875C10.4656 0.71875 8.60078 1.29395 6.63301 2.52305C4.97402 3.56445 3.27266 5.02969 0.935547 7.43945L0.875 7.5L1.28066 7.91777C4.6168 11.3326 7.49883 14.2812 12.5 14.2812C14.71 14.2812 16.8533 13.5607 19.0512 12.0773C20.9221 10.8119 22.5145 9.20742 23.792 7.91172L24.125 7.57871L24.0705 7.51211ZM12.5 12.3438C9.82988 12.3438 7.65625 10.1701 7.65625 7.5C7.65625 4.82988 9.82988 2.65625 12.5 2.65625C15.1701 2.65625 17.3438 4.82988 17.3438 7.5C17.3438 10.1701 15.1701 12.3438 12.5 12.3438Z"
+                      fill="#BEBCBC"
+                    />
+                    <path
+                      d="M12.1609 5.73203C12.1609 5.31426 12.282 4.9207 12.4939 4.59375C10.8895 4.59375 9.59375 5.90156 9.59375 7.51211C9.59375 9.12266 10.8955 10.4244 12.4939 10.4244C14.0924 10.4244 15.4002 9.12266 15.4002 7.51211C15.0732 7.72402 14.6797 7.84512 14.2619 7.84512C13.1055 7.83906 12.1609 6.89453 12.1609 5.73203Z"
+                      fill="#BEBCBC"
+                    />
+                  </svg>
+                </span>
+              </div>
+
+              <p className="max-w-[465px] w-full text-base text-[#b0b0b0] font-normal text-end">
+                <Link
+                  className="no-underline font-medium text-[#009A98]"
+                  to="/HeroForgetPg"
+                >
+                  Forget Password?
+                </Link>
+              </p>
+              <Link to="/AfterHome">
+               
                 <button
                   type="submit"
-                  className=" bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-base text-[white] cursor-pointer font-bold max-w-[465px] w-full p-[15px] rounded-[5px]"
+                  className="w-[456px] bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-base text-[white] cursor-pointer font-bold max-w-[465px] w-full p-[15px] rounded-[5px]"
                 >
                   Log In
                 </button>
-              </form>
-              <div className=" w-full max-w-[458px] min-h-[19px] flex justify-between items-center p-[15px]">
-                <div className="w-[202px] border-[1px] border-solid border-[#B0B0B0]"></div>
-                <p className="font-medium text-base text-[#b0b0b0] text-[16px] leading-[100%] px-3">or</p>
-                <div className="w-[202px] border-[1px] border-solid border-[#B0B0B0]"></div>
+              </Link>
+            </form>
+            <div className=" w-full max-w-[458px] min-h-[19px] flex justify-between items-center p-[15px]">
+              <div className="w-[202px] border-[1px] border-solid border-[#B0B0B0]"></div>
+              <p className="font-medium text-base text-[#b0b0b0] text-[16px] leading-[100%] px-3">
+                or
+              </p>
+              <div className="w-[202px] border-[1px] border-solid border-[#B0B0B0]"></div>
             </div>
 
-            <div className="w-full max-w-[465px] min-h-[19px] text-center text-[16px] leading-[100%] font-medium text-[#B0B0B0]">Sign up with</div>
+            <div className="w-full max-w-[465px] min-h-[19px] text-center text-[16px] leading-[100%] font-medium text-[#B0B0B0]">
+              Sign up with
+            </div>
 
             <div className="flex items-center justify-between gap-2.5 w-full">
               <a href="http://localhost:8000/login/google">
@@ -279,16 +291,15 @@ const handleSubmit = async (e) => {
               </a>
             </div>
 
-
-                <p className="text-[16px] leading-[100%] text-[#b0b0b0] font-normal">
-                  Don't have an account?{" "}
-                  <Link
-                    className="no-underline font-bold text-[#00B0BA]"
-                    to={"/sign-up"}
-                  >
-                    Sign up
-                  </Link>
-                </p>
+            <p className="text-[16px] leading-[100%] text-[#b0b0b0] font-normal">
+              Don't have an account?{" "}
+              <Link
+                className="no-underline font-bold text-[#00B0BA]"
+                to={"/sign-up"}
+              >
+                Sign up
+              </Link>
+            </p>
           </div>
         </div>
       </div>

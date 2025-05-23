@@ -22,6 +22,7 @@ import UiPlans from "./pages/PricingPage/UiPlans";
 import Pay from "./pages/PricingPage/Pay";
 import ConformationPage from "./pages/PricingPage/ConformationPage";
 import Profile from "./pages/Profile/Profile";
+import AfterHome from "./pages/AfterSignHome/AfterHome";
 
 export default function App() {
   return (
@@ -47,6 +48,7 @@ export default function App() {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp/>}/>
         <Route path="/Profile" element={<Profile/>}/>
+        <Route path="/AfterHome" element={<AfterHome/>}/>
       </Routes>
 
       <Footer />
