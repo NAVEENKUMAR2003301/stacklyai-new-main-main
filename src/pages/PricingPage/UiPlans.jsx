@@ -318,11 +318,7 @@ export default function UiPlans() {
             </div>
           </div>
 
-          <Link to="">
-            <div className="text-white underline font-medium leading-[140%] text-[32px] text-center ">
-              View all FAQs
-            </div>
-          </Link>
+        
         </div>
       </section>
     </div>
