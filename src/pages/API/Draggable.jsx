@@ -94,20 +94,7 @@ export default function Draggable(){
       </div>
 
       {/* Call to Action */}
-      <div className="mt-8 flex flex-col items-center gap-4">
-        {/* <h3 className="text-[32px] font-semibold text-[#00b0ba] leading-[140%]">
-          Get Started – Infinite Ideas.
-        </h3> */}
-        <a
-          href="#"
-          className="max-w-[800px] mt-[40] min-h-[60px] rounded-[5px] hover:bg-cyan-500 text-white font-semibold py-4 px-8 rounded-md text-[20px] leading-[35px] spacing-[8px] transition"style={{
-            background:
-              "linear-gradient(to right, #007c82 0%,rgb(4, 68, 75),rgb(3, 89, 94) 100%)",
-          }}
-        >
-          Read API Documentation
-        </a>
-      </div>
+      
       <div className="mt-16 text-center max-w-[681px] text-[#ffffff] font-normal text-[24px] leading-[180%] align-center">
         {/* Loved by experts and designed for everyone, our platform brings
         professional-quality results with ease and simplicity. */}
