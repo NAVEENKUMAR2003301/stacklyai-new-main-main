@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function HeroBanner() {
   const [changeText, setChangeText] = useState(0);
@@ -51,14 +52,17 @@ export default function HeroBanner() {
               Your Own Space Photo-like images in 25 Seconds
             </p>
 
-            <div className="max-w-[305px] w-full h-[50px] flex justify-center items-center bg-[#007b82] text-white shadow-[10px_10px_10px_10px_#2a2a2a29] cursor-pointer rounded-[5px] hover:bg-[#2e9ea4] hover:text-white max-[500px]:h-10">
-              <p
-                className="text-lg font-bold leading-[100%] text-center text-white"
-                style={{ wordSpacing: "2px" }}
-              >
-                Design Now!
-              </p>
-            </div>
+            <Link to="sign-in">
+              {" "}
+              <div className="max-w-[305px] w-[305px] h-[50px] flex justify-center items-center bg-[#007b82] text-white shadow-[10px_10px_10px_10px_#2a2a2a29] cursor-pointer rounded-[5px] hover:bg-[#2e9ea4] hover:text-white max-[500px]:h-10">
+                <p
+                  className="text-lg font-bold leading-[100%] text-center text-white"
+                  style={{ wordSpacing: "2px" }}
+                >
+                  Design Now!
+                </p>
+              </div>
+            </Link>
           </div>
           <div className="relative w-full max-w-[500px] min-h-[312px] group overflow-hidden rounded-lg">
             <div

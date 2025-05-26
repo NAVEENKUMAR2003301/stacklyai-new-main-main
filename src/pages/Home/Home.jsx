@@ -57,6 +57,8 @@ import Star from "../../assets/home/star.png";
 import Reacts from "../../assets/home/react.png";
 import Stars from "../../assets/home/stars.png";
 import Magic from "../../assets/product-pg/magic.png";
+import {Link} from "react-router-dom"
+
 
 //export default function Home() {
 export default function Home() {
@@ -133,102 +135,7 @@ export default function Home() {
       </div>
 
       {/* section 3 */}
-      {/* <section className="w-full min-h-[1394px]">
-        <div className="w-full min-h-[1394px] bg-[#002628]">
-          <div className="home-bg-img relative w-full min-h-[1371px] overflow-hidden px-[5%] py-[100px]">
-            <img
-              src={sec3Pattern1}
-              alt=""
-              style={{
-                position: "absolute",
-                width: "240px",
-                height: "240px",
-                top: 0,
-                left: 0,
-                mixBlendMode: "overlay",
-              }}
-            />
-            <img
-              src={sec3Pattern2}
-              alt=""
-              style={{
-                position: "absolute",
-                width: "60px",
-                height: "60px",
-                top: "554px",
-                left: "1080px",
-                mixBlendMode: "overlay",
-              }}
-            />
-            <img
-              src={sec3Pattern3}
-              style={{
-                position: "absolute",
-                width: "44px",
-                height: "44px",
-                top: "747px",
-                left: "260px",
-              }}
-              alt=""
-            />
-            <img
-              src={sec3Pattern4}
-              style={{
-                position: "absolute",
-                width: "44px",
-                height: "44px",
-                top: "932px",
-                left: "70%",
-              }}
-              alt=""
-            />
 
-            <h1 className="text-[40px] font-bold text-[white] text-center mb-5">
-              Ultimate{" "}
-              <span style={{ color: "#00D1DD", opacity: "100%" }}>
-                AI Design Tool
-              </span>{" "}
-              for Interiors & Exteriors
-            </h1>
-            <p className="text-[22px] font-medium text-[white] text-center">
-              Transform Any Space Effortlessly
-            </p>
-
-            <div className="w-full mt-[100px]">
-              <div className="design flex items-center justify-center gap-5 absolute left-5 top-5 max-[600px]:static max-[600px]:flex-col max-[600px]:p-3">
-                <p className="rounded-tl-[50px] rounded-tr-[50px] rounded-bl-[50px] rounded-br-[50px] text-[22px] font-semibold text-black bg-white p-5">
-                  AI-Powered Interior Designs
-                </p>
-                <img
-                  className="w-full max-w-[400px] max-h-[400px] rounded-[50%] border-8 border-solid border-[white]"
-                  src={sec3Design1}
-                  alt=""
-                />
-              </div>
-              <div className="design flex items-center justify-center gap-5 absolute right-5 top-[300px] max-[600px]:static max-[600px]:flex-col max-[600px]:p-3">
-                <img
-                  className="w-full max-w-[400px] max-h-[400px] rounded-[50%] border-8 border-solid border-[white]"
-                  src={sec3Design2}
-                  alt=""
-                />
-                <p className="rounded-tl-[50px] rounded-tr-[50px] rounded-bl-[50px] rounded-br-[50px] text-[22px] font-semibold text-black bg-white p-5">
-                  Stunning Exterior Makeovers
-                </p>
-              </div>
-              <div className="design flex items-center justify-center gap-5 absolute left-5 top-[600px] max-[600px]:static max-[600px]:flex-col max-[600px]:p-3">
-                <p className="rounded-tl-[50px] rounded-tr-[50px] rounded-bl-[50px] rounded-br-[50px] text-[22px] font-semibold text-black bg-white p-5">
-                  Outdoor Spaces Reimagined
-                </p>
-                <img
-                  className="w-full max-w-[400px] max-h-[400px] rounded-[50%] border-8 border-solid border-[white]"
-                  src={sec3Design3}
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className="w-full min-h-[900px]" ref={sectionRef}>
         <div
           className="w-full min-h-[900px]  bg-cover bg-center bg-no-repeat bg-blend-overlay pb-0"
@@ -398,24 +305,27 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div
-            className="max-w-[846px] w-full min-h-[65px] flex justify-center items-center rounded-[5px] hover:bg-[#4bb0b5]
+          <Link to="/Products">
+            {" "}
+            <div
+              className="max-w-[846px] w-[846px] min-h-[65px] flex justify-center items-center rounded-[5px] hover:bg-[#4bb0b5]
           "
-            style={{
-              backgroundImage: `
+              style={{
+                backgroundImage: `
         linear-gradient(to right, #007c82 0%,rgb(4, 68, 75),rgb(3, 89, 94) 100%)
         
         `,
-            }}
-          >
-            <p
-              className="max-w-[464px] w-full min-h-[65px] text-xl font-bold leading-[100%]  text-center text-white no-underline flex justify-center items-center gap-[10px] cursor-pointer"
-              style={{ wordSpacing: "2px" }}
+              }}
             >
-              <img src={Magic} alt="" className="w-30px h-[30px]" />
-              Generate Design
-            </p>
-          </div>
+              <p
+                className="max-w-[464px] w-full min-h-[65px] text-xl font-bold leading-[100%]  text-center text-white no-underline flex justify-center items-center gap-[10px] cursor-pointer"
+                style={{ wordSpacing: "2px" }}
+              >
+                <img src={Magic} alt="" className="w-30px h-[30px]" />
+                Generate Design
+              </p>
+            </div>
+          </Link>
         </div>
       </section>
 
@@ -447,8 +357,6 @@ export default function Home() {
         />
       </div>
 
-     
-
       <GalleryHover
         sec5BlockImg={sec5BlockImg}
         sec5Frame1={sec5Frame1}
@@ -461,7 +369,6 @@ export default function Home() {
         sec5Frame8={sec5Frame8}
       />
 
-      
       <section className="w-full min-h-[725px] bg-white py-16 px-4 flex flex-col justify-center items-center gap-[100px]">
         <div className="max-w-6xl mx-auto ">
           {/* Title */}
@@ -735,7 +642,7 @@ export default function Home() {
         </h2>
 
         <a
-          href="#"
+          href="/Form"
           className="max-w-[406px] min-h-[60px] rounded-[5px] bg-gradient-to-r from-[#00B0BA] via-[#000000] to-[#007B82] text-white font-bold py-5 px-16 rounded-md hover:opacity-50 transition"
         >
           Start Free Trial

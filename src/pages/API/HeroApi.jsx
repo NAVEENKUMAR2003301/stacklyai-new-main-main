@@ -60,7 +60,7 @@ export default function HeroApi() {
       {/* <h1 className="w-[816px] h-[128px] font-bold text-[48px] leading-[64px] text-center text-[#2a2a2a]">
         "Transform Spaces Effortlessly with <span className="text-[#00B0BA]">StacklyAI API</span>"
       </h1> */}
-      <h1 className="max-w-full text-[64px] font-extrabold md:text-[40px] lg:text-[48px] leading-[72px] text-center  text-[#2a2a2a]">
+      <h1 className="max-w-full text-[64px] font-extrabold md:text-[40px] text-[48px] leading-[72%] text-center  text-[#2a2a2a]">
         Transform Spaces Effortlessly with <span className="text-[#00B0BA]">StacklyAI API</span>
       </h1>
       {/* <p className="w-[672px] h-[56px] font-[400] text-[18px] leading-[72px] text-center text-[#b0b0b0] mt-4">

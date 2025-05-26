@@ -41,6 +41,8 @@ export default function HeroProducts() {
           </p>
         ))}
       </div>
+
+      
     </div>
   );
 }

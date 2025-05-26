@@ -23,6 +23,7 @@ import Pay from "./pages/PricingPage/Pay";
 import ConformationPage from "./pages/PricingPage/ConformationPage";
 import Profile from "./pages/Profile/Profile";
 import AfterHome from "./pages/AfterSignHome/AfterHome";
+import Form from "./pages/home/Form";
 
 export default function App() {
   return (
@@ -42,6 +43,7 @@ export default function App() {
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/HeroForgetPg" element={<HeroForgetPg/>}/>
         <Route path="/Otp" element={<Otp/>}/>
+        <Route path="/Form" element={<Form />}/>
         <Route path="/ResetPassword" element={<ResetPassword/>}/>
         <Route path="/ResetPopup" element={<ResetPopup/>}/>
         <Route path="/ForgetPg" element={<ForgetPg/>}/>
