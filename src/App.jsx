@@ -23,7 +23,7 @@ import Pay from "./pages/PricingPage/Pay";
 import ConformationPage from "./pages/PricingPage/ConformationPage";
 import Profile from "./pages/Profile/Profile";
 import AfterHome from "./pages/AfterSignHome/AfterHome";
-import Form from "./pages/home/Form";
+import Form from "./pages/Home/Form";
 
 export default function App() {
   return (
