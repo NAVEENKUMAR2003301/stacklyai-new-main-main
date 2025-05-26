@@ -6,6 +6,8 @@ import dragImg2_1 from "../../assets/home/draggableImgSection/drag2(1).png";
 import dragImg2_2 from "../../assets/home/draggableImgSection/drag2(2).png";
 import dragImg3_1 from "../../assets/home/draggableImgSection/drag3(1).png";
 import dragImg3_2 from "../../assets/home/draggableImgSection/drag3(2).png";
+import { Link } from "react-router-dom";
+
 
 export default function CarouselProducts() {
   const [index, setIndex] = useState(0);
@@ -25,14 +27,17 @@ export default function CarouselProducts() {
       <div className="w-full text-center font-[400] text-[24px] leading-[28px] text-white my-[22px]">
         <p>Curated ideas for modern living</p>
       </div>
-     <div className="w-full flex justify-center items-center">
-     <div className="w-full max-w-[850px] min-h-[48px] rounded-[10px] border-[1px] border-solid border-white px-[20px] py-[10px] text-white font-[500] text-[16px] text-center leading-[28px] my-[20px]">
-      Soft Neutrals Tone
+      <div className="w-full flex justify-center items-center">
+        <div className="w-full max-w-[850px] min-h-[48px] rounded-[10px] border-[1px] border-solid border-white px-[20px] py-[10px] text-white font-[500] text-[16px] text-center leading-[28px] my-[20px]">
+          Soft Neutrals Tone
+        </div>
       </div>
-     </div>
 
       <div className="overflow-x-hidden flex gap-2 sm:gap-5 w-full mt-10 px-2 items-center justify-center">
-        <span className="p-2 sm:p-4 text-md sm:text-xl bg-[#19383b] cursor-pointer rounded-full" onClick={showPrev}>
+        <span
+          className="p-2 sm:p-4 text-md sm:text-xl bg-[#19383b] cursor-pointer rounded-full"
+          onClick={showPrev}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="10"
@@ -67,7 +72,10 @@ export default function CarouselProducts() {
           </div>
         </div>
 
-        <span className="p-2 sm:p-4 text-md sm:text-xl bg-[#19383b] cursor-pointer rounded-full" onClick={showNext}>
+        <span
+          className="p-2 sm:p-4 text-md sm:text-xl bg-[#19383b] cursor-pointer rounded-full"
+          onClick={showNext}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="10"
@@ -84,42 +92,47 @@ export default function CarouselProducts() {
       </div>
 
       <div className="flex justify-center items-center gap-2 my-5">
-          <span
-            onClick={() => setIndex(0)}
-            className={`${
-              index === 0 ? "w-5 h-3 bg-cyan-500" : "w-3 h-3 bg-white"
-            } rounded-full cursor-pointer`}
-          />
-          <span
-            onClick={() => setIndex(1)}
-            className={`${
-              index === 1 ? "w-5 h-3 bg-cyan-500" : "w-3 h-3 bg-white"
-            } rounded-full cursor-pointer`}
-          />
-          <span
-            onClick={() => setIndex(2)}
-            className={`${
-              index === 2 ? "w-5 h-3 bg-cyan-500" : "w-3 h-3 bg-white"
-            } rounded-full cursor-pointer`}
-          />
-        </div>
-
-      <div className="flex gap-2.5 justify-center items-center mt-10">
-        <nav className="bg-[#00b0ba] p-3 sm:px-[25px] sm:py-[15px] rounded-[5px] flex gap-2.5 justify-center items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 29 29"
-            fill="none"
-            className="w-7 h-7"
-          >
-            <path
-              d="M9.00008 5.46663L5.66675 7.33329L7.53341 3.99996L5.66675 0.666626L9.00008 2.53329L12.3334 0.666626L10.4667 3.99996L12.3334 7.33329L9.00008 5.46663ZM25.0001 18.5333L28.3334 16.6666L26.4667 20L28.3334 23.3333L25.0001 21.4666L21.6667 23.3333L23.5334 20L21.6667 16.6666L25.0001 18.5333ZM28.3334 0.666626L26.4667 3.99996L28.3334 7.33329L25.0001 5.46663L21.6667 7.33329L23.5334 3.99996L21.6667 0.666626L25.0001 2.53329L28.3334 0.666626ZM16.7867 15.04L20.0401 11.7866L17.2134 8.95996L13.9601 12.2133L16.7867 15.04ZM18.1601 7.71996L21.2801 10.84C21.8001 11.3333 21.8001 12.2 21.2801 12.72L5.72008 28.28C5.20008 28.8 4.33341 28.8 3.84008 28.28L0.720078 25.16C0.200078 24.6666 0.200078 23.8 0.720078 23.28L16.2801 7.71996C16.8001 7.19996 17.6667 7.19996 18.1601 7.71996Z"
-              fill="white"
-            />
-          </svg>
-          <p className="text-md sm:text-xl font-bold text-white">Create Magic</p>
-        </nav>
+        <span
+          onClick={() => setIndex(0)}
+          className={`${
+            index === 0 ? "w-5 h-3 bg-cyan-500" : "w-3 h-3 bg-white"
+          } rounded-full cursor-pointer`}
+        />
+        <span
+          onClick={() => setIndex(1)}
+          className={`${
+            index === 1 ? "w-5 h-3 bg-cyan-500" : "w-3 h-3 bg-white"
+          } rounded-full cursor-pointer`}
+        />
+        <span
+          onClick={() => setIndex(2)}
+          className={`${
+            index === 2 ? "w-5 h-3 bg-cyan-500" : "w-3 h-3 bg-white"
+          } rounded-full cursor-pointer`}
+        />
       </div>
+
+      <Link to="/Form">
+        {" "}
+        <div className="flex gap-2.5 justify-center items-center mt-10">
+          <nav className="bg-[#00b0ba] p-3 sm:px-[25px] sm:py-[15px] rounded-[5px] flex gap-2.5 justify-center items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 29 29"
+              fill="none"
+              className="w-7 h-7"
+            >
+              <path
+                d="M9.00008 5.46663L5.66675 7.33329L7.53341 3.99996L5.66675 0.666626L9.00008 2.53329L12.3334 0.666626L10.4667 3.99996L12.3334 7.33329L9.00008 5.46663ZM25.0001 18.5333L28.3334 16.6666L26.4667 20L28.3334 23.3333L25.0001 21.4666L21.6667 23.3333L23.5334 20L21.6667 16.6666L25.0001 18.5333ZM28.3334 0.666626L26.4667 3.99996L28.3334 7.33329L25.0001 5.46663L21.6667 7.33329L23.5334 3.99996L21.6667 0.666626L25.0001 2.53329L28.3334 0.666626ZM16.7867 15.04L20.0401 11.7866L17.2134 8.95996L13.9601 12.2133L16.7867 15.04ZM18.1601 7.71996L21.2801 10.84C21.8001 11.3333 21.8001 12.2 21.2801 12.72L5.72008 28.28C5.20008 28.8 4.33341 28.8 3.84008 28.28L0.720078 25.16C0.200078 24.6666 0.200078 23.8 0.720078 23.28L16.2801 7.71996C16.8001 7.19996 17.6667 7.19996 18.1601 7.71996Z"
+                fill="white"
+              />
+            </svg>
+            <p className="text-md sm:text-xl font-bold text-white">
+              Create Magic
+            </p>
+          </nav>
+        </div>
+      </Link>
     </div>
   );
 }

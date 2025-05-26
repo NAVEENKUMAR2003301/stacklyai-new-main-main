@@ -479,16 +479,18 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div
-            className="max-w-[406px] w-full min-h-[60px] flex justify-center items-center gap-2.5 text-xl font-bold leading-[35px] text-center text-[white] cursor-pointer rounded-xl"
-            style={{
-              background:
-                "linear-gradient(to right,#00B0BA 0%,#000000 50%,#007B82 100%)",
-              wordSpacing: "8px",
-            }}
-          >
-            Signup
-          </div>
+          <Link to="/sign-up">
+            <div
+              className="max-w-[406px] w-[406px] min-h-[60px] flex justify-center items-center gap-2.5 text-xl font-bold leading-[35px] text-center text-[white] cursor-pointer rounded-xl"
+              style={{
+                background:
+                  "linear-gradient(to right,#00B0BA 0%,#000000 50%,#007B82 100%)",
+                wordSpacing: "8px",
+              }}
+            >
+              Signup
+            </div>
+          </Link>
         </div>
       </section>
 

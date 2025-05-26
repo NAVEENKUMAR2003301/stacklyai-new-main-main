@@ -11,6 +11,7 @@ import Payment from "./Payment";
 import UiPlans from "./UiPlans";
 import ConformationPage from "./ConformationPage";
 import Pay from "./Pay";
+import { Link } from "react-router-dom";
 
 
 
@@ -73,9 +74,12 @@ export default function HeroPricing() {
         </h2>
 
         {/* CTA Button */}
-        <button className="bg-gradient-to-r from-[#00B0BA] via-[black] to-[#007B82] hover:from-cyan-600  text-white font-bold py-3 px-8 rounded-md text-[20px] transition-all duration-300">
-          Get Started for Free
-        </button>
+        <Link to="/Form">
+          {" "}
+          <button className="bg-gradient-to-r from-[#00B0BA] via-[black] to-[#007B82] hover:from-cyan-600  text-white font-bold py-3 px-8 rounded-md text-[20px] transition-all duration-300">
+            Get Started for Free
+          </button>
+        </Link>
 
         {/* Subtext */}
         <p className="mt-6 text-[16px] leading-[28px] font-[400] text-[#f5f5f5] ">
@@ -119,10 +123,6 @@ export default function HeroPricing() {
       <PricingFaq />
 
       {/* section 8  */}
-
-    
-
-      
     </div>
   );
 }

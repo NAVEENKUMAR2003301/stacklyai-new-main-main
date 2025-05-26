@@ -13,7 +13,7 @@ import sec14Img4 from "../../assets/home/sec14/m2.jpg";
 import sec14Img5 from "../../assets/home/sec14/m3.jpg";
 import ApiFaq from './ApiFaq';
 import keyImage from "../../assets/api/key.png";
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -57,82 +57,91 @@ export default function HeroApi() {
     <div>
       {/* section1 */}
       <div className="relative w-full h-[536px] flex flex-col items-center justify-center bg-white-to-cyan">
-      {/* <h1 className="w-[816px] h-[128px] font-bold text-[48px] leading-[64px] text-center text-[#2a2a2a]">
+        {/* <h1 className="w-[816px] h-[128px] font-bold text-[48px] leading-[64px] text-center text-[#2a2a2a]">
         "Transform Spaces Effortlessly with <span className="text-[#00B0BA]">StacklyAI API</span>"
       </h1> */}
-      <h1 className="max-w-full text-[64px] font-extrabold md:text-[40px] text-[48px] leading-[72%] text-center  text-[#2a2a2a]">
-        Transform Spaces Effortlessly with <span className="text-[#00B0BA]">StacklyAI API</span>
-      </h1>
-      {/* <p className="w-[672px] h-[56px] font-[400] text-[18px] leading-[72px] text-center text-[#b0b0b0] mt-4">
+        <h1 className="max-w-full text-[64px] font-extrabold md:text-[40px] text-[48px] leading-[72%] text-center  text-[#2a2a2a]">
+          Transform Spaces Effortlessly with{" "}
+          <span className="text-[#00B0BA]">StacklyAI API</span>
+        </h1>
+        {/* <p className="w-[672px] h-[56px] font-[400] text-[18px] leading-[72px] text-center text-[#b0b0b0] mt-4">
         Explore limitless possibilities to redesign and enhance any home interior, exterior, or outdoor space — all through powerful AI integration.
       </p> */}
-      <p className="w-[672px] h-[56px] font-extrabold font-[400] text-[20px] leading-[28px] text-center text-[#b0b0b0] mt-4">
-        <span className="text-[#00B0BA]">Get Instant API Access for your AI Design Platform</span>
-      </p>
-      <button
-        className="w-[306px] h-[45px] mt-8 rounded-[6px] border-[1px] border-solid border-transparent bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-white font-semibold text-[18px] leading-[100%]"
-      >
-        Let’s Connect!
-      </button>
-       {/* Positioned Illustration at Bottom Left */}
-      <img
-        src={keyImage}
-        alt="API Key Illustration"
-        className="absolute bottom-[40px] right-[80px] w-[330px] h-auto object-contain "
-      />
-    </div>
-
-
-    {/* section-2  */}
-
-    {/* //<div className="relative w-full h-[848px] flex items-center justify-center bg-black"> */}
-    <div className="relative w-full h-[709px] flex items-center justify-center bg-[#011213]">
-      {/* Background API Image */}
-      <img
-        src={apiBackground}
-        alt="API Background"
-        className="absolute w-[1150.91px] h-[848px] p-[34px] opacity-60"
-      />
-
-      {/* Text Content */}
-      <div className="relative z-10 w-[1172px] h-[242px] flex flex-col items-center justify-center text-white text-center">
-        <h2 className="w-[816px] h-[64px] font-semibold text-[48px] leading-[64px]">
-          What Is StacklyAI API?
-        </h2>
-        <p className="w-[1172px] h-[113px] font-[400] text-[28px] leading-[36px] mt-4">
-          StacklyAI API allows developers, platforms, and businesses to generate high-quality AI-<br />rendered images from user-submitted photos. Whether it's a room makeover,<br /> architectural facade, or outdoor setting — the API delivers instant visual<br /> transformations, directly into your product.
+        <p className="w-[672px] h-[56px] font-extrabold font-[400] text-[20px] leading-[28px] text-center text-[#b0b0b0] mt-4">
+          <span className="text-[#00B0BA]">
+            Get Instant API Access for your AI Design Platform
+          </span>
         </p>
+        <Link to="/Sign-in">
+          {" "}
+          <button className="w-[306px] h-[45px] mt-8 rounded-[6px] border-[1px] border-solid border-transparent bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-white font-semibold text-[18px] leading-[100%]">
+            Let’s Connect!
+          </button>
+        </Link>
+        {/* Positioned Illustration at Bottom Left */}
+        <img
+          src={keyImage}
+          alt="API Key Illustration"
+          className="absolute bottom-[40px] right-[80px] w-[330px] h-auto object-contain "
+        />
       </div>
-    </div>
 
+      {/* section-2  */}
 
-    {/* section-3  */}
+      {/* //<div className="relative w-full h-[848px] flex items-center justify-center bg-black"> */}
+      <div className="relative w-full h-[709px] flex items-center justify-center bg-[#011213]">
+        {/* Background API Image */}
+        <img
+          src={apiBackground}
+          alt="API Background"
+          className="absolute w-[1150.91px] h-[848px] p-[34px] opacity-60"
+        />
 
-    <Keys />
-    
-    {/* section 4  */}
+        {/* Text Content */}
+        <div className="relative z-10 w-[1172px] h-[242px] flex flex-col items-center justify-center text-white text-center">
+          <h2 className="w-[816px] h-[64px] font-semibold text-[48px] leading-[64px]">
+            What Is StacklyAI API?
+          </h2>
+          <p className="w-[1172px] h-[113px] font-[400] text-[28px] leading-[36px] mt-4">
+            StacklyAI API allows developers, platforms, and businesses to
+            generate high-quality AI-
+            <br />
+            rendered images from user-submitted photos. Whether it's a room
+            makeover,
+            <br /> architectural facade, or outdoor setting — the API delivers
+            instant visual
+            <br /> transformations, directly into your product.
+          </p>
+        </div>
+      </div>
 
-    <ApiIntegrate/>
+      {/* section-3  */}
 
-    {/* section-5  */}
+      <Keys />
 
-    <Plan />
+      {/* section 4  */}
 
-    {/* section-6  */}
+      <ApiIntegrate />
 
-    {/* <ApiAccess /> */}
+      {/* section-5  */}
 
-    {/* section-7  */}
+      <Plan />
 
-    <HowItWorks/>
+      {/* section-6  */}
 
-    {/* section-8  */}
-    
-    <CustomAPIPlan/>
+      {/* <ApiAccess /> */}
 
-    {/* section-9  */}
+      {/* section-7  */}
 
- {/* <div className='w-full flex justify-center'>
+      <HowItWorks />
+
+      {/* section-8  */}
+
+      <CustomAPIPlan />
+
+      {/* section-9  */}
+
+      {/* <div className='w-full flex justify-center'>
  <div className='w-[1280px] h-[1049px] rounded-[40px] bg-[white] shadow-[#00000040] shadow-[0_0_4px_0] flex flex-col justify-center items-center'>
       <h2 className="w-full max-w-[743px] min-h-[64px] text-[44px] leading-[64px] font-bold text-center">
         Ready to <span className="text-[#009A98]">Create Something Great?</span>
@@ -194,8 +203,8 @@ export default function HeroApi() {
 
  </div> */}
 
-       {/* {section-10} */}
-       {/* <section className="w-full py-16 px-4 flex flex-col justify-center items-center mt-20">
+      {/* {section-10} */}
+      {/* <section className="w-full py-16 px-4 flex flex-col justify-center items-center mt-20">
         <h2 className="text-[48px] md:text-5xl font-semibold text-center text-gray-800 leading-[140%]">
           Discover Our{" "}
           <span className="text-[#007B82]">Advanced AI Interior Tools</span> and
@@ -207,37 +216,40 @@ export default function HeroApi() {
       </section> */}
 
       <div className="relative w-full h-[709px] flex items-center justify-center bg-[white]">
-      {/* Background API Image */}
-      <img
-        src={apiBackground}
-        alt="API Background"
-        className="absolute w-[1150.91px] h-[848px] p-[34px] opacity-60"
-      />
+        {/* Background API Image */}
+        <img
+          src={apiBackground}
+          alt="API Background"
+          className="absolute w-[1150.91px] h-[848px] p-[34px] opacity-60"
+        />
 
-      {/* Text Content */}
-      <div className="relative z-10 w-[1172px] h-[242px] flex flex-col items-center justify-center text-black text-center -mt-40">
-        <h2 className="w-[816px] h-[64px] font-semibold text-[48px] leading-[64px]">
-          Ready to <span className="text-[#00B0BA]">Create Something Great?</span>
-        </h2>
-        <p className="w-[1280px] h-[199px] font-[400] text-[28px] leading-[36px] mt-4">
-          We offer flexible API plans tailored to your needs.<br />
-          Let’s build the right setup—just for you.
-        </p>
-        <button
-    className="w-[800px] h-[100px] mt-[80] rounded-[6px] border border-transparent bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-white font-semibold text-[18px] leading-[100%] "
-  >
-    Let’s Connect!
-  </button>
+        {/* Text Content */}
+        <div className="relative z-10 w-[1172px] h-[242px] flex flex-col items-center justify-center text-black text-center -mt-40">
+          <h2 className="w-[816px] h-[64px] font-semibold text-[48px] leading-[64px]">
+            Ready to{" "}
+            <span className="text-[#00B0BA]">Create Something Great?</span>
+          </h2>
+          <p className="w-[1280px] h-[199px] font-[400] text-[28px] leading-[36px] mt-4">
+            We offer flexible API plans tailored to your needs.
+            <br />
+            Let’s build the right setup—just for you.
+          </p>
+          <Link to="/Sign-in">
+            {" "}
+            <button className="w-[800px] h-[70px] mt-[80] rounded-[6px] border border-transparent bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-white font-semibold text-[18px] leading-[100%] ">
+              Let’s Connect!
+            </button>
+          </Link>
+        </div>
       </div>
-    </div>
 
- {/* section-11  */}
+      {/* section-11  */}
 
-  <Draggable/> 
+      <Draggable />
 
- {/* section-12  */}
+      {/* section-12  */}
 
-  {/* <section
+      {/* <section
          className="relative w-full  absolute-0  bg-cover bg-center bg-no-repeat"
          style={{ backgroundImage: "url('./src/assets/home/sec14/bg1.jpg')" }}
        >
@@ -252,17 +264,17 @@ export default function HeroApi() {
                <span className="text-cyan-400  font-semibold">Stackly AI</span>,
                trusted by people in all 195 countries.
              </p> */}
-             {/* Center logo */}
-             {/* <div className="mb-16">
+      {/* Center logo */}
+      {/* <div className="mb-16">
                <div className="bg-[#FFFFFF1F] rounded-full p-8 shadow-lg">
                  <img src={sec14Img2} alt="Center Icon" className="w-12 h-12" />
                </div>
              </div> */}
- 
-             {/* Member Cards */}
-             {/* <div className="w-[100vw] flex justify-center item-center flex-wrap gap-10"> */}
-               {/* Card 1 */}
-               {/* <div className="max-w-[413px] min-h-[288px] bg-white rounded-[12px] p-10 flex flex-col items-center">
+
+      {/* Member Cards */}
+      {/* <div className="w-[100vw] flex justify-center item-center flex-wrap gap-10"> */}
+      {/* Card 1 */}
+      {/* <div className="max-w-[413px] min-h-[288px] bg-white rounded-[12px] p-10 flex flex-col items-center">
                  <div className="min-w-[413px] h-full flex justify-around items-center">
                    <div className="max-w-[206px] min-h-[64px] flex flex-col items-start gap-1 ">
                      <h3 className="text-black text-[22px] font-medium leading-[140%] ">Guru Ragav Auditor</h3>
@@ -280,9 +292,9 @@ export default function HeroApi() {
                    flawlessly!”
                  </p>
                </div> */}
- 
-               {/* Card 2 */}
-               {/* <div className="max-w-[413px] min-h-[288px] bg-white rounded-[12px] p-10 flex flex-col items-center">
+
+      {/* Card 2 */}
+      {/* <div className="max-w-[413px] min-h-[288px] bg-white rounded-[12px] p-10 flex flex-col items-center">
                  <div className="min-w-[413px] h-full flex justify-around items-center">
                    <div className="max-w-[206px] min-h-[64px] flex flex-col items-start gap-1">
                      <h3 className="text-black text-[22px] font-medium leading-[140%]">Cristian Rama</h3>
@@ -299,9 +311,9 @@ export default function HeroApi() {
                    few design ideas with Stackly AI. Awesome technology!”
                  </p>
                </div> */}
- 
-               {/* Card 3 */}
-               {/* <div className="max-w-[413px] min-h-[288px] bg-white rounded-[12px] p-10 flex flex-col items-center">
+
+      {/* Card 3 */}
+      {/* <div className="max-w-[413px] min-h-[288px] bg-white rounded-[12px] p-10 flex flex-col items-center">
                  <div className="min-w-[413px] h-full flex justify-around items-center">
                    <div className="max-w-[206px] min-h-[64px] flex flex-col items-start gap-1">
                      <h3 className="text-black text-[22px] font-medium leading-[140%]">Ram Krishnan</h3>
@@ -324,12 +336,9 @@ export default function HeroApi() {
          </div>
        </section> */}
 
-       {/* section-14  */}
-       
-       <ApiFaq faqs={faqs} />
+      {/* section-14  */}
 
-
-
+      <ApiFaq faqs={faqs} />
     </div>
-  )
+  );
 }
