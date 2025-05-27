@@ -63,22 +63,22 @@ export default function Mybilling() {
           <div className="w-[807px] h-[869px] rounded-[10px] bg-[#FFFFFFCC] backdrop-blur-[6px] shadow-[0_1px_4px_0] shadow-[#0000003D]">
             {/* header  */}
             <div className="w-[100%] h-[98px] flex justify-between items-center px-[30px]">
-              <Link to="">
+              <Link to="/HeroProfile">
                 <button className="w-[94px] h-[98px] flex justify-center items-center font-medium text-[18px] leading-[100%] text-[black] hover:text-[#007B82] hover:border-b-[#007B82] hover:border-solid hover:border-b-[2px] focus-within:text-[#007B82] focus-within:border-b-[#007B82] cursor-pointer active:text-[#007B82] active:border-b-[#007B82]">
                   Edit Profile
                 </button>
               </Link>
-              <Link to="">
+              <Link to="/Myplan">
                 <button className="w-[94px] h-[98px] flex justify-center items-center font-medium text-[18px] leading-[100%] text-[black] hover:text-[#007B82] hover:border-b-[#007B82] hover:border-solid hover:border-b-[2px] focus:text-[#007B82] focus:border-b-[#007B82] cursor-pointer active:text-[#007B82]">
                   My Plan
                 </button>
               </Link>
-              <Link to="">
+              <Link to="/Mybilling">
                 <button className="w-[94px] h-[98px] flex justify-center items-center font-medium text-[18px] leading-[100%] text-[black] hover:text-[#007B82] hover:border-b-[#007B82] hover:border-solid hover:border-b-[2px] focus:text-[#007B82] focus:border-b-[#007B82] cursor-pointer active:text-[#007B82]">
                   My Billing
                 </button>
               </Link>
-              <Link to="">
+              <Link to="/HelpCenter">
                 <button className="w-[150px] h-[98px] flex justify-center items-center font-medium text-[18px] leading-[100%] text-[black] hover:text-[#007B82] hover:border-b-[#007B82] hover:border-solid hover:border-b-[2px] focus:text-[#007B82] focus:border-b-[#007B82] cursor-pointer active:text-[#007B82]">
                   Help Center
                 </button>
@@ -110,10 +110,85 @@ export default function Mybilling() {
                       <span className="text-[#00B0BA]">Monthly</span>
                     </div>
                     <div className="w-[172px] h-[57px] rounded-[12px] p-[20px] bg-white shadow-[0_6.54px_12.2px_0] shadow-[#ABB2BB40] flex justify-center items-center font-medium text-[14px] text-center text-black">
-                      Pricing :{" "}
-                      <span className="text-[#00B0BA]">$0 / month</span>
+                      Total Members: <span className="text-[#00B0BA]">1</span>
                     </div>
                   </div>
+
+                  {/* Payment  */}
+
+                  <div className="w-[687px] h-[70px] flex flex-col justify-start items-start gap-[10px]">
+                    <div className="w-[100%] h-[19px] font-[400] text-[16px] text-[#6E6E6E]">
+                      Total Payment
+                    </div>
+                    <div className="w-[687px] h-[44px] rounded-[10px] border-[1px] border-solid border-[#00B0BA] bg-[white] flex justify-center items-center gap-[10px] p-[20px]">
+                      <input
+                        type="number"
+                        placeholder="$0 / month"
+                        className="placeholder:text-[black] w-[100%]"
+                      />
+                      <div className="w-[100%] h-[19px] font-[400] text-[14px] text-[#6E6E6E]">
+                        Stay updated on your remaining balance.
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* premium  */}
+
+                  <div className="w-[687px] h-[189px] rounded-[12px] px-[107px] py-[28px] flex flex-col justify-center items-center gap-[26px] bg-[#007B8214] shadow-[0_1.54px_12.2px_0] shadow-[#ABB2BB40]">
+                    <div className="w-[473px] h-[24px] font-semibold text-[20px] text-center text-black">
+                      Unlock More with{" "}
+                      <span className="text-[#F0AC00]">Premium!</span>
+                    </div>
+                    <div className="w-[473px] h-[17px] font-[400] leading-[100%] text-[#2A2A2A]">
+                      Upgrade to Silver or Gold for exclusive features and
+                      enhanced benefits!
+                    </div>
+                    <div className="w-[473px] h-[40px] flex justify-between items-center gap-[13px]">
+                      <div className="w-[230px] h-[40px] rounded-[5px] border-[1px] border-solid border-[#A0A0A099] font-bold text-[16px] text-center flex justify-center items-center text-[#2A2A2A] hover:bg-[#00B0BA] hover:text-white cursor-pointer">
+                        Upgrade to Silver
+                      </div>
+                      <div className="w-[230px] h-[40px] rounded-[5px] bg-gradient-to-l from-[#00B0BA] via-[black] to-[#007B82] flex justify-center items-center font-bold text-center text-[16px] text-[#FFD56B]">
+                        Upgrade to Gold
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[807px] h-[222px] relative top-[57px] rounded-bl-[10px] rounded-br-[10px]">
+                <div className="w-[100%] h-[22px] text-center font-semibold text-[18px] text-[#2A2A2A]">
+                  Billing History
+                </div>
+                <div className="w-[100%] h-[182px] px-[60px] py-[12px]">
+                  <table className="w-[100%] h-[182px] ">
+                    <thead className="w-[100%] h-[44px] font-bold text-[16px] text-[#2A2A2A] bg-[#007B8208] px-[60px] py-[12px]">
+                      <td className="pl-[30px]">Date</td>
+                      <td>Amount</td>
+                      <td>Payment Method</td>
+                      <td>Status</td>
+                      <td>Invoice</td>
+                    </thead>
+                    <tr>
+                      <td className="pl-[30px]">Invoice</td>
+                      <td>$XX.XX</td>
+                      <td>Credit Card</td>
+                      <td>Completed</td>
+                      <td className="text-[#007B82]">View</td>
+                    </tr>
+                    <tr>
+                      <td className="pl-[30px]">Invoice</td>
+                      <td>$XX.XX</td>
+                      <td>Credit Card</td>
+                      <td>Completed</td>
+                      <td className="text-[#007B82]">View</td>
+                    </tr>
+                    <tr>
+                      <td className="pl-[30px]">Invoice</td>
+                      <td>$XX.XX</td>
+                      <td>Credit Card</td>
+                      <td>Completed</td>
+                      <td className="text-[#007B82]">View</td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>

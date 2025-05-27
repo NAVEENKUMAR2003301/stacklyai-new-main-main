@@ -24,6 +24,10 @@ import ConformationPage from "./pages/PricingPage/ConformationPage";
 import Profile from "./pages/Profile/Profile";
 import AfterHome from "./pages/AfterSignHome/AfterHome";
 import Form from "./pages/Home/Form";
+import HeroProfile from "./pages/Profile/HeroProfile";
+import Myplan from "./pages/Profile/Myplan";
+import Mybilling from "./pages/Profile/Mybilling";
+import HelpCenter from "./pages/Profile/HelpCenter";
 
 export default function App() {
   return (
@@ -51,6 +55,10 @@ export default function App() {
         <Route path="/sign-up" element={<SignUp/>}/>
         <Route path="/Profile" element={<Profile/>}/>
         <Route path="/AfterHome" element={<AfterHome/>}/>
+        <Route path="/HeroProfile" element={<HeroProfile/>}/>
+        <Route path="/Myplan" element={<Myplan/>}/>
+        <Route path="/Mybilling" element={<Mybilling/>}/>
+        <Route path="/HelpCenter" element={<HelpCenter/>}/>
       </Routes>
 
       <Footer />

@@ -268,7 +268,7 @@ export default function Form() {
         {/* Form Controls */}
         <form
           onSubmit={handleSubmit}
-          className="w-full xl:w-1/2 max-w-xl flex flex-col gap-6"
+          className="w-full xl:w-1/2 max-w-xl flex flex-col gap-6 "
         >
           {/* Building Type */}
           <div className="space-y-2">
@@ -309,15 +309,15 @@ export default function Form() {
               options: Array.from({ length: 9 }, (_, i) => i + 1),
             },
           ].map((field) => (
-            <div key={field.name} className="space-y-2">
+            <div key={field.name} className="space-y-2 ">
               <label className="text-white text-lg">{field.label}</label>
               <select
                 name={field.name}
                 value={formData[field.name]}
                 onChange={(e) => handleChange(e.target.value, field.name)}
-                className="w-full p-3 rounded-md bg-white text-[#007B82] cursor-pointer"
+                className="w-full px-[20px] py-[15px] rounded-md bg-white text-[#007B82] cursor-pointer"
               >
-                <option value="">Select {field.name}</option>
+                <option value="" >Select {field.name}</option>
                 {field.options.map((option) => (
                   <option key={option} value={option}>
                     {option}

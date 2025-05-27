@@ -2,6 +2,7 @@ import React from 'react'
 import HeroProfile from './HeroProfile'
 import Myplan from './Myplan'
 import Mybilling from './Mybilling'
+import HelpCenter from './HelpCenter'
 
 export default function Profile() {
   return (
@@ -9,6 +10,7 @@ export default function Profile() {
       <HeroProfile />
       <Myplan />
       <Mybilling />
+      <HelpCenter />
     </div>
   )
 }

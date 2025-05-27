@@ -15,14 +15,14 @@ import DraggableImages from "../../components/DraggableImages";
 import Banner from "../../assets/product-pg/bannercode.png"
 import Banner1 from "../../assets/product-pg/bannercode1.png"
 import Star from "../../assets/product-pg/star.png"
+import { Link } from "react-router-dom";
 
 export default function DraggableImagesProducts() {
   return (
     <div>
       <div className="max-w-[100vw] min-h-[720px] flex flex-col items-center justify-center gap-5 bg-gradient-to-l from-[#007B8214] to-[white]">
         <h1 className="w-full  max-w-[1064px] text-center font-bold text-[70px] leading-[78px] mt-[150px]">
-        <span className="text-[#009A98]">Stackly.AI</span> Interior
-          Designer
+          <span className="text-[#009A98]">Stackly.AI</span> Interior Designer
         </h1>
 
         <p className="max-w-[1064px] min-h-[56px] text-[22px] leading-[28px] text-center font-[400] text-[#0F0F0F]">
@@ -36,24 +36,40 @@ export default function DraggableImagesProducts() {
         </div>
 
         <div className="absolute">
-          <img src={Banner} alt="banner1" className="absolute left-[-60px] top-[70px]" />
-          <img src={Banner1} alt="bammer2" className=""/>
-
+          <img
+            src={Banner}
+            alt="banner1"
+            className="absolute left-[-60px] top-[70px]"
+          />
+          <img src={Banner1} alt="bammer2" className="" />
         </div>
 
-        <div className="w-[52.38px] h-[50px] relative top-[-300px] left-[-650px]"><img src={Star} alt="star" /></div>
-        <div className="w-[30px] h-[28.64px] relative top-[-330px] left-[-630px]"><img src={Star} alt="star" /></div>
-        <div className="w-[52.38px] h-[50px] relative top-[50px] left-[550px]"><img src={Star} alt="star" /></div>
-        <div className="w-[30px] h-[28.64px] relative top-[20px] left-[580px]"><img src={Star} alt="star" /></div>
+        <div className="w-[52.38px] h-[50px] relative top-[-300px] left-[-650px]">
+          <img src={Star} alt="star" />
         </div>
+        <div className="w-[30px] h-[28.64px] relative top-[-330px] left-[-630px]">
+          <img src={Star} alt="star" />
+        </div>
+        <div className="w-[52.38px] h-[50px] relative top-[50px] left-[550px]">
+          <img src={Star} alt="star" />
+        </div>
+        <div className="w-[30px] h-[28.64px] relative top-[20px] left-[580px]">
+          <img src={Star} alt="star" />
+        </div>
+      </div>
 
       {/* DraggableImages */}
 
       <div>
         <div className="max-w-[100vw] h-auto">
           <div className="w-full min-h-[158px] flex flex-col justify-center items-center gap-[24px]">
-            <div className="w-[1026px] min-h-[78px] font-bold text-[48px] leading-[78px] text-center text-gradient-to-l from-[#007B82] to-[#001A1C]">Spaces That Inspire You</div>
-            <div className="w-[1026px] min-h-[56px] text-[400] text-[24px] leading-[28px] text-center text-[#000000]">Explore handpicked collections for every corner of your home — from cozy balconies to focused work zones.</div>
+            <div className="w-[1026px] min-h-[78px] font-bold text-[48px] leading-[78px] text-center text-gradient-to-l from-[#007B82] to-[#001A1C]">
+              Spaces That Inspire You
+            </div>
+            <div className="w-[1026px] min-h-[56px] text-[400] text-[24px] leading-[28px] text-center text-[#000000]">
+              Explore handpicked collections for every corner of your home —
+              from cozy balconies to focused work zones.
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 sm:gap-15 mt-10  p-5 sm:p-10">
@@ -275,9 +291,24 @@ export default function DraggableImagesProducts() {
             </div>
           </div>
           <div className="w-[146px] h-[38px] rounded-[8px] border-[1px] border-solid border-[#007B82] px-[12px] py-[8px] flex justify-center items-center gap-[8px] relative top-[-860px] right-[-1350px] ">
-             <select name="" id="" className="text-[#007B82] cursor-pointer">
-                <option value="">Choose Area</option>
-             </select>
+            <select
+              name=""
+              id=""
+              className="text-[#007B82] cursor-pointer text-center"
+            >
+              <option
+                value="" disabled selected
+                className="text-[#007B82] deselect select-none h-[20px] w-[100%] border-b-[1px] border-b-[#2a2a2a] border-b-solid"
+              >
+                Choose Area
+              </option>
+              <Link to=""><option value="" className="text-[#2a2a2a]">Lobby</option></Link>
+              <Link to=""><option value="" className="text-[#2a2a2a]">Garden</option></Link>
+              <Link to=""><option value="" className="text-[#2a2a2a]">Rooftop</option></Link>
+              <Link to=""><option value="" className="text-[#2a2a2a]">Dining</option></Link>
+              <Link to=""><option value="" className="text-[#2a2a2a]">Office</option></Link>
+              <Link to=""><option value="" className="text-[#2a2a2a]">Gym</option></Link>
+            </select>
           </div>
         </div>
       </div>
