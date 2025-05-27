@@ -67,7 +67,7 @@ export default function HeroPricing() {
 
       {/* section-4  */}
 
-      <section className="bg-[#001E20] text-white text-center py-16 px-4">
+      <section className="bg-[#001E20] text-white text-center py-16 px-4 mb-[120px]">
         {/* Heading */}
         <h2 className="text-[44px] font-semibold leading-[140%] text-center mb-6">
           Ready to Experience the Power?
@@ -93,7 +93,7 @@ export default function HeroPricing() {
 
       {/* section-6  */}
 
-      <div className="bg-[#001E20] text-white py-12 px-4 md:px-16 text-center">
+      <div className="bg-[#001E20] text-white py-12 px-4 md:px-16 text-center mt-[120px]">
         <h2 className="text-[48px] font-bold leading-[64px] text-center text-[white]">
           Why Upgrade to Premium?
         </h2>

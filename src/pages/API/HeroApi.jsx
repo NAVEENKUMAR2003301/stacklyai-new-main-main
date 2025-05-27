@@ -117,7 +117,7 @@ export default function HeroApi() {
 
       {/* section-3  */}
 
-      <Keys />
+      {/* <Keys /> */}
 
       {/* section 4  */}
 
@@ -125,7 +125,7 @@ export default function HeroApi() {
 
       {/* section-5  */}
 
-      <Plan />
+      {/* <Plan /> */}
 
       {/* section-6  */}
 
@@ -133,7 +133,7 @@ export default function HeroApi() {
 
       {/* section-7  */}
 
-      <HowItWorks />
+      {/* <HowItWorks /> */}
 
       {/* section-8  */}
 

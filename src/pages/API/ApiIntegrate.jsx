@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../../assets/api/bgColour.png";
+import bgImage from "../../assets/api/apibg.png";
 
 const integrationData = [
   {
@@ -46,7 +46,7 @@ const StacklyAPIIntegration = () => {
       }}
     >
       {/* Heading */}
-      <div className="w-[791px] h-[58px] text-[48px] font-bold leading-[100%] text-white text-center">
+      <div className="w-[791px] h-[58px] text-[48px] font-bold leading-[100%] text-black text-center">
         Who Can <span className="text-[#00D9D0]">Integrate</span> StacklyAI API?
       </div>
 
