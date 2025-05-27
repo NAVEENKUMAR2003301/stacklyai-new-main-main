@@ -1,16 +1,34 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
-import { Link } from "react-router-dom";
-import Header1 from "../components/Header1";
-
-export default function SignUp() {
+export default function SignUp({ onSignup }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const couponRef = useRef(0);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Validate passwords match
+    if (password !== confirmPassword) {
+      setError("Passwords don't match!");
+      return;
+    }
+
+    const success = onSignup(email, password);
+    if (success) {
+      navigate("/sign-in");
+    } else {
+      setError("User already exists!");
+    }
+  };
 
   return (
     <div>
-
-      <Header1 />
       <div
         className="bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: "url('/signUp/bg-img.jpeg')" }}
@@ -27,46 +45,50 @@ export default function SignUp() {
               you'll unlock endless possibilities to remaining & Transform Any
               home using AI.
             </p>
-            <button
-              // onClick={() => {
-              //   couponRef.current.value = "";
-              // }}
-              className=" w-full max-w-[435px] min-h-[55px] rounded-[12px] border cursor-pointer font-medium text-base text-white bg-[#0000004d] mt-[50px] pt-[10px] pr-[20px] pb-[10px] pl-[20px]  border-solid border-[white] flex justify-center items-center gap-[10px]"
-            >
-             <span className="font-bold max-w-[150px] min-h-[35px] text-[18px] leading-[35px] spacing-[8px] tracking-[1px]">Start Free Trial</span>
+            <button className="w-full max-w-[435px] min-h-[55px] rounded-[12px] border cursor-pointer font-medium text-base text-white bg-[#0000004d] mt-[50px] pt-[10px] pr-[20px] pb-[10px] pl-[20px] border-solid border-[white] flex justify-center items-center gap-[10px]">
+              <span className="font-bold max-w-[150px] min-h-[35px] text-[18px] leading-[35px] spacing-[8px] tracking-[1px]">
+                Start Free Trial
+              </span>
             </button>
-
-           
 
             <p className="font-medium text-[16px] w-full max-w-[596px] min-h-[19px] leading-[100%] min-[500px]:text-base pt-5 text-[#ffffff] text-center">
               Get started with 10 free outputs – No credit card needed!
             </p>
           </div>
-          <div className="max-[1000px]:w-full flex-1 max-w-[522px] min-h-[618px] border flex flex-col items-center justify-center bg-[#00000033] pt-[28px] pr-[32px] pb-[28px] pl-[32px]  rounded-[10px] border-solid border-[white] gap-[40px] shadow:0 1px 3px 0">
+          <div className="max-[1000px]:w-full flex-1 max-w-[522px] min-h-[618px] border flex flex-col items-center justify-center bg-[#00000033] pt-[28px] pr-[32px] pb-[28px] pl-[32px] rounded-[10px] border-solid border-[white] gap-[40px] shadow:0 1px 3px 0">
             <h3 className="font-semibold text-[24px] text-[#009A98] leading-[100%] text-center">
               Create an Account
             </h3>
-            <form className=" w-full max-w-[558px] min-h-[44px] flex flex-col gap-5 items-center justify-center">
+            {error && (
+              <p className="text-red-500 text-center max-w-[458px] w-full">
+                {error}
+              </p>
+            )}
+            <form
+              className="w-full max-w-[558px] min-h-[44px] flex flex-col gap-5 items-center justify-center"
+              onSubmit={handleSubmit}
+            >
               <input
                 className="placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a] max-w-[458px] w-full bg-[white] p-[15px] rounded-[5px]"
                 type="email"
                 placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
 
-              <div class="max-w-[458px] w-full bg-[white] flex items-center justify-center p-[15px] rounded-[5px]">
+              <div className="max-w-[458px] w-full bg-[white] flex items-center justify-center p-[15px] rounded-[5px]">
                 <input
                   className="bg-white flex-1 placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a]"
                   type={showPassword ? "text" : "password"}
-                  id="password"
                   placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                   required
                 />
                 <span
                   className="cursor-pointer"
-                  onClick={() => {
-                    setShowPassword((prev) => !prev);
-                  }}
+                  onClick={() => setShowPassword(!showPassword)}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -87,26 +109,18 @@ export default function SignUp() {
                 </span>
               </div>
 
-              <div className="max-w-[458px] min-h-[44px] w-full bg-[white] flex items-center justify-center p-[15px] rounded-[5px]">
+              <div className="max-w-[458px] w-full bg-[white] flex items-center justify-center p-[15px] rounded-[5px]">
                 <input
                   className="placeholder:text-base placeholder:font-normal placeholder:text-[#2a2a2a] flex-1 bg-white"
-                  type="text"
+                  type={showConfirmPassword ? "text" : "password"}
                   placeholder="Confirm Password"
-                  id="coupon"
-                  ref={couponRef}
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  required
                 />
-                {/* <span
-                  id="apply_btn"
-                  onclick="applyCoupon()"
-                  className="cursor-pointer font-medium text-base text-[#007b82]"
-                >
-                  Apply
-                </span> */}
                 <span
                   className="cursor-pointer"
-                  onClick={() => {
-                    setShowPassword((prev) => !prev);
-                  }}
+                  onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -135,15 +149,17 @@ export default function SignUp() {
               </button>
             </form>
 
-           
-            <div className=" w-full max-w-[458px] min-h-[19px] flex justify-between items-center p-[15px]">
-                <div className="w-[202px] border-[1px] border-solid border-[#B0B0B0]"></div>
-                <p className="font-medium text-base text-[#b0b0b0] text-[16px] leading-[100%] px-3">or</p>
-                <div className="w-[202px] border-[1px] border-solid border-[#B0B0B0]"></div>
+            <div className="w-full max-w-[458px] min-h-[19px] flex justify-between items-center p-[15px]">
+              <div className="w-[202px] border-[1px] border-solid border-[#B0B0B0]"></div>
+              <p className="font-medium text-base text-[#b0b0b0] text-[16px] leading-[100%] px-3">
+                or
+              </p>
+              <div className="w-[202px] border-[1px] border-solid border-[#B0B0B0]"></div>
             </div>
-           
- 
-            <p className="font-semibold max-w-[458px] text-[16px] leading-[100%] text-center text-base text-[#b0b0b0]">sign up with</p>
+
+            <p className="font-semibold max-w-[458px] text-[16px] leading-[100%] text-center text-base text-[#b0b0b0]">
+              sign up with
+            </p>
             <div className="max-w-[458px] flex items-center justify-between gap-2.5 w-full">
               <a href="#">
                 <button className="w-[136px] h-[44px] bg-white rounded cursor-pointer shadow-[2px_2px_5px_#00000014] p-2.5 flex items-center justify-center">
@@ -238,16 +254,15 @@ export default function SignUp() {
                 </button>
               </a>
             </div>
-              <p className="max-w-[246px] min-h-[19px] flex justify-center items-center gap-[4px] text-[16] leading-[100%] text-base text-[#b0b0b0] font-normal">
-                Already have an account?{" "}
-                <Link
-                  to={"/sign-in"}
-                  className="nounderline font-[900] text-[16px]  text-[#00B0BA]"
-                >
-                  
-                  Log In
-                </Link>
-              </p>
+            <p className="max-w-[246px] min-h-[19px] flex justify-center items-center gap-[4px] text-[16] leading-[100%] text-base text-[#b0b0b0] font-normal">
+              Already have an account?{" "}
+              <Link
+                to="/sign-in"
+                className="nounderline font-[900] text-[16px] text-[#00B0BA]"
+              >
+                Log In
+              </Link>
+            </p>
           </div>
         </div>
       </div>

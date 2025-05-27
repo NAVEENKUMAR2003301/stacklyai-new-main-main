@@ -1,7 +1,5 @@
-import React from 'react'
-import Coin from '../../../src/assets/product-pg/coin.png'
-import { Link } from 'react-router-dom'
-
+import React from "react";
+import Coin from "../../../src/assets/product-pg/coin.png";
 
 export default function PackageProducts() {
   return (
@@ -12,11 +10,9 @@ export default function PackageProducts() {
           Step up to <span className="text-[#F3AE00]">GOLD</span> for all
           Premium Benefits!
         </div>
-        <Link to="/UiPlans">
-          <div className="w-[406px] min-h-[60px] rounded-[5px] bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-[20px] font-bold leading-[35px] spacing-[8px] text-center text-white flex justify-center items-center">
-            GET STARTED!
-          </div>
-        </Link>
+        <div className="w-[406px] min-h-[60px] rounded-[5px] bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-[20px] font-bold leading-[35px] spacing-[8px] text-center text-white flex justify-center items-center">
+          GET STARTED!
+        </div>
       </div>
 
       <div className="w-[57.1px] h-[37.47px] rotate-[30deg] relative top-[-100px] right-[-280px]">
