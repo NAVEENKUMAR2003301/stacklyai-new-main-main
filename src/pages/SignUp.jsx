@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 
 import { Link } from "react-router-dom";
+import Header1 from "../components/Header1";
 
 export default function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
@@ -8,6 +9,8 @@ export default function SignUp() {
 
   return (
     <div>
+
+      <Header1 />
       <div
         className="bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: "url('/signUp/bg-img.jpeg')" }}
