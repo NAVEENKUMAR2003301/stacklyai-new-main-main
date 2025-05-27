@@ -68,63 +68,58 @@ export default function Billing() {
                 <div className="w-[716px] h-[477px] flex flex-col justify-start items-start gap-[12px]">
                   <div className="w-[716px] h-[42px] flex justify-between items-center gap-[16px]">
                     <div className="w-[228px] h-[40px] rounded-[8px] border-[1px] border-solid border-[#007B82] bg-[white] flex justify-between items-center px-[16px] py-[10px]">
-                      <div className="font-[400] text-[14px] leading-[140%] text-[#007B82]">
+                      <div className="font-[400] text-[14px] leading-[140%] text-[#007B82] flex justify-between items-center ">
                         Basic
+                        <input
+                          type="radio"
+                          className="accent-[#007B82]  w-[308px]"
+                          name="premium"
+                        />
                       </div>
-
-                      <input
-                        type="radio"
-                        className="accent-[#007B82] "
-                        name="premium"
-                      />
                     </div>
                     <div className="w-[228px] h-[40px] rounded-[8px] border-[1px] border-solid border-[#007B82] bg-[white] flex justify-between items-center px-[16px] py-[10px]">
-                      <div className="font-[400] text-[14px] leading-[140%] text-[#007B82]">
+                      <div className="font-[400]  text-[14px] leading-[140%] text-[#007B82] flex justify-between items-center ">
                         Silver
+                        <input
+                          type="radio"
+                          className="accent-[#007B82] w-[308px]"
+                          name="premium"
+                        />
                       </div>
-
-                      <input
-                        type="radio"
-                        className="accent-[#007B82] "
-                        name="premium"
-                      />
                     </div>
                     <div className="w-[228px] h-[40px] rounded-[8px] border-[1px] border-solid border-[#007B82] bg-[white] flex justify-between items-center px-[16px] py-[10px]">
-                      <div className="font-[400] text-[14px] leading-[140%] text-[#007B82]">
+                      <div className="font-[400] text-[14px] leading-[140%] text-[#007B82] flex justify-between items-center ">
                         Gold
+                        <input
+                          type="radio"
+                          className="accent-[#007B82] w-[308px]"
+                          name="premium"
+                        />
                       </div>
-
-                      <input
-                        type="radio"
-                        className="accent-[#007B82] "
-                        name="premium"
-                      />
                     </div>
                   </div>
 
                   <div className="w-[472px] h-[42px] flex justify-between items-center gap-[16px]">
                     <div className="w-[228px] h-[40px] rounded-[8px] border-[1px] border-solid border-[#007B82] bg-[white] flex justify-between items-center px-[16px] py-[10px]">
-                      <div className="font-[400] text-[14px] leading-[140%] text-[#007B82]">
+                      <div className="font-[400] text-[14px] leading-[140%] text-[#007B82] flex justify-between items-center ">
                         Monthly
+                        <input
+                          type="radio"
+                          className="accent-[#007B82]  w-[278px]"
+                          name="Durations"
+                        />
                       </div>
-
-                      <input
-                        type="radio"
-                        className="accent-[#007B82]  "
-                        name="Durations"
-                      />
                     </div>
 
                     <div className="w-[228px] h-[40px] rounded-[8px] border-[1px] border-solid border-[#007B82] bg-[white] flex justify-between items-center px-[16px] py-[10px]">
-                      <div className="font-[400] text-[14px] leading-[140%] text-[#007B82]">
+                      <div className="font-[400] text-[14px] leading-[140%] text-[#007B82] flex justify-between items-center">
                         Yearly
+                        <input
+                          type="radio"
+                          className="accent-[#007B82] w-[278px] "
+                          name="Durations"
+                        />
                       </div>
-
-                      <input
-                        type="radio"
-                        className="accent-[#007B82] "
-                        name="Durations"
-                      />
                     </div>
                   </div>
 
@@ -171,7 +166,11 @@ export default function Billing() {
                       placeholder="Zip/Postal Code"
                     />
                     <div className="w-[228px] bg-white h-[52px] rounded-[12px] border-[1px] border-solid border-[#007B82] flex justify-between items-center  overflow-hidden px-[20px] cursor-pointer">
-                      <select name="" id="" className="w-[208px] cursor-pointer">
+                      <select
+                        name=""
+                        id=""
+                        className="w-[208px] cursor-pointer"
+                      >
                         <option value="">IND</option>
                         <option value="">USA</option>
                       </select>
