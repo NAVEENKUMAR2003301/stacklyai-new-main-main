@@ -49,8 +49,8 @@ export default function Products() {
     <div>
       <HeroProducts />
       <CarouselProducts />
-      <DraggableImages/>
-      <Form/>
+      <DraggableImages />
+      <Form id="form-section" imageValue={selectedImage} />
       <PackageProducts />
       <ImageGeneration />
     </div>
