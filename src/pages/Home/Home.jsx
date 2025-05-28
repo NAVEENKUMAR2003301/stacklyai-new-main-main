@@ -643,12 +643,12 @@ export default function Home() {
           Get started with 10 free outputs – No credit card needed!
         </h2>
 
-        <a
-          href="/Form"
+        <Link
+          to="/Pricing"
           className="max-w-[406px] min-h-[60px] rounded-[5px] bg-gradient-to-r from-[#00B0BA] via-[#000000] to-[#007B82] text-white font-bold py-5 px-16 rounded-md hover:opacity-50 transition"
         >
           Start Free Trial
-        </a>
+        </Link>
       </section>
       {/* {section-13} */}
       <section className="w-full py-16 px-4 flex flex-col justify-center items-center mt-20">
