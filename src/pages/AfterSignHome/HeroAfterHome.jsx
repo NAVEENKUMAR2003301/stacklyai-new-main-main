@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Form, Link } from "react-router-dom";
-import G1 from "../../../public/AfterHome/g1.png"
-import G2 from "../../../public/AfterHome/g2.png"
-import G3 from "../../../public/AfterHome/g3.png"
-import G4 from "../../../public/AfterHome/g4.png"
-import G5 from "../../../public/AfterHome/g5.png"
-import G6 from "../../../public/AfterHome/g6.png"
-import L1 from "../../../public/AfterHome/l1.png"
-import L2 from "../../../public/AfterHome/l2.png"
-import L3 from "../../../public/AfterHome/l3.png"
-import L4 from "../../../public/AfterHome/l4.png"
-import Line from "../../../public/AfterHome/line.png"
+import G1 from "../../assets/afterHome/g1.png"
+import G2 from "../../assets/afterHome/g2.png";
+import G3 from "../../assets/afterHome/g3.png";
+import G4 from "../../assets/afterHome/g4.png";
+import G5 from "../../assets/afterHome/g5.png";
+import G6 from "../../assets/afterHome/g6.png";
+import L1 from "../../assets/afterHome/l1.png";
+import L2 from "../../assets/afterHome/l2.png";
+import L3 from "../../assets/afterHome/l3.png";
+import L4 from "../../assets/afterHome/l4.png";
+import Line from "../../assets/afterHome/line.png";
 import DraggableAfter from "../../pages/AfterSignHome/DraggableAfter"
 
 
