@@ -28,6 +28,9 @@ import HeroProfile from "./pages/Profile/HeroProfile";
 import Myplan from "./pages/Profile/Myplan";
 import Mybilling from "./pages/Profile/Mybilling";
 import HelpCenter from "./pages/Profile/HelpCenter";
+import ExteriorForm from "./pages/AfterSignHome/ExteriorForm";
+import OutdoorForm from "./pages/AfterSignHome/OutdoorForm";
+import FormAfter from "./pages/AfterSignHome/FormAfter";
 
 export default function App() {
   return (
@@ -59,6 +62,9 @@ export default function App() {
         <Route path="/Myplan" element={<Myplan/>}/>
         <Route path="/Mybilling" element={<Mybilling/>}/>
         <Route path="/HelpCenter" element={<HelpCenter/>}/>
+        <Route path="/ExteriorForm" element={<ExteriorForm/>}/>
+        <Route path="/OutdoorForm" element={<OutdoorForm/>}/>
+        <Route path="/FormAfter" element={<FormAfter />}/>
       </Routes>
 
       <Footer />

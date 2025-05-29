@@ -18,6 +18,8 @@ import DraggableAfter from "../../pages/AfterSignHome/DraggableAfter"
 
 import FormAfter from "../../pages/AfterSignHome/FormAfter"
 import AfterFaq from "../../pages/AfterSignHome/AfterFaq"
+import ExteriorForm from "./ExteriorForm";
+import OutdoorForm from "./OutdoorForm";
 
 
 export default function HeroAfterHome() {
@@ -219,6 +221,10 @@ export default function HeroAfterHome() {
       {/* section-7  */}
 
        <AfterFaq />
+
+       <ExteriorForm />
+
+       <OutdoorForm />
       
 
     </div>

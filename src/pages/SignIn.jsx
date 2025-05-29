@@ -111,12 +111,15 @@ export default function SignIn({ onLogin }) {
                 </Link>
               </p>
 
-              <button
-                type="submit"
-                className="w-[456px] bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-base text-[white] cursor-pointer font-bold max-w-[465px] p-[15px] rounded-[5px]"
-              >
-                Log In
-              </button>
+              <Link to="/AfterHome">
+                {" "}
+                <button
+                  type="submit"
+                  className="w-[456px] bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-base text-[white] cursor-pointer font-bold max-w-[465px] p-[15px] rounded-[5px]"
+                >
+                  Log In
+                </button>
+              </Link>
             </form>
             <div className="w-full max-w-[458px] min-h-[19px] flex justify-between items-center p-[15px]">
               <div className="w-[202px] border-[1px] border-solid border-[#B0B0B0]"></div>
@@ -229,7 +232,7 @@ export default function SignIn({ onLogin }) {
                 to="/sign-up"
                 className="nounderline font-[900] text-[16px] text-[#00B0BA]"
               >
-                Log In
+                Sign up
               </Link>
             </p>
           </div>
