@@ -58,6 +58,7 @@ import Reacts from "../../assets/home/react.png";
 import Stars from "../../assets/home/stars.png";
 import Magic from "../../assets/product-pg/magic.png";
 import {Link} from "react-router-dom"
+import BasicForm from "./BasicForm";
 
 
 //export default function Home() {
@@ -446,7 +447,7 @@ export default function Home() {
 
       {/* Section 7 */}
 
-      <Form />
+      <BasicForm />
 
       {/* Section 7.5 */}
 
