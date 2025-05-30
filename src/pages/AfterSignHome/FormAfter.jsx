@@ -2895,7 +2895,7 @@ export default function Form() {
               <img src={I} alt="i" />
             </div>
             <div className="w-[93px] h-[19px] text-[16px] font-[medium] leading-[100%] text-center text-white">
-              Photo guide
+              Photo Tips
             </div>
           </div>
         </div>
