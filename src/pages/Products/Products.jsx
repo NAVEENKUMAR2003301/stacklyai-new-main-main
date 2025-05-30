@@ -51,7 +51,7 @@ export default function Products() {
       <HeroProducts />
       <CarouselProducts />
       <DraggableImages />
-      <Form id="form-section" imageValue={selectedImage} />
+      <BasicForm id="form-section" imageValue={selectedImage} />
       <PackageProducts />
       <ImageGeneration />
     </div>
