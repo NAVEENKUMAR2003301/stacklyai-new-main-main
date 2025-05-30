@@ -1226,9 +1226,9 @@ export default function Form() {
     try {
       await new Promise((resolve) => setTimeout(resolve, 3000));
       setGeneratedDesigns([
-        { id: 1, url: After },
-        { id: 2, url: After },
-        { id: 3, url: After },
+        // { id: 1, url: After },
+        // { id: 2, url: After },
+        // { id: 3, url: After },
       ]);
     } catch (error) {
       console.error("Generation failed:", error);
