@@ -8,7 +8,7 @@ import dragImg3_1 from "../../assets/home/draggableImgSection/drag3(1).png";
 import dragImg3_2 from "../../assets/home/draggableImgSection/drag3(2).png";
 import { Link } from "react-router-dom";
 
-export default function CarouselProducts() {
+export default function AfterCarouselProducts() {
   const [index, setIndex] = useState(0);
   const showNext = () => {
     index < 2 ? setIndex((prev) => ++prev) : setIndex(0);
@@ -111,7 +111,7 @@ export default function CarouselProducts() {
         />
       </div>
 
-      <Link to="/Sign-in">
+      
         {" "}
         <div className="flex gap-2.5 justify-center items-center mt-10">
           <nav className="bg-[#00b0ba] p-3 sm:px-[25px] sm:py-[15px] rounded-[5px] flex gap-2.5 justify-center items-center">
@@ -131,7 +131,7 @@ export default function CarouselProducts() {
             </p>
           </nav>
         </div>{" "}
-      </Link>
+     
     </div>
   );
 }

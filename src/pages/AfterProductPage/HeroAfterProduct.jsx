@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function HeroProducts() {
+export default function HeroAfterProducts() {
   return (
     <div className="px-[20px] sm:px-[50px] pb-[20px] w-full">
       <div className="w-full  min-h-[208px]  my-[20px] sm:my-[60px] text-center flex flex-col justify-center items-center gap-[24px]">

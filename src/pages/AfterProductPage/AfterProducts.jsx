@@ -1,10 +1,5 @@
-import React from "react";
-import HeroProducts from "./HeroProducts";
-import CarouselProducts from "./CarouselProducts";
-import DraggableImages from "./DraggableImagesProducts";
-import PackageProducts from "./PackageProducts";
-import Form from "../Home/Form";
-import ImageGeneration from "./ImageGeneration";
+
+import AfterForm from "../AfterSignHome/FormAfter";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -15,8 +10,12 @@ import dragImg2_2 from "../../assets/home/draggableImgSection/drag2(2).png";
 import dragImg3_1 from "../../assets/home/draggableImgSection/drag3(1).png";
 import dragImg3_2 from "../../assets/home/draggableImgSection/drag3(2).png";
 import BasicForm from "../Home/BasicForm";
+import HeroAfterProducts from "./HeroAfterProduct";
+import AfterCarouselProducts from "./AfterCarouselProduct";
+import AfterDraggableImagesProducts from "./AfterDraggableImageProducts";
+import AfterPackageProducts from "./AfterPackageProducts";
 
-export default function Products() {
+export default function AfterProducts() {
   const location = useLocation();
   const [selectedImage, setSelectedImage] = useState("");
 
@@ -47,12 +46,11 @@ export default function Products() {
 
   return (
     <div>
-      <HeroProducts />
-      <CarouselProducts />
-      <DraggableImages />
-      <BasicForm id="form-section" imageValue={selectedImage} />
-      <PackageProducts />
-      <ImageGeneration />
+      <HeroAfterProducts />
+      <AfterCarouselProducts />
+      <AfterDraggableImagesProducts />
+      <AfterForm id="AfterForm-section" imageValue={selectedImage} />
+      <AfterPackageProducts />
     </div>
   );
 }

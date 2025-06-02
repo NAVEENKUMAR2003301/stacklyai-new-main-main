@@ -16,7 +16,7 @@ import Banner from "../../assets/product-pg/bannercode.png";
 import Banner1 from "../../assets/product-pg/bannercode1.png";
 import Star from "../../assets/product-pg/star.png";
 
-export default function DraggableImagesProducts() {
+export default function AfterDraggableImagesProducts() {
   const navigate = useNavigate();
   const [fullscreenImage, setFullscreenImage] = useState(null);
   const [popupImage, setPopupImage] = useState(null);

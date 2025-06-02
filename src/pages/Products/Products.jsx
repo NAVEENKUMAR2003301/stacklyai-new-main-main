@@ -53,7 +53,7 @@ export default function Products() {
       <DraggableImages />
       <BasicForm id="form-section" imageValue={selectedImage} />
       <PackageProducts />
-      <ImageGeneration />
+     
     </div>
   );
 }

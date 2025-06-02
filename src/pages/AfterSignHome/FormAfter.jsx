@@ -2623,7 +2623,7 @@ const CloseIcon =
 
 
 
-export default function Form() {
+export default function Form(imageValue, id) {
   const { userInfo } = useContext(UserContext);
   const navigate = useNavigate();
   const inpRef = useRef(null);

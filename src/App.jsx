@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -31,40 +31,52 @@ import HelpCenter from "./pages/Profile/HelpCenter";
 import ExteriorForm from "./pages/AfterSignHome/ExteriorForm";
 import OutdoorForm from "./pages/AfterSignHome/OutdoorForm";
 import FormAfter from "./pages/AfterSignHome/FormAfter";
+import { UserContext } from "./context/UserContext";
+import AfterProducts from "./pages/AfterProductPage/AfterProducts";
 
 export default function App() {
+  const { userInfo } = useContext(UserContext);
   return (
     <div className="overflow-x-hidden">
-      <Header/>
-      
+      <Header />
+
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/Api" element={<Api/>}/>
-        <Route path="/Pricing" element={<Pricing/>}/>
-        <Route path="/Billing" element={<Billing/>}/>
-        <Route path="/UiPlans" element={<UiPlans/>}/>
-        <Route path="/Pay" element={<Pay/>}/>
-        <Route path="/ConformationPage" element={<ConformationPage/>}/>
-        <Route path="/Payment" element={<Payment/>}/>
-        <Route path="/Contact" element={<Contact/>}/>
-        <Route path="/HeroForgetPg" element={<HeroForgetPg/>}/>
-        <Route path="/Otp" element={<Otp/>}/>
-        <Route path="/Form" element={<Form />}/>
-        <Route path="/ResetPassword" element={<ResetPassword/>}/>
-        <Route path="/ResetPopup" element={<ResetPopup/>}/>
-        <Route path="/ForgetPg" element={<ForgetPg/>}/>
+        {userInfo.userId ? (
+          <Route path="/" element={<AfterHome />} />
+        ) : (
+          <Route path="/" element={<Home />} />
+        )}
+        {userInfo.userId ? (
+          <Route path="/AfterProducts" element={<AfterProducts />} />
+        ) : (
+          <Route path="/Products" element={<Products />} />
+        )}
+
+        <Route path="/Api" element={<Api />} />
+        <Route path="/Pricing" element={<Pricing />} />
+        <Route path="/Billing" element={<Billing />} />
+        <Route path="/UiPlans" element={<UiPlans />} />
+        <Route path="/Pay" element={<Pay />} />
+        <Route path="/ConformationPage" element={<ConformationPage />} />
+        <Route path="/Payment" element={<Payment />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/HeroForgetPg" element={<HeroForgetPg />} />
+        <Route path="/Otp" element={<Otp />} />
+        <Route path="/Form" element={<Form />} />
+        <Route path="/ResetPassword" element={<ResetPassword />} />
+        <Route path="/ResetPopup" element={<ResetPopup />} />
+        <Route path="/ForgetPg" element={<ForgetPg />} />
         <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/sign-up" element={<SignUp/>}/>
-        <Route path="/Profile" element={<Profile/>}/>
-        <Route path="/AfterHome" element={<AfterHome/>}/>
-        <Route path="/HeroProfile" element={<HeroProfile/>}/>
-        <Route path="/Myplan" element={<Myplan/>}/>
-        <Route path="/Mybilling" element={<Mybilling/>}/>
-        <Route path="/HelpCenter" element={<HelpCenter/>}/>
-        <Route path="/ExteriorForm" element={<ExteriorForm/>}/>
-        <Route path="/OutdoorForm" element={<OutdoorForm/>}/>
-        <Route path="/FormAfter" element={<FormAfter />}/>
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/HeroProfile" element={<HeroProfile />} />
+        <Route path="/Myplan" element={<Myplan />} />
+        <Route path="/Mybilling" element={<Mybilling />} />
+        <Route path="/HelpCenter" element={<HelpCenter />} />
+        <Route path="/ExteriorForm" element={<ExteriorForm />} />
+        <Route path="/OutdoorForm" element={<OutdoorForm />} />
+        <Route path="/FormAfter" element={<FormAfter />} />
+        <Route path="/AfterProducts" element={<AfterProducts />} />
       </Routes>
 
       <Footer />

@@ -2,7 +2,7 @@ import React from "react";
 import Coin from "../../../src/assets/product-pg/coin.png";
 import { Link } from "react-router-dom";
 
-export default function PackageProducts() {
+export default function AfterPackageProducts() {
   return (
     <div className="w-full min-h-[689px] flex justify-center items-center flex-col mt-[400px] mb-[-200px]">
       <div className="w-full min-h-[234px] bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82]"></div>
@@ -11,7 +11,7 @@ export default function PackageProducts() {
           Step up to <span className="text-[#F3AE00]">GOLD</span> for all
           Premium Benefits!
         </div>
-        <Link to="/Sign-in">
+        <Link to="/UiPlans">
           {" "}
           <div className="w-[406px] min-h-[60px] rounded-[5px] bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-[20px] font-bold leading-[35px] spacing-[8px] text-center text-white flex justify-center items-center">
             GET STARTED!
