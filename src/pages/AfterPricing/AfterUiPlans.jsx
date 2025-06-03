@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Tik from "../../assets/pricing-pg/tik.png";
 import Silver from "../../assets/pricing-pg/silver.png";
 import Page from "../../assets/pricing-pg/page.png";
@@ -7,7 +7,7 @@ import DarkPg from "../../assets/pricing-pg/darkPg.png";
 import Rarrow from "../../assets/pricing-pg/Rarrow.png";
 import { Link } from "react-router-dom";
 
-export default function UiPlans() {
+export default function AfterUiPlans() {
   return (
     <div>
       <section className="w-full h-[1600px] flex justify-center items-center bg-[#021314]">
@@ -22,8 +22,6 @@ export default function UiPlans() {
               journey best.
             </div>
 
-            
-  
           </div>
 
           {/* plan  */}
@@ -47,7 +45,7 @@ export default function UiPlans() {
                     /per month
                   </span>
                 </div>
-                <Link to="/Sign-in">
+                <Link to="/AfterBilling">
                   <div className="w-[373px] h-[46px] bg-[white] rounded-[8px] border-[1px] border-solid border-[#007B82] text-[#007B82] flex justify-center items-center hover:bg-gradient-to-b from-[#007B82] to-[#00B0BA] hover:text-white">
                     Get Started
                   </div>
@@ -150,7 +148,7 @@ export default function UiPlans() {
                       </div>
                     </div>
                   </div>
-                  <Link to="/Sign-in">
+                  <Link to="/AfterBilling">
                     {" "}
                     <div className="w-[373px] h-[46px] rounded-[5px] border-[1px] border-solid border-[#007B82] hover:text-[white] text-[#007B82] bg-white flex justify-center items-center hover:bg-gradient-to-b from-[#007B82] to-[#00B0BA]">
                       Get Started
@@ -253,7 +251,7 @@ export default function UiPlans() {
                       </div>
                     </div>
                   </div>
-                  <Link to="/Sign-in">
+                  <Link to="/AfterBilling">
                     <div className="w-[373px] h-[46px] bg-[white] rounded-[8px] border-[1px] border-solid border-[#007B82] text-[#007B82] flex justify-center items-center hover:text-[white] hover:bg-gradient-to-b from-[#007B82] to-[#00B0BA]">
                       Get Started
                     </div>
@@ -313,8 +311,6 @@ export default function UiPlans() {
               </div>
             </div>
           </div>
-
-        
         </div>
       </section>
     </div>

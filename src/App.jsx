@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignIn from "./pages/SignIn";
@@ -16,11 +15,11 @@ import HeroForgetPg from "./pages/forgetPage/HeroForgetPg";
 import Otp from "./pages/forgetPage/Otp";
 import ResetPassword from "./pages/forgetPage/ResetPassword";
 import ResetPopup from "./pages/forgetPage/ResetPopup";
-import Billing from "./pages/PricingPage/Billing";
-import Payment from "./pages/PricingPage/Payment";
-import UiPlans from "./pages/PricingPage/UiPlans";
-import Pay from "./pages/PricingPage/Pay";
-import ConformationPage from "./pages/PricingPage/ConformationPage";
+import AfterBilling from "./pages/AfterPricing/AfterBilling";
+import AfterPayment from "./pages/AfterPricing/AfterPayment";
+import AfterUiPlans from "./pages/AfterPricing/AfterUiPlans";
+import AfterPay from "./pages/AfterPricing/AfterPay";
+import AfterConformationPage from "./pages/AfterPricing/AfterConformationPage";
 import Profile from "./pages/Profile/Profile";
 import AfterHome from "./pages/AfterSignHome/AfterHome";
 import Form from "./pages/Home/Form";
@@ -30,9 +29,9 @@ import Mybilling from "./pages/Profile/Mybilling";
 import HelpCenter from "./pages/Profile/HelpCenter";
 import ExteriorForm from "./pages/AfterSignHome/ExteriorForm";
 import OutdoorForm from "./pages/AfterSignHome/OutdoorForm";
-import FormAfter from "./pages/AfterSignHome/FormAfter";
 import { UserContext } from "./context/UserContext";
 import AfterProducts from "./pages/AfterProductPage/AfterProducts";
+import AfterPricing from "./pages/AfterPricing/AfterPricing";
 
 export default function App() {
   const { userInfo } = useContext(UserContext);
@@ -51,14 +50,22 @@ export default function App() {
         ) : (
           <Route path="/Products" element={<Products />} />
         )}
+        {userInfo.userId ? (
+          <Route path="/Pricing" element={<AfterPricing />} />
+        ) : (
+          <Route path="/AfterPricing" element={<Pricing />} />
+        )}
 
-        <Route path="/Api" element={<Api />} />
         <Route path="/Pricing" element={<Pricing />} />
-        <Route path="/Billing" element={<Billing />} />
-        <Route path="/UiPlans" element={<UiPlans />} />
-        <Route path="/Pay" element={<Pay />} />
-        <Route path="/ConformationPage" element={<ConformationPage />} />
-        <Route path="/Payment" element={<Payment />} />
+        <Route path="/Api" element={<Api />} />
+        <Route path="/AfterBilling" element={<AfterBilling />} />
+        <Route path="/AfterUiPlans" element={<AfterUiPlans />} />
+        <Route path="/AfterPay" element={<AfterPay />} />
+        <Route
+          path="/AfterConformationPage"
+          element={<AfterConformationPage />}
+        />
+        <Route path="/AfterPayment" element={<AfterPayment />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/HeroForgetPg" element={<HeroForgetPg />} />
         <Route path="/Otp" element={<Otp />} />
@@ -75,7 +82,6 @@ export default function App() {
         <Route path="/HelpCenter" element={<HelpCenter />} />
         <Route path="/ExteriorForm" element={<ExteriorForm />} />
         <Route path="/OutdoorForm" element={<OutdoorForm />} />
-        <Route path="/FormAfter" element={<FormAfter />} />
         <Route path="/AfterProducts" element={<AfterProducts />} />
       </Routes>
 

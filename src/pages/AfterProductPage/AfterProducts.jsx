@@ -1,3 +1,4 @@
+// AfterProducts 
 
 import AfterForm from "../AfterSignHome/FormAfter";
 import { useEffect, useState } from "react";
@@ -18,38 +19,49 @@ import AfterPackageProducts from "./AfterPackageProducts";
 export default function AfterProducts() {
   const location = useLocation();
   const [selectedImage, setSelectedImage] = useState("");
+  const [selectedRoom, setSelectedRoom] = useState("");
 
   useEffect(() => {
     if (location.state?.scrollToForm) {
-      // Small timeout to ensure DOM is ready
+      // Add slight delay to ensure DOM is ready
       const timer = setTimeout(() => {
-        const formElement = document.getElementById("form-section");
+        const formElement = document.getElementById("AfterForm-section");
         if (formElement) {
           formElement.scrollIntoView({
             behavior: "smooth",
             block: "start",
           });
         }
-      }, 50);
+      }, 100); // Increased delay slightly
 
-      // Set the selected image if passed via state
+      // Verify the image exists before setting state
       if (location.state?.originalImage) {
-        setSelectedImage(location.state.originalImage);
+        // Create image element to verify it loads
+        const img = new Image();
+        img.src = location.state.originalImage;
+        img.onload = () => setSelectedImage(location.state.originalImage);
+        img.onerror = () => setSelectedImage(null);
       }
 
-      // Clear the state after scrolling
-      window.history.replaceState({}, document.title);
+      if (location.state?.selectedRoom) {
+        setSelectedRoom(location.state.selectedRoom);
+      }
 
+      window.history.replaceState({}, document.title);
       return () => clearTimeout(timer);
     }
   }, [location.state]);
-
+ 
   return (
     <div>
       <HeroAfterProducts />
       <AfterCarouselProducts />
       <AfterDraggableImagesProducts />
-      <AfterForm id="AfterForm-section" imageValue={selectedImage} />
+      <AfterForm
+        id="AfterForm-section"
+        imageValue={selectedImage}
+        selectedRoom={selectedRoom}
+      />
       <AfterPackageProducts />
     </div>
   );

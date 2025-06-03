@@ -2,30 +2,26 @@ import React from "react";
 import { CheckCircle2 } from "lucide-react";
 import Banner1 from "../../assets/pricing-pg/banner1.png";
 import Banner2 from "../../assets/pricing-pg/banner2.png";
-import CreditStats from "./CreditStats";
-import Graph from "./Graph";
-import PricingTable from "./PricingTable";
-import PricingFaq from "./PricingFaq";
-import Billing from "./Billing";
-import Payment from "./Payment";
-import UiPlans from "./UiPlans";
-import ConformationPage from "./ConformationPage";
-import Pay from "./Pay";
+import AfterCreditStats from "./AfterCreditStats";
+import AfterGraph from "./AfterGraph";
+import AfterPricingTable from "./AfterPricingTable";
+import AfterPricingFaq from "./AfterPricingFaq";
+import AfterBilling from "./AfterBilling";
+import AfterPayment from "./AfterPayment";
+import AfterUiPlans from "./AfterUiPlans";
+import AfterConformationPage from "./AfterConformationPage";
+import AfterPay from "./AfterPay";
 import { Link } from "react-router-dom";
 
-
-
-export default function HeroPricing() {
-  
-
-      const features = [
-        "Unlimited Designs",
-        "High-Resolution 4K Images",
-        "Watermark-Free Downloads",
-        "Highly Advanced AI Designs",
-        "24/7 Support Assistance",
-        "Cancel Anytime",
-      ];
+export default function AfterHeroPricing() {
+  const features = [
+    "Unlimited Designs",
+    "High-Resolution 4K Images",
+    "Watermark-Free Downloads",
+    "Highly Advanced AI Designs",
+    "24/7 Support Assistance",
+    "Cancel Anytime",
+  ];
 
   return (
     <div>
@@ -59,11 +55,11 @@ export default function HeroPricing() {
 
       {/* section-2  */}
 
-      <CreditStats />
+      <AfterCreditStats />
 
       {/* section-3  */}
 
-      <Graph />
+      <AfterGraph />
 
       {/* section-4  */}
 
@@ -74,7 +70,7 @@ export default function HeroPricing() {
         </h2>
 
         {/* CTA Button */}
-        <Link to="/Sign-in">
+        <Link to="/FormAfter">
           {" "}
           <button className="bg-gradient-to-r from-[#00B0BA] via-[black] to-[#007B82] hover:from-cyan-600  text-white font-bold py-3 px-8 rounded-md text-[20px] transition-all duration-300">
             Get Started for Free
@@ -88,8 +84,8 @@ export default function HeroPricing() {
       </section>
 
       {/* section-5  */}
-      {/* <PricingTable /> */}
-      <UiPlans />
+      {/* <AfterPricingTable /> */}
+      <AfterUiPlans />
 
       {/* section-6  */}
 
@@ -120,7 +116,7 @@ export default function HeroPricing() {
 
       {/* section-7  */}
 
-      <PricingFaq />
+      <AfterPricingFaq />
 
       {/* section 8  */}
     </div>

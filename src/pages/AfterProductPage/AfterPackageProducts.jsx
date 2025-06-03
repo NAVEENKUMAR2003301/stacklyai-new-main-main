@@ -11,7 +11,7 @@ export default function AfterPackageProducts() {
           Step up to <span className="text-[#F3AE00]">GOLD</span> for all
           Premium Benefits!
         </div>
-        <Link to="/UiPlans">
+        <Link to="/AfterUiPlans">
           {" "}
           <div className="w-[406px] min-h-[60px] rounded-[5px] bg-gradient-to-l from-[#00B0BA] via-[#000000] to-[#007B82] text-[20px] font-bold leading-[35px] spacing-[8px] text-center text-white flex justify-center items-center">
             GET STARTED!
