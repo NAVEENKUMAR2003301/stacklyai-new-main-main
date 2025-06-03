@@ -6,7 +6,6 @@ import {
   useNavigate,
   useParams,
   useSearchParams,
-
 } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 export default function Header() {
@@ -16,14 +15,6 @@ export default function Header() {
   const { userInfo, setUserInfo } = useContext(UserContext);
   const location = useLocation();
   const endpoint = location.pathname.split("/").filter(Boolean).pop();
-  
-  const handleProductClick = () => {
-    if (userInfo?.userId) {
-      navigate("/AfterProducts");
-    } else {
-      navigate("/Products");
-    }
-  };
 
   return (
     <div>
@@ -51,15 +42,15 @@ export default function Header() {
                 </NavLink>
               </li>
               <li>
-                <span
+                <NavLink
+                  to="/products"
                   onClick={() => {
-                    handleProductClick();
                     setShowSideBar(false);
                   }}
                   className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82]"
                 >
                   Products
-                </span>
+                </NavLink>
               </li>
               <li>
                 <NavLink
@@ -231,15 +222,15 @@ export default function Header() {
           Home
         </NavLink>
 
-        <span
+        <NavLink
+          to="/products"
           onClick={() => {
-            handleProductClick();
             setShowSideBar(false);
           }}
           className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82]"
         >
           Products
-        </span>
+        </NavLink>
 
         <NavLink
           className="text-[20px] font-bold text-[#2a2a2a] cursor-pointer no-underline leading-[100%] hover:text-[#007b82] NavLink visited:font-bold"
@@ -291,7 +282,6 @@ export default function Header() {
             >
               Sign Up
             </button>
-            
           </>
         )}
       </section>

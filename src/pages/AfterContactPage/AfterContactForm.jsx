@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import formBanner from "../../assets/pricing-pg/formBanner.jpg"; // Adjust path as needed
 
 //Connect fastapi
-const ContactForm = () => {
+const AfterContactForm = () => {
   const [formData, setFormData] = useState({
     first_name: "",
     last_name: "",
@@ -313,4 +313,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default AfterContactForm;

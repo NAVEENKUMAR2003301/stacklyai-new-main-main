@@ -32,6 +32,9 @@ import OutdoorForm from "./pages/AfterSignHome/OutdoorForm";
 import { UserContext } from "./context/UserContext";
 import AfterProducts from "./pages/AfterProductPage/AfterProducts";
 import AfterPricing from "./pages/AfterPricing/AfterPricing";
+import FormAfter from "./pages/AfterSignHome/FormAfter"
+import AfterApi from "./pages/AfterApi/AfterApi"
+import AfterContact from "./pages/AfterContactPage/AfterContact";
 
 export default function App() {
   const { userInfo } = useContext(UserContext);
@@ -46,18 +49,27 @@ export default function App() {
           <Route path="/" element={<Home />} />
         )}
         {userInfo.userId ? (
-          <Route path="/AfterProducts" element={<AfterProducts />} />
+          <Route path="/products" element={<AfterProducts />} />
         ) : (
-          <Route path="/Products" element={<Products />} />
+          <Route path="/products" element={<Products />} />
         )}
         {userInfo.userId ? (
-          <Route path="/Pricing" element={<AfterPricing />} />
+          <Route path="/pricing" element={<AfterPricing />} />
         ) : (
-          <Route path="/AfterPricing" element={<Pricing />} />
+          <Route path="/pricing" element={<Pricing />} />
+        )}
+        {userInfo.userId ? (
+          <Route path="/Api" element={<AfterApi />} />
+        ) : (
+          <Route path="/Api" element={<Api />} />
+        )}
+        {userInfo.userId ? (
+          <Route path="/contact" element={<AfterContact />} />
+        ) : (
+          <Route path="/contact" element={<Contact />} />
         )}
 
-        <Route path="/Pricing" element={<Pricing />} />
-        <Route path="/Api" element={<Api />} />
+        
         <Route path="/AfterBilling" element={<AfterBilling />} />
         <Route path="/AfterUiPlans" element={<AfterUiPlans />} />
         <Route path="/AfterPay" element={<AfterPay />} />
@@ -66,7 +78,6 @@ export default function App() {
           element={<AfterConformationPage />}
         />
         <Route path="/AfterPayment" element={<AfterPayment />} />
-        <Route path="/Contact" element={<Contact />} />
         <Route path="/HeroForgetPg" element={<HeroForgetPg />} />
         <Route path="/Otp" element={<Otp />} />
         <Route path="/Form" element={<Form />} />
@@ -83,6 +94,7 @@ export default function App() {
         <Route path="/ExteriorForm" element={<ExteriorForm />} />
         <Route path="/OutdoorForm" element={<OutdoorForm />} />
         <Route path="/AfterProducts" element={<AfterProducts />} />
+        <Route path="/FormAfter" element={<FormAfter />} />
       </Routes>
 
       <Footer />
