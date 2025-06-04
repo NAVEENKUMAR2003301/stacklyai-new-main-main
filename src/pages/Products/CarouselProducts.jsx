@@ -126,12 +126,7 @@ export default function CarouselProducts() {
                 fill="white"
               />
             </svg>
-            <Link to="/Sign-in">
-              {" "}
-              <p className="text-md sm:text-xl font-bold text-white">
-                Create Magic
-              </p>
-            </Link>
+            
           </nav>
         </div>{" "}
       </Link>
