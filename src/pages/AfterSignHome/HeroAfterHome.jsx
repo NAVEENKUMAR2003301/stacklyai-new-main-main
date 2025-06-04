@@ -77,7 +77,7 @@ export default function HeroAfterHome() {
       </section>
 
       {/* section2  */}
-      <section
+      {/* <section
         className="w-full min-h-[1000px] bg-cover bg-no-repeat bg-center p-[40px] flex flex-col justify-start items-center "
         style={{ backgroundImage: 'url("/AfterHome/sec2.png")' }}
       >
@@ -128,6 +128,60 @@ export default function HeroAfterHome() {
               src={G6}
               alt="img-gallery"
               className="w-[317.29px] h-[317.29px] rounded-[8.46px] relative left-[-30px]"
+            />
+          </div>
+        </div>
+      </section> */}
+
+      <section
+        className="w-full min-h-[1000px] bg-cover bg-no-repeat bg-center p-[40px] flex flex-col justify-start items-center"
+        style={{ backgroundImage: 'url("/AfterHome/sec2.png")' }}
+      >
+        <div className="w-full h-[106px] flex flex-col justify-center items-center gap-[32px]">
+          <div className="w-full h-[46px] font-medium text-[38px] leading-[100%] text-center text-[#007B82]">
+            STACKLY AI
+          </div>
+          <div className="w-full h-[28px] font-medium text-[24px] leading-[28px] text-center text-[#1E1E1E]">
+            Design Your Dream Space — Effortlessly
+          </div>
+        </div>
+
+        <div className="w-[80%] h-[850px] flex justify-center items-center">
+          <div>
+            <img
+              src={G1}
+              alt="img-gallery"
+              className="bubble-img w-[317.29px] h-[317.29px] rounded-[8.46px] relative top-8 left-3 transform transition-transform hover:scale-105"
+            />
+            <img
+              src={G2}
+              alt="img-gallery"
+              className="bubble-img w-[317.29px] h-[317.29px] rounded-[8.46px] relative left-5 mt-4 transform transition-transform hover:scale-105"
+            />
+          </div>
+          <div>
+            <img
+              src={G3}
+              alt="img-gallery"
+              className="bubble-img w-[317.29px] h-[317.29px] rounded-[8.46px] relative top-8 transform transition-transform hover:scale-105"
+            />
+            <br />
+            <img
+              src={G4}
+              alt="img-gallery"
+              className="bubble-img w-[317.29px] h-[317.29px] rounded-[8.46px] relative left-4 mt-4 transform transition-transform hover:scale-105"
+            />
+          </div>
+          <div>
+            <img
+              src={G5}
+              alt="img-gallery"
+              className="bubble-img w-[317.29px] h-[317.29px] rounded-[8.46px] relative top-8 right-3 transform transition-transform hover:scale-105"
+            />
+            <img
+              src={G6}
+              alt="img-gallery"
+              className="bubble-img w-[317.29px] h-[317.29px] rounded-[8.46px] relative left-[-30px] mt-4 transform transition-transform hover:scale-105"
             />
           </div>
         </div>
@@ -217,16 +271,13 @@ export default function HeroAfterHome() {
 
       <FormAfter />
 
-
       {/* section-7  */}
 
-       <AfterFaq />
+      <AfterFaq />
 
-       {/* <ExteriorForm />
+      {/* <ExteriorForm />
 
        <OutdoorForm /> */}
-      
-
     </div>
   );
 }
