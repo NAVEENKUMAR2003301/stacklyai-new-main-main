@@ -257,7 +257,7 @@ export default function HeroAfterHome() {
                 with Gold!
               </div>
             </div>
-            <Link to="">
+            <Link to="/AfterUiPlans">
               {" "}
               <div className="w-[406px] h-[60px] flex justify-center items-center gap-[10px] rounded-[5px] bg-gradient-to-l from-[#00B0BA] via-[black] to-[#007B82] font-medium text-[18px] text-center text-white">
                 Unlock Unlimited with <span className="text-[Gold]">Gold</span>
