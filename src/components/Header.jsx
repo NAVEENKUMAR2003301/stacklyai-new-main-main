@@ -152,8 +152,8 @@ export default function Header() {
                 className="profile-list min-w-[150px] p-4 z-10 hidden group-hover:flex flex-col gap-2 absolute bottom-0 right-0 bg-white rounded-md"
                 style={{ transform: "translateY(95%)" }}
               >
-                <NavLink to="#">My Profile</NavLink>
-                <NavLink to="#">My Creations</NavLink>
+                <NavLink to="/Profile">My Profile</NavLink>
+                {/* <NavLink to="#">My Creations</NavLink> */}
                 <p className="w-full h-[1px] bg-gray-600 my-1"></p>
                 <NavLink
                   onClick={() => {

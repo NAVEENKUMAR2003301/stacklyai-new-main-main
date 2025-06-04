@@ -111,7 +111,7 @@ export default function CarouselProducts() {
         />
       </div>
 
-      <Link to="/Sign-in">
+      {/* <Link to="/Sign-in">
         {" "}
         <div className="flex gap-2.5 justify-center items-center mt-10">
           <nav className="bg-[#00b0ba] p-3 sm:px-[25px] sm:py-[15px] rounded-[5px] flex gap-2.5 justify-center items-center">
@@ -126,10 +126,15 @@ export default function CarouselProducts() {
                 fill="white"
               />
             </svg>
-            
+            <Link to="/Sign-in">
+              {" "}
+              <p className="text-md sm:text-xl font-bold text-white">
+                Create Magic
+              </p>
+            </Link>
           </nav>
         </div>{" "}
-      </Link>
+      </Link> */}
     </div>
   );
 }

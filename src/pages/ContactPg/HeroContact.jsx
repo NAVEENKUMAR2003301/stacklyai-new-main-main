@@ -10,8 +10,6 @@ export default function HeroContact() {
       <ContactBanner/>
 
       <ContactForm/>
-
-      <Profile />
     </div>
   )
 }

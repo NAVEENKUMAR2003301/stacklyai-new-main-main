@@ -645,7 +645,7 @@ export default function Home() {
         </h2>
 
         <Link
-          to="/UiPlans"
+          to="/Sign-in"
           className="max-w-[406px] min-h-[60px] rounded-[5px] bg-gradient-to-r from-[#00B0BA] via-[#000000] to-[#007B82] text-white font-bold py-5 px-16 rounded-md hover:opacity-50 transition"
         >
           Start Free Trial

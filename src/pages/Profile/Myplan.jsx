@@ -3,6 +3,8 @@ import Banner from "../../assets/profile/banner.jpg";
 import Pimage from "../../assets/profile/pimage.png";
 import Eye from "../../assets/profile/eye.png";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 
 export default function Myplan() {
   return (
@@ -62,7 +64,7 @@ export default function Myplan() {
 
           <div className="w-[807px] h-[869px] rounded-[10px] bg-[#FFFFFFCC] backdrop-blur-[6px] shadow-[0_1px_4px_0] shadow-[#0000003D]">
             {/* header  */}
-            <div className="w-[100%] h-[98px] flex justify-between items-center px-[30px]">
+            {/* <div className="w-[100%] h-[98px] flex justify-between items-center px-[30px]">
               <Link to="/HeroProfile">
                 <button className="w-[94px] h-[98px] flex justify-center items-center font-medium text-[18px] leading-[100%] text-[black] hover:text-[#007B82] hover:border-b-[#007B82] hover:border-solid hover:border-b-[2px] focus-within:text-[#007B82] focus-within:border-b-[#007B82] cursor-pointer active:text-[#007B82] active:border-b-[#007B82]">
                   Edit Profile
@@ -82,6 +84,71 @@ export default function Myplan() {
                 <button className="w-[150px] h-[98px] flex justify-center items-center font-medium text-[18px] leading-[100%] text-[black] hover:text-[#007B82] hover:border-b-[#007B82] hover:border-solid hover:border-b-[2px] focus:text-[#007B82] focus:border-b-[#007B82] cursor-pointer active:text-[#007B82]">
                   Help Center
                 </button>
+              </Link>
+            </div> */}
+
+            <div className="w-[100%] h-[98px] flex justify-between items-center px-[30px]">
+              {/* <Link to="/HeroProfile">
+                <button className="w-[94px] h-[98px] flex justify-center items-center font-medium text-[18px] leading-[100%] text-[black] hover:text-[#007B82] hover:border-b-[#007B82] hover:border-solid hover:border-b-[2px] focus-within:text-[#007B82] focus-within:border-b-[#007B82] cursor-pointer active:text-[#007B82] active:border-b-[#007B82]">
+                  Edit Profile
+                </button>
+              </Link> */}
+              <NavLink
+                to="/HeroProfile"
+                className={({ isActive }) =>
+                  `w-[94px] h-[98px] flex justify-center items-center font-medium text-[18px] leading-[100%] text-black hover:text-[#007B82] border-b-[2px] border-solid ${
+                    isActive
+                      ? "text-[#007B82] border-[#007B82]"
+                      : "border-transparent hover:border-[#007B82]"
+                  }`
+                }
+              >
+                Edit Profile
+              </NavLink>
+              {/* <Link to="/Myplan">
+                <button className="w-[94px] h-[98px] flex justify-center items-center font-medium text-[18px] leading-[100%] text-[black] hover:text-[#007B82] hover:border-b-[#007B82] hover:border-solid hover:border-b-[2px] focus:text-[#007B82] focus:border-b-[#007B82] cursor-pointer active:text-[#007B82]">
+                  My Plan
+                </button>
+              </Link> */}
+              <Link
+                to="/Myplan"
+                className={`w-[94px] h-[98px] flex justify-center items-center font-medium text-[18px] leading-[100%] text-black hover:text-[#007B82] border-b-[2px] border-solid ${
+                  window.location.pathname === "/Myplan"
+                    ? "text-[#007B82] border-[#007B82]"
+                    : "border-transparent hover:border-[#007B82]"
+                }`}
+              >
+                My Plan
+              </Link>
+              {/* <Link to="/Mybilling">
+                <button className="w-[94px] h-[98px] flex justify-center items-center font-medium text-[18px] leading-[100%] text-[black] hover:text-[#007B82] hover:border-b-[#007B82] hover:border-solid hover:border-b-[2px] focus:text-[#007B82] focus:border-b-[#007B82] cursor-pointer active:text-[#007B82]">
+                  My Billing
+                </button>
+              </Link> */}
+              <Link
+                to="/Mybilling"
+                className={`w-[94px] h-[98px] flex justify-center items-center font-medium text-[18px] leading-[100%] text-black hover:text-[#007B82] border-b-[2px] border-solid ${
+                  window.location.pathname === "/Mybilling"
+                    ? "text-[#007B82] border-[#007B82]"
+                    : "border-transparent hover:border-[#007B82]"
+                }`}
+              >
+                My Billing
+              </Link>
+              {/* <Link to="/HelpCenter">
+                <button className="w-[150px] h-[98px] flex justify-center items-center font-medium text-[18px] leading-[100%] text-[black] hover:text-[#007B82] hover:border-b-[#007B82] hover:border-solid hover:border-b-[2px] focus:text-[#007B82] focus:border-b-[#007B82] cursor-pointer active:text-[#007B82]">
+                  Help Center
+                </button>
+              </Link> */}
+              <Link
+                to="/HelpCenter"
+                className={`w-[150px] h-[98px] flex justify-center items-center font-medium text-[18px] leading-[100%] text-black hover:text-[#007B82] border-b-[2px] border-solid ${
+                  window.location.pathname === "/HelpCenter"
+                    ? "text-[#007B82] border-[#007B82]"
+                    : "border-transparent hover:border-[#007B82]"
+                }`}
+              >
+                Help Center
               </Link>
             </div>
 
